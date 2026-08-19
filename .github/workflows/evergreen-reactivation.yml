@@ -1,0 +1,47 @@
+name: Evergreen Reactivation
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: evergreen-reactivation
+  cancel-in-progress: false
+
+jobs:
+  reactivate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run reactivation engine
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_WORKSPACE: ${{ github.workspace }}
+          FLARIENT_API_URL: ${{ secrets.FLARIENT_API_URL }}
+        run: python evergreen_reactivation.py
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## Evergreen Reactivation Scan" >> ${{ github.step_summary }}
+          echo "Scanned current space weather for triggers and matched against episode genomes." >> ${{ github.step_summary }}
