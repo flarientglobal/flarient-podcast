@@ -42,8 +42,10 @@ if EPISODE_TYPE == "auto":
         EPISODE_TYPE = "daily"
 
 # Voice assignment (Microsoft Azure neural voice, free via edge-tts)
-# Ollie is a British English male voice — warm, engaging, and natural-sounding.
-HOST_VOICE = "en-GB-OllieMultilingualNeural"  # Single host — Ollie (consistent every episode)
+# Ollie is the podcast host persona. The TTS voice is en-GB-RyanNeural because
+# en-GB-OllieMultilingualNeural is an Azure-only voice not available through
+# the edge-tts (Edge browser) free endpoint. Ryan is a warm British English male voice.
+HOST_VOICE = "en-GB-RyanNeural"  # Single host — Ollie (consistent every episode)
 
 # Podcast metadata
 PODCAST_TITLE = "Daily Space Podcast by Flarient"
