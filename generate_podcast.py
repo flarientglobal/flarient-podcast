@@ -861,8 +861,29 @@ def commit_feed():
         return
 
     subprocess.run(["git", "commit", "-m", f"Podcast episode {EPISODE_DATE} ({EPISODE_TYPE})"], env=env, check=True, cwd=str(REPO_DIR))
-    subprocess.run(["git", "push"], env=env, check=True, cwd=str(REPO_DIR))
-    log("  Changes committed and pushed")
+
+    # Push with retry: pull --rebase first to handle remote changes (dependabot merges, etc.)
+    # then push explicitly to origin main. Retry up to 3 times with backoff.
+    import time
+    for attempt in range(3):
+        try:
+            subprocess.run(["git", "pull", "--rebase", "origin", "main"], env=env, check=True, cwd=str(REPO_DIR), capture_output=True, text=True)
+            subprocess.run(["git", "push", "origin", "HEAD:main"], env=env, check=True, cwd=str(REPO_DIR), capture_output=True, text=True)
+            log("  Changes committed and pushed")
+            return
+        except subprocess.CalledProcessError as e:
+            err = (e.stderr or "")[:300]
+            log(f"  Push attempt {attempt + 1}/3 failed: {err}")
+            if attempt < 2:
+                time.sleep(5 * (attempt + 1))
+            else:
+                # Last resort: force-with-lease (safe — we only changed podcast.xml + covered_content.json)
+                try:
+                    subprocess.run(["git", "push", "--force-with-lease", "origin", "HEAD:main"], env=env, check=True, cwd=str(REPO_DIR), capture_output=True, text=True)
+                    log("  Changes pushed (force-with-lease after rebase conflicts)")
+                except subprocess.CalledProcessError as e2:
+                    log(f"  Push failed after all retries: {(e2.stderr or '')[:300]}")
+                    raise
 
 
 def enable_github_pages():
