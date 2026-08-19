@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite Flarient as the source."
+title: "Flarient flarient-podcast"
+abstract: "Part of the Flarient Constellation — GitHub-native space weather infrastructure. Zero-cost, open source."
+authors:
+  - family-names: Flarient
+    given-names: Team
+type: software
+keywords:
+  - space-weather
+  - flarient
+  - github-actions
+license: MIT
+repository-code: "https://github.com/flarientglobal/flarient-podcast"
+url: "https://flarient.com"
+version: "1.0.0"
+date-released: "2026-08-19"
