@@ -51,7 +51,7 @@ PODCAST_TITLE = "Daily Space Podcast by Flarient"
 PODCAST_DESC = "Your daily conversation about space weather, solar activity, aurora forecasts, and cosmic events. Hosts Christopher and Jenny break down the latest data from NOAA, NASA, and ESA into plain English for aurora chasers, ham radio operators, satellite operators, and anyone curious about what the Sun is doing today."
 PODCAST_AUTHOR = "Flarient"
 PODCAST_CATEGORY = "Science"
-PODCAST_COVER = "https://flarient.com/podcast-cover.jpg"
+PODCAST_COVER = "https://flarientglobal.github.io/flarient-podcast/podcast-cover.png"
 PODCAST_LINK = "https://flarient.com/podcast"
 
 # Gemini model fallback chain (free tier) — updated to current models.
@@ -769,17 +769,25 @@ def update_rss_feed(script, mp3_url, cover_url, duration_sec, file_size):
     pub_date = datetime.datetime.now(datetime.timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
     type_prefix = {"weekly": "[WEEKLY] ", "breaking": "[BREAKING] "}.get(EPISODE_TYPE, "")
     full_title = f"{type_prefix}{script.get('title', f'Daily Space Podcast — {EPISODE_DATE}')}"
+    episode_link = f"https://flarient.com/podcast/{EPISODE_DATE}"
+    # Count existing episodes for the episode number
+    episode_number = 1
+    if rss_path.exists():
+        existing_xml = rss_path.read_text(encoding="utf-8")
+        episode_number = existing_xml.count("<item>") + 1
 
     cover_tag = f"      <itunes:image href='{escape_xml(cover_url)}'/>\n" if cover_url else ""
 
     episode_xml = f"""    <item>
        <title>{escape_xml(full_title)}</title>
+       <link>{episode_link}</link>
        <description>{escape_xml(script.get("show_notes", ""))}</description>
        <pubDate>{pub_date}</pubDate>
        <guid isPermaLink="false">{episode_guid}</guid>
        <enclosure url="{escape_xml(mp3_url)}" length="{file_size}" type="audio/mpeg"/>
        <itunes:duration>{duration_sec}</itunes:duration>
        <itunes:episodeType>{EPISODE_TYPE}</itunes:episodeType>
+       <itunes:episode>{episode_number}</itunes:episode>
 {cover_tag}       <itunes:summary>{escape_xml(script.get("show_notes", ""))}</itunes:summary>
      </item>
 """
@@ -791,12 +799,27 @@ def update_rss_feed(script, mp3_url, cover_url, duration_sec, file_size):
             re.DOTALL
         )
         xml = pattern.sub('\n', xml)
+        # Update channel-level itunes:image to latest cover and add missing tags
+        if cover_url and "<item>" in xml:
+            channel_part, items_part = xml.split("<item>", 1)
+            channel_part = re.sub(
+                r'<itunes:image href=["'][^"']*["'] */?>',
+                f'<itunes:image href="{escape_xml(cover_url)}"/>',
+                channel_part
+            )
+            if "<itunes:type>" not in channel_part:
+                channel_part = channel_part.replace(
+                    "<itunes:explicit>false</itunes:explicit>",
+                    "<itunes:explicit>false</itunes:explicit>\n    <itunes:type>episodic</itunes:type>"
+                )
+            xml = channel_part + "<item>" + items_part
         if "</channel>" in xml:
             xml = xml.replace("</channel>", episode_xml + "  </channel>")
         else:
             log("  WARNING: Could not find </channel> in existing feed")
             return
     else:
+        channel_cover = cover_url or PODCAST_COVER
         xml = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
@@ -804,10 +827,12 @@ def update_rss_feed(script, mp3_url, cover_url, duration_sec, file_size):
     <link>{PODCAST_LINK}</link>
     <language>en-us</language>
     <description>{escape_xml(PODCAST_DESC)}</description>
+    <itunes:summary>{escape_xml(PODCAST_DESC)}</itunes:summary>
     <itunes:author>{escape_xml(PODCAST_AUTHOR)}</itunes:author>
+    <itunes:type>episodic</itunes:type>
     <itunes:category text="{PODCAST_CATEGORY}"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="{PODCAST_COVER}"/>
+    <itunes:image href="{escape_xml(channel_cover)}"/>
     <itunes:owner>
       <itunes:name>{escape_xml(PODCAST_AUTHOR)}</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
