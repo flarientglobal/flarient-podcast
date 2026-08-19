@@ -76,7 +76,7 @@ jobs:
           EPISODE_TYPE: ${{ steps.ep_type.outputs.type }}
         run: python generate_podcast.py
 
-      - name: Backup MP3 to Archive.org
+      - name: Backup episode to Archive.org
         if: success()
         env:
           IA_S3_ACCESS_KEY: ${{ secrets.IA_S3_ACCESS_KEY }}
@@ -87,8 +87,21 @@ jobs:
           MP3_FILE=$(ls /tmp/podcast/flarient-podcast-*.mp3 2>/dev/null | head -1)
           if [ -z "$MP3_FILE" ]; then echo "No MP3 found, skipping backup"; exit 0; fi
           if [ -z "$IA_S3_ACCESS_KEY" ] || [ -z "$IA_S3_SECRET_KEY" ]; then echo "Archive.org credentials not set, skipping backup"; exit 0; fi
-          echo "Backing up $MP3_FILE to Archive.org..."
+          # Upload MP3
+          echo "Backing up MP3 to Archive.org..."
           curl -s -X PUT             -H "Authorization: LOW $IA_S3_ACCESS_KEY:$IA_S3_SECRET_KEY"             -H "x-amz-auto-create-bucket:1"             --upload-file "$MP3_FILE"             "https://s3.us.archive.org/$ITEM_ID/flarient-podcast-$EPISODE_DATE.mp3"
+          # Upload transcript
+          TRANSCRIPT_FILE=$(ls /tmp/podcast/transcript-*.txt 2>/dev/null | head -1)
+          if [ -n "$TRANSCRIPT_FILE" ]; then
+            echo "Backing up transcript to Archive.org..."
+            curl -s -X PUT               -H "Authorization: LOW $IA_S3_ACCESS_KEY:$IA_S3_SECRET_KEY"               --upload-file "$TRANSCRIPT_FILE"               "https://s3.us.archive.org/$ITEM_ID/transcript-$EPISODE_DATE.txt"
+          fi
+          # Upload cover art
+          COVER_FILE=$(ls /tmp/podcast/cover-*.jpg 2>/dev/null | head -1)
+          if [ -n "$COVER_FILE" ]; then
+            echo "Backing up cover art to Archive.org..."
+            curl -s -X PUT               -H "Authorization: LOW $IA_S3_ACCESS_KEY:$IA_S3_SECRET_KEY"               --upload-file "$COVER_FILE"               "https://s3.us.archive.org/$ITEM_ID/cover-$EPISODE_DATE.jpg"
+          fi
           echo "Backup complete: https://archive.org/details/$ITEM_ID"
 
       - name: Upload episode artifact
