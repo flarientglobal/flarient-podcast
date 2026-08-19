@@ -1,0 +1,5 @@
+edge-tts
+requests
+google-genai
+pydub
+Pillow
