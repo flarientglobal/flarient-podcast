@@ -1,0 +1,47 @@
+name: Build Micro Publications
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: micro-publications
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build micro publications
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_WORKSPACE: ${{ github.workspace }}
+          FLARIENT_API_URL: ${{ secrets.FLARIENT_API_URL }}
+        run: python build_micro_publications.py
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## Micro Publications Built" >> ${{ github.step_summary }}
+          echo "4 content lenses updated: Aurora, Solar Flare, Asteroid, Human vs AI" >> ${{ github.step_summary }}
