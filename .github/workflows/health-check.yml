@@ -1,0 +1,50 @@
+name: Podcast Health Check
+
+on:
+  schedule:
+    - cron: '0 8 * * *'  # Daily at 08:00 UTC (1.5h after the 06:30 podcast generation)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check latest release
+        id: check
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          LATEST=$(gh release list --limit 1 --json tagName,createdAt 2>/dev/null | jq -r '.[0].tagName // empty')
+          if [ -z "$LATEST" ]; then
+            echo "status=no_releases" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          CREATED=$(gh release list --limit 1 --json createdAt | jq -r '.[0].createdAt')
+          CREATED_TS=$(date -d "$CREATED" +%s)
+          NOW_TS=$(date +%s)
+          AGE_HOURS=$(( (NOW_TS - CREATED_TS) / 3600 ))
+          echo "age_hours=$AGE_HOURS" >> $GITHUB_OUTPUT
+          if [ "$AGE_HOURS" -gt 26 ]; then
+            echo "status=stale" >> $GITHUB_OUTPUT
+          else
+            echo "status=healthy" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create alert issue if stale
+        if: steps.check.outputs.status == 'stale'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "Podcast health check: no recent episode (last release ${{ steps.check.outputs.age_hours }}h ago)" \
+            --body "The daily podcast was expected at 06:30 UTC but the latest GitHub Release is ${{ steps.check.outputs.age_hours }} hours old. Check the Actions tab for failed workflow runs."
+
+      - name: Report
+        run: |
+          echo "Status: ${{ steps.check.outputs.status }}"
+          echo "Latest release age: ${{ steps.check.outputs.age_hours }}h"
