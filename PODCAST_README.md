@@ -14,7 +14,7 @@ This repo contains the automated podcast generation pipeline for [Flarient](http
 
 1. **Content Fetch** — Pulls live space weather data, blog posts, events, fact checks, daily briefs, and "This Day in History" from the Flarient API
 2. **Deduplication** — Tracks covered content IDs in `covered_content.json` to prevent repeating the same articles/events/fact checks across episodes
-3. **Script Generation** — Gemini AI generates a conversational script with two consistent hosts (Christopher & Jenny)
+3. **Script Generation** — Gemini AI generates a conversational script with a single consistent host (Ollie)
 4. **Text-to-Speech** — edge-tts (Microsoft Azure neural voices) synthesizes speech — zero cost, no API key
 5. **Audio Mastering** — ffmpeg: silence removal, background music bed, ID3 chapter markers, loudnorm to -16 LUFS (±2 LUFS tolerance)
 6. **Cover Art** — Per-episode 3000×3000 JPG generated with Pillow (date, Kp index, episode type badge)
@@ -22,12 +22,11 @@ This repo contains the automated podcast generation pipeline for [Flarient](http
 8. **Publishing** — MP3, cover art, and transcript uploaded as GitHub Release assets (permanent public URLs)
 9. **RSS Feed** — podcast.xml updated and committed to the repo, hosted via GitHub Pages
 
-## Consistent Voices
+## Consistent Voice
 
-- **Christopher** (en-US-ChristopherNeural) — Male host, the space weather expert
-- **Jenny** (en-US-JennyNeural) — Female host, the curious co-host
+- **Ollie** (en-GB-OllieMultilingualNeural) — Male host, the space weather expert
 
-These Microsoft Azure neural voices are consistently rated as the most natural-sounding free TTS voices and are used in every episode for consistency.
+This Microsoft Azure neural voice is used in every episode for consistency. Ollie hosts the show alone, speaking directly to the listener in a warm, engaging British accent.
 
 ## Cost
 
