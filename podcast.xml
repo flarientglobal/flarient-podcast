@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Daily Space Podcast by Flarient</title>
+    <link>https://flarient.com/podcast</link>
+    <language>en-us</language>
+    <description>Your daily conversation about space weather, solar activity, aurora forecasts, and cosmic events. Hosts Christopher and Jenny break down the latest data from NOAA, NASA, and ESA into plain English for aurora chasers, ham radio operators, satellite operators, and anyone curious about what the Sun is doing today.</description>
+    <itunes:author>Flarient</itunes:author>
+    <itunes:category text="Science"/>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:image href="https://flarient.com/podcast-cover.jpg"/>
+    <itunes:owner>
+      <itunes:name>Flarient</itunes:name>
+      <itunes:email>podcast@flarient.com</itunes:email>
+    </itunes:owner>
+    <item>
+       <title>Asteroid 2026 PX Flyby, Solar Wind Forecast Clashes, and Unmasking Cosmic Giants</title>
+       <description>Daily Space Podcast by Flarient - Wednesday, August 19, 2026
+
+EPISODE SUMMARY:
+In today&apos;s episode, Christopher and Jenny break down the near-Earth flyby of asteroid 2026 PX and review the Earth&apos;s recovery following recent G1 geomagnetic storm conditions. We dive into a fascinating forecasting standoff where human space weather analysts and AI models disagree by up to 40% on solar wind acceleration and upcoming CME impact probabilities. Plus, we explore how astronomers detect invisible black holes, how to photograph Starlink satellite trains, why asteroids have their own moons, and we fact-check persistent viral claims about moon bases, Martian colonies, and extraterrestrial life.
+
+TIMESTAMPS:
+00:00 - Hook &amp; Welcome
+01:15 - Space Weather Report: Geomagnetic Calming &amp; Kp 2.33
+06:30 - Space Events: Statistical Anomaly &amp; Human vs. AI Forecast Divergence
+12:45 - Blog Discussions: Black Hole Detection, Satellite Photography, Asteroid Moons &amp; Solar Flares
+20:15 - Deep Fact Check: Apollo 11, Moon Bases, SpaceX Mars Myths &amp; UAPs
+26:00 - Daily Brief: Asteroid 2026 PX Approach &amp; Lingering Perseids
+29:00 - Call to Actions &amp; Outro
+
+LINKS MENTIONED:
+- Live Space Weather Dashboard: https://flarient.com
+- Podcast Episodes &amp; Notes: https://flarient.com/podcast
+- Black Hole Observation: https://flarient.com/blog/astrophysicists-detect-black-holes-through-indirect-observation
+- Satellite Tracking &amp; Photography: https://flarient.com/blog/photographing-satellites-and-starlink-trains
+- Asteroid Moons &amp; Systems: https://flarient.com/blog/the-discovery-of-asteroid-moons-and-their-celestial-systems
+- Solar Flare Electronics Impact: https://flarient.com/blog/how-solar-flares-impact-modern-electronics
+- History of Asteroid Impacts: https://flarient.com/blog/history-records-earths-violent-asteroid-impacts
+- Fact Checks: https://flarient.com/fact-checker
+- Anomaly &amp; Forecast Divergence Tracker: https://flarient.com/space-events</description>
+       <pubDate>Wed, 19 Aug 2026 04:10:54 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-08-19</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-19/flarient-podcast-2026-08-19.mp3" length="20805200" type="audio/mpeg"/>
+       <itunes:duration>866</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+      <itunes:image href='https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-19/cover-2026-08-19.jpg'/>
+       <itunes:summary>Daily Space Podcast by Flarient - Wednesday, August 19, 2026
+
+EPISODE SUMMARY:
+In today&apos;s episode, Christopher and Jenny break down the near-Earth flyby of asteroid 2026 PX and review the Earth&apos;s recovery following recent G1 geomagnetic storm conditions. We dive into a fascinating forecasting standoff where human space weather analysts and AI models disagree by up to 40% on solar wind acceleration and upcoming CME impact probabilities. Plus, we explore how astronomers detect invisible black holes, how to photograph Starlink satellite trains, why asteroids have their own moons, and we fact-check persistent viral claims about moon bases, Martian colonies, and extraterrestrial life.
+
+TIMESTAMPS:
+00:00 - Hook &amp; Welcome
+01:15 - Space Weather Report: Geomagnetic Calming &amp; Kp 2.33
+06:30 - Space Events: Statistical Anomaly &amp; Human vs. AI Forecast Divergence
+12:45 - Blog Discussions: Black Hole Detection, Satellite Photography, Asteroid Moons &amp; Solar Flares
+20:15 - Deep Fact Check: Apollo 11, Moon Bases, SpaceX Mars Myths &amp; UAPs
+26:00 - Daily Brief: Asteroid 2026 PX Approach &amp; Lingering Perseids
+29:00 - Call to Actions &amp; Outro
+
+LINKS MENTIONED:
+- Live Space Weather Dashboard: https://flarient.com
+- Podcast Episodes &amp; Notes: https://flarient.com/podcast
+- Black Hole Observation: https://flarient.com/blog/astrophysicists-detect-black-holes-through-indirect-observation
+- Satellite Tracking &amp; Photography: https://flarient.com/blog/photographing-satellites-and-starlink-trains
+- Asteroid Moons &amp; Systems: https://flarient.com/blog/the-discovery-of-asteroid-moons-and-their-celestial-systems
+- Solar Flare Electronics Impact: https://flarient.com/blog/how-solar-flares-impact-modern-electronics
+- History of Asteroid Impacts: https://flarient.com/blog/history-records-earths-violent-asteroid-impacts
+- Fact Checks: https://flarient.com/fact-checker
+- Anomaly &amp; Forecast Divergence Tracker: https://flarient.com/space-events</itunes:summary>
+     </item>
+  </channel>
+</rss>
