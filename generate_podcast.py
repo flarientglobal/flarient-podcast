@@ -41,14 +41,13 @@ if EPISODE_TYPE == "auto":
     else:
         EPISODE_TYPE = "daily"
 
-# Voice assignments (Microsoft Azure neural voices, free via edge-tts)
-# These are consistently rated as the most natural-sounding free TTS voices.
-HOST_A_VOICE = "en-US-ChristopherNeural"  # Male host — the expert (consistent every episode)
-HOST_B_VOICE = "en-US-JennyNeural"        # Female host — the curious co-host (consistent every episode)
+# Voice assignment (Microsoft Azure neural voice, free via edge-tts)
+# Ollie is a British English male voice — warm, engaging, and natural-sounding.
+HOST_VOICE = "en-GB-OllieMultilingualNeural"  # Single host — Ollie (consistent every episode)
 
 # Podcast metadata
 PODCAST_TITLE = "Daily Space Podcast by Flarient"
-PODCAST_DESC = "Your daily conversation about space weather, solar activity, aurora forecasts, and cosmic events. Hosts Christopher and Jenny break down the latest data from NOAA, NASA, and ESA into plain English for aurora chasers, ham radio operators, satellite operators, and anyone curious about what the Sun is doing today."
+PODCAST_DESC = "Your daily conversation about space weather, solar activity, aurora forecasts, and cosmic events. Host Ollie breaks down the latest data from NOAA, NASA, and ESA into plain English for aurora chasers, ham radio operators, satellite operators, and anyone curious about what the Sun is doing today."
 PODCAST_AUTHOR = "Flarient"
 PODCAST_CATEGORY = "Science"
 PODCAST_COVER = "https://flarientglobal.github.io/flarient-podcast/podcast-cover.png"
@@ -277,9 +276,8 @@ Standard daily episode covering all content areas.
 
 {type_instructions}
 
-TWO HOSTS (consistent every episode):
-- Host A (Christopher, male, American accent) — the knowledgeable space weather expert who explains the science
-- Host B (Jenny, female, American accent) — the curious co-host who asks questions and makes it accessible
+SINGLE HOST (consistent every episode):
+- Ollie (male, British accent) — a knowledgeable and engaging space weather expert who explains the science in an accessible, conversational way. Ollie hosts the show alone, speaking directly to the listener as if sharing a fascinating story with a friend.
 
 PODCAST STRUCTURE:
 
@@ -291,16 +289,16 @@ PODCAST STRUCTURE:
    The hook should relate to today's most interesting content but be phrased as a teaser.
    The hook comes FIRST, before anything else. Do not introduce the podcast or the hosts before the hook.
 
-2. CONSISTENT INTRO (15-30 seconds): After the hook, use this EXACT intro every single episode (Host A says it):
-   "You're listening to the Daily Space Podcast by Flarient, your daily conversation about space weather, solar activity, and cosmic events. I'm Christopher, and I'm Jenny, and today is [say the date in natural language like 'Wednesday, August nineteenth'."
-   Then Host B adds: "Let's get into what the Sun is doing today."
+2. CONSISTENT INTRO (15-30 seconds): After the hook, use this EXACT intro every single episode (Ollie says it):
+   "You're listening to the Daily Space Podcast by Flarient, your daily conversation about space weather, solar activity, and cosmic events. I'm Ollie, and today is [say the date in natural language like 'Wednesday, August nineteenth']."
+   Then Ollie adds: "Let's get into what the Sun is doing today."
    This intro must be word-for-word the same every episode (only the date changes).
 
 3. THIS DAY IN SPACE WEATHER HISTORY (60-90 seconds, ~100-150 words): A SHORT, ENTERTAINING segment about a historical space weather event that happened on this date. Keep it brief and fun — like a "on this day in history" radio segment. Use the provided This Day in History data. If no data is available, skip this segment.
 
-4. SPACE WEATHER REPORT (5-7 minutes, ~800-1000 words): Cover today's live space weather data conversationally. Discuss the Kp index, solar wind, Bz, flare activity, and aurora forecast. Explain what the numbers mean in plain English. Have Host B ask clarifying questions.
+4. SPACE WEATHER REPORT (5-7 minutes, ~800-1000 words): Cover today's live space weather data conversationally. Discuss the Kp index, solar wind, Bz, flare activity, and aurora forecast. Explain what the numbers mean in plain English. Ollie should ask rhetorical questions and then answer them, as if thinking out loud.
 
-5. BLOG ARTICLES (5-7 minutes, ~800-1000 words): Discuss the day's blog articles. Summarize key points, add insights, ask each other questions. Make it conversational, not a reading of the article.
+5. BLOG ARTICLES (5-7 minutes, ~800-1000 words): Discuss the day's blog articles. Summarize key points, add insights, and share personal takeaways. Make it conversational, not a reading of the article.
 
 6. SPACE EVENTS (5-7 minutes, ~800-1000 words): Cover recent space events — geomagnetic storms, solar flares, asteroid approaches, etc. Discuss what happened, why it matters, and who's affected.
 
@@ -317,7 +315,7 @@ PODCAST STRUCTURE:
    - Download the Flarient app for push notifications when geomagnetic storms hit
 
 IMPORTANT RULES:
-- Make it CONVERSATIONAL and NATURAL — hosts should interact, ask each other questions, add personal insights and humor
+- Make it CONVERSATIONAL and NATURAL — Ollie is a single host speaking directly to the listener. Use a warm, engaging tone as if talking to a friend. Add personal insights, rhetorical questions, and humor.
 - Do NOT just read facts — discuss them, explain them, make them accessible to a general audience
 - Use varied sentence structures and natural speech patterns (fillers like "right", "exactly", "I mean" are OK sparingly)
 - Include moments of personality, humor, and genuine curiosity
@@ -332,21 +330,20 @@ CONTENT DATA:
 Respond with a JSON object with this exact structure:
 {{
   "title": "Episode title (max 120 chars, engaging and descriptive)",
-  "hook": "The full 30-60 second opening hook (as a single dialogue segment from Host A)",
+  "hook": "The full 30-60 second opening hook (as a single segment from Ollie)",
   "show_notes": "Detailed show notes with key topics covered, links to articles/events mentioned, and timestamps. Format as plain text with line breaks.",
   "segments": [
     {{"speaker": "A", "text": "dialogue text for this segment", "section": "hook|intro|this_day|space_weather|articles|events|fact_checks|brief|ctas"}},
-    {{"speaker": "B", "text": "dialogue text for this segment", "section": "hook|intro|this_day|space_weather|articles|events|fact_checks|brief|ctas"}},
     ...
   ],
   "ctas": ["CTA 1 text", "CTA 2 text", ...]
 }}
 
-The "hook" field should be the first segment of the podcast (Host A's opening). Include it as the first element in segments as well.
+The "hook" field should be the first segment of the podcast (Ollie's opening). Include it as the first element in segments as well.
 The "segments" array should contain ALL dialogue including the hook, intro, all content sections, and CTAs.
 Each segment text should be 1-5 sentences (natural dialogue chunks).
 Each segment MUST have a "section" field indicating which part of the show it belongs to.
-Alternate between speakers A and B naturally (not strictly alternating — sometimes one host speaks twice in a row).
+All segments should have "speaker": "A" (Ollie is the only host).
 Generate enough segments to fill the target duration."""
 
 
@@ -400,9 +397,8 @@ async def synthesize_all(segments):
 
     async def synth_one(i, seg):
         async with sem:
-            voice = HOST_A_VOICE if seg["speaker"] == "A" else HOST_B_VOICE
             output = str(WORK_DIR / f"segment_{i:04d}.mp3")
-            await synth_segment(seg["text"], voice, output)
+            await synth_segment(seg["text"], HOST_VOICE, output)
             return output
 
     tasks = [synth_one(i, seg) for i, seg in enumerate(segments)]
@@ -691,9 +687,8 @@ def save_transcript(script, output_path):
     lines.append("", )
 
     for seg in segments:
-        speaker = "Christopher" if seg.get("speaker") == "A" else "Jenny"
-        lines.append(f"{speaker}: {seg.get('text', '')}", )
-        lines.append("", )
+        lines.append(seg.get('text', ''))
+        lines.append("")
 
     with open(output_path, "w") as f:
         f.write("\n".join(str(l) for l in lines))
