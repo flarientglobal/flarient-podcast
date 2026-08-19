@@ -764,7 +764,10 @@ def update_rss_feed(script, mp3_url, cover_url, duration_sec, file_size):
     pub_date = datetime.datetime.now(datetime.timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
     type_prefix = {"weekly": "[WEEKLY] ", "breaking": "[BREAKING] "}.get(EPISODE_TYPE, "")
     full_title = f"{type_prefix}{script.get('title', f'Daily Space Podcast — {EPISODE_DATE}')}"
-    episode_link = f"https://flarient.com/podcast/{EPISODE_DATE}"
+    # Generate title-based slug for the episode URL
+    episode_slug = re.sub(r'[^a-z0-9 \s-]', '', script.get('title', '').lower()).strip()
+    episode_slug = re.sub(r'[\s-]+', '-', episode_slug).strip('-')[:80] or EPISODE_DATE
+    episode_link = f"https://flarient.com/podcast/{episode_slug}"
     # Count existing episodes for the episode number
     episode_number = 1
     if rss_path.exists():
