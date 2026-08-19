@@ -1,0 +1,108 @@
+name: Daily Podcast Generation
+
+on:
+  schedule:
+    - cron: '30 6 * * 1-6'  # Mon-Sat at 06:30 UTC (daily episodes)
+    - cron: '30 6 * * 0'    # Sunday at 06:30 UTC (weekly roundup — replaces daily)
+  repository_dispatch:
+    types: [breaking-event]  # Triggered by Flarient for G4+ storms or X-class flares
+  workflow_dispatch:
+    inputs:
+      episode_type:
+        description: 'Episode type (auto = detect from day of week)'
+        required: false
+        default: 'auto'
+        type: choice
+        options:
+          - auto
+          - daily
+          - weekly
+          - breaking
+
+permissions:
+  contents: write
+  packages: write
+
+concurrency:
+  group: podcast-generation
+  cancel-in-progress: false
+
+jobs:
+  generate-podcast:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set episode type
+        id: ep_type
+        run: |
+          if [ "${{ github.event_name }}" = "repository_dispatch" ]; then
+            echo "type=breaking" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.inputs.episode_type }}" != "" ] && [ "${{ github.event.inputs.episode_type }}" != "auto" ]; then
+            echo "type=${{ github.event.inputs.episode_type }}" >> $GITHUB_OUTPUT
+          else
+            echo "type=auto" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          ffmpeg -version | head -1
+
+      - name: Install Python dependencies
+        run: |
+          pip install --upgrade pip
+          pip install edge-tts requests google-genai pydub Pillow
+
+      - name: Generate podcast
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          FLARIENT_API_URL: ${{ secrets.FLARIENT_API_URL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_WORKSPACE: ${{ github.workspace }}
+          EPISODE_TYPE: ${{ steps.ep_type.outputs.type }}
+        run: python generate_podcast.py
+
+      - name: Upload episode artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: podcast-${{ github.run_id }}
+          path: |
+            /tmp/podcast/*.mp3
+            /tmp/podcast/*.jpg
+            /tmp/podcast/*.txt
+            podcast.xml
+            covered_content.json
+          retention-days: 30
+          if-no-files-found: warn
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## Podcast Generation Summary" >> ${{ github.step_summary }}
+          echo "" >> ${{ github.step_summary }}
+          if [ -f /tmp/podcast/flarient-podcast-*.mp3 ]; then
+            echo "✅ Episode generated successfully" >> ${{ github.step_summary }}
+            echo "" >> ${{ github.step_summary }}
+            echo "**MP3:** Available as GitHub Release asset (permanent URL)" >> ${{ github.step_summary }}
+            echo "**Cover Art:** Per-episode 3000×3000 JPG" >> ${{ github.step_summary }}
+            echo "**Transcript:** Full dialogue transcript .txt" >> ${{ github.step_summary }}
+            echo "**Chapters:** ID3 chapter markers embedded" >> ${{ github.step_summary }}
+            echo "**RSS Feed:** podcast.xml committed to repo" >> ${{ github.step_summary }}
+            echo "**Dedup:** covered_content.json updated" >> ${{ github.step_summary }}
+          else
+            echo "❌ Episode generation failed or skipped (already exists for today)" >> ${{ github.step_summary }}
+          fi
