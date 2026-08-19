@@ -1,4 +1,4 @@
-# Flarient Daily Podcast Pipeline
+# Daily Space Podcast by Flarient
 
 This repo contains the automated podcast generation pipeline for [Flarient](https://flarient.com).
 
@@ -31,7 +31,7 @@ These Microsoft Azure neural voices are consistently rated as the most natural-s
 
 ## Cost
 
-**$0/month** — all components use free tiers:
+**Free** — all components use free tiers:
 - Gemini API (free tier)
 - edge-tts (free, no API key)
 - GitHub Actions (free for public repos, 2000 min/month for private)
