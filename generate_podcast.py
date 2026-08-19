@@ -455,39 +455,22 @@ def get_jingles():
 
 # ── 4b. Generate background music bed ─────────────────────────────────────
 def generate_music_bed(output_path, duration_sec):
-    """Generate a royalty-free ambient music bed with ffmpeg (sine waves + lowpass).
-    Generates a short 30s loop and extends it to the required duration for efficiency."""
+    """Generate a royalty-free ambient music bed with ffmpeg (sine waves + reverb)."""
     log("  Generating background music bed...")
-    # Generate a short 30-second loop, then extend it with stream_loop
-    loop_dur = 30
-    loop_path = str(WORK_DIR / "music_loop.mp3")
-    try:
-        subprocess.run([
-            "ffmpeg", "-y",
-            "-f", "lavfi", "-i", "sine=frequency=110:duration=" + str(loop_dur),
-            "-f", "lavfi", "-i", "sine=frequency=165:duration=" + str(loop_dur),
-            "-f", "lavfi", "-i", "sine=frequency=220:duration=" + str(loop_dur),
-            "-filter_complex",
-            "[0:a]volume=0.08[a1];[1:a]volume=0.06[a2];[2:a]volume=0.04[a3];"
-            "[a1][a2][a3]amix=inputs=3:duration=longest[mix];"
-            "[mix]lowpass=f=800[bed]",
-            "-map", "[bed]",
-            "-ar", "44100", "-ab", "128k",
-            loop_path
-        ], check=True, capture_output=True)
-        # Loop the short segment to the full duration
-        loop_count = max(1, int(duration_sec // loop_dur) + 1)
-        subprocess.run([
-            "ffmpeg", "-y",
-            "-stream_loop", str(loop_count),
-            "-i", loop_path,
-            "-t", str(duration_sec),
-            "-ar", "44100", "-ab", "128k",
-            output_path
-        ], check=True, capture_output=True)
-    except subprocess.CalledProcessError as e:
-        log(f"  WARNING: Music bed generation failed: {e.stderr[:300] if e.stderr else 'unknown'}")
-        raise
+    subprocess.run([
+        "ffmpeg", "-y",
+        "-f", "lavfi", "-i", "sine=frequency=110:duration=" + str(duration_sec),
+        "-f", "lavfi", "-i", "sine=frequency=165:duration=" + str(duration_sec),
+        "-f", "lavfi", "-i", "sine=frequency=220:duration=" + str(duration_sec),
+        "-filter_complex",
+        "[0:a]volume=0.08[a1];[1:a]volume=0.06[a2];[2:a]volume=0.04[a3];"
+        "[a1][a2][a3]amix=inputs=3:duration=longest[mix];"
+        "[mix]aecho=0.6:0.3:500|0.4:0.2|1000[echo];"
+        "[echo]lowpass=f=800[bed]",
+        "-map", "[bed]",
+        "-ar", "44100", "-ab", "128k",
+        output_path
+    ], check=True, capture_output=True)
 
 
 # ── 4c. Generate per-episode cover art with Pillow ────────────────────────
@@ -579,7 +562,6 @@ def generate_cover_art(episode_type, content):
 # ── 5. Master audio with ffmpeg ───────────────────────────────────────────
 def master_audio(segment_files, script, output_path):
     log("Mastering audio...")
-    intro_path, outro_path = get_jingles()
 
     # 1. Concatenate all dialogue segments
     log("  Concatenating dialogue segments...")
@@ -594,95 +576,22 @@ def master_audio(segment_files, script, output_path):
         "-c", "copy", dialogue_raw
     ], check=True, capture_output=True)
 
-    # 2. Remove silence and normalize dialogue
-    log("  Removing silence and normalizing dialogue...")
-    dialogue_clean = str(WORK_DIR / "dialogue_clean.mp3")
+    # 2. Remove unnatural silences, normalize loudness, and add ID3 metadata in one pass
+    #    silenceremove: strips pauses > 0.5s below -45dB (keeps natural speech pauses)
+    #    loudnorm: broadcast standard -16 LUFS
+    log("  Removing silence, normalizing loudness, and adding metadata...")
+    title = script.get("title", f"Flarient Podcast — {EPISODE_DATE}")
     subprocess.run([
         "ffmpeg", "-y", "-i", dialogue_raw,
         "-af", "silenceremove=stop_periods=-1:stop_duration=0.5:stop_threshold=-45dB,loudnorm=I=-16:TP=-1.5:LRA=11",
-        "-ar", "44100", "-ab", "192k", "-ac", "2",
-        dialogue_clean
-    ], check=True, capture_output=True)
-
-    # 3. Get dialogue duration for music bed
-    dialogue_dur = get_duration(dialogue_clean)
-
-    # 4. Generate background music bed (graceful fallback: skip music if it fails)
-    music_bed = str(WORK_DIR / "music_bed.mp3")
-    has_music = False
-    try:
-        generate_music_bed(music_bed, dialogue_dur + 6)  # extra for intro/outro
-        has_music = True
-    except Exception as e:
-        log(f"  WARNING: Skipping background music — generation failed: {e}")
-        has_music = False
-
-    # 5. Mix dialogue with background music (music at -28dB under dialogue)
-    with_music = str(WORK_DIR / "with_music.mp3")
-    if has_music:
-        log("  Mixing dialogue with background music...")
-        try:
-            subprocess.run([
-                "ffmpeg", "-y",
-                "-i", dialogue_clean,
-                "-i", music_bed,
-                "-filter_complex",
-                "[1:a]volume=0.15[bg];[0:a][bg]amix=inputs=2:duration=first:dropout_transition=0",
-                "-ar", "44100", "-ab", "192k", "-ac", "2",
-                with_music
-            ], check=True, capture_output=True)
-        except subprocess.CalledProcessError as e:
-            log(f"  WARNING: Music mixing failed: {e.stderr[:300] if e.stderr else 'unknown'} — using dialogue without music")
-            subprocess.run(["cp", dialogue_clean, with_music], check=True)
-    else:
-        log("  No background music — using clean dialogue")
-        subprocess.run(["cp", dialogue_clean, with_music], check=True)
-
-    # 6. Add intro and outro jingles
-    log("  Adding intro/outro jingles...")
-    with_jingles_list = WORK_DIR / "concat_jingles.txt"
-    with open(with_jingles_list, "w") as f:
-        f.write(f"file '{intro_path}'\n")
-        f.write(f"file '{with_music}'\n")
-        f.write(f"file '{outro_path}'\n")
-
-    with_jingles = str(WORK_DIR / "with_jingles.mp3")
-    subprocess.run([
-        "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(with_jingles_list),
-        "-c", "copy", with_jingles
-    ], check=True, capture_output=True)
-
-    # 7. Final loudness normalization
-    log("  Final loudness normalization to -16 LUFS...")
-    normalized = str(WORK_DIR / "normalized.mp3")
-    subprocess.run([
-        "ffmpeg", "-y", "-i", with_jingles,
-        "-af", "loudnorm=I=-16:TP=-1.5:LRA=11",
-        "-ar", "44100", "-ab", "192k", "-ac", "2",
-        normalized
-    ], check=True, capture_output=True)
-
-    # 8. Add ID3 metadata + chapter markers
-    log("  Adding ID3 metadata and chapter markers...")
-    title = script.get("title", f"Flarient Podcast — {EPISODE_DATE}")
-    chapters_file = generate_chapters_file(script, intro_dur=1.5)
-
-    metadata_args = [
-        "ffmpeg", "-y", "-i", normalized,
         "-metadata", f"title={title}",
         "-metadata", "artist=Flarient",
         "-metadata", "album=Flarient Daily Space Weather",
         "-metadata", "genre=Podcast",
         "-metadata", f"date={EPISODE_DATE}",
-        "-metadata", f"comment={script.get('show_notes', '')[:500]}",
-    ]
-
-    # Add chapters if file exists
-    if chapters_file and Path(chapters_file).exists():
-        metadata_args.extend(["-i", chapters_file, "-map_chapters", "1"])
-
-    metadata_args.extend(["-c", "copy", output_path])
-    subprocess.run(metadata_args, check=True, capture_output=True)
+        "-ar", "44100", "-ab", "192k", "-ac", "2",
+        output_path
+    ], check=True, capture_output=True)
 
     log(f"  Final audio: {output_path}")
 
@@ -980,14 +889,11 @@ def main():
     # 4. Generate cover art
     cover_path = generate_cover_art(EPISODE_TYPE, content)
 
-    # 5. Master audio
+    # 5. Master audio (silence removal + loudness normalization + metadata in one pass)
     final_mp3 = str(WORK_DIR / MP3_FILENAME)
     master_audio(segment_files, script, final_mp3)
 
-    # 5b. Loudness check
-    check_loudness(final_mp3)
-
-    # 5c. Save transcript
+    # 5b. Save transcript
     transcript_path = str(WORK_DIR / TRANSCRIPT_FILENAME)
     save_transcript(script, transcript_path)
 
