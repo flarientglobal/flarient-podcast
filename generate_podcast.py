@@ -573,17 +573,18 @@ def master_audio(segment_files, script, output_path):
     dialogue_raw = str(WORK_DIR / "dialogue_raw.mp3")
     subprocess.run([
         "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat_list),
-        "-c", "copy", dialogue_raw
+        "-ar", "44100", "-ab", "192k", "-ac", "2",
+        dialogue_raw
     ], check=True, capture_output=True)
 
     # 2. Remove unnatural silences, normalize loudness, and add ID3 metadata in one pass
-    #    silenceremove: strips pauses > 0.5s below -45dB (keeps natural speech pauses)
+    #    silenceremove: strips pauses > 1.0s below -50dB (keeps natural speech pauses)
     #    loudnorm: broadcast standard -16 LUFS
     log("  Removing silence, normalizing loudness, and adding metadata...")
     title = script.get("title", f"Flarient Podcast — {EPISODE_DATE}")
     subprocess.run([
         "ffmpeg", "-y", "-i", dialogue_raw,
-        "-af", "silenceremove=stop_periods=-1:stop_duration=0.5:stop_threshold=-45dB,loudnorm=I=-16:TP=-1.5:LRA=11",
+        "-af", "silenceremove=stop_periods=-1:stop_duration=1.0:stop_threshold=-50dB,loudnorm=I=-16:TP=-1.5:LRA=11",
         "-metadata", f"title={title}",
         "-metadata", "artist=Flarient",
         "-metadata", "album=Flarient Daily Space Weather",
@@ -841,16 +842,23 @@ def commit_feed():
 
 def enable_github_pages():
     log("Ensuring GitHub Pages is enabled...")
-    env = os.environ.copy()
-    env["GH_TOKEN"] = GH_TOKEN
-    result = subprocess.run([
-        "gh", "api", f"repos/{REPO}/pages", "-X", "POST",
-        "-f", "source[branch]=main", "-f", "source[path]=/"
-    ], capture_output=True, text=True, env=env)
-    if result.returncode == 0:
+    headers = {
+        "Authorization": f"token {GH_TOKEN}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    # Try to create Pages site (uses requests, not gh CLI, for reliability)
+    resp = requests.post(
+        f"https://api.github.com/repos/{REPO}/pages",
+        headers=headers,
+        json={"source": {"branch": "main", "path": "/"}}
+    )
+    if resp.status_code == 201:
         log("  GitHub Pages enabled")
+    elif resp.status_code == 409:
+        log("  GitHub Pages already enabled")
     else:
-        log("  GitHub Pages already enabled (or check repo Settings → Pages)")
+        log(f"  GitHub Pages setup: {resp.status_code} {resp.text[:200]}")
 
 
 # ── Main ──────────────────────────────────────────────────────────────────
