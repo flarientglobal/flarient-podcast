@@ -54,12 +54,34 @@ PODCAST_CATEGORY = "Science"
 PODCAST_COVER = "https://flarient.com/podcast-cover.jpg"
 PODCAST_LINK = "https://flarient.com/podcast"
 
-# Gemini model fallback chain (free tier)
-GEMINI_MODELS = ["gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-flash"]
+# Gemini model fallback chain (free tier) — updated to current models.
+# Runtime discovery (below) will override this list with live API data when available,
+# making this resilient to future deprecations.
+GEMINI_MODELS = ["gemini-3.6-flash", "gemini-3.5-flash", "gemini-2.5-flash"]
 
 
 def log(msg):
     print(f"[PODCAST] {msg}", flush=True)
+
+
+# ── Runtime Gemini model discovery ─────────────────────────────────────────
+# Lists available models from the API and picks flash variants (fast + free tier).
+# This prevents failures when Google deprecates specific model versions.
+def discover_gemini_models(client):
+    try:
+        log("  Discovering available Gemini models via API...")
+        available = []
+        for model in client.models.list():
+            name = model.name.replace("models/", "")
+            # Prefer flash models (fast, free tier) — skip pro/embedding/vision-only
+            if "flash" in name.lower() and "embed" not in name.lower() and "vision" not in name.lower():
+                available.append(name)
+        if available:
+            log(f"  Found {len(available)} flash models: {', '.join(available[:5])}")
+            return available
+    except Exception as e:
+        log(f"  Model discovery failed ({e}), using fallback list")
+    return None
 
 
 # ── 0. Check if episode already exists (one per day max) ───────────────────
@@ -323,7 +345,11 @@ def generate_script(content, episode_type):
     client = genai.Client(api_key=GEMINI_API_KEY)
     prompt = build_prompt(content, episode_type)
 
-    for model_name in GEMINI_MODELS:
+    # Try runtime-discovered models first, fall back to hardcoded list
+    models_to_try = discover_gemini_models(client) or GEMINI_MODELS
+    log(f"  Model chain: {', '.join(models_to_try)}")
+
+    for model_name in models_to_try:
         try:
             log(f"  Trying model: {model_name}")
             response = client.models.generate_content(
