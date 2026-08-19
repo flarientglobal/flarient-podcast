@@ -4,42 +4,16 @@
     <title>Daily Space Podcast by Flarient</title>
     <link>https://flarient.com/podcast</link>
     <language>en-us</language>
-    <description>Your daily conversation about space weather, solar activity, aurora forecasts, and cosmic events. Hosts Christopher and Jenny break down the latest data from NOAA, NASA, and ESA into plain English for aurora chasers, ham radio operators, satellite operators, and anyone curious about what the Sun is doing today.</description>
+    <description>Your daily conversation about space weather, solar activity, aurora forecasts, and cosmic events. Host Ollie breaks down the latest data from NOAA, NASA, and ESA into plain English for aurora chasers, ham radio operators, satellite operators, and anyone curious about what the Sun is doing today.</description>
+    <itunes:summary>Your daily conversation about space weather, solar activity, aurora forecasts, and cosmic events. Host Ollie breaks down the latest data from NOAA, NASA, and ESA into plain English for aurora chasers, ham radio operators, satellite operators, and anyone curious about what the Sun is doing today.</itunes:summary>
     <itunes:author>Flarient</itunes:author>
+    <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:type>episodic</itunes:type>
     <itunes:image href="https://flarientglobal.github.io/flarient-podcast/podcast-cover.png"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
     </itunes:owner>
-    <item>
-       <title>Asteroid 2026 PX Flyby &amp; Post-Storm Solar Wind Recovery</title>
-       <link>https://flarient.com/podcast/2026-08-19</link>
-       <description>In today&apos;s episode of the Daily Space Podcast by Flarient:
-- Live Space Weather Report: Analyzing current Kp index levels, Dst readings at -31 nT, solar wind speed recovery after hitting 544 km/s, and a steady Bz orientation.
-- In-Depth Article Focus: How Solar Cycle 25 coronal hole streams affect the ionosphere and upper-atmospheric satellite drag.
-- Space Events: The safe flyby of Near-Earth Asteroid 2026 PX and trailing dust streams from the Perseid meteor shower (comet 109P/Swift-Tuttle).
-- Fact Checks: Can asteroid flybys trigger solar flares? Do G1 geomagnetic storms damage personal electronics?
-- Daily Brief &amp; 72-Hour Outlook: Post-storm recovery, GNSS stability, and what to expect over the coming days.
-
-Visit flarient.com for real-time space weather data and aurora forecasts.</description>
-       <pubDate>Wed, 19 Aug 2026 04:59:55 GMT</pubDate>
-       <guid isPermaLink="false">flarient-podcast-2026-08-19</guid>
-       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-19/flarient-podcast-2026-08-19.mp3" length="26370510" type="audio/mpeg"/>
-       <itunes:duration>1098</itunes:duration>
-       <itunes:episodeType>daily</itunes:episodeType>
-       <itunes:episode>1</itunes:episode>
-      <itunes:image href='https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-19/cover-2026-08-19.jpg'/>
-       <itunes:summary>In today&apos;s episode of the Daily Space Podcast by Flarient:
-- Live Space Weather Report: Analyzing current Kp index levels, Dst readings at -31 nT, solar wind speed recovery after hitting 544 km/s, and a steady Bz orientation.
-- In-Depth Article Focus: How Solar Cycle 25 coronal hole streams affect the ionosphere and upper-atmospheric satellite drag.
-- Space Events: The safe flyby of Near-Earth Asteroid 2026 PX and trailing dust streams from the Perseid meteor shower (comet 109P/Swift-Tuttle).
-- Fact Checks: Can asteroid flybys trigger solar flares? Do G1 geomagnetic storms damage personal electronics?
-- Daily Brief &amp; 72-Hour Outlook: Post-storm recovery, GNSS stability, and what to expect over the coming days.
-
-Visit flarient.com for real-time space weather data and aurora forecasts.</itunes:summary>
-     </item>
   </channel>
 </rss>
