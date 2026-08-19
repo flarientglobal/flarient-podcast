@@ -24,4 +24,4 @@ All links point back to relevant Flarient.com URLs.
 
 ## Cost
 
-Free — GitHub Pages + GitHub Actions + Flarient API (no Base44 credits).
+Free — GitHub Pages + GitHub Actions + Flarient API.
