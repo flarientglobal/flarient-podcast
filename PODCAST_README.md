@@ -24,9 +24,9 @@ This repo contains the automated podcast generation pipeline for [Flarient](http
 
 ## Consistent Voice
 
-- **Ollie** (en-GB-OllieMultilingualNeural) — Male host, the space weather expert
+- **Ollie** (en-GB-RyanNeural) — Male host, the space weather expert
 
-This Microsoft Azure neural voice is used in every episode for consistency. Ollie hosts the show alone, speaking directly to the listener in a warm, engaging British accent.
+Ollie is the podcast host persona. The TTS voice is en-GB-RyanNeural (a warm British English male voice available through edge-tts). Ollie hosts the show alone, speaking directly to the listener in a warm, engaging British accent.
 
 ## Cost
 
