@@ -1,0 +1,64 @@
+name: Post-Publish (Questions + Discussions)
+
+on:
+  workflow_run:
+    workflows: ["Daily Podcast Generation"]
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  discussions: write
+  pull-requests: write
+
+concurrency:
+  group: post-publish
+  cancel-in-progress: false
+
+jobs:
+  post-publish:
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Create GitHub Discussion
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_WORKSPACE: ${{ github.workspace }}
+        run: python create_discussions.py
+
+      - name: Generate question pages
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_WORKSPACE: ${{ github.workspace }}
+          FLARIENT_API_URL: ${{ secrets.FLARIENT_API_URL }}
+          INDEXNOW_KEY: ${{ vars.INDEXNOW_KEY || 'flarientpodcast2026indexnowkeya8f3b2e1d4c7' }}
+        run: python generate_questions.py
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## Post-Publish Summary" >> ${{ github.step_summary }}
+          echo "- GitHub Discussion created for latest episode" >> ${{ github.step_summary }}
+          echo "- 10-30 question pages generated from transcript" >> ${{ github.step_summary }}
+          echo "- Sitemap updated + IndexNow notified" >> ${{ github.step_summary }}
+          echo "- Episode genome topics extracted" >> ${{ github.step_summary }}
