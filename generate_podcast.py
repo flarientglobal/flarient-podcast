@@ -784,9 +784,9 @@ def update_rss_feed(script, mp3_url, cover_url, duration_sec, file_size):
     episode_guid = f"flarient-podcast-{EPISODE_DATE}"
     pub_date = datetime.datetime.now(datetime.timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
     type_prefix = {"weekly": "[WEEKLY] ", "breaking": "[BREAKING] "}.get(EPISODE_TYPE, "")
-    full_title = f"{type_prefix}{script.get('title', f'Flarient Podcast — {EPISODE_DATE}')}"
+    full_title = f"{type_prefix}{script.get('title', f'Daily Space Podcast — {EPISODE_DATE}')}"
 
-    cover_tag = f"      <itunes:image href="{escape_xml(cover_url)}"/>\n" if cover_url else ""
+    cover_tag = f"      <itunes:image href='{escape_xml(cover_url)}'/>\n" if cover_url else ""
 
     episode_xml = f"""    <item>
        <title>{escape_xml(full_title)}</title>
@@ -839,7 +839,7 @@ def commit_feed():
     log("Committing changes to repo...")
     env = os.environ.copy()
     env["GH_TOKEN"] = GH_TOKEN
-    subprocess.run(["git", "config", "user.name", "Flarient Podcast Bot"], env=env, check=True)
+    subprocess.run(["git", "config", "user.name", "Daily Space Podcast Bot"], env=env, check=True)
     subprocess.run(["git", "config", "user.email", "bot@flarient.com"], env=env, check=True)
 
     # Add podcast.xml and covered_content.json
