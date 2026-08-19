@@ -473,7 +473,8 @@ def generate_music_bed(output_path, duration_sec):
 
 # ── 4c. Generate per-episode cover art with Pillow ────────────────────────
 def generate_cover_art(episode_type, content):
-    """Generate a 3000x3000 cover art image with the date, Kp index, and episode type."""
+    """Generate a 3000x3000 cover art image with the date, Flarient branding,
+    podcast name, and a stylised solar design. No live weather data on the cover."""
     log("  Generating cover art...")
     try:
         from PIL import Image, ImageDraw, ImageFont
@@ -485,30 +486,87 @@ def generate_cover_art(episode_type, content):
     img = Image.new("RGB", (W, H))
     draw = ImageDraw.Draw(img)
 
-    # Dark space gradient background
+    # Dark space gradient background (deep cosmic purple/indigo)
     for y in range(H):
-        r = int(10 + (y / H) * 20)
-        g = int(6 + (y / H) * 10)
-        b = int(32 + (y / H) * 40)
+        r = int(10 + (y / H) * 18)
+        g = int(6 + (y / H) * 8)
+        b = int(32 + (y / H) * 36)
         draw.line([(0, y), (W, y)], fill=(r, g, b))
 
-    # Add some "stars"
-    import random
+    # Add subtle stars
+    import random, math
     random.seed(EPISODE_DATE)
-    for _ in range(200):
+    for _ in range(250):
         x, y = random.randint(0, W), random.randint(0, H)
-        brightness = random.randint(80, 255)
-        size = random.choice([1, 1, 1, 2, 2, 3])
+        brightness = random.randint(60, 220)
+        size = random.choice([1, 1, 1, 1, 2, 2, 3])
         draw.ellipse([x-size, y-size, x+size, y+size], fill=(brightness, brightness, brightness))
 
-    # Draw a stylized sun/circle
-    cx, cy, cr = W // 2, 1100, 300
-    for i in range(cr, 0, -2):
-        alpha = int(80 * (1 - i / cr))
-        color = (99 + alpha, 102 + alpha, 241)
-        draw.ellipse([cx-i, cy-i, cx+i, cy+i], outline=color)
+    # ── Stylised solar-sun design ──────────────────────────────────────────
+    # A warm, detailed sun with corona rays, gradient disk, and prominence flares.
+    cx, cy = W // 2, 1050
+    sun_r = 260
 
-    # Try to load a font
+    # Outer corona glow (soft amber halo)
+    for i in range(120, 0, -1):
+        radius = sun_r + i * 3
+        alpha_factor = (1 - i / 120) ** 2
+        r_val = int(245 * alpha_factor + 10 * (1 - alpha_factor))
+        g_val = int(158 * alpha_factor + 6 * (1 - alpha_factor))
+        b_val = int(11 * alpha_factor + 32 * (1 - alpha_factor))
+        draw.ellipse([cx - radius, cy - radius, cx + radius, cy + radius],
+                     fill=(min(r_val, 255), min(g_val, 255), min(b_val, 255)))
+
+    # Solar rays — radiating outward from the sun disk
+    num_rays = 24
+    for i in range(num_rays):
+        angle = (2 * math.pi * i) / num_rays
+        ray_inner = sun_r + 20
+        ray_outer = sun_r + random.randint(90, 160)
+        ray_width = 0.04  # radians
+        x1 = cx + ray_inner * math.cos(angle - ray_width)
+        y1 = cy + ray_inner * math.sin(angle - ray_width)
+        x2 = cx + ray_outer * math.cos(angle - ray_width)
+        y2 = cy + ray_outer * math.sin(angle - ray_width)
+        x3 = cx + ray_outer * math.cos(angle + ray_width)
+        y3 = cy + ray_outer * math.sin(angle + ray_width)
+        x4 = cx + ray_inner * math.cos(angle + ray_width)
+        y4 = cy + ray_inner * math.sin(angle + ray_width)
+        # Alternate ray colours for depth (amber and gold)
+        ray_color = (245, 180, 40) if i % 2 == 0 else (255, 200, 60)
+        draw.polygon([(x1, y1), (x2, y2), (x3, y3), (x4, y4)], fill=ray_color)
+
+    # Sun disk — warm gradient (bright centre to darker edge)
+    for i in range(sun_r, 0, -1):
+        t = i / sun_r
+        r_val = int(255 - 10 * t)
+        g_val = int(200 - 60 * t)
+        b_val = int(80 - 60 * t)
+        draw.ellipse([cx - i, cy - i, cx + i, cy + i], fill=(max(r_val, 0), max(g_val, 0), max(b_val, 0)))
+
+    # Solar surface texture — subtle darker patches (sunspots/granulation)
+    random.seed(EPISODE_DATE + "surface")
+    for _ in range(15):
+        angle = random.uniform(0, 2 * math.pi)
+        dist = random.uniform(0, sun_r * 0.7)
+        px = cx + dist * math.cos(angle)
+        py = cy + dist * math.sin(angle)
+        ps = random.randint(20, 50)
+        draw.ellipse([px - ps, py - ps, px + ps, py + ps], fill=(220, 140, 30))
+
+    # Solar prominences — small flare arcs at the sun's edge
+    random.seed(EPISODE_DATE + "prominence")
+    for _ in range(4):
+        angle = random.uniform(0, 2 * math.pi)
+        flare_r = sun_r + random.randint(15, 45)
+        flare_size = random.randint(30, 70)
+        fx = cx + flare_r * math.cos(angle)
+        fy = cy + flare_r * math.sin(angle)
+        draw.ellipse([fx - flare_size, fy - flare_size, fx + flare_size, fy + flare_size],
+                     fill=(255, 220, 100))
+
+    # ── Text elements ──────────────────────────────────────────────────────
+    # Try to load fonts
     try:
         font_large = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 120)
         font_medium = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 80)
@@ -533,20 +591,14 @@ def generate_cover_art(episode_type, content):
     # Date
     date_text = EPISODE_DATE
     bbox = draw.textbbox((0, 0), date_text, font=font_large)
-    draw.text(((W - (bbox[2] - bbox[0])) // 2, 1600), date_text, fill="white", font=font_large)
-
-    # Kp index
-    live = content.get("live_data") or {}
-    kp = live.get("kp_index") or live.get("kp") or "?"
-    kp_text = f"Kp {kp}"
-    bbox = draw.textbbox((0, 0), kp_text, font=font_medium)
-    draw.text(((W - (bbox[2] - bbox[0])) // 2, 1800), kp_text, fill=(34, 211, 238), font=font_medium)
+    draw.text(((W - (bbox[2] - bbox[0])) // 2, 1700), date_text, fill="white", font=font_large)
 
     # Flarient branding
     brand_text = "FLARIENT"
     bbox = draw.textbbox((0, 0), brand_text, font=font_large)
     draw.text(((W - (bbox[2] - bbox[0])) // 2, 2500), brand_text, fill=(99, 102, 241), font=font_large)
 
+    # Podcast name
     subtitle = "DAILY SPACE WEATHER"
     bbox = draw.textbbox((0, 0), subtitle, font=font_small)
     draw.text(((W - (bbox[2] - bbox[0])) // 2, 2650), subtitle, fill=(200, 200, 220), font=font_small)
