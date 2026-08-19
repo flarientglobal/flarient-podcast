@@ -801,7 +801,7 @@ def update_rss_feed(script, mp3_url, cover_url, duration_sec, file_size):
         if cover_url and "<item>" in xml:
             channel_part, items_part = xml.split("<item>", 1)
             channel_part = re.sub(
-                r'<itunes:image href=["'][^"']*["'] */?>',
+                r"""<itunes:image href=["'][^"']*["'] */?>""",
                 f'<itunes:image href="{escape_xml(cover_url)}"/>',
                 channel_part
             )
