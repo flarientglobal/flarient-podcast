@@ -15,5 +15,40 @@
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
     </itunes:owner>
+      <item>
+       <title>G1 Geomagnetic Storm Recap, Asteroid 2026 PX Flyby, and the AI Forecast Disagreement</title>
+       <link>https://flarient.com/podcast/g1-geomagnetic-storm-recap-asteroid-2026-px-flyby-and-the-ai-forecast-disagreeme</link>
+       <description>Episode Highlights:
+- Space Weather Report: Kp index spikes to 5.0 (G1 storm level), Dst index at -44 nT, solar wind activity, and auroral display dynamics.
+- Cislunar Space &amp; Solar Physics: Exploring the gravity wells between Earth and Moon, high-frequency radio blackouts, satellite astrophotography, and binary asteroid systems.
+- Space Events &amp; Anomalies: Analysis of the Kp historical statistical anomaly, major human vs. AI forecast divergences on solar wind and CMEs, plus upcoming meteor showers.
+- Fact Checks: Evaluating claims on extraterrestrial life, Apollo 11 moon landing evidence, active lunar base plans, and Mars colony rumors.
+- Daily Brief: In-depth focus on Asteroid 2026 PX&apos;s close approach and the 72-hour space weather outlook.
+
+Links &amp; Resources:
+- Live Space Weather Data &amp; Dashboard: https://flarient.com
+- Podcast Episodes &amp; Show Notes: https://flarient.com/podcast
+- Space Events Tracking: https://flarient.com/space-events
+- Flarient Blog Articles: https://flarient.com/blog</description>
+       <pubDate>Wed, 19 Aug 2026 06:52:11 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-08-19</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-19/flarient-podcast-2026-08-19.mp3" length="24304149" type="audio/mpeg"/>
+       <itunes:duration>1012</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>1</itunes:episode>
+      <itunes:image href='https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-19/cover-2026-08-19.jpg'/>
+       <itunes:summary>Episode Highlights:
+- Space Weather Report: Kp index spikes to 5.0 (G1 storm level), Dst index at -44 nT, solar wind activity, and auroral display dynamics.
+- Cislunar Space &amp; Solar Physics: Exploring the gravity wells between Earth and Moon, high-frequency radio blackouts, satellite astrophotography, and binary asteroid systems.
+- Space Events &amp; Anomalies: Analysis of the Kp historical statistical anomaly, major human vs. AI forecast divergences on solar wind and CMEs, plus upcoming meteor showers.
+- Fact Checks: Evaluating claims on extraterrestrial life, Apollo 11 moon landing evidence, active lunar base plans, and Mars colony rumors.
+- Daily Brief: In-depth focus on Asteroid 2026 PX&apos;s close approach and the 72-hour space weather outlook.
+
+Links &amp; Resources:
+- Live Space Weather Data &amp; Dashboard: https://flarient.com
+- Podcast Episodes &amp; Show Notes: https://flarient.com/podcast
+- Space Events Tracking: https://flarient.com/space-events
+- Flarient Blog Articles: https://flarient.com/blog</itunes:summary>
+     </item>
   </channel>
 </rss>
