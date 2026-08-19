@@ -8,13 +8,15 @@
     <itunes:author>Flarient</itunes:author>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarient.com/podcast-cover.jpg"/>
+    <itunes:type>episodic</itunes:type>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/podcast-cover.png"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
     </itunes:owner>
     <item>
        <title>Asteroid 2026 PX Flyby &amp; Post-Storm Solar Wind Recovery</title>
+       <link>https://flarient.com/podcast/2026-08-19</link>
        <description>In today&apos;s episode of the Daily Space Podcast by Flarient:
 - Live Space Weather Report: Analyzing current Kp index levels, Dst readings at -31 nT, solar wind speed recovery after hitting 544 km/s, and a steady Bz orientation.
 - In-Depth Article Focus: How Solar Cycle 25 coronal hole streams affect the ionosphere and upper-atmospheric satellite drag.
@@ -28,6 +30,7 @@ Visit flarient.com for real-time space weather data and aurora forecasts.</descr
        <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-19/flarient-podcast-2026-08-19.mp3" length="26370510" type="audio/mpeg"/>
        <itunes:duration>1098</itunes:duration>
        <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>1</itunes:episode>
       <itunes:image href='https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-19/cover-2026-08-19.jpg'/>
        <itunes:summary>In today&apos;s episode of the Daily Space Podcast by Flarient:
 - Live Space Weather Report: Analyzing current Kp index levels, Dst readings at -31 nT, solar wind speed recovery after hitting 544 km/s, and a steady Bz orientation.
