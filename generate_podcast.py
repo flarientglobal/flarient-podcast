@@ -73,11 +73,24 @@ def discover_gemini_models(client):
         available = []
         for model in client.models.list():
             name = model.name.replace("models/", "")
-            # Prefer flash models (fast, free tier) — skip pro/embedding/vision-only
-            if "flash" in name.lower() and "embed" not in name.lower() and "vision" not in name.lower():
-                available.append(name)
+            name_lower = name.lower()
+            # Only keep flash models (fast, free tier)
+            if "flash" not in name_lower:
+                continue
+            # Exclude non-text-generation models (TTS, image, audio, live, embed, vision)
+            exclude_kw = ["embed", "vision", "tts", "image", "audio", "live", "native"]
+            if any(kw in name_lower for kw in exclude_kw):
+                continue
+            available.append(name)
         if available:
-            log(f"  Found {len(available)} flash models: {', '.join(available[:5])}")
+            # Sort: non-lite first, then by version number (highest first)
+            def sort_key(n):
+                is_lite = 1 if "lite" in n.lower() else 0
+                vm = re.search(r'(\d+\.?\d*)', n)
+                ver = float(vm.group(1)) if vm else 0
+                return (is_lite, -ver)
+            available.sort(key=sort_key)
+            log(f"  Found {len(available)} text flash models: {', '.join(available[:5])}")
             return available
     except Exception as e:
         log(f"  Model discovery failed ({e}), using fallback list")
@@ -357,7 +370,7 @@ def generate_script(content, episode_type):
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json",
-                    max_output_tokens=8192,
+                    max_output_tokens=16384,
                 ),
             )
             text = response.text
@@ -405,15 +418,19 @@ def generate_jingle(output_path, ascending=True):
     for f in freqs:
         inputs.extend(["-f", "lavfi", "-i", f"sine=frequency={f}:duration=0.35"])
     n = len(freqs)
-    filter_str = "".join(f"[{i}:a]" for i in range(n)) + f"concat=n={n}:v=0:a=1[a]"
-    subprocess.run([
-        "ffmpeg", "-y", *inputs,
-        "-filter_complex", filter_str,
-        "-map", "[a]",
-        "-af", "afade=t=out:st=1.2:d=0.3,volume=0.6",
-        "-t", "1.5",
-        output_path
-    ], check=True, capture_output=True)
+    # Combine concat, fade, and volume into one filter_complex (avoid -af + -filter_complex conflict)
+    filter_str = "".join(f"[{i}:a]" for i in range(n)) + f"concat=n={n}:v=0:a=1[concat];[concat]afade=t=out:st=1.2:d=0.3,volume=0.6[a]"
+    try:
+        subprocess.run([
+            "ffmpeg", "-y", *inputs,
+            "-filter_complex", filter_str,
+            "-map", "[a]",
+            "-t", "1.5",
+            output_path
+        ], check=True, capture_output=True, text=True)
+    except subprocess.CalledProcessError as e:
+        log(f"  Jingle generation failed: {e.stderr[:500] if e.stderr else 'no stderr'}")
+        raise
 
 
 def get_jingles():
