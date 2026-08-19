@@ -1,0 +1,34 @@
+name: Auto-merge Dependabot PRs
+
+on:
+  pull_request:
+    types: [opened]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  dependabot-auto-merge:
+    if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto-merge patch and minor updates
+        run: |
+          PR_TITLE=$(gh pr view "$PR_NUMBER" --json title --jq .title)
+          # Parse version numbers from "Bump X from A.B.C to D.E.F"
+          FROM_MAJOR=$(echo "$PR_TITLE" | sed -n 's/.*from \([0-9]*\)\..*/\1/p')
+          TO_MAJOR=$(echo "$PR_TITLE" | sed -n 's/.*to \([0-9]*\)\..*/\1/p')
+          if [ -z "$FROM_MAJOR" ] || [ -z "$TO_MAJOR" ]; then
+            echo "Could not parse versions from: $PR_TITLE"
+            exit 0
+          fi
+          if [ "$FROM_MAJOR" = "$TO_MAJOR" ]; then
+            echo "Patch/minor update — enabling auto-merge"
+            gh pr merge "$PR_NUMBER" --auto --merge
+          else
+            echo "Major version change — skipping auto-merge"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
