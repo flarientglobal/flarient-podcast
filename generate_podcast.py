@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Flarient Daily Space Weather Podcast Generator
+Daily Space Podcast by Flarient — Generator
 - Episode types: daily (30min, Mon-Sat), weekly (45min, Sunday), breaking (30min, significant events)
 - Fetches content from Flarient API (live data, blog posts, events, fact checks, daily brief, This Day in History)
 - Deduplication: tracks covered content IDs in covered_content.json to avoid repeats
@@ -12,7 +12,7 @@ Flarient Daily Space Weather Podcast Generator
 - Creates GitHub Release with MP3, cover art, and transcript (permanent public URLs)
 - Updates podcast.xml RSS feed and commits it back to the repo
 - One episode per day max (checks if release exists before generating)
-Total cost: $0/month
+Total cost: Free
 """
 
 import os, sys, json, re, subprocess, asyncio, datetime, hashlib, math
@@ -47,7 +47,7 @@ HOST_A_VOICE = "en-US-ChristopherNeural"  # Male host — the expert (consistent
 HOST_B_VOICE = "en-US-JennyNeural"        # Female host — the curious co-host (consistent every episode)
 
 # Podcast metadata
-PODCAST_TITLE = "Flarient Space Daily Podcast"
+PODCAST_TITLE = "Daily Space Podcast by Flarient"
 PODCAST_DESC = "Your daily conversation about space weather, solar activity, aurora forecasts, and cosmic events. Hosts Christopher and Jenny break down the latest data from NOAA, NASA, and ESA into plain English for aurora chasers, ham radio operators, satellite operators, and anyone curious about what the Sun is doing today."
 PODCAST_AUTHOR = "Flarient"
 PODCAST_CATEGORY = "Science"
@@ -238,7 +238,7 @@ DAILY MODE (30 minutes, ~4,500-5,000 words):
 Standard daily episode covering all content areas.
 """
 
-    return f"""You are generating a podcast episode for "Flarient Daily Space Weather", a space weather and astronomy podcast.
+    return f"""You are generating a podcast episode for "Daily Space Podcast by Flarient", a space weather and astronomy podcast.
 
 {type_instructions}
 
@@ -257,7 +257,7 @@ PODCAST STRUCTURE:
    The hook comes FIRST, before anything else. Do not introduce the podcast or the hosts before the hook.
 
 2. CONSISTENT INTRO (15-30 seconds): After the hook, use this EXACT intro every single episode (Host A says it):
-   "You're listening to the Flarient Space Daily Podcast, your daily conversation about space weather, solar activity, and cosmic events. I'm Christopher, and I'm Jenny, and today is [say the date in natural language like 'Wednesday, August nineteenth'."
+   "You're listening to the Daily Space Podcast by Flarient, your daily conversation about space weather, solar activity, and cosmic events. I'm Christopher, and I'm Jenny, and today is [say the date in natural language like 'Wednesday, August nineteenth'."
    Then Host B adds: "Let's get into what the Sun is doing today."
    This intro must be word-for-word the same every episode (only the date changes).
 
@@ -872,7 +872,7 @@ def enable_github_pages():
 
 # ── Main ──────────────────────────────────────────────────────────────────
 def main():
-    log(f"=== Flarient Podcast Generator — {EPISODE_DATE} (type: {EPISODE_TYPE}) ===")
+    log(f"=== Daily Space Podcast Generator — {EPISODE_DATE} (type: {EPISODE_TYPE}) ===")
 
     if not GEMINI_API_KEY:
         log("ERROR: GEMINI_API_KEY not set")
