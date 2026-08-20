@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '30 6 * * 1-6'  # Mon-Sat at 06:30 UTC (daily episodes)
     - cron: '30 6 * * 0'    # Sunday at 06:30 UTC (weekly roundup — replaces daily)
+    # Retry cron — fires 2.5h after the primary schedule. If the 06:30 run was
+    # delayed or skipped by GitHub (common on free-tier repos), this catches it.
+    # Safe from double episodes: the Python script checks release_exists() and
+    # exits immediately if today episode already exists (one per day max).
+    - cron: '0 9 * * *'     # Daily retry at 09:00 UTC if 06:30 missed
   repository_dispatch:
     types: [breaking-event]  # Triggered by Flarient for G4+ storms or X-class flares
   workflow_dispatch:
