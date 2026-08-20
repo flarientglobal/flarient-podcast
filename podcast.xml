@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/podcast-cover.png"/>
+    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-20/cover-2026-08-20.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -49,6 +49,51 @@ Links &amp; Resources:
 - Podcast Episodes &amp; Show Notes: https://flarient.com/podcast
 - Space Events Tracking: https://flarient.com/space-events
 - Flarient Blog Articles: https://flarient.com/blog</itunes:summary>
+     </item>
+      <item>
+       <title>Roman Telescope Launch Date, Cosmic Forecast Disagreements, and the Truth About Night-Shining Clouds</title>
+       <link>https://flarient.com/podcast/roman-telescope-launch-date-cosmic-forecast-disagreements-and-the-truth-about-ni</link>
+       <description>In today&apos;s episode of the Daily Space Podcast by Flarient, Ollie breaks down the latest solar activity, including a surprisingly quiet magnetosphere with a latest Kp index of 0.33 and a maximum of 2.67 over the last 24 hours.
+
+Key Topics Covered:
+- The Reality of Noctilucent Clouds: Why these stunning electric-blue wisps in the mesosphere pose absolutely zero danger to Earth.
+- Historical Impacts: A look back at the Chicxulub asteroid impact that ended the age of non-avian dinosaurs and how NASA&apos;s CNEOS tracks modern hazards.
+- Spotting Satellites: An easy observer&apos;s guide to identifying man-made objects in Low Earth Orbit.
+- Solar Particle Events: The hazards of high-energy proton radiation on satellites, deep space hardware, and astronaut safety.
+- Forecast Divergence: The growing disagreement between human experts and AI models regarding upcoming X-class flares and G2-class geomagnetic storms.
+- Leonids Meteor Shower: A watch advisory for the upcoming November peak.
+- Fact-Checking the Cosmos: Debunking conspiracies about space debris, the fabrication of Lagrange points, and artificial solar flares.
+- Daily Brief: NASA confirms the official launch date for the Nancy Grace Roman Space Telescope, while asteroid 2026 PX transits Earth during the tail end of the Perseids.
+
+Links &amp; Resources:
+- Live Space Weather Dashboards: https://flarient.com
+- Podcast Archive: https://flarient.com/podcast
+- NASA Center for Near-Earth Object Studies: https://cneos.jpl.nasa.gov/
+- SWPC 3-Day Forecast: https://www.swpc.noaa.gov/products/3-day-forecast</description>
+       <pubDate>Thu, 20 Aug 2026 06:49:47 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-08-20</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-20/flarient-podcast-2026-08-20.mp3" length="19495545" type="audio/mpeg"/>
+       <itunes:duration>812</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>2</itunes:episode>
+      <itunes:image href='https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-20/cover-2026-08-20.jpg'/>
+       <itunes:summary>In today&apos;s episode of the Daily Space Podcast by Flarient, Ollie breaks down the latest solar activity, including a surprisingly quiet magnetosphere with a latest Kp index of 0.33 and a maximum of 2.67 over the last 24 hours.
+
+Key Topics Covered:
+- The Reality of Noctilucent Clouds: Why these stunning electric-blue wisps in the mesosphere pose absolutely zero danger to Earth.
+- Historical Impacts: A look back at the Chicxulub asteroid impact that ended the age of non-avian dinosaurs and how NASA&apos;s CNEOS tracks modern hazards.
+- Spotting Satellites: An easy observer&apos;s guide to identifying man-made objects in Low Earth Orbit.
+- Solar Particle Events: The hazards of high-energy proton radiation on satellites, deep space hardware, and astronaut safety.
+- Forecast Divergence: The growing disagreement between human experts and AI models regarding upcoming X-class flares and G2-class geomagnetic storms.
+- Leonids Meteor Shower: A watch advisory for the upcoming November peak.
+- Fact-Checking the Cosmos: Debunking conspiracies about space debris, the fabrication of Lagrange points, and artificial solar flares.
+- Daily Brief: NASA confirms the official launch date for the Nancy Grace Roman Space Telescope, while asteroid 2026 PX transits Earth during the tail end of the Perseids.
+
+Links &amp; Resources:
+- Live Space Weather Dashboards: https://flarient.com
+- Podcast Archive: https://flarient.com/podcast
+- NASA Center for Near-Earth Object Studies: https://cneos.jpl.nasa.gov/
+- SWPC 3-Day Forecast: https://www.swpc.noaa.gov/products/3-day-forecast</itunes:summary>
      </item>
   </channel>
 </rss>
