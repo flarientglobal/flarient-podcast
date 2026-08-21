@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-20/cover-2026-08-20.jpg"/>
+    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-21/cover-2026-08-21.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -98,6 +98,49 @@ Links &amp; Resources:
 - Podcast Archive: https://flarient.com/podcast
 - NASA Center for Near-Earth Object Studies: https://cneos.jpl.nasa.gov/
 - SWPC 3-Day Forecast: https://www.swpc.noaa.gov/products/3-day-forecast</itunes:summary>
+     </item>
+      <item>
+       <title>Cosmic Giants, Asteroid 2026 PX, and the Chemistry of Colorful Auroras</title>
+       <link>https://flarient.com/podcast/cosmic-giants-asteroid-2026-px-and-the-chemistry-of-colorful-auroras</link>
+       <description>In this episode, Ollie dives into the latest space weather metrics, showing a remarkably calm magnetosphere despite steady solar wind speeds. We also unpack recent articles on the clever techniques used to find exoplanets, the reality of asteroid impacts, the physics of geostationary satellites, and the atmospheric chemistry behind colorful auroras. Finally, we explore the groundbreaking James Webb Space Telescope discovery of mature early galaxies, the flyby of asteroid 2026 PX, and what to expect from the space environment in the next 72 hours.
+
+Key Topics:
+- Current Kp index and solar wind analysis
+- How astronomers find exoplanets using light and gravity
+- Understanding the true risks of near-Earth asteroids
+- The delicate balance keeping geostationary satellites in place
+- Chemical reactions that paint the night sky with auroras
+- Webb&apos;s discovery of massive early galaxies
+- Asteroid 2026 PX flyby details
+- Space weather 3-day outlook
+
+Links Mentioned:
+- Live dashboards and auroral forecasts: https://flarient.com
+- Podcast archive and show notes: https://flarient.com/podcast
+- NOAA Space Weather Prediction Center: https://www.swpc.noaa.gov/</description>
+       <pubDate>Fri, 21 Aug 2026 08:23:21 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-08-21</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-21/flarient-podcast-2026-08-21.mp3" length="23909164" type="audio/mpeg"/>
+       <itunes:duration>996</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>3</itunes:episode>
+      <itunes:image href='https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-21/cover-2026-08-21.jpg'/>
+       <itunes:summary>In this episode, Ollie dives into the latest space weather metrics, showing a remarkably calm magnetosphere despite steady solar wind speeds. We also unpack recent articles on the clever techniques used to find exoplanets, the reality of asteroid impacts, the physics of geostationary satellites, and the atmospheric chemistry behind colorful auroras. Finally, we explore the groundbreaking James Webb Space Telescope discovery of mature early galaxies, the flyby of asteroid 2026 PX, and what to expect from the space environment in the next 72 hours.
+
+Key Topics:
+- Current Kp index and solar wind analysis
+- How astronomers find exoplanets using light and gravity
+- Understanding the true risks of near-Earth asteroids
+- The delicate balance keeping geostationary satellites in place
+- Chemical reactions that paint the night sky with auroras
+- Webb&apos;s discovery of massive early galaxies
+- Asteroid 2026 PX flyby details
+- Space weather 3-day outlook
+
+Links Mentioned:
+- Live dashboards and auroral forecasts: https://flarient.com
+- Podcast archive and show notes: https://flarient.com/podcast
+- NOAA Space Weather Prediction Center: https://www.swpc.noaa.gov/</itunes:summary>
      </item>
   </channel>
 </rss>
