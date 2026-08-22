@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-21/cover-2026-08-21.jpg"/>
+    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-22/cover-2026-08-22.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -143,6 +143,75 @@ Links Mentioned:
 - Live dashboards and auroral forecasts: https://flarient.com
 - Podcast archive and show notes: https://flarient.com/podcast
 - NOAA Space Weather Prediction Center: https://www.swpc.noaa.gov/</itunes:summary>
+     </item>
+      <item>
+       <title>Solar Flares vs. Earthquakes Myth, Black Knight Satellite Debunked &amp; NOAA&apos;s New Coronagraph</title>
+       <link>https://flarient.com/podcast/solar-flares-vs-earthquakes-myth-black-knight-satellite-debunked-noaas-new-coron</link>
+       <description>Episode Overview:
+In this episode of the Daily Space Podcast by Flarient, Ollie breaks down the latest space weather metrics, tackles common space science myths, and reviews major updates in space observational technology.
+
+Key Topics Covered:
+- Live Space Weather Report: Kp index analysis (currently at 0, 24-hour max 1.33), Dst index at -10 nT, solar wind speeds near 496.8 km/s, and aurora prospects.
+- Myth Debunking: Do solar flares trigger earthquakes on Earth? We analyze the physical mechanisms separating atmospheric electromagnetic disturbances from deep crustal tectonic movements.
+- Power Grid Vulnerabilities: How Geomagnetically Induced Currents (GICs) interact with high-voltage transformers during coronal mass ejections.
+- Asteroids vs. Meteors: Demystifying space rock terminology, scale differences, and tracking near-Earth objects.
+- Solar Cycle &amp; HF Radio: How ionospheric ionization during Solar Cycle 25 alters high-frequency radio wave propagation.
+- Fact Check: Debunking the 13,000-year-old &apos;Black Knight Satellite&apos; alien spacecraft conspiracy theory.
+- Daily Brief: NOAA&apos;s SOLAR 1 CCOR 2 instrument coming online on August 21, 2026, alongside the close approach of asteroid 2026 PX.
+
+Links &amp; Resources:
+- Live Space Weather Data &amp; Interactive Dashboards: https://flarient.com
+- Podcast Archive &amp; Show Notes: https://flarient.com/podcast
+- Blog Article - Solar Flares and Earthquakes: https://flarient.com/blog/solar-flares-and-earthquakes-separating-fact-from-fiction
+- Blog Article - Power Grid Stability: https://flarient.com/blog/solar-flares-influence-global-power-grid-stability
+- Blog Article - Asteroids vs. Meteors: https://flarient.com/blog/asteroids-are-distinctly-larger-than-meteors
+- Blog Article - Radio Propagation: https://flarient.com/blog/how-the-solar-cycle-dictates-radio-communication-conditions
+- Fact Check - Black Knight Satellite: https://flarient.com/fact-checker/debunking-the-black-knight-satellite-the-truth-about-the-alleged-alien-craft
+
+Timestamps:
+00:00 - Hook &amp; Intro
+01:15 - Daily Space Weather Report
+06:30 - Blog Articles Discussion
+14:00 - Space Events &amp; NOAA CCOR 2 Launch
+19:45 - Fact Check: Black Knight Satellite
+24:15 - Daily Brief &amp; 72-Hour Outlook
+28:30 - Call to Actions &amp; Wrap-Up</description>
+       <pubDate>Sat, 22 Aug 2026 07:56:26 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-08-22</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-22/flarient-podcast-2026-08-22.mp3" length="27787428" type="audio/mpeg"/>
+       <itunes:duration>1157</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>4</itunes:episode>
+      <itunes:image href='https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-22/cover-2026-08-22.jpg'/>
+       <itunes:summary>Episode Overview:
+In this episode of the Daily Space Podcast by Flarient, Ollie breaks down the latest space weather metrics, tackles common space science myths, and reviews major updates in space observational technology.
+
+Key Topics Covered:
+- Live Space Weather Report: Kp index analysis (currently at 0, 24-hour max 1.33), Dst index at -10 nT, solar wind speeds near 496.8 km/s, and aurora prospects.
+- Myth Debunking: Do solar flares trigger earthquakes on Earth? We analyze the physical mechanisms separating atmospheric electromagnetic disturbances from deep crustal tectonic movements.
+- Power Grid Vulnerabilities: How Geomagnetically Induced Currents (GICs) interact with high-voltage transformers during coronal mass ejections.
+- Asteroids vs. Meteors: Demystifying space rock terminology, scale differences, and tracking near-Earth objects.
+- Solar Cycle &amp; HF Radio: How ionospheric ionization during Solar Cycle 25 alters high-frequency radio wave propagation.
+- Fact Check: Debunking the 13,000-year-old &apos;Black Knight Satellite&apos; alien spacecraft conspiracy theory.
+- Daily Brief: NOAA&apos;s SOLAR 1 CCOR 2 instrument coming online on August 21, 2026, alongside the close approach of asteroid 2026 PX.
+
+Links &amp; Resources:
+- Live Space Weather Data &amp; Interactive Dashboards: https://flarient.com
+- Podcast Archive &amp; Show Notes: https://flarient.com/podcast
+- Blog Article - Solar Flares and Earthquakes: https://flarient.com/blog/solar-flares-and-earthquakes-separating-fact-from-fiction
+- Blog Article - Power Grid Stability: https://flarient.com/blog/solar-flares-influence-global-power-grid-stability
+- Blog Article - Asteroids vs. Meteors: https://flarient.com/blog/asteroids-are-distinctly-larger-than-meteors
+- Blog Article - Radio Propagation: https://flarient.com/blog/how-the-solar-cycle-dictates-radio-communication-conditions
+- Fact Check - Black Knight Satellite: https://flarient.com/fact-checker/debunking-the-black-knight-satellite-the-truth-about-the-alleged-alien-craft
+
+Timestamps:
+00:00 - Hook &amp; Intro
+01:15 - Daily Space Weather Report
+06:30 - Blog Articles Discussion
+14:00 - Space Events &amp; NOAA CCOR 2 Launch
+19:45 - Fact Check: Black Knight Satellite
+24:15 - Daily Brief &amp; 72-Hour Outlook
+28:30 - Call to Actions &amp; Wrap-Up</itunes:summary>
      </item>
   </channel>
 </rss>
