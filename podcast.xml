@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-22/cover-2026-08-22.jpg"/>
+    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-23/cover-2026-08-23.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -214,6 +214,51 @@ Timestamps:
 19:45 - Fact Check: Black Knight Satellite
 24:15 - Daily Brief &amp; 72-Hour Outlook
 28:30 - Call to Actions &amp; Wrap-Up</itunes:summary>
+     </item>
+      <item>
+       <title>[WEEKLY] Weekly Roundup: Volatile Sunspot 4513, Perseids Celestial Peak, and Airless Asteroid Physics</title>
+       <link>https://flarient.com/podcast/weekly-roundup-volatile-sunspot-4513-perseids-celestial-peak-and-airless-asteroi</link>
+       <description>Welcome to the Sunday Weekly Roundup of the Daily Space Podcast by Flarient! In this episode, host Ollie breaks down the five biggest space weather and astronomical stories of the past week.
+
+Timestamps &amp; Key Topics:
+00:00 - Hook &amp; Weekly Intro
+01:30 - This Day in Space Weather History
+03:00 - Story #1: Sunspot 4513 and the Threat of X-Class Solar Flares
+09:00 - Story #2: The Annual Peak of the Perseids Meteor Shower
+15:00 - Story #3: The Physics of Asteroids and Near-Earth Object 2026 PX
+21:00 - Story #4: Tracking Elusive Noctilucent Clouds at the Edge of Space
+27:00 - Story #5: Solar Cycle 25 Dynamics and Flare Frequency
+33:00 - The Week Ahead in Space Weather
+37:00 - Fact Check: Debunking Teleportation Slave Camps on Mars &amp; Nibiru Myths
+42:00 - Call to Action &amp; Community Wrap-Up
+
+Links mentioned:
+- Live Space Weather Data &amp; Forecasts: https://flarient.com
+- Podcast Episodes &amp; Notes: https://flarient.com/podcast</description>
+       <pubDate>Sun, 23 Aug 2026 07:58:12 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-08-23</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-23/flarient-podcast-2026-08-23.mp3" length="14587860" type="audio/mpeg"/>
+       <itunes:duration>607</itunes:duration>
+       <itunes:episodeType>weekly</itunes:episodeType>
+       <itunes:episode>5</itunes:episode>
+      <itunes:image href='https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-23/cover-2026-08-23.jpg'/>
+       <itunes:summary>Welcome to the Sunday Weekly Roundup of the Daily Space Podcast by Flarient! In this episode, host Ollie breaks down the five biggest space weather and astronomical stories of the past week.
+
+Timestamps &amp; Key Topics:
+00:00 - Hook &amp; Weekly Intro
+01:30 - This Day in Space Weather History
+03:00 - Story #1: Sunspot 4513 and the Threat of X-Class Solar Flares
+09:00 - Story #2: The Annual Peak of the Perseids Meteor Shower
+15:00 - Story #3: The Physics of Asteroids and Near-Earth Object 2026 PX
+21:00 - Story #4: Tracking Elusive Noctilucent Clouds at the Edge of Space
+27:00 - Story #5: Solar Cycle 25 Dynamics and Flare Frequency
+33:00 - The Week Ahead in Space Weather
+37:00 - Fact Check: Debunking Teleportation Slave Camps on Mars &amp; Nibiru Myths
+42:00 - Call to Action &amp; Community Wrap-Up
+
+Links mentioned:
+- Live Space Weather Data &amp; Forecasts: https://flarient.com
+- Podcast Episodes &amp; Notes: https://flarient.com/podcast</itunes:summary>
      </item>
   </channel>
 </rss>
