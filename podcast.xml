@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-23/cover-2026-08-23.jpg"/>
+    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-24/cover-2026-08-24.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -261,6 +261,49 @@ Timestamps &amp; Key Topics:
 Links mentioned:
 - Live Space Weather Data &amp; Forecasts: https://flarient.com
 - Podcast Episodes &amp; Notes: https://flarient.com/podcast</itunes:summary>
+     </item>
+      <item>
+       <title>Venusian Spectacle, ISS Spacewalk Prep, and Flares vs. CMEs Explained</title>
+       <link>https://flarient.com/podcast/venusian-spectacle-iss-spacewalk-prep-and-flares-vs-cmes-explained</link>
+       <description>Welcome to today&apos;s episode of the Daily Space Podcast by Flarient!
+
+In this episode, Ollie covers:
+- Live Space Weather Data: Extremely quiet geomagnetic conditions with a Kp index peaking at just 1.67 and a steady Dst around -10 nT.
+- Deep Dive into Space Weather Science: Clarifying the physical differences between instantaneous Solar Flares and slower, massive Coronal Mass Ejections (CMEs).
+- Solar Physics &amp; Solar Cycle 25: Why solar flares are proven electromagnetic phenomena driven by magnetic reconnection.
+- Planetary Science: The fundamental limits of celestial mechanics—why asteroids can never grow to the size of Earth.
+- Satellite Mechanics: Understanding orbital velocity, freefall, and atmospheric drag in low Earth orbit.
+- Space Operations &amp; Skywatching: Upcoming ISS Spacewalk 98 with astronauts Anil Menon and Sophie Adenot, Venus at greatest elongation east, and the flyby of asteroid 2022 UP6.
+- Fact Check: Debunking common myths regarding solar flares and planetary sizes.
+
+Links &amp; Resources:
+- Main Website: https://flarient.com
+- Podcast Archive: https://flarient.com/podcast
+- Solar Imagery &amp; Glossary: https://flarient.com/gallery and https://flarient.com/glossary
+- Track Near-Earth Objects &amp; Space Weather Alerts on the Flarient App.</description>
+       <pubDate>Mon, 24 Aug 2026 09:16:45 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-08-24</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-24/flarient-podcast-2026-08-24.mp3" length="16928826" type="audio/mpeg"/>
+       <itunes:duration>705</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>6</itunes:episode>
+      <itunes:image href='https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-24/cover-2026-08-24.jpg'/>
+       <itunes:summary>Welcome to today&apos;s episode of the Daily Space Podcast by Flarient!
+
+In this episode, Ollie covers:
+- Live Space Weather Data: Extremely quiet geomagnetic conditions with a Kp index peaking at just 1.67 and a steady Dst around -10 nT.
+- Deep Dive into Space Weather Science: Clarifying the physical differences between instantaneous Solar Flares and slower, massive Coronal Mass Ejections (CMEs).
+- Solar Physics &amp; Solar Cycle 25: Why solar flares are proven electromagnetic phenomena driven by magnetic reconnection.
+- Planetary Science: The fundamental limits of celestial mechanics—why asteroids can never grow to the size of Earth.
+- Satellite Mechanics: Understanding orbital velocity, freefall, and atmospheric drag in low Earth orbit.
+- Space Operations &amp; Skywatching: Upcoming ISS Spacewalk 98 with astronauts Anil Menon and Sophie Adenot, Venus at greatest elongation east, and the flyby of asteroid 2022 UP6.
+- Fact Check: Debunking common myths regarding solar flares and planetary sizes.
+
+Links &amp; Resources:
+- Main Website: https://flarient.com
+- Podcast Archive: https://flarient.com/podcast
+- Solar Imagery &amp; Glossary: https://flarient.com/gallery and https://flarient.com/glossary
+- Track Near-Earth Objects &amp; Space Weather Alerts on the Flarient App.</itunes:summary>
      </item>
   </channel>
 </rss>
