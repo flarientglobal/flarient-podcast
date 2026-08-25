@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-24/cover-2026-08-24.jpg"/>
+    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-25/cover-2026-08-25.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -306,6 +306,51 @@ Links &amp; Resources:
 - Podcast Archive: https://flarient.com/podcast
 - Solar Imagery &amp; Glossary: https://flarient.com/gallery and https://flarient.com/glossary
 - Track Near-Earth Objects &amp; Space Weather Alerts on the Flarient App.</itunes:summary>
+     </item>
+      <item>
+       <title>Solar Silence, AI Eruption Tracking, and Unmasking Lunar Myths</title>
+       <link>https://flarient.com/podcast/solar-silence-ai-eruption-tracking-and-unmasking-lunar-myths</link>
+       <description>In today&apos;s episode of the Daily Space Podcast by Flarient, Ollie breaks down current space weather conditions and key updates from across space science:
+
+- Space Weather Report: Ultra-quiet geomagnetic conditions with a Kp index sitting around 0.33, nominal solar wind speeds near 364 km/s, and a Dst index of -10 nT.
+- Blog Articles Deep-Dive:
+  * Asteroid Mining Economy: Moving from speculative fiction to orbital industrial reality.
+  * Flares vs. CMEs: Clearing up the fundamental physical differences between light-speed radiation bursts and massive plasma clouds.
+  * Solar Radiation Storms: High-energy proton acceleration and its risk to satellite electronics.
+  * Satellite Resilience: Engineering strategies used to keep orbital networks online during geomagnetic storms.
+- Recent Space Events: Asteroid 2022 UP6 close flyby, Venus at greatest elongation east, and breakthrough AI models predicting solar eruptions.
+- Fact-Check Roundup: Debunking claims regarding ISS live feed cuts, Cydonia Martian pyramids, lunar nuclear tests, Moon gravity, and glass domes on the lunar surface.
+- Daily Briefing: Low Kp baseline, space weather risk mitigation, and proactive satellite telemetry management.
+
+Links &amp; Resources:
+- Live Space Weather &amp; Aurora Forecasts: https://flarient.com
+- Podcast Archive: https://flarient.com/podcast
+- Blog Articles: https://flarient.com/blog
+- Fact-Checker Archive: https://flarient.com/fact-checker</description>
+       <pubDate>Tue, 25 Aug 2026 07:26:30 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-08-25</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-25/flarient-podcast-2026-08-25.mp3" length="22113603" type="audio/mpeg"/>
+       <itunes:duration>921</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>7</itunes:episode>
+      <itunes:image href='https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-25/cover-2026-08-25.jpg'/>
+       <itunes:summary>In today&apos;s episode of the Daily Space Podcast by Flarient, Ollie breaks down current space weather conditions and key updates from across space science:
+
+- Space Weather Report: Ultra-quiet geomagnetic conditions with a Kp index sitting around 0.33, nominal solar wind speeds near 364 km/s, and a Dst index of -10 nT.
+- Blog Articles Deep-Dive:
+  * Asteroid Mining Economy: Moving from speculative fiction to orbital industrial reality.
+  * Flares vs. CMEs: Clearing up the fundamental physical differences between light-speed radiation bursts and massive plasma clouds.
+  * Solar Radiation Storms: High-energy proton acceleration and its risk to satellite electronics.
+  * Satellite Resilience: Engineering strategies used to keep orbital networks online during geomagnetic storms.
+- Recent Space Events: Asteroid 2022 UP6 close flyby, Venus at greatest elongation east, and breakthrough AI models predicting solar eruptions.
+- Fact-Check Roundup: Debunking claims regarding ISS live feed cuts, Cydonia Martian pyramids, lunar nuclear tests, Moon gravity, and glass domes on the lunar surface.
+- Daily Briefing: Low Kp baseline, space weather risk mitigation, and proactive satellite telemetry management.
+
+Links &amp; Resources:
+- Live Space Weather &amp; Aurora Forecasts: https://flarient.com
+- Podcast Archive: https://flarient.com/podcast
+- Blog Articles: https://flarient.com/blog
+- Fact-Checker Archive: https://flarient.com/fact-checker</itunes:summary>
      </item>
   </channel>
 </rss>
