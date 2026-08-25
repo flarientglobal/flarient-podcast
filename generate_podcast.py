@@ -386,6 +386,17 @@ def generate_script(content, episode_type):
     raise Exception("All Gemini models failed. Check GEMINI_API_KEY and quota.")
 
 
+# ── 2b. Fix domain pronunciation for TTS ───────────────────────────────────
+def fix_domain_pronunciation(text):
+    """Replace domain URLs with phonetic spelling so edge-tts reads them correctly.
+    The TTS engine misreads 'flarient.com' — writing 'flarient dot com' forces correct pronunciation."""
+    if not text:
+        return text
+    text = re.sub(r'flarient\.com', 'flarient dot com', text, flags=re.IGNORECASE)
+    text = re.sub(r'flain\.com', 'flarient dot com', text, flags=re.IGNORECASE)
+    return text
+
+
 # ── 3. Synthesize speech with edge-tts ─────────────────────────────────────
 async def synth_segment(text, voice, output_path):
     communicate = edge_tts.Communicate(text, voice)
@@ -588,8 +599,9 @@ def generate_cover_art(episode_type, content):
     draw.rounded_rectangle([bx, by, bx + bw, by + bh], radius=20, fill=badge_color)
     draw.text((bx + 30, by + 10), badge_text, fill="white", font=font_medium)
 
-    # Date
-    date_text = EPISODE_DATE
+    # Date — formatted as "25 August, 2026" for readability
+    date_obj = datetime.datetime.strptime(EPISODE_DATE, "%Y-%m-%d")
+    date_text = date_obj.strftime("%-d %B, %Y")
     bbox = draw.textbbox((0, 0), date_text, font=font_large)
     draw.text(((W - (bbox[2] - bbox[0])) // 2, 1700), date_text, fill="white", font=font_large)
 
@@ -984,6 +996,10 @@ def main():
     # 2. Generate script
     script = generate_script(content, EPISODE_TYPE)
     log(f"  Title: {script.get('title', 'Untitled')}")
+
+    # 2b. Fix domain pronunciation for TTS (flarient.com → flarient dot com)
+    for seg in script.get("segments", []):
+        seg["text"] = fix_domain_pronunciation(seg.get("text", ""))
 
     # 3. Synthesize speech
     segments = script.get("segments", [])
