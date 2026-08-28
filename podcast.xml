@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-25/cover-2026-08-25.jpg"/>
+    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-28/cover-2026-08-28.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -354,6 +354,59 @@ Links &amp; Resources:
 - Podcast Archive: https://flarient.com/podcast
 - Blog Articles: https://flarient.com/blog
 - Fact-Checker Archive: https://flarient.com/fact-checker</itunes:summary>
+     </item>
+      <item>
+       <title>Solar Storm Looming: M6.9 CME Heads for Earth Alongside a Partial Lunar Eclipse</title>
+       <link>https://flarient.com/podcast/solar-storm-looming-m69-cme-heads-for-earth-alongside-a-partial-lunar-eclipse</link>
+       <description>DAILY SPACE PODCAST BY FLARIENT - AUGUST 28, 2026
+Host: Ollie
+
+EPISODE OVERVIEW:
+In today&apos;s episode, Ollie breaks down the calm before the storm as an M6.9 solar flare sends a Coronal Mass Ejection (CME) heading for Earth, setting up potential G1-G2 geomagnetic storming right as a partial lunar eclipse lights up the night sky. We also explore solar cycle radio propagation, the atomic science behind auroral colors, quantum mechanics vs reality, and whether Mars actually has gravity.
+
+TIMESTAMPS:
+00:00 - Opening Hook
+00:45 - Show Intro
+01:15 - Live Space Weather Report (Kp index, solar wind, Dst index)
+07:30 - Deep Dive Articles (Ham radio propagation, Aurora colours, Solar flare prediction, Magnetosphere dynamics, Stellar lifecycles)
+17:45 - Space Events (M6.9 CME incoming, G2 Storm Watch, Asteroid 2022 UP6 flyby)
+23:15 - Space Fact Checks (Is the Universe a Quantum Computer? Does Mars Have Gravity?)
+27:00 - Daily Brief &amp; Highlights (Lunar Eclipse meets Solar Storm)
+29:00 - Community &amp; Call to Actions
+
+MENTIONED LINKS &amp; RESOURCES:
+- Live Space Weather Dashboard: https://flarient.com
+- Full Episode Notes &amp; Transcripts: https://flarient.com/podcast
+- Interactive Solar Gallery: https://flarient.com/gallery
+- Articles referenced: &apos;How the Solar Cycle Dictates Global Ham Radio Propagation&apos;, &apos;Decoding the Colours of the Aurora&apos;, &apos;The Reality of Predicting Solar Flares&apos;, &apos;How Solar Wind Shapes Earth Magnetosphere&apos;, &apos;The Lifecycle of Stars: From Nebulae to Stellar Remnants&apos;</description>
+       <pubDate>Fri, 28 Aug 2026 04:40:19 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-08-28</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-28/flarient-podcast-2026-08-28.mp3" length="16448601" type="audio/mpeg"/>
+       <itunes:duration>685</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>8</itunes:episode>
+      <itunes:image href='https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-28/cover-2026-08-28.jpg'/>
+       <itunes:summary>DAILY SPACE PODCAST BY FLARIENT - AUGUST 28, 2026
+Host: Ollie
+
+EPISODE OVERVIEW:
+In today&apos;s episode, Ollie breaks down the calm before the storm as an M6.9 solar flare sends a Coronal Mass Ejection (CME) heading for Earth, setting up potential G1-G2 geomagnetic storming right as a partial lunar eclipse lights up the night sky. We also explore solar cycle radio propagation, the atomic science behind auroral colors, quantum mechanics vs reality, and whether Mars actually has gravity.
+
+TIMESTAMPS:
+00:00 - Opening Hook
+00:45 - Show Intro
+01:15 - Live Space Weather Report (Kp index, solar wind, Dst index)
+07:30 - Deep Dive Articles (Ham radio propagation, Aurora colours, Solar flare prediction, Magnetosphere dynamics, Stellar lifecycles)
+17:45 - Space Events (M6.9 CME incoming, G2 Storm Watch, Asteroid 2022 UP6 flyby)
+23:15 - Space Fact Checks (Is the Universe a Quantum Computer? Does Mars Have Gravity?)
+27:00 - Daily Brief &amp; Highlights (Lunar Eclipse meets Solar Storm)
+29:00 - Community &amp; Call to Actions
+
+MENTIONED LINKS &amp; RESOURCES:
+- Live Space Weather Dashboard: https://flarient.com
+- Full Episode Notes &amp; Transcripts: https://flarient.com/podcast
+- Interactive Solar Gallery: https://flarient.com/gallery
+- Articles referenced: &apos;How the Solar Cycle Dictates Global Ham Radio Propagation&apos;, &apos;Decoding the Colours of the Aurora&apos;, &apos;The Reality of Predicting Solar Flares&apos;, &apos;How Solar Wind Shapes Earth Magnetosphere&apos;, &apos;The Lifecycle of Stars: From Nebulae to Stellar Remnants&apos;</itunes:summary>
      </item>
   </channel>
 </rss>
