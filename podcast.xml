@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-28/cover-2026-08-28.jpg"/>
+    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-29/cover-2026-08-29.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -408,6 +408,39 @@ MENTIONED LINKS &amp; RESOURCES:
 - Full Episode Notes &amp; Transcripts: https://flarient.com/podcast
 - Interactive Solar Gallery: https://flarient.com/gallery
 - Articles referenced: &apos;How the Solar Cycle Dictates Global Ham Radio Propagation&apos;, &apos;Decoding the Colours of the Aurora&apos;, &apos;The Reality of Predicting Solar Flares&apos;, &apos;How Solar Wind Shapes Earth Magnetosphere&apos;, &apos;The Lifecycle of Stars: From Nebulae to Stellar Remnants&apos;</itunes:summary>
+     </item>
+      <item>
+       <title>Solar Storm Meets Lunar Eclipse — Shield Under Pressure</title>
+       <link>https://flarient.com/podcast/solar-storm-meets-lunar-eclipse-shield-under-pressure</link>
+       <description>In today&apos;s comprehensive episode of the Daily Space Podcast by Flarient, host Ollie dives deep into a remarkable cosmic confluence occurring in Earth&apos;s near-space environment.
+
+First, we analyze live space weather metrics from NOAA and GFZ Potsdam, examining a Kp index peak of 3, a Dst index hovering around -27 nanoteslas, and solar wind speeds holding at 363 km/s with a slightly southward Bz orientation. We explain what these numbers mean for grid stability, satellite drag, and high-latitude aurora viewing.
+
+Next, we break down five recent insightful articles from the Flarient library. We clarify the correct pronunciation and mesospheric science of noctilucent clouds, explain the physics of HF radio propagation in the ionosphere, debunk the recurring pseudoscientific claim linking solar flares to terrestrial earthquakes, explore how coronal holes drive long-lasting auroral streams without needing solar flares, and detail the sudden impact of X-ray radio blackouts on global maritime and aviation communications.
+
+Then, we focus on the Daily Brief highlight: a G1 geomagnetic storm watch coinciding with a stunning partial lunar eclipse boasting an umbral magnitude of 0.93. We also touch upon the recent safe flyby of near-Earth asteroid 2022 UP6.
+
+Finally, we tackle a viral claim in our Fact Check segment, reviewing reports from NASA and the Pentagon&apos;s AARO to officially debunk the notion that a secret breakaway human civilization is operating warp-capable deep space battlecruisers.
+
+For real-time space weather charts, live aurora trackers, and detailed forecasts, visit https://flarient.com.</description>
+       <pubDate>Sat, 29 Aug 2026 16:07:59 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-08-29</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-29/flarient-podcast-2026-08-29.mp3" length="23210114" type="audio/mpeg"/>
+       <itunes:duration>967</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>9</itunes:episode>
+      <itunes:image href='https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-29/cover-2026-08-29.jpg'/>
+       <itunes:summary>In today&apos;s comprehensive episode of the Daily Space Podcast by Flarient, host Ollie dives deep into a remarkable cosmic confluence occurring in Earth&apos;s near-space environment.
+
+First, we analyze live space weather metrics from NOAA and GFZ Potsdam, examining a Kp index peak of 3, a Dst index hovering around -27 nanoteslas, and solar wind speeds holding at 363 km/s with a slightly southward Bz orientation. We explain what these numbers mean for grid stability, satellite drag, and high-latitude aurora viewing.
+
+Next, we break down five recent insightful articles from the Flarient library. We clarify the correct pronunciation and mesospheric science of noctilucent clouds, explain the physics of HF radio propagation in the ionosphere, debunk the recurring pseudoscientific claim linking solar flares to terrestrial earthquakes, explore how coronal holes drive long-lasting auroral streams without needing solar flares, and detail the sudden impact of X-ray radio blackouts on global maritime and aviation communications.
+
+Then, we focus on the Daily Brief highlight: a G1 geomagnetic storm watch coinciding with a stunning partial lunar eclipse boasting an umbral magnitude of 0.93. We also touch upon the recent safe flyby of near-Earth asteroid 2022 UP6.
+
+Finally, we tackle a viral claim in our Fact Check segment, reviewing reports from NASA and the Pentagon&apos;s AARO to officially debunk the notion that a secret breakaway human civilization is operating warp-capable deep space battlecruisers.
+
+For real-time space weather charts, live aurora trackers, and detailed forecasts, visit https://flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
