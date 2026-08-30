@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-29/cover-2026-08-29.jpg"/>
+    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-30/cover-2026-08-30.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -442,6 +442,31 @@ Then, we focus on the Daily Brief highlight: a G1 geomagnetic storm watch coinci
 Finally, we tackle a viral claim in our Fact Check segment, reviewing reports from NASA and the Pentagon&apos;s AARO to officially debunk the notion that a secret breakaway human civilization is operating warp-capable deep space battlecruisers.
 
 For real-time space weather charts, live aurora trackers, and detailed forecasts, visit https://flarient.com.</itunes:summary>
+     </item>
+      <item>
+       <title>M6.9 Solar Flare &amp; G2 Storm Watch — What to Expect</title>
+       <link>https://flarient.com/podcast/m69-solar-flare-g2-storm-watch-what-to-expect</link>
+       <description>Welcome to another daily episode of the Daily Space Podcast by Flarient, your essential guide to space weather, solar activity, and cosmic events. In today&apos;s episode, host Ollie breaks down the latest real-time data from NOAA and SWPC, exploring a recent M6.9 solar flare and the active G2 geomagnetic storm watch currently in effect. We examine fluctuating Kp index readings, discuss the physics of solar wind interactions, and look closely at how these space weather events impact satellite operations, high-frequency radio communications, and power grids on Earth.
+
+Moving beyond our local star, Ollie explores a fascinating collection of recent blog articles covering the global responsibility for orbital debris removal and the Kessler Syndrome, aurora visibility across the United Kingdom, and the formal scientific classification of asteroids as minor planets. If you are an astrophotography enthusiast, we also share essential camera settings for capturing vibrant auroral displays.
+
+In our fact-check segment, we tackle three intriguing claims: whether the red supergiant Stephenson 2-18 really dwarfs our Sun, the reality behind Area 51 and alleged reverse-engineered extraterrestrial spacecraft, and the truth of the Soviet Union&apos;s secretive N1-L3 manned lunar landing programme.
+
+Finally, we wrap up with our daily highlight detailing the incoming coronal mass ejections, potential ionospheric disruptions, and close asteroid approaches. For live space weather dashboards, real-time Kp index tracking, and interactive aurora forecasts, visit flarient.com. Don&apos;t forget to subscribe on your favorite platform, check out flarient.com/podcast for show notes, and download the official Flarient app for instant push notifications when geomagnetic storms strike.</description>
+       <pubDate>Sun, 30 Aug 2026 11:26:23 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-08-30</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-30/flarient-podcast-2026-08-30.mp3" length="11801704" type="audio/mpeg"/>
+       <itunes:duration>491</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>10</itunes:episode>
+      <itunes:image href='https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-30/cover-2026-08-30.jpg'/>
+       <itunes:summary>Welcome to another daily episode of the Daily Space Podcast by Flarient, your essential guide to space weather, solar activity, and cosmic events. In today&apos;s episode, host Ollie breaks down the latest real-time data from NOAA and SWPC, exploring a recent M6.9 solar flare and the active G2 geomagnetic storm watch currently in effect. We examine fluctuating Kp index readings, discuss the physics of solar wind interactions, and look closely at how these space weather events impact satellite operations, high-frequency radio communications, and power grids on Earth.
+
+Moving beyond our local star, Ollie explores a fascinating collection of recent blog articles covering the global responsibility for orbital debris removal and the Kessler Syndrome, aurora visibility across the United Kingdom, and the formal scientific classification of asteroids as minor planets. If you are an astrophotography enthusiast, we also share essential camera settings for capturing vibrant auroral displays.
+
+In our fact-check segment, we tackle three intriguing claims: whether the red supergiant Stephenson 2-18 really dwarfs our Sun, the reality behind Area 51 and alleged reverse-engineered extraterrestrial spacecraft, and the truth of the Soviet Union&apos;s secretive N1-L3 manned lunar landing programme.
+
+Finally, we wrap up with our daily highlight detailing the incoming coronal mass ejections, potential ionospheric disruptions, and close asteroid approaches. For live space weather dashboards, real-time Kp index tracking, and interactive aurora forecasts, visit flarient.com. Don&apos;t forget to subscribe on your favorite platform, check out flarient.com/podcast for show notes, and download the official Flarient app for instant push notifications when geomagnetic storms strike.</itunes:summary>
      </item>
   </channel>
 </rss>
