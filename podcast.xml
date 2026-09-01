@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-08-30/cover-2026-08-30.jpg"/>
+    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-01/cover-2026-09-01.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -468,6 +468,41 @@ Moving beyond our local star, Ollie explores a fascinating collection of recent 
 In our fact-check segment, we tackle three intriguing claims: whether the red supergiant Stephenson 2-18 really dwarfs our Sun, the reality behind Area 51 and alleged reverse-engineered extraterrestrial spacecraft, and the truth of the Soviet Union&apos;s secretive N1-L3 manned lunar landing programme.
 
 Finally, we wrap up with our daily highlight detailing the incoming coronal mass ejections, potential ionospheric disruptions, and close asteroid approaches. For live space weather dashboards, real-time Kp index tracking, and interactive aurora forecasts, visit flarient.com. Don&apos;t forget to subscribe on your favorite platform, check out flarient.com/podcast for show notes, and download the official Flarient app for instant push notifications when geomagnetic storms strike.</itunes:summary>
+     </item>
+      <item>
+       <title>Drone Risks and the Venus Myth — Daily Space Podcast</title>
+       <link>https://flarient.com/podcast/drone-risks-and-the-venus-myth-daily-space-podcast</link>
+       <description>In today’s episode of the Daily Space Podcast by Flarient, Ollie takes a deep dive into the hidden ways space weather impacts our modern technology, specifically looking at the growing risk to drone operations. We explore how ionospheric disturbances can lead to significant GPS errors, posing a challenge for both hobbyists and commercial operators during Solar Cycle 25.
+
+We also clear up some common misconceptions about asteroids. Despite what you might see in science fiction, these rocky remnants aren&apos;t radioactive; we explain the difference between kinetic threats and solar radiation. For the astrophysics enthusiasts, we discuss the &apos;unseen giants&apos;—black holes—and how scientists use gravitational modeling and X-ray emissions to map objects that light itself cannot escape.
+
+In our space weather report, we analyze a surprisingly quiet day on the Sun, with a Kp index hovering near zero, and what this stability means for our satellites and power grids. Finally, we tackle a popular myth about Venus. Did the planet really destroy every probe we ever sent? We look at the triumphs of the Soviet Venera program and NASA&apos;s orbiters to set the record straight.
+
+Articles discussed:
+- Ionospheric Disturbances Pose Risks to Modern Drone Operations: https://flarient.com/blog/ionospheric-disturbances-pose-risks-to-modern-drone-operations
+- Asteroids Do Not Emit Ionising Radiation: https://flarient.com/blog/asteroids-do-not-emit-ionising-radiation
+- Astrophysicists Unveil the Invisible Mechanics of Black Holes: https://flarient.com/blog/astrophysicists-unveil-the-invisible-mechanics-of-black-holes
+- Understanding the Solar Wind and Its Velocity: https://flarient.com/blog/understanding-the-solar-wind-and-its-velocity
+- Fact Check - The Venus Probe Myth: https://flarient.com/fact-checker/did-venus-destroy-every-probe-sent-to-its-surface-the-reality-of-space-missions</description>
+       <pubDate>Tue, 01 Sep 2026 00:24:01 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-01</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-01/flarient-podcast-2026-09-01.mp3" length="17546346" type="audio/mpeg"/>
+       <itunes:duration>731</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>11</itunes:episode>
+      <itunes:image href='https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-01/cover-2026-09-01.jpg'/>
+       <itunes:summary>In today’s episode of the Daily Space Podcast by Flarient, Ollie takes a deep dive into the hidden ways space weather impacts our modern technology, specifically looking at the growing risk to drone operations. We explore how ionospheric disturbances can lead to significant GPS errors, posing a challenge for both hobbyists and commercial operators during Solar Cycle 25.
+
+We also clear up some common misconceptions about asteroids. Despite what you might see in science fiction, these rocky remnants aren&apos;t radioactive; we explain the difference between kinetic threats and solar radiation. For the astrophysics enthusiasts, we discuss the &apos;unseen giants&apos;—black holes—and how scientists use gravitational modeling and X-ray emissions to map objects that light itself cannot escape.
+
+In our space weather report, we analyze a surprisingly quiet day on the Sun, with a Kp index hovering near zero, and what this stability means for our satellites and power grids. Finally, we tackle a popular myth about Venus. Did the planet really destroy every probe we ever sent? We look at the triumphs of the Soviet Venera program and NASA&apos;s orbiters to set the record straight.
+
+Articles discussed:
+- Ionospheric Disturbances Pose Risks to Modern Drone Operations: https://flarient.com/blog/ionospheric-disturbances-pose-risks-to-modern-drone-operations
+- Asteroids Do Not Emit Ionising Radiation: https://flarient.com/blog/asteroids-do-not-emit-ionising-radiation
+- Astrophysicists Unveil the Invisible Mechanics of Black Holes: https://flarient.com/blog/astrophysicists-unveil-the-invisible-mechanics-of-black-holes
+- Understanding the Solar Wind and Its Velocity: https://flarient.com/blog/understanding-the-solar-wind-and-its-velocity
+- Fact Check - The Venus Probe Myth: https://flarient.com/fact-checker/did-venus-destroy-every-probe-sent-to-its-surface-the-reality-of-space-missions</itunes:summary>
      </item>
   </channel>
 </rss>
