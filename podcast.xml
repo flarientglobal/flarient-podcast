@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-01/cover-2026-09-01.jpg"/>
+    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-02/cover-2026-09-02.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -505,6 +505,39 @@ Articles discussed:
 - Astrophysicists Unveil the Invisible Mechanics of Black Holes: https://flarient.com/blog/astrophysicists-unveil-the-invisible-mechanics-of-black-holes
 - Understanding the Solar Wind and Its Velocity: https://flarient.com/blog/understanding-the-solar-wind-and-its-velocity
 - Fact Check - The Venus Probe Myth: https://flarient.com/fact-checker/did-venus-destroy-every-probe-sent-to-its-surface-the-reality-of-space-missions</itunes:summary>
+     </item>
+      <item>
+       <title>G2 Solar Storm Watch and the Myth of Ancient Spaceflight</title>
+       <link>https://flarient.com/podcast/g2-solar-storm-watch-and-the-myth-of-ancient-spaceflight</link>
+       <description>In today&apos;s deep dive, Ollie breaks down the impending space weather drama heading our way over the next seventy-two hours. We start with the headline news: NOAA has issued an official G2 geomagnetic storm watch following a powerful M6.9 solar flare and a series of coronal mass ejections (CMEs) launched directly towards Earth. Ollie explains what a G2 storm means for satellite communications, electrical grids, and our chance to spot the aurora at mid-latitudes.
+
+Next, we transition from solar wind to planetary defense, analyzing the close approach of Asteroid 2025 UK9, which recently cruised past our cosmic backyard. We also explore the fascinating physics behind asteroid impact tsunamis—what happens when a space rock hits the ocean, and how researchers model these high-energy waves.
+
+In our science segment, we look at the complex relationship between solar activity and human health. Do solar flares actually trigger headaches and fatigue, or is it a case of correlation without causation? We also provide a guide on how to spot elusive noctilucent clouds—the electric blue, night-shining clouds glowing at the edge of space.
+
+Finally, we tackle a viral claim: did ancient humans escape a global catastrophe 12,000 years ago in spaceships, only to return today as UAPs? We look at official reports from AARO, NASA, and the ODNI to deliver our verdict.
+
+For real-time space weather alerts, interactive Kp index dashboards, and aurora forecasts, visit https://flarient.com.
+Read our full analysis of solar activity and human health at https://flarient.com/blog/solar-activity-and-potential-links-to-human-health.
+Explore the physics of asteroid tsunamis at https://flarient.com/blog/the-physics-of-asteroid-impact-tsunamis.</description>
+       <pubDate>Wed, 02 Sep 2026 15:16:37 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-02</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-02/flarient-podcast-2026-09-02.mp3" length="24158671" type="audio/mpeg"/>
+       <itunes:duration>1006</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>12</itunes:episode>
+      <itunes:image href='https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-02/cover-2026-09-02.jpg'/>
+       <itunes:summary>In today&apos;s deep dive, Ollie breaks down the impending space weather drama heading our way over the next seventy-two hours. We start with the headline news: NOAA has issued an official G2 geomagnetic storm watch following a powerful M6.9 solar flare and a series of coronal mass ejections (CMEs) launched directly towards Earth. Ollie explains what a G2 storm means for satellite communications, electrical grids, and our chance to spot the aurora at mid-latitudes.
+
+Next, we transition from solar wind to planetary defense, analyzing the close approach of Asteroid 2025 UK9, which recently cruised past our cosmic backyard. We also explore the fascinating physics behind asteroid impact tsunamis—what happens when a space rock hits the ocean, and how researchers model these high-energy waves.
+
+In our science segment, we look at the complex relationship between solar activity and human health. Do solar flares actually trigger headaches and fatigue, or is it a case of correlation without causation? We also provide a guide on how to spot elusive noctilucent clouds—the electric blue, night-shining clouds glowing at the edge of space.
+
+Finally, we tackle a viral claim: did ancient humans escape a global catastrophe 12,000 years ago in spaceships, only to return today as UAPs? We look at official reports from AARO, NASA, and the ODNI to deliver our verdict.
+
+For real-time space weather alerts, interactive Kp index dashboards, and aurora forecasts, visit https://flarient.com.
+Read our full analysis of solar activity and human health at https://flarient.com/blog/solar-activity-and-potential-links-to-human-health.
+Explore the physics of asteroid tsunamis at https://flarient.com/blog/the-physics-of-asteroid-impact-tsunamis.</itunes:summary>
      </item>
   </channel>
 </rss>
