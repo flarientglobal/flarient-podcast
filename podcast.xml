@@ -44,6 +44,7 @@ In space weather, the Sun remains remarkably calm. With Kp values hovering betwe
 
 For real-time solar dashboards, live geomagnetic indices, and aurora alerts, visit flarient.com.</itunes:summary>
             <podcast:socialInteract uri="https://github.com/flarientglobal/flarient-podcast/discussions/33" priority="1" platform="github"/>
+            <podcast:socialInteract uri="https://github.com/flarientglobal/flarient-podcast/discussions/34" priority="1" platform="github"/>
      </item>
   </channel>
 </rss>
