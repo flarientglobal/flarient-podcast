@@ -16,34 +16,29 @@
       <itunes:email>podcast@flarient.com</itunes:email>
     </itunes:owner>
     <item>
-       <title>Roman Telescope Weekend Launch &amp; Asteroid 2025 UK9 Flyby</title>
-       <link>https://flarient.com/podcast/roman-telescope-weekend-launch-asteroid-2025-uk9-flyby</link>
-       <description>In today&apos;s episode of the Daily Space Podcast by Flarient, Ollie breaks down the latest live space weather conditions and major astronomical headlines for Friday, September 4, 2026.
+       <title>Roman Telescope Launch Preps and Asteroid 2025 UK9 Flyby</title>
+       <link>https://flarient.com/podcast/roman-telescope-launch-preps-and-asteroid-2025-uk9-flyby</link>
+       <description>In today&apos;s episode for Friday, September 4, 2026, Ollie dives into the upcoming launch preparations for NASA&apos;s Nancy Grace Roman Space Telescope at Kennedy Space Centre. Standing ready on the launchpad for its weekend lift-off, this next-generation observatory promises to revolutionize our understanding of dark energy and cosmic structure once operational next year.
 
-We start with a complete look at today&apos;s exceptionally tranquil space weather report. With the Kp index sitting at a calm 0 to 0.33 and solar wind speeds holding steady at 412.8 kilometres per second, Earth&apos;s magnetosphere is experiencing minimal pressure. We discuss what these numbers mean for satellite operators, power grid managers, and aurora chasers.
+We also break down today&apos;s close flyby of near-Earth asteroid 2025 UK9. While this space rock passes by safely with no risk of impact, it provides an invaluable opportunity for astronomers to refine orbital tracking and celestial mechanics models.
 
-Next, we dive into four deep-dive articles from the Flarient blog. We explore the composition of the interstellar medium, learning how diffuse gas and interstellar grains act as raw material for new stars. We then discuss real-time satellite tracking, orbital mechanics, and two-line element sets in low Earth orbit. We also examine how corporate space weather services protect essential terrestrial and orbital infrastructure, and we unravel the gravitational secrets of dark matter holding galaxies together.
+On the space weather front, conditions are exceptionally calm. With a Kp index hovering between 0 and 0.67, solar wind speeds at a steady 412.8 km/s, and a neutral magnetic field, the magnetosphere is under minimal pressure. Ollie explains why this quiet baseline is great news for launch operations, satellite stability, and radio propagation, while keeping aurora activity muted at high latitudes.
 
-Finally, we cover today&apos;s key space events and daily highlight: the close pass of near-Earth asteroid 2025 UK9 happening today, September 4, 2026, and the upcoming weekend launch of NASA&apos;s Nancy Grace Roman Space Telescope from Kennedy Space Centre.
-
-For real-time dashboards, Kp updates, and interactive forecasts, visit https://flarient.com.</description>
-       <pubDate>Fri, 04 Sep 2026 18:55:28 GMT</pubDate>
+For real-time solar tracking, aurora maps, and interactive data dashboards, visit flarient.com.</description>
+       <pubDate>Fri, 04 Sep 2026 22:30:39 GMT</pubDate>
        <guid isPermaLink="false">flarient-podcast-2026-09-04</guid>
-       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-04/flarient-podcast-2026-09-04.mp3" length="15847344" type="audio/mpeg"/>
-       <itunes:duration>660</itunes:duration>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-04/flarient-podcast-2026-09-04.mp3" length="12823618" type="audio/mpeg"/>
+       <itunes:duration>534</itunes:duration>
        <itunes:episodeType>daily</itunes:episodeType>
-       <itunes:episode>14</itunes:episode>
+       <itunes:episode>2</itunes:episode>
       <itunes:image href='https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-04/cover-2026-09-04.jpg'/>
-       <itunes:summary>In today&apos;s episode of the Daily Space Podcast by Flarient, Ollie breaks down the latest live space weather conditions and major astronomical headlines for Friday, September 4, 2026.
+       <itunes:summary>In today&apos;s episode for Friday, September 4, 2026, Ollie dives into the upcoming launch preparations for NASA&apos;s Nancy Grace Roman Space Telescope at Kennedy Space Centre. Standing ready on the launchpad for its weekend lift-off, this next-generation observatory promises to revolutionize our understanding of dark energy and cosmic structure once operational next year.
 
-We start with a complete look at today&apos;s exceptionally tranquil space weather report. With the Kp index sitting at a calm 0 to 0.33 and solar wind speeds holding steady at 412.8 kilometres per second, Earth&apos;s magnetosphere is experiencing minimal pressure. We discuss what these numbers mean for satellite operators, power grid managers, and aurora chasers.
+We also break down today&apos;s close flyby of near-Earth asteroid 2025 UK9. While this space rock passes by safely with no risk of impact, it provides an invaluable opportunity for astronomers to refine orbital tracking and celestial mechanics models.
 
-Next, we dive into four deep-dive articles from the Flarient blog. We explore the composition of the interstellar medium, learning how diffuse gas and interstellar grains act as raw material for new stars. We then discuss real-time satellite tracking, orbital mechanics, and two-line element sets in low Earth orbit. We also examine how corporate space weather services protect essential terrestrial and orbital infrastructure, and we unravel the gravitational secrets of dark matter holding galaxies together.
+On the space weather front, conditions are exceptionally calm. With a Kp index hovering between 0 and 0.67, solar wind speeds at a steady 412.8 km/s, and a neutral magnetic field, the magnetosphere is under minimal pressure. Ollie explains why this quiet baseline is great news for launch operations, satellite stability, and radio propagation, while keeping aurora activity muted at high latitudes.
 
-Finally, we cover today&apos;s key space events and daily highlight: the close pass of near-Earth asteroid 2025 UK9 happening today, September 4, 2026, and the upcoming weekend launch of NASA&apos;s Nancy Grace Roman Space Telescope from Kennedy Space Centre.
-
-For real-time dashboards, Kp updates, and interactive forecasts, visit https://flarient.com.</itunes:summary>
-            <podcast:socialInteract uri="https://github.com/flarientglobal/flarient-podcast/discussions/31" priority="1" platform="github"/>
+For real-time solar tracking, aurora maps, and interactive data dashboards, visit flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
