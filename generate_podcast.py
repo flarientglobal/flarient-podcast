@@ -134,14 +134,17 @@ def research_breaking_news():
 
 Search the web for the MOST SIGNIFICANT space exploration, astronomy, and aerospace news from the LAST 24 HOURS ONLY (since {yesterday}).
 
+CRITICAL ACCURACY RULES:
+- Do NOT report specific launch dates, launch preparations, or mission status for any telescope, probe, or spacecraft UNLESS you find an OFFICIAL press release from NASA, ESA, JAXA, or the operating organization dated within the last 24 hours.
+- The Nancy Grace Roman Space Telescope is NOT launching in September 2026. Do NOT mention it unless you find an official NASA press release from the last 24 hours about a specific milestone.
+- Do NOT speculate about upcoming launches. Only report launches that have ALREADY HAPPENED or are officially scheduled with a specific date in the next 24 hours.
+- If you are unsure whether a launch happened or is scheduled, DO NOT include it.
+
 Find and report on:
 
 1. BREAKING SPACE NEWS: Any major announcements, discoveries, or events from the last 24 hours. Prioritize primary sources: NASA, ESA, JAXA, SpaceNews, Space.com, CelesTrak, Orbital Radar, and official university/observatory press releases.
 
-2. ORBITAL LAUNCHES: Any orbital launches, dockings, or major spacecraft maneuvers that:
-   - Happened in the last 24 hours, OR
-   - Are scheduled for the next 24 hours
-   Include: provider (e.g. SpaceX, Rocket Lab), payload, launch site, and outcome/status.
+2. ORBITAL LAUNCHES: Any orbital launches that ALREADY HAPPENED in the last 24 hours. Include: provider (e.g. SpaceX, Rocket Lab), payload, launch site, and outcome. Do NOT include upcoming launches unless they have a confirmed specific date in the next 24 hours.
 
 3. PEER-REVIEWED DISCOVERY: One recent peer-reviewed finding or official discovery from astrophysics, astronomy, or planetary science. Translate the academic jargon into an accessible, engaging explanation.
 
@@ -150,6 +153,7 @@ For each item, provide:
 - A 2-3 sentence summary with key facts
 - The source (NASA, ESA, SpaceNews, etc.)
 - The date/time if available
+- A confidence note: "CONFIRMED" if from an official primary source, "UNCONFIRMED" if from secondary sources
 
 IMPORTANT: Only include news from the last 24 hours. Do NOT include older news. If you cannot find something in a category, say "No significant news in this category in the last 24 hours."
 
@@ -380,7 +384,7 @@ PODCAST STRUCTURE:
 
 3. THIS DAY IN SPACE WEATHER HISTORY (60-90 seconds, ~100-150 words): A SHORT, ENTERTAINING segment about a historical space weather event that happened on this date. Keep it brief and fun — like a "on this day in history" radio segment. Use the provided This Day in History data. If no data is available, skip this segment.
 
-4. BREAKING NEWS (5-7 minutes, ~800-1000 words): Cover the most significant breaking space exploration, astronomy, and aerospace news from the LAST 24 HOURS. Use the BREAKING NEWS FROM WEB SEARCH data as the PRIMARY SOURCE. Prioritize primary sources: NASA, ESA, JAXA, SpaceNews, Space.com, CelesTrak, Orbital Radar, and official university/observatory press releases. Discuss what happened, why it matters, and who it affects. This is the LEAD STORY section — make it engaging and newsy.
+4. BREAKING NEWS (5-7 minutes, ~800-1000 words): Cover the most significant breaking space exploration, astronomy, and aerospace news from the LAST 24 HOURS. Use the BREAKING NEWS FROM WEB SEARCH data as the PRIMARY SOURCE. Prioritize primary sources: NASA, ESA, JAXA, SpaceNews, Space.com, CelesTrak, Orbital Radar, and official university/observatory press releases. Discuss what happened, why it matters, and who it affects. This is the LEAD STORY section — make it engaging and newsy. CRITICAL: Do NOT mention specific launch dates, launch preparations, or mission status for any telescope or spacecraft unless the web search data explicitly contains a CONFIRMED note from an official source. Never claim a telescope or spacecraft is "launching soon", "ready for launch", or "preparing for lift-off" unless the data explicitly says so.
 
 5. LAUNCH REPORT (3-5 minutes, ~500-700 words): Detail any orbital launches, dockings, or major spacecraft maneuvers from the last 24 hours or scheduled for the next 24 hours. Include: provider (e.g. SpaceX, Rocket Lab), payload, launch site, and outcome/status. If no launches, mention that briefly and move on.
 
@@ -498,16 +502,32 @@ def validate_script(script, content):
         for m in matches:
             issues.append(f"DATE HALLUCINATION: '{m}' — verify this event is actually happening")
 
-    # Pattern 2: Missions/telescopes mentioned but not in source data
+    # Pattern 2: Missions/telescopes mentioned with launch-related language
+    # This catches hallucinated launch claims even if the mission appears in web search data
     known_missions = [
         "roman telescope", "roman space telescope", "nancy grace roman",
         "jwst", "james webb", "webb telescope",
         "artemis", "euclid", "psyche", "osiris-rex",
         "europa clipper", "hera", "juice",
     ]
+    launch_language = [
+        "launch", "lift-off", "liftoff", "blast off", "blasting off",
+        "pre-launch", "pre launch", "countdown", "ready for launch",
+        "standing ready", "standing tall", "fully assembled",
+        "scheduled for", "set to launch", "due to launch",
+        "launch window", "launch pad", "launch preparations",
+    ]
     for mission in known_missions:
-        if mission in text_lower and mission not in source_text:
-            issues.append(f"UNSOURCED MISSION: '{mission}' mentioned but not in source data — likely hallucination")
+        if mission in text_lower:
+            # Check if any launch language appears within 200 chars of the mission mention
+            for match in re.finditer(mission, text_lower):
+                start = max(0, match.start() - 200)
+                end = min(len(text_lower), match.end() + 200)
+                context = text_lower[start:end]
+                for launch_term in launch_language:
+                    if launch_term in context:
+                        issues.append(f"LAUNCH CLAIM: '{mission}' mentioned with '{launch_term}' — verify this launch is actually happening today from official sources")
+                        break
 
     return issues
 
@@ -1134,9 +1154,9 @@ def main():
         log(f"  ⚠ ACCURACY VALIDATION: {len(issues)} issue(s) found:")
         for issue in issues:
             log(f"    - {issue}")
-        unsourced = [i for i in issues if "UNSOURCED" in i]
+        unsourced = [i for i in issues if "UNSOURCED" in i or "LAUNCH CLAIM" in i]
         if unsourced:
-            log(f"  ⚠ Critical: {len(unsourced)} unsourced mission(s) — regenerating with stricter guardrails...")
+            log(f"  ⚠ Critical: {len(unsourced)} hallucination(s) — regenerating with stricter guardrails...")
             content["_accuracy_warnings"] = issues
             script = generate_script(content, EPISODE_TYPE, breaking_news)
             issues2 = validate_script(script, content)
