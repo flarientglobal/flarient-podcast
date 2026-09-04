@@ -23,6 +23,11 @@ on:
           - daily
           - weekly
           - breaking
+      episode_date:
+        description: 'Episode date (YYYY-MM-DD) \u2014 leave empty for today. Used for backdating.'
+        required: false
+        default: ''
+        type: string
 
 permissions:
   contents: write
@@ -79,6 +84,7 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
           GITHUB_WORKSPACE: ${{ github.workspace }}
           EPISODE_TYPE: ${{ steps.ep_type.outputs.type }}
+          EPISODE_DATE: ${{ github.event.inputs.episode_date }}
         run: python generate_podcast.py
 
       - name: Backup episode to Archive.org
