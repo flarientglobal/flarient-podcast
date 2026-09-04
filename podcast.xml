@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-02/cover-2026-09-02.jpg"/>
+    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-04/cover-2026-09-04.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -544,5 +544,42 @@ Read our full analysis of solar activity and human health at https://flarient.co
 Explore the physics of asteroid tsunamis at https://flarient.com/blog/the-physics-of-asteroid-impact-tsunamis.</itunes:summary>
      </item>
 
+      <item>
+       <title>Roman Telescope Launch Prep &amp; Asteroid 2025 UK9 Flyby</title>
+       <link>https://flarient.com/podcast/roman-telescope-launch-prep-asteroid-2025-uk9-flyby</link>
+       <description>In today&apos;s deep dive on the Daily Space Podcast by Flarient, host Ollie explores a remarkably serene day in space weather and what it means for major space missions and celestial observers alike.
+
+First, we break down today&apos;s live space weather telemetry. With a planetary Kp index sitting at a tranquil 0 to 1.67, a solar wind cruising at a steady 412.8 km/s, and a neutral interplanetary magnetic field (Bz around -0.3 nT), Earth&apos;s magnetosphere is enjoying a period of quiet calm. We unpack the physics behind the Dst index of -19 nT and explain why these quiet conditions create the perfect launch window for sensitive satellite deployments and high-frequency radio communications.
+
+Next, we dive into two fascinating articles from the Flarient blog. We examine the intricate craft of aurora photography, walking through how to balance sensor exposure, aperture, and ISO to capture the quantum de-excitation of atmospheric oxygen and nitrogen without blowing out detail. Then, we look at the magnetic engines driving our star in our breakdown of sunspots, exploring how twisted flux tubes in the solar photosphere store gigajoules of magnetic energy before unleashing flares and coronal mass ejections.
+
+In our space events and daily brief segments, we focus on the upcoming launch of the Nancy Grace Roman Space Telescope from Kennedy Space Center—a flagship observatory designed to probe dark energy and cosmic structure—alongside the close flyby of near-Earth asteroid 2025 UK9. We also run a dedicated fact-check dissecting the common myth that quiet solar conditions mean zero atmospheric drag in low Earth orbit.
+
+Explore all the articles, telemetry, and tools mentioned in today&apos;s show:
+- Mastering Camera Settings for Vibrant Aurora Photography: https://flarient.com/blog/mastering-camera-settings-for-vibrant-aurora-photography
+- Sunspots and Their Role in Shaping Space Weather: https://flarient.com/blog/sunspots-and-their-role-in-shaping-space-weather
+- Real-time Kp index, Dst data, and live space weather dashboards: https://flarient.com
+- Podcast episodes and archives: https://flarient.com/podcast</description>
+       <pubDate>Fri, 04 Sep 2026 04:33:33 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-04</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-04/flarient-podcast-2026-09-04.mp3" length="22187573" type="audio/mpeg"/>
+       <itunes:duration>924</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>13</itunes:episode>
+      <itunes:image href='https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-04/cover-2026-09-04.jpg'/>
+       <itunes:summary>In today&apos;s deep dive on the Daily Space Podcast by Flarient, host Ollie explores a remarkably serene day in space weather and what it means for major space missions and celestial observers alike.
+
+First, we break down today&apos;s live space weather telemetry. With a planetary Kp index sitting at a tranquil 0 to 1.67, a solar wind cruising at a steady 412.8 km/s, and a neutral interplanetary magnetic field (Bz around -0.3 nT), Earth&apos;s magnetosphere is enjoying a period of quiet calm. We unpack the physics behind the Dst index of -19 nT and explain why these quiet conditions create the perfect launch window for sensitive satellite deployments and high-frequency radio communications.
+
+Next, we dive into two fascinating articles from the Flarient blog. We examine the intricate craft of aurora photography, walking through how to balance sensor exposure, aperture, and ISO to capture the quantum de-excitation of atmospheric oxygen and nitrogen without blowing out detail. Then, we look at the magnetic engines driving our star in our breakdown of sunspots, exploring how twisted flux tubes in the solar photosphere store gigajoules of magnetic energy before unleashing flares and coronal mass ejections.
+
+In our space events and daily brief segments, we focus on the upcoming launch of the Nancy Grace Roman Space Telescope from Kennedy Space Center—a flagship observatory designed to probe dark energy and cosmic structure—alongside the close flyby of near-Earth asteroid 2025 UK9. We also run a dedicated fact-check dissecting the common myth that quiet solar conditions mean zero atmospheric drag in low Earth orbit.
+
+Explore all the articles, telemetry, and tools mentioned in today&apos;s show:
+- Mastering Camera Settings for Vibrant Aurora Photography: https://flarient.com/blog/mastering-camera-settings-for-vibrant-aurora-photography
+- Sunspots and Their Role in Shaping Space Weather: https://flarient.com/blog/sunspots-and-their-role-in-shaping-space-weather
+- Real-time Kp index, Dst data, and live space weather dashboards: https://flarient.com
+- Podcast episodes and archives: https://flarient.com/podcast</itunes:summary>
+     </item>
   </channel>
 </rss>
