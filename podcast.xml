@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-03/cover-2026-09-03.jpg"/>
+    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-02/cover-2026-09-02.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -543,34 +543,6 @@ For real-time space weather alerts, interactive Kp index dashboards, and aurora 
 Read our full analysis of solar activity and human health at https://flarient.com/blog/solar-activity-and-potential-links-to-human-health.
 Explore the physics of asteroid tsunamis at https://flarient.com/blog/the-physics-of-asteroid-impact-tsunamis.</itunes:summary>
      </item>
-      <item>
-       <title>NASA Launches Roman Telescope as Asteroid Sweeps Past</title>
-       <link>https://flarient.com/podcast/nasa-launches-roman-telescope-as-asteroid-sweeps-past</link>
-       <description>In today&apos;s episode, Ollie takes us through a remarkable day in our local cosmos. We discuss the historic, successful launch of NASA&apos;s Nancy Grace Roman Space Telescope aboard a SpaceX Falcon Heavy, beginning its journey to investigate dark energy and search for exoplanets. Alongside this monument of human achievement, a near-Earth asteroid known as 2026 RC made a safe flyby of our planet.
 
-Despite all this activity, the Sun remains remarkably quiet. We dive deep into the daily space weather report, analyzing a Kp index of zero, low solar wind speeds, and what this calm environment means for satellite operations and aurora chasers.
-
-We also explore four brand-new articles from the Flarient blog. Learn how solar particle events pose severe radiation risks to spacecraft and astronauts, how solar flares interfere with the accuracy of GPS navigation systems, why sunspots act as the magnetic engines driving space weather, and the growing dangers of orbital debris in low Earth orbit.
-
-Finally, we tackle a popular myth in our fact-check segment: Can major solar flares directly trigger earthquakes on Earth? Ollie breaks down the science to explain why this widespread claim is entirely false.
-
-For real-time space weather alerts, interactive dashboards, and aurora forecasts, visit flarient.com.</description>
-       <pubDate>Thu, 03 Sep 2026 15:19:13 GMT</pubDate>
-       <guid isPermaLink="false">flarient-podcast-2026-09-03</guid>
-       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-03/flarient-podcast-2026-09-03.mp3" length="17705588" type="audio/mpeg"/>
-       <itunes:duration>737</itunes:duration>
-       <itunes:episodeType>daily</itunes:episodeType>
-       <itunes:episode>13</itunes:episode>
-      <itunes:image href='https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-03/cover-2026-09-03.jpg'/>
-       <itunes:summary>In today&apos;s episode, Ollie takes us through a remarkable day in our local cosmos. We discuss the historic, successful launch of NASA&apos;s Nancy Grace Roman Space Telescope aboard a SpaceX Falcon Heavy, beginning its journey to investigate dark energy and search for exoplanets. Alongside this monument of human achievement, a near-Earth asteroid known as 2026 RC made a safe flyby of our planet.
-
-Despite all this activity, the Sun remains remarkably quiet. We dive deep into the daily space weather report, analyzing a Kp index of zero, low solar wind speeds, and what this calm environment means for satellite operations and aurora chasers.
-
-We also explore four brand-new articles from the Flarient blog. Learn how solar particle events pose severe radiation risks to spacecraft and astronauts, how solar flares interfere with the accuracy of GPS navigation systems, why sunspots act as the magnetic engines driving space weather, and the growing dangers of orbital debris in low Earth orbit.
-
-Finally, we tackle a popular myth in our fact-check segment: Can major solar flares directly trigger earthquakes on Earth? Ollie breaks down the science to explain why this widespread claim is entirely false.
-
-For real-time space weather alerts, interactive dashboards, and aurora forecasts, visit flarient.com.</itunes:summary>
-     </item>
   </channel>
 </rss>
