@@ -2,13 +2,12 @@ name: Podcast Health Check
 
 on:
   schedule:
-    - cron: '0 10 * * *'  # Daily at 10:00 UTC (3.5h after the 06:30 podcast generation)
+    - cron: '0 8 * * *'  # Daily at 08:00 UTC (1.5h after the 06:30 podcast generation)
   workflow_dispatch:
 
 permissions:
   contents: read
   issues: write
-  actions: write
 
 jobs:
   health-check:
@@ -36,23 +35,14 @@ jobs:
             echo "status=healthy" >> $GITHUB_OUTPUT
           fi
 
-      - name: Auto-retrigger podcast if stale
-        if: steps.check.outputs.status == 'stale'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          echo "Podcast is stale — auto-retriggering Daily Podcast Generation..."
-          gh workflow run podcast.yml --ref main -f episode_type=daily
-          echo "Workflow triggered. It will generate today's episode."
-
       - name: Create alert issue if stale
         if: steps.check.outputs.status == 'stale'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh issue create \
-            --title "Podcast health check: auto-retriggered (last release ${{ steps.check.outputs.age_hours }}h ago)" \
-            --body "The daily podcast was expected at 06:30 UTC but the latest GitHub Release is ${{ steps.check.outputs.age_hours }} hours old. The podcast generation workflow has been auto-retriggered. If this issue persists, check the Actions tab for failed workflow runs."
+            --title "Podcast health check: no recent episode (last release ${{ steps.check.outputs.age_hours }}h ago)" \
+            --body "The daily podcast was expected at 06:30 UTC but the latest GitHub Release is ${{ steps.check.outputs.age_hours }} hours old. Check the Actions tab for failed workflow runs."
 
       - name: Report
         run: |
