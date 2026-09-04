@@ -134,17 +134,14 @@ def research_breaking_news():
 
 Search the web for the MOST SIGNIFICANT space exploration, astronomy, and aerospace news from the LAST 24 HOURS ONLY (since {yesterday}).
 
-CRITICAL ACCURACY RULES:
-- Do NOT report specific launch dates, launch preparations, or mission status for any telescope, probe, or spacecraft UNLESS you find an OFFICIAL press release from NASA, ESA, JAXA, or the operating organization dated within the last 24 hours.
-- The Nancy Grace Roman Space Telescope is NOT launching in September 2026. Do NOT mention it unless you find an official NASA press release from the last 24 hours about a specific milestone.
-- Do NOT speculate about upcoming launches. Only report launches that have ALREADY HAPPENED or are officially scheduled with a specific date in the next 24 hours.
-- If you are unsure whether a launch happened or is scheduled, DO NOT include it.
-
 Find and report on:
 
 1. BREAKING SPACE NEWS: Any major announcements, discoveries, or events from the last 24 hours. Prioritize primary sources: NASA, ESA, JAXA, SpaceNews, Space.com, CelesTrak, Orbital Radar, and official university/observatory press releases.
 
-2. ORBITAL LAUNCHES: Any orbital launches that ALREADY HAPPENED in the last 24 hours. Include: provider (e.g. SpaceX, Rocket Lab), payload, launch site, and outcome. Do NOT include upcoming launches unless they have a confirmed specific date in the next 24 hours.
+2. ORBITAL LAUNCHES: Any orbital launches, dockings, or major spacecraft maneuvers that:
+   - Happened in the last 24 hours, OR
+   - Are scheduled for the next 24 hours
+   Include: provider (e.g. SpaceX, Rocket Lab), payload, launch site, and outcome/status.
 
 3. PEER-REVIEWED DISCOVERY: One recent peer-reviewed finding or official discovery from astrophysics, astronomy, or planetary science. Translate the academic jargon into an accessible, engaging explanation.
 
@@ -153,9 +150,21 @@ For each item, provide:
 - A 2-3 sentence summary with key facts
 - The source (NASA, ESA, SpaceNews, etc.)
 - The date/time if available
-- A confidence note: "CONFIRMED" if from an official primary source, "UNCONFIRMED" if from secondary sources
 
-IMPORTANT: Only include news from the last 24 hours. Do NOT include older news. If you cannot find something in a category, say "No significant news in this category in the last 24 hours."
+CRITICAL ACCURACY RULES — VIOLATING THESE IS UNACCEPTABLE:
+
+KNOWN MISSION TIMELINES (as of {today}):
+- Nancy Grace Roman Space Telescope: Scheduled for launch in MAY 2027. It is NOT launching in September 2026. Any web results about it "standing ready at Kennedy", "completing pre-launch checks", or "preparing for a weekend launch" are OUTDATED or SPECULATIVE — EXCLUDE THEM ENTIRELY.
+- Artemis II crewed lunar flyby: Scheduled for 2026 but NO specific launch date has been confirmed for September 2026. Only report if an official NASA press release from the last 24 hours confirms a specific date.
+- Europa Clipper: Launched October 2024, arrives at Jupiter 2030. Do NOT report as "launching" — it is already en route.
+- Hera mission: Launched October 2024, arrives at Didymos 2026. Do NOT report as "launching".
+- JUICE (ESA): Launched April 2023, arrives at Jupiter 2031. Do NOT report as "launching".
+
+LAUNCH REPORTING RULES:
+- Do NOT report on ANY mission as "preparing for launch", "standing ready", "completing checks", or "scheduled for launch" unless you can cite an OFFICIAL NASA/ESA/JAXA press release from the last 24 hours with a SPECIFIC confirmed date.
+- If a web search result describes a future mission as "ready" or "preparing" but does not cite a specific confirmed launch date within the next 7 days from an official source, EXCLUDE IT.
+- When in doubt about whether a launch is actually happening, EXCLUDE the item rather than risk reporting false information.
+- Only include news from the last 24 hours. Do NOT include older news. If you cannot find something in a category, say "No significant news in this category in the last 24 hours."
 
 Format your response as plain text with clear sections."""
 
@@ -384,7 +393,7 @@ PODCAST STRUCTURE:
 
 3. THIS DAY IN SPACE WEATHER HISTORY (60-90 seconds, ~100-150 words): A SHORT, ENTERTAINING segment about a historical space weather event that happened on this date. Keep it brief and fun — like a "on this day in history" radio segment. Use the provided This Day in History data. If no data is available, skip this segment.
 
-4. BREAKING NEWS (5-7 minutes, ~800-1000 words): Cover the most significant breaking space exploration, astronomy, and aerospace news from the LAST 24 HOURS. Use the BREAKING NEWS FROM WEB SEARCH data as the PRIMARY SOURCE. Prioritize primary sources: NASA, ESA, JAXA, SpaceNews, Space.com, CelesTrak, Orbital Radar, and official university/observatory press releases. Discuss what happened, why it matters, and who it affects. This is the LEAD STORY section — make it engaging and newsy. CRITICAL: Do NOT mention specific launch dates, launch preparations, or mission status for any telescope or spacecraft unless the web search data explicitly contains a CONFIRMED note from an official source. Never claim a telescope or spacecraft is "launching soon", "ready for launch", or "preparing for lift-off" unless the data explicitly says so.
+4. BREAKING NEWS (5-7 minutes, ~800-1000 words): Cover the most significant breaking space exploration, astronomy, and aerospace news from the LAST 24 HOURS. Use the BREAKING NEWS FROM WEB SEARCH data as the PRIMARY SOURCE. Prioritize primary sources: NASA, ESA, JAXA, SpaceNews, Space.com, CelesTrak, Orbital Radar, and official university/observatory press releases. Discuss what happened, why it matters, and who it affects. This is the LEAD STORY section — make it engaging and newsy.
 
 5. LAUNCH REPORT (3-5 minutes, ~500-700 words): Detail any orbital launches, dockings, or major spacecraft maneuvers from the last 24 hours or scheduled for the next 24 hours. Include: provider (e.g. SpaceX, Rocket Lab), payload, launch site, and outcome/status. If no launches, mention that briefly and move on.
 
@@ -502,32 +511,31 @@ def validate_script(script, content):
         for m in matches:
             issues.append(f"DATE HALLUCINATION: '{m}' — verify this event is actually happening")
 
-    # Pattern 2: Missions/telescopes mentioned with launch-related language
-    # This catches hallucinated launch claims even if the mission appears in web search data
+    # Pattern 2: Missions/telescopes mentioned but not in source data
     known_missions = [
         "roman telescope", "roman space telescope", "nancy grace roman",
         "jwst", "james webb", "webb telescope",
         "artemis", "euclid", "psyche", "osiris-rex",
         "europa clipper", "hera", "juice",
     ]
-    launch_language = [
-        "launch", "lift-off", "liftoff", "blast off", "blasting off",
-        "pre-launch", "pre launch", "countdown", "ready for launch",
-        "standing ready", "standing tall", "fully assembled",
-        "scheduled for", "set to launch", "due to launch",
-        "launch window", "launch pad", "launch preparations",
-    ]
     for mission in known_missions:
+        if mission in text_lower and mission not in source_text:
+            issues.append(f"UNSOURCED MISSION: '{mission}' mentioned but not in source data — likely hallucination")
+
+    # Pattern 3: KNOWN FUTURE missions with launch language — ALWAYS a hallucination
+    # regardless of whether the web search returned it (web search can hallucinate too).
+    # These missions have NOT launched as of 2026 — any launch/prep language is false.
+    future_missions_launch = {
+        "roman telescope": ["launch", "lift-off", "liftoff", "pre-launch", "countdown", "ready", "standing", "assembled", "kennedy", "deploy", "blast", "weekend", "tower", "pad"],
+        "roman space telescope": ["launch", "lift-off", "liftoff", "pre-launch", "countdown", "ready", "standing", "assembled", "kennedy", "deploy", "blast", "weekend", "tower", "pad"],
+        "nancy grace roman": ["launch", "lift-off", "liftoff", "pre-launch", "countdown", "ready", "standing", "assembled", "kennedy", "deploy", "blast", "weekend", "tower", "pad"],
+    }
+    for mission, launch_words in future_missions_launch.items():
         if mission in text_lower:
-            # Check if any launch language appears within 200 chars of the mission mention
-            for match in re.finditer(mission, text_lower):
-                start = max(0, match.start() - 200)
-                end = min(len(text_lower), match.end() + 200)
-                context = text_lower[start:end]
-                for launch_term in launch_language:
-                    if launch_term in context:
-                        issues.append(f"LAUNCH CLAIM: '{mission}' mentioned with '{launch_term}' — verify this launch is actually happening today from official sources")
-                        break
+            for word in launch_words:
+                if word in text_lower:
+                    issues.append(f"FUTURE MISSION HALLUCINATION: '{mission}' mentioned with '{word}' — this mission is NOT launching in September 2026. STRIP ALL REFERENCES.")
+                    break
 
     return issues
 
@@ -1154,16 +1162,43 @@ def main():
         log(f"  ⚠ ACCURACY VALIDATION: {len(issues)} issue(s) found:")
         for issue in issues:
             log(f"    - {issue}")
-        unsourced = [i for i in issues if "UNSOURCED" in i or "LAUNCH CLAIM" in i]
-        if unsourced:
-            log(f"  ⚠ Critical: {len(unsourced)} hallucination(s) — regenerating with stricter guardrails...")
+        critical = [i for i in issues if "UNSOURCED" in i or "FUTURE MISSION" in i]
+        if critical:
+            log(f"  ⚠ Critical: {len(critical)} hallucination(s) — cleaning breaking news and regenerating...")
+            # Strip hallucinated mission content from breaking news so regeneration
+            # doesn't see the same bad data and reproduce the same hallucination.
+            cleaned_breaking = breaking_news or ""
+            for mission_phrase in ["roman telescope", "roman space telescope", "nancy grace roman"]:
+                # Remove any sentence/paragraph containing the hallucinated mission
+                cleaned_breaking = re.sub(
+                    r'[^\n]*' + re.escape(mission_phrase) + r'[^\n]*',
+                    '[REMOVED — hallucinated mission reference]',
+                    cleaned_breaking,
+                    flags=re.IGNORECASE,
+                )
+            content["_breaking_news"] = cleaned_breaking
             content["_accuracy_warnings"] = issues
-            script = generate_script(content, EPISODE_TYPE, breaking_news)
+            script = generate_script(content, EPISODE_TYPE, cleaned_breaking)
             issues2 = validate_script(script, content)
             if issues2:
-                log(f"  ⚠ Still {len(issues2)} issue(s) after regeneration — proceeding but flagging")
+                log(f"  ⚠ Still {len(issues2)} issue(s) after regeneration — stripping offending segments")
                 for issue in issues2:
                     log(f"    - {issue}")
+                # Last resort: strip segments that mention hallucinated missions
+                hallucinated_missions = ["roman telescope", "roman space telescope", "nancy grace roman"]
+                original_count = len(script.get("segments", []))
+                script["segments"] = [
+                    s for s in script.get("segments", [])
+                    if not any(m in s.get("text", "").lower() for m in hallucinated_missions)
+                ]
+                stripped = original_count - len(script["segments"])
+                log(f"  Stripped {stripped} segment(s) containing hallucinated mission references")
+                # Re-validate after stripping
+                issues3 = validate_script(script, content)
+                if issues3:
+                    log(f"  ⚠ Still {len(issues3)} issue(s) after stripping — proceeding with cleaned script")
+                else:
+                    log(f"  ✓ Stripping resolved all hallucination issues")
             else:
                 log(f"  ✓ Regeneration passed accuracy validation")
     else:
