@@ -35,7 +35,7 @@ permissions:
 
 concurrency:
   group: podcast-generation
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   generate-podcast:
@@ -64,6 +64,14 @@ jobs:
         with:
           python-version: '3.12'
           cache: 'pip'
+
+      - name: Cache apt packages
+        uses: actions/cache@v4
+        with:
+          path: /var/cache/apt/archives
+          key: apt-ffmpeg-${{ runner.os }}
+          restore-keys: |
+            apt-ffmpeg-
 
       - name: Install ffmpeg
         run: |
