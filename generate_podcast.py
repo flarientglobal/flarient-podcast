@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Daily Space Podcast by Flarient â Generator
+Daily Space Podcast by Flarient — Generator
 - Episode types: daily (30min, Mon-Sat), weekly (45min, Sunday), breaking (30min, significant events)
 - Fetches content from Flarient API (live data, blog posts, events, fact checks, daily brief, This Day in History)
 - Deduplication: tracks covered content IDs in covered_content.json to avoid repeats
@@ -20,12 +20,12 @@ from pathlib import Path
 import requests
 import edge_tts
 
-# ââ Configuration ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# ── Configuration ──────────────────────────────────────────────────────────
 FLARIENT_API = os.environ.get("FLARIENT_API_URL", "https://flarient.com").rstrip("/")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
 REPO = os.environ.get("GITHUB_REPOSITORY", "")
 GH_TOKEN = os.environ.get("GITHUB_TOKEN", "")
-EPISODE_DATE = os.environ.get("EPISODE_DATE") or datetime.date.today().isoformat()
+EPISODE_DATE = datetime.date.today().isoformat()
 EPISODE_TAG = f"podcast-{EPISODE_DATE}"
 MP3_FILENAME = f"flarient-podcast-{EPISODE_DATE}.mp3"
 COVER_FILENAME = f"cover-{EPISODE_DATE}.jpg"
@@ -45,7 +45,7 @@ if EPISODE_TYPE == "auto":
 # Ollie is the podcast host persona. The TTS voice is en-GB-RyanNeural because
 # en-GB-OllieMultilingualNeural is an Azure-only voice not available through
 # the edge-tts (Edge browser) free endpoint. Ryan is a warm British English male voice.
-HOST_VOICE = "en-GB-RyanNeural"  # Single host â Ollie (consistent every episode)
+HOST_VOICE = "en-GB-RyanNeural"  # Single host — Ollie (consistent every episode)
 
 # Podcast metadata
 PODCAST_TITLE = "Daily Space Podcast by Flarient"
@@ -55,7 +55,7 @@ PODCAST_CATEGORY = "Science"
 PODCAST_COVER = "https://flarientglobal.github.io/flarient-podcast/podcast-cover.png"
 PODCAST_LINK = "https://flarient.com/podcast"
 
-# Gemini model fallback chain (free tier) â updated to current models.
+# Gemini model fallback chain (free tier) — updated to current models.
 # Runtime discovery (below) will override this list with live API data when available,
 # making this resilient to future deprecations.
 GEMINI_MODELS = ["gemini-3.6-flash", "gemini-3.5-flash", "gemini-2.5-flash"]
@@ -65,7 +65,7 @@ def log(msg):
     print(f"[PODCAST] {msg}", flush=True)
 
 
-# ââ Runtime Gemini model discovery âââââââââââââââââââââââââââââââââââââââââ
+# ── Runtime Gemini model discovery ─────────────────────────────────────────
 # Lists available models from the API and picks flash variants (fast + free tier).
 # This prevents failures when Google deprecates specific model versions.
 def discover_gemini_models(client):
@@ -98,7 +98,7 @@ def discover_gemini_models(client):
     return None
 
 
-# ââ 0. Check if episode already exists (one per day max) âââââââââââââââââââ
+# ── 0. Check if episode already exists (one per day max) ───────────────────
 def release_exists():
     env = os.environ.copy()
     env["GH_TOKEN"] = GH_TOKEN
@@ -106,7 +106,7 @@ def release_exists():
     return result.returncode == 0
 
 
-# ââ 1. Fetch content from Flarient API âââââââââââââââââââââââââââââââââââââ
+# ── 1. Fetch content from Flarient API ─────────────────────────────────────
 def fetch_content():
     log("Fetching content from Flarient API...")
     resp = requests.get(f"{FLARIENT_API}/api/functions/getPodcastContent", timeout=30)
@@ -118,7 +118,7 @@ def fetch_content():
     return data
 
 
-# ââ 1b. Deduplication: load/save covered content IDs ââââââââââââââââââââââ
+# ── 1b. Deduplication: load/save covered content IDs ──────────────────────
 def load_covered():
     path = REPO_DIR / "covered_content.json"
     if path.exists():
@@ -151,7 +151,7 @@ def filter_covered(content, covered):
     return content
 
 
-# ââ 2. Generate conversational script with Gemini ââââââââââââââââââââââââââ
+# ── 2. Generate conversational script with Gemini ──────────────────────────
 def build_prompt(content, episode_type):
     live = content.get("live_data") or {}
     events = content.get("events") or []
@@ -217,7 +217,6 @@ def build_prompt(content, episode_type):
         brief_summary += f"- Title: {daily_brief.get('title', '')}\n"
         brief_summary += f"  Subtitle: {daily_brief.get('subtitle', '')}\n"
         brief_summary += f"  Description: {daily_brief.get('description', '')}\n"
-        brief_summary += f"  Freshness: {daily_brief.get('freshness_note', 'today')}\n"
         if daily_brief.get('intro'):
             brief_summary += f"  Intro: {daily_brief['intro'][:1500]}\n"
         if daily_brief.get('implications'):
@@ -243,12 +242,12 @@ def build_prompt(content, episode_type):
 WEEKLY ROUNDUP MODE (45 minutes, ~7,000 words):
 This is a SUNDAY WEEKLY ROUNDUP episode. Instead of the daily format, focus on the TOP 5 space weather events of the past week.
 Structure:
-1. HOOK (30-60s) â tease the #1 story of the week
-2. BRIEF INTRO â mention this is the weekly roundup
-3. THIS DAY IN HISTORY (60-90s) â short entertaining cold-open fact
-4. TOP 5 STORIES OF THE WEEK (30 min) â rank the week's biggest space weather events, discuss each in depth (~5-6 min each)
-5. WEEK AHEAD (3-5 min) â what to watch for next week
-6. FACT CHECKS (3-5 min) â cover any fact checks from the week
+1. HOOK (30-60s) — tease the #1 story of the week
+2. BRIEF INTRO — mention this is the weekly roundup
+3. THIS DAY IN HISTORY (60-90s) — short entertaining cold-open fact
+4. TOP 5 STORIES OF THE WEEK (30 min) — rank the week's biggest space weather events, discuss each in depth (~5-6 min each)
+5. WEEK AHEAD (3-5 min) — what to watch for next week
+6. FACT CHECKS (3-5 min) — cover any fact checks from the week
 7. CTAs (1-2 min)
 Make it feel like a weekly review show, not a daily report.
 """
@@ -258,11 +257,11 @@ BREAKING EVENT MODE (30 minutes, ~4,500-5,000 words):
 A significant space weather event is happening RIGHT NOW (G4+ geomagnetic storm or X-class solar flare).
 Lead with the breaking event as the TOP story (first 5-7 minutes), then continue with regular daily content.
 Structure:
-1. HOOK (30-60s) â lead with the breaking event dramatically
-2. BRIEF INTRO â mention this is a breaking special
-3. BREAKING EVENT (5-7 min) â detailed coverage of the significant event
-4. THIS DAY IN HISTORY (60-90s) â short entertaining cold-open fact
-5. SPACE WEATHER REPORT (3-5 min) â current conditions
+1. HOOK (30-60s) — lead with the breaking event dramatically
+2. BRIEF INTRO — mention this is a breaking special
+3. BREAKING EVENT (5-7 min) — detailed coverage of the significant event
+4. THIS DAY IN HISTORY (60-90s) — short entertaining cold-open fact
+5. SPACE WEATHER REPORT (3-5 min) — current conditions
 6. BLOG ARTICLES (3-5 min)
 7. SPACE EVENTS (3-5 min)
 8. FACT CHECKS (2-3 min)
@@ -275,12 +274,27 @@ DAILY MODE (30 minutes, ~4,500-5,000 words):
 Standard daily episode covering all content areas.
 """
 
+    # Accuracy warnings from previous failed attempt (if regenerating)
+    accuracy_warnings = ""
+    if content.get("_accuracy_warnings"):
+        accuracy_warnings = "\n\n⚠ PREVIOUS ATTEMPT FAILED ACCURACY CHECK — AVOID THESE ERRORS:\n"
+        for w in content["_accuracy_warnings"]:
+            accuracy_warnings += f"- {w}\n"
+
     return f"""You are generating a podcast episode for "Daily Space Podcast by Flarient", a space weather and astronomy podcast.
 
+CRITICAL ACCURACY RULES — VIOLATING THESE IS UNACCEPTABLE:
+- TODAY'S DATE IS {EPISODE_DATE}. Every date reference must be checked against this date.
+- ONLY discuss events, articles, missions, launches, and facts that appear in the CONTENT DATA below. If something is not in the provided data, DO NOT mention it.
+- NEVER fabricate or hallucinate content from your training data. Missions like the Roman Telescope, JWST, Artemis, etc. must ONLY be mentioned if they appear in the provided content data.
+- When discussing any event with a date, verify whether that date is in the PAST, TODAY, or FUTURE relative to {EPISODE_DATE}.
+- NEVER describe a past event as "upcoming", "due to be launched", "scheduled for today", or "launching soon". If a launch already happened, say it happened.
+- If you are unsure whether an event has already happened or is yet to happen, do not mention it at all.
+{accuracy_warnings}
 {type_instructions}
 
 SINGLE HOST (consistent every episode):
-- Ollie (male, British accent) â a knowledgeable and engaging space weather expert who explains the science in an accessible, conversational way. Ollie hosts the show alone, speaking directly to the listener as if sharing a fascinating story with a friend.
+- Ollie (male, British accent) — a knowledgeable and engaging space weather expert who explains the science in an accessible, conversational way. Ollie hosts the show alone, speaking directly to the listener as if sharing a fascinating story with a friend.
 
 PODCAST STRUCTURE:
 
@@ -297,20 +311,20 @@ PODCAST STRUCTURE:
    Then Ollie adds: "Let's get into what the Sun is doing today."
    This intro must be word-for-word the same every episode (only the date changes).
 
-3. THIS DAY IN SPACE WEATHER HISTORY (60-90 seconds, ~100-150 words): A SHORT, ENTERTAINING segment about a historical space weather event that happened on this date. Keep it brief and fun â like a "on this day in history" radio segment. Use the provided This Day in History data. If no data is available, skip this segment.
+3. THIS DAY IN SPACE WEATHER HISTORY (60-90 seconds, ~100-150 words): A SHORT, ENTERTAINING segment about a historical space weather event that happened on this date. Keep it brief and fun — like a "on this day in history" radio segment. Use the provided This Day in History data. If no data is available, skip this segment.
 
 4. SPACE WEATHER REPORT (5-7 minutes, ~800-1000 words): Cover today's live space weather data conversationally. Discuss the Kp index, solar wind, Bz, flare activity, and aurora forecast. Explain what the numbers mean in plain English. Ollie should ask rhetorical questions and then answer them, as if thinking out loud.
 
 5. BLOG ARTICLES (5-7 minutes, ~800-1000 words): Discuss the day's blog articles. Summarize key points, add insights, and share personal takeaways. Make it conversational, not a reading of the article.
 
-6. SPACE EVENTS (5-7 minutes, ~800-1000 words): Cover recent space events â geomagnetic storms, solar flares, asteroid approaches, etc. Discuss what happened, why it matters, and who's affected.
+6. SPACE EVENTS (5-7 minutes, ~800-1000 words): Cover recent space events — geomagnetic storms, solar flares, asteroid approaches, etc. Discuss what happened, why it matters, and who's affected.
 
 7. FACT CHECKS (3-5 minutes, ~500-700 words): Cover recent fact checks. Discuss the claims and verdicts. Explain why the claim is true, false, or somewhere in between.
 
 8. DAILY BRIEF (3-5 minutes, ~500-700 words): Discuss the daily highlight/brief article. Cover the key points and implications.
 
 9. CALL TO ACTIONS (1-2 minutes, ~150-200 words): Include these CTAs:
-   - Visit flarient.com for live space weather data, real time Kp index, aurora forecasts, and interactive dashboards â it is the official website of Flarient and the best place to see what is happening right now
+   - Visit flarient.com for live space weather data, real time Kp index, aurora forecasts, and interactive dashboards — it is the official website of Flarient and the best place to see what is happening right now
    - Subscribe to the podcast on your favorite platform so you never miss an episode
    - Visit flarient.com/podcast for all episodes and show notes
    - Follow Flarient on social media for real time space weather alerts
@@ -318,12 +332,12 @@ PODCAST STRUCTURE:
    - Download the Flarient app for push notifications when geomagnetic storms hit
 
 IMPORTANT RULES:
-- Make it CONVERSATIONAL and NATURAL â Ollie is a single host speaking directly to the listener. Use a warm, engaging tone as if talking to a friend. Add personal insights, rhetorical questions, and humor.
-- Do NOT just read facts â discuss them, explain them, make them accessible to a general audience
+- Make it CONVERSATIONAL and NATURAL — Ollie is a single host speaking directly to the listener. Use a warm, engaging tone as if talking to a friend. Add personal insights, rhetorical questions, and humor.
+- Do NOT just read facts — discuss them, explain them, make them accessible to a general audience
 - Use varied sentence structures and natural speech patterns (fillers like "right", "exactly", "I mean" are OK sparingly)
 - Include moments of personality, humor, and genuine curiosity
-- The HOOK must be ORIGINAL and DIFFERENT every episode â never repeat the same opening
-- The THIS DAY IN HISTORY segment must be SHORT (60-90 seconds max) and ENTERTAINING â not a dry history lesson
+- The HOOK must be ORIGINAL and DIFFERENT every episode — never repeat the same opening
+- The THIS DAY IN HISTORY segment must be SHORT (60-90 seconds max) and ENTERTAINING — not a dry history lesson
 - Each segment should flow naturally into the next
 - Aim for approximately 4,500-5,000 words total for daily (30 min) or 6,500-7,000 words for weekly (45 min)
 
@@ -332,9 +346,9 @@ CONTENT DATA:
 
 Respond with a JSON object with this exact structure:
 {{
-  "title": "Episode title (max 60 chars, SEO-optimised and click-attractive. Front-load the key topic or most compelling fact. Use active language. No colons at the start. Example: Solar Storm Hits Earth — What It Means for You)",
+  "title": "Episode title (max 60 chars, SEO-optimised and click-attractive. Front-load the key topic or most compelling fact. Use active language. No colons at the start. Example: 'Solar Storm Hits Earth — What It Means for You')",
   "hook": "The full 30-60 second opening hook (as a single segment from Ollie)",
-  "show_notes": "Write an in-depth description of 300-500 words summarising the episode key topics, discussions, and insights. Explain what the listener will learn, the main stories covered, and why they matter. Include links to any articles, events, or fact checks mentioned. Do NOT include timestamps — they are inaccurate. Format as plain text with line breaks.",
+  "show_notes": "Write an in-depth description of 300-500 words summarising the episode's key topics, discussions, and insights. Explain what the listener will learn, the main stories covered, and why they matter. Include links to any articles, events, or fact checks mentioned. Do NOT include timestamps — they are inaccurate. Format as plain text with line breaks.",
   "segments": [
     {{"speaker": "A", "text": "dialogue text for this segment", "section": "hook|intro|this_day|space_weather|articles|events|fact_checks|brief|ctas"}},
     ...
@@ -387,10 +401,44 @@ def generate_script(content, episode_type):
     raise Exception("All Gemini models failed. Check GEMINI_API_KEY and quota.")
 
 
-# ââ 2b. Fix domain pronunciation for TTS âââââââââââââââââââââââââââââââââââ
+# ── 2a. Validate script for date hallucinations ───────────────────────────
+def validate_script(script, content):
+    """Check the generated script for date-related hallucinations and
+    mentions of missions/events not present in the source data."""
+    issues = []
+    full_text = " ".join(s.get("text", "") for s in script.get("segments", []))
+    text_lower = full_text.lower()
+    source_text = json.dumps(content).lower()
+
+    # Pattern 1: "due to be launched today", "launching soon", "scheduled for today"
+    hallucination_patterns = [
+        r'(?:due to be|scheduled to be|set to be|about to be).{0,40}(?:launch|liftoff|deploy|release)',
+        r'(?:launching|lifting off|blasting off).{0,20}(?:today|tomorrow|this week|soon)',
+        r'(?:today|tomorrow).{0,30}(?:launch|launching|liftoff|blast)',
+    ]
+    for pattern in hallucination_patterns:
+        matches = re.findall(pattern, text_lower)
+        for m in matches:
+            issues.append(f"DATE HALLUCINATION: '{m}' — verify this event is actually happening")
+
+    # Pattern 2: Missions/telescopes mentioned but not in source data
+    known_missions = [
+        "roman telescope", "roman space telescope", "nancy grace roman",
+        "jwst", "james webb", "webb telescope",
+        "artemis", "euclid", "psyche", "osiris-rex",
+        "europa clipper", "hera", "juice",
+    ]
+    for mission in known_missions:
+        if mission in text_lower and mission not in source_text:
+            issues.append(f"UNSOURCED MISSION: '{mission}' mentioned but not in source data — likely hallucination")
+
+    return issues
+
+
+# ── 2b. Fix domain pronunciation for TTS ───────────────────────────────────
 def fix_domain_pronunciation(text):
     """Replace domain URLs with phonetic spelling so edge-tts reads them correctly.
-    The TTS engine misreads 'flarient.com' â writing 'flarient dot com' forces correct pronunciation."""
+    The TTS engine misreads 'flarient.com' — writing 'flarient dot com' forces correct pronunciation."""
     if not text:
         return text
     text = re.sub(r'flarient\.com', 'flarient dot com', text, flags=re.IGNORECASE)
@@ -398,7 +446,7 @@ def fix_domain_pronunciation(text):
     return text
 
 
-# ââ 3. Synthesize speech with edge-tts âââââââââââââââââââââââââââââââââââââ
+# ── 3. Synthesize speech with edge-tts ─────────────────────────────────────
 async def synth_segment(text, voice, output_path):
     communicate = edge_tts.Communicate(text, voice)
     await communicate.save(output_path)
@@ -421,7 +469,7 @@ async def synthesize_all(segments):
     return segment_files
 
 
-# ââ 4. Generate intro/outro jingles with ffmpeg âââââââââââââââââââââââââââ
+# ── 4. Generate intro/outro jingles with ffmpeg ───────────────────────────
 def generate_jingle(output_path, ascending=True):
     freqs = [523, 659, 784, 1047] if ascending else [1047, 784, 659, 523]
     inputs = []
@@ -463,7 +511,7 @@ def get_jingles():
     return intro_path, outro_path
 
 
-# ââ 4b. Generate background music bed âââââââââââââââââââââââââââââââââââââ
+# ── 4b. Generate background music bed ─────────────────────────────────────
 def generate_music_bed(output_path, duration_sec):
     """Generate a royalty-free ambient music bed with ffmpeg (sine waves + reverb)."""
     log("  Generating background music bed...")
@@ -483,7 +531,7 @@ def generate_music_bed(output_path, duration_sec):
     ], check=True, capture_output=True)
 
 
-# ââ 4c. Generate per-episode cover art with Pillow ââââââââââââââââââââââââ
+# ── 4c. Generate per-episode cover art with Pillow ────────────────────────
 def generate_cover_art(episode_type, content):
     """Generate a 3000x3000 cover art image with the date, Flarient branding,
     podcast name, and a stylised solar design. No live weather data on the cover."""
@@ -514,7 +562,7 @@ def generate_cover_art(episode_type, content):
         size = random.choice([1, 1, 1, 1, 2, 2, 3])
         draw.ellipse([x-size, y-size, x+size, y+size], fill=(brightness, brightness, brightness))
 
-    # ââ Stylised solar-sun design ââââââââââââââââââââââââââââââââââââââââââ
+    # ── Stylised solar-sun design ──────────────────────────────────────────
     # A warm, detailed sun with corona rays, gradient disk, and prominence flares.
     cx, cy = W // 2, 1050
     sun_r = 260
@@ -529,7 +577,7 @@ def generate_cover_art(episode_type, content):
         draw.ellipse([cx - radius, cy - radius, cx + radius, cy + radius],
                      fill=(min(r_val, 255), min(g_val, 255), min(b_val, 255)))
 
-    # Solar rays â radiating outward from the sun disk
+    # Solar rays — radiating outward from the sun disk
     num_rays = 24
     for i in range(num_rays):
         angle = (2 * math.pi * i) / num_rays
@@ -548,7 +596,7 @@ def generate_cover_art(episode_type, content):
         ray_color = (245, 180, 40) if i % 2 == 0 else (255, 200, 60)
         draw.polygon([(x1, y1), (x2, y2), (x3, y3), (x4, y4)], fill=ray_color)
 
-    # Sun disk â warm gradient (bright centre to darker edge)
+    # Sun disk — warm gradient (bright centre to darker edge)
     for i in range(sun_r, 0, -1):
         t = i / sun_r
         r_val = int(255 - 10 * t)
@@ -556,7 +604,7 @@ def generate_cover_art(episode_type, content):
         b_val = int(80 - 60 * t)
         draw.ellipse([cx - i, cy - i, cx + i, cy + i], fill=(max(r_val, 0), max(g_val, 0), max(b_val, 0)))
 
-    # Solar surface texture â subtle darker patches (sunspots/granulation)
+    # Solar surface texture — subtle darker patches (sunspots/granulation)
     random.seed(EPISODE_DATE + "surface")
     for _ in range(15):
         angle = random.uniform(0, 2 * math.pi)
@@ -566,7 +614,7 @@ def generate_cover_art(episode_type, content):
         ps = random.randint(20, 50)
         draw.ellipse([px - ps, py - ps, px + ps, py + ps], fill=(220, 140, 30))
 
-    # Solar prominences â small flare arcs at the sun's edge
+    # Solar prominences — small flare arcs at the sun's edge
     random.seed(EPISODE_DATE + "prominence")
     for _ in range(4):
         angle = random.uniform(0, 2 * math.pi)
@@ -577,7 +625,7 @@ def generate_cover_art(episode_type, content):
         draw.ellipse([fx - flare_size, fy - flare_size, fx + flare_size, fy + flare_size],
                      fill=(255, 220, 100))
 
-    # ââ Text elements ââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+    # ── Text elements ──────────────────────────────────────────────────────
     # Try to load fonts
     try:
         font_large = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 120)
@@ -600,7 +648,7 @@ def generate_cover_art(episode_type, content):
     draw.rounded_rectangle([bx, by, bx + bw, by + bh], radius=20, fill=badge_color)
     draw.text((bx + 30, by + 10), badge_text, fill="white", font=font_medium)
 
-    # Date â formatted as "25 August, 2026" for readability
+    # Date — formatted as "25 August, 2026" for readability
     date_obj = datetime.datetime.strptime(EPISODE_DATE, "%Y-%m-%d")
     date_text = date_obj.strftime("%-d %B, %Y")
     bbox = draw.textbbox((0, 0), date_text, font=font_large)
@@ -622,7 +670,7 @@ def generate_cover_art(episode_type, content):
     return cover_path
 
 
-# ââ 5. Master audio with ffmpeg âââââââââââââââââââââââââââââââââââââââââââ
+# ── 5. Master audio with ffmpeg ───────────────────────────────────────────
 def master_audio(segment_files, script, output_path):
     log("Mastering audio...")
 
@@ -644,7 +692,7 @@ def master_audio(segment_files, script, output_path):
     #    silenceremove: strips pauses > 1.0s below -50dB (keeps natural speech pauses)
     #    loudnorm: broadcast standard -16 LUFS
     log("  Removing silence, normalizing loudness, and adding metadata...")
-    title = script.get("title", f"Flarient Podcast â {EPISODE_DATE}")
+    title = script.get("title", f"Flarient Podcast — {EPISODE_DATE}")
     subprocess.run([
         "ffmpeg", "-y", "-i", dialogue_raw,
         "-af", "silenceremove=stop_periods=-1:stop_duration=1.0:stop_threshold=-50dB,loudnorm=I=-16:TP=-1.5:LRA=11",
@@ -716,9 +764,9 @@ def get_duration(filepath):
     return int(float(result.stdout.strip()))
 
 
-# ââ 5b. Loudness check ââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# ── 5b. Loudness check ────────────────────────────────────────────────────
 def check_loudness(filepath):
-    """Verify the final audio is within Â±2 LUFS of -16."""
+    """Verify the final audio is within ±2 LUFS of -16."""
     log("  Checking loudness...")
     result = subprocess.run([
         "ffmpeg", "-i", filepath,
@@ -731,22 +779,22 @@ def check_loudness(filepath):
     match = re.search(r'"input_i"\s*:\s*"([\-\d.]+)"', stderr)
     if match:
         loudness = float(match.group(1))
-        log(f"  Integrated loudness: {loudness:.1f} LUFS (target: -16 Â±2)")
+        log(f"  Integrated loudness: {loudness:.1f} LUFS (target: -16 ±2)")
         if abs(loudness - (-16)) > 2:
-            log(f"  WARNING: Loudness {loudness:.1f} LUFS is outside Â±2 LUFS of target -16!")
+            log(f"  WARNING: Loudness {loudness:.1f} LUFS is outside ±2 LUFS of target -16!")
             return False
-        log("  Loudness check passed â")
+        log("  Loudness check passed ✓")
         return True
     log("  Could not measure loudness (skipping check)")
     return True
 
 
-# ââ 5c. Save transcript ââââââââââââââââââââââââââââââââââââââââââââââââââ
+# ── 5c. Save transcript ──────────────────────────────────────────────────
 def save_transcript(script, output_path):
     """Save the full dialogue text as a transcript file."""
     log("  Saving transcript...")
     segments = script.get("segments", [])
-    lines = [f"Flarient Daily Space Weather â {EPISODE_DATE}", ""]
+    lines = [f"Flarient Daily Space Weather — {EPISODE_DATE}", ""]
     lines.append(f"Title: {script.get('title', 'Untitled')}", )
     lines.append(f"Episode Type: {EPISODE_TYPE}", )
     lines.append("", )
@@ -762,10 +810,10 @@ def save_transcript(script, output_path):
     log(f"  Transcript saved: {output_path}")
 
 
-# ââ 6. Create GitHub Release ââââââââââââââââââââââââââââââââââââââââââââââ
+# ── 6. Create GitHub Release ──────────────────────────────────────────────
 def create_release(mp3_path, script, cover_path=None, transcript_path=None):
     log("Creating GitHub Release...")
-    title = script.get("title", f"Flarient Podcast â {EPISODE_DATE}")
+    title = script.get("title", f"Flarient Podcast — {EPISODE_DATE}")
     type_prefix = {"weekly": "[WEEKLY] ", "breaking": "[BREAKING] "}.get(EPISODE_TYPE, "")
     full_title = f"{type_prefix}{title}"
     notes = f"""Episode Type: {EPISODE_TYPE.upper()}
@@ -812,7 +860,7 @@ Date: {EPISODE_DATE}
     return mp3_url, cover_url, transcript_url
 
 
-# ââ 7. Update podcast.xml RSS feed ââââââââââââââââââââââââââââââââââââââââ
+# ── 7. Update podcast.xml RSS feed ────────────────────────────────────────
 def escape_xml(text):
     if not text:
         return ""
@@ -830,7 +878,7 @@ def update_rss_feed(script, mp3_url, cover_url, duration_sec, file_size):
     episode_guid = f"flarient-podcast-{EPISODE_DATE}"
     pub_date = datetime.datetime.now(datetime.timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
     type_prefix = {"weekly": "[WEEKLY] ", "breaking": "[BREAKING] "}.get(EPISODE_TYPE, "")
-    full_title = f"{type_prefix}{script.get('title', f'Daily Space Podcast â {EPISODE_DATE}')}"
+    full_title = f"{type_prefix}{script.get('title', f'Daily Space Podcast — {EPISODE_DATE}')}"
     # Generate title-based slug for the episode URL
     episode_slug = re.sub(r'[^a-z0-9 \s-]', '', script.get('title', '').lower()).strip()
     episode_slug = re.sub(r'[\s-]+', '-', episode_slug).strip('-')[:80] or EPISODE_DATE
@@ -942,7 +990,7 @@ def commit_feed():
             if attempt < 2:
                 time.sleep(5 * (attempt + 1))
             else:
-                # Last resort: force-with-lease (safe â we only changed podcast.xml + covered_content.json)
+                # Last resort: force-with-lease (safe — we only changed podcast.xml + covered_content.json)
                 try:
                     subprocess.run(["git", "push", "--force-with-lease", "origin", "HEAD:main"], env=env, check=True, cwd=str(REPO_DIR), capture_output=True, text=True)
                     log("  Changes pushed (force-with-lease after rebase conflicts)")
@@ -972,9 +1020,9 @@ def enable_github_pages():
         log(f"  GitHub Pages setup: {resp.status_code} {resp.text[:200]}")
 
 
-# ââ Main ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+# ── Main ──────────────────────────────────────────────────────────────────
 def main():
-    log(f"=== Daily Space Podcast Generator â {EPISODE_DATE} (type: {EPISODE_TYPE}) ===")
+    log(f"=== Daily Space Podcast Generator — {EPISODE_DATE} (type: {EPISODE_TYPE}) ===")
 
     if not GEMINI_API_KEY:
         log("ERROR: GEMINI_API_KEY not set")
@@ -982,7 +1030,7 @@ def main():
 
     # Check if episode already exists (one per day max)
     if release_exists():
-        log("Episode already exists for today â skipping (one per day max)")
+        log("Episode already exists for today — skipping (one per day max)")
         sys.exit(0)
 
     WORK_DIR.mkdir(parents=True, exist_ok=True)
@@ -998,7 +1046,28 @@ def main():
     script = generate_script(content, EPISODE_TYPE)
     log(f"  Title: {script.get('title', 'Untitled')}")
 
-    # 2b. Fix domain pronunciation for TTS (flarient.com â flarient dot com)
+    # 2a. Validate script for date hallucinations
+    issues = validate_script(script, content)
+    if issues:
+        log(f"  ⚠ ACCURACY VALIDATION: {len(issues)} issue(s) found:")
+        for issue in issues:
+            log(f"    - {issue}")
+        unsourced = [i for i in issues if "UNSOURCED" in i]
+        if unsourced:
+            log(f"  ⚠ Critical: {len(unsourced)} unsourced mission(s) — regenerating with stricter guardrails...")
+            content["_accuracy_warnings"] = issues
+            script = generate_script(content, EPISODE_TYPE)
+            issues2 = validate_script(script, content)
+            if issues2:
+                log(f"  ⚠ Still {len(issues2)} issue(s) after regeneration — proceeding but flagging")
+                for issue in issues2:
+                    log(f"    - {issue}")
+            else:
+                log(f"  ✓ Regeneration passed accuracy validation")
+    else:
+        log(f"  ✓ Accuracy validation passed — no hallucinations detected")
+
+    # 2b. Fix domain pronunciation for TTS (flarient.com → flarient dot com)
     for seg in script.get("segments", []):
         seg["text"] = fix_domain_pronunciation(seg.get("text", ""))
 
