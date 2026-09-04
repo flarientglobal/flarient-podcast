@@ -43,6 +43,7 @@ Simultaneously, we track near-Earth asteroid 2025 UK9, which makes a routine, ha
 In space weather, the Sun remains remarkably calm. With Kp values hovering between 0 and 0.67, a solar wind speed of 412.8 km/s, and a nearly neutral Bz of -0.3 nT, the geomagnetic environment is completely undisturbed. We discuss why this tranquil backdrop is welcome news for satellite communications, GNSS accuracy, and orbital pre-launch checkouts, while noting a quiet aurora forecast capped at just 28% maximum probability.
 
 For real-time solar dashboards, live geomagnetic indices, and aurora alerts, visit flarient.com.</itunes:summary>
+            <podcast:socialInteract uri="https://github.com/flarientglobal/flarient-podcast/discussions/33" priority="1" platform="github"/>
      </item>
   </channel>
 </rss>
