@@ -118,6 +118,68 @@ def fetch_content():
     return data
 
 
+# ── 1c. Research breaking news with Gemini + Google Search ────────────────
+def research_breaking_news():
+    """Use Gemini with Google Search grounding to find breaking space news,
+    orbital launches, and peer-reviewed discoveries from the LAST 24 HOURS ONLY."""
+    log("Researching breaking news with Gemini + Google Search...")
+    from google import genai
+    from google.genai import types
+
+    client = genai.Client(api_key=GEMINI_API_KEY)
+    today = EPISODE_DATE
+    yesterday = (datetime.date.today() - datetime.timedelta(days=1)).isoformat()
+
+    research_prompt = f"""You are the Lead Researcher and Scriptwriter for a daily space podcast. Today is {today}.
+
+Search the web for the MOST SIGNIFICANT space exploration, astronomy, and aerospace news from the LAST 24 HOURS ONLY (since {yesterday}).
+
+Find and report on:
+
+1. BREAKING SPACE NEWS: Any major announcements, discoveries, or events from the last 24 hours. Prioritize primary sources: NASA, ESA, JAXA, SpaceNews, Space.com, CelesTrak, Orbital Radar, and official university/observatory press releases.
+
+2. ORBITAL LAUNCHES: Any orbital launches, dockings, or major spacecraft maneuvers that:
+   - Happened in the last 24 hours, OR
+   - Are scheduled for the next 24 hours
+   Include: provider (e.g. SpaceX, Rocket Lab), payload, launch site, and outcome/status.
+
+3. PEER-REVIEWED DISCOVERY: One recent peer-reviewed finding or official discovery from astrophysics, astronomy, or planetary science. Translate the academic jargon into an accessible, engaging explanation.
+
+For each item, provide:
+- The headline/topic
+- A 2-3 sentence summary with key facts
+- The source (NASA, ESA, SpaceNews, etc.)
+- The date/time if available
+
+IMPORTANT: Only include news from the last 24 hours. Do NOT include older news. If you cannot find something in a category, say "No significant news in this category in the last 24 hours."
+
+Format your response as plain text with clear sections."""
+
+    search_tool = types.Tool(google_search=types.GoogleSearch())
+    models_to_try = discover_gemini_models(client) or ["gemini-2.5-flash", "gemini-2.0-flash"]
+
+    for model_name in models_to_try:
+        try:
+            log(f"  Researching with model: {model_name}")
+            response = client.models.generate_content(
+                model=model_name,
+                contents=research_prompt,
+                config=types.GenerateContentConfig(
+                    tools=[search_tool],
+                    max_output_tokens=8192,
+                ),
+            )
+            result_text = response.text
+            log(f"  Research complete: {len(result_text)} chars")
+            return result_text
+        except Exception as e:
+            log(f"  Research with {model_name} failed: {e}")
+            continue
+
+    log("  WARNING: Web search research failed — proceeding with Flarient API data only")
+    return None
+
+
 # ── 1b. Deduplication: load/save covered content IDs ──────────────────────
 def load_covered():
     path = REPO_DIR / "covered_content.json"
@@ -152,7 +214,7 @@ def filter_covered(content, covered):
 
 
 # ── 2. Generate conversational script with Gemini ──────────────────────────
-def build_prompt(content, episode_type):
+def build_prompt(content, episode_type, breaking_news=None):
     live = content.get("live_data") or {}
     events = content.get("events") or []
     articles = content.get("articles") or []
@@ -235,43 +297,54 @@ def build_prompt(content, episode_type):
             if h.get('source_name'):
                 this_day_summary += f"  Source: {h['source_name']}\n"
 
+    # Build breaking news summary from web search
+    breaking_news_summary = ""
+    if breaking_news:
+        breaking_news_summary = f"\n\nBREAKING NEWS FROM WEB SEARCH (last 24 hours — PRIMARY SOURCE for today's lead stories):\n{breaking_news}\n"
+
     # Episode type-specific instructions
     type_instructions = ""
     if episode_type == "weekly":
         type_instructions = """
 WEEKLY ROUNDUP MODE (45 minutes, ~7,000 words):
-This is a SUNDAY WEEKLY ROUNDUP episode. Instead of the daily format, focus on the TOP 5 space weather events of the past week.
+This is a SUNDAY WEEKLY ROUNDUP episode. Focus on the TOP 5 space weather events of the past week, plus breaking news from the last 24 hours.
 Structure:
-1. HOOK (30-60s) — tease the #1 story of the week
+1. HOOK / VOCAL TRAILER (60-90s) — tease the #1 story of the week
 2. BRIEF INTRO — mention this is the weekly roundup
 3. THIS DAY IN HISTORY (60-90s) — short entertaining cold-open fact
-4. TOP 5 STORIES OF THE WEEK (30 min) — rank the week's biggest space weather events, discuss each in depth (~5-6 min each)
-5. WEEK AHEAD (3-5 min) — what to watch for next week
-6. FACT CHECKS (3-5 min) — cover any fact checks from the week
-7. CTAs (1-2 min)
+4. BREAKING NEWS (5-7 min) — any breaking space news from the last 24 hours
+5. TOP 5 STORIES OF THE WEEK (25 min) — rank the week's biggest space weather events, discuss each in depth (~5 min each)
+6. LAUNCH REPORT (3-5 min) — orbital launches from the past week and upcoming
+7. DISCOVERY OF THE DAY (3-5 min) — one peer-reviewed finding
+8. WEEK AHEAD (3-5 min) — what to watch for next week
+9. FACT CHECKS (3-5 min) — cover any fact checks from the week
+10. CTAs (1-2 min)
 Make it feel like a weekly review show, not a daily report.
 """
     elif episode_type == "breaking":
         type_instructions = """
-BREAKING EVENT MODE (30 minutes, ~4,500-5,000 words):
+BREAKING EVENT MODE (30 minutes, ~5,000-5,500 words):
 A significant space weather event is happening RIGHT NOW (G4+ geomagnetic storm or X-class solar flare).
-Lead with the breaking event as the TOP story (first 5-7 minutes), then continue with regular daily content.
+Lead with the breaking event as the TOP story, then continue with regular daily content.
 Structure:
-1. HOOK (30-60s) — lead with the breaking event dramatically
+1. HOOK / VOCAL TRAILER (60-90s) — lead with the breaking event dramatically
 2. BRIEF INTRO — mention this is a breaking special
 3. BREAKING EVENT (5-7 min) — detailed coverage of the significant event
 4. THIS DAY IN HISTORY (60-90s) — short entertaining cold-open fact
-5. SPACE WEATHER REPORT (3-5 min) — current conditions
-6. BLOG ARTICLES (3-5 min)
-7. SPACE EVENTS (3-5 min)
-8. FACT CHECKS (2-3 min)
-9. CTAs (1-2 min)
+5. BREAKING NEWS (3-5 min) — any other breaking space news from the last 24 hours
+6. LAUNCH REPORT (3-5 min) — orbital launches
+7. SPACE WEATHER REPORT (3-5 min) — current conditions
+8. DISCOVERY OF THE DAY (3-5 min) — one peer-reviewed finding
+9. BLOG ARTICLES (3-5 min)
+10. SPACE EVENTS (3-5 min)
+11. FACT CHECKS (2-3 min)
+12. CTAs (1-2 min)
 The breaking event takes priority but still cover other content per the normal rules.
 """
     else:
         type_instructions = """
-DAILY MODE (30 minutes, ~4,500-5,000 words):
-Standard daily episode covering all content areas.
+DAILY MODE (30 minutes, ~5,000-5,500 words):
+Standard daily episode covering all content areas. Lead with breaking news from the web search, then cover launches, space weather, discovery, blog articles, events, fact checks, and daily brief.
 """
 
     # Accuracy warnings from previous failed attempt (if regenerating)
@@ -298,13 +371,7 @@ SINGLE HOST (consistent every episode):
 
 PODCAST STRUCTURE:
 
-1. HOOK (30-60 seconds, ~100-150 words): A UNIQUE, COMPELLING opening that grabs attention immediately. This must be DIFFERENT every single episode. Do NOT use generic openings like "Welcome back to the podcast" or "Today we're talking about...". Instead, start with:
-   - A surprising fact or statistic
-   - A dramatic "what if" scenario
-   - A vivid description of something happening in space right now
-   - A question that makes the listener want to know the answer
-   The hook should relate to today's most interesting content but be phrased as a teaser.
-   The hook comes FIRST, before anything else. Do not introduce the podcast or the hosts before the hook.
+1. HOOK / VOCAL TRAILER (60-90 seconds, ~150-200 words): Create a COMPELLING VOCAL TRAILER that teases the most exciting moments from today's episode. Like a movie trailer for a podcast — preview the best bits, most surprising facts, and biggest stories. Use energetic, punchy language designed for the EAR. Say things like "Coming up, we'll reveal...", "But first, a discovery that...", "Stay tuned for..." to preview specific moments without giving everything away. This should make the listener NEED to keep listening. The hook comes FIRST, before anything else. Do not introduce the podcast or the host before the hook.
 
 2. CONSISTENT INTRO (15-30 seconds): After the hook, use this EXACT intro every single episode (Ollie says it):
    "You're listening to the Daily Space Podcast by Flarient, your daily conversation about space weather, solar activity, and cosmic events. I'm Ollie, and today is [say the date in natural language like 'Wednesday, August nineteenth']."
@@ -313,17 +380,23 @@ PODCAST STRUCTURE:
 
 3. THIS DAY IN SPACE WEATHER HISTORY (60-90 seconds, ~100-150 words): A SHORT, ENTERTAINING segment about a historical space weather event that happened on this date. Keep it brief and fun — like a "on this day in history" radio segment. Use the provided This Day in History data. If no data is available, skip this segment.
 
-4. SPACE WEATHER REPORT (5-7 minutes, ~800-1000 words): Cover today's live space weather data conversationally. Discuss the Kp index, solar wind, Bz, flare activity, and aurora forecast. Explain what the numbers mean in plain English. Ollie should ask rhetorical questions and then answer them, as if thinking out loud.
+4. BREAKING NEWS (5-7 minutes, ~800-1000 words): Cover the most significant breaking space exploration, astronomy, and aerospace news from the LAST 24 HOURS. Use the BREAKING NEWS FROM WEB SEARCH data as the PRIMARY SOURCE. Prioritize primary sources: NASA, ESA, JAXA, SpaceNews, Space.com, CelesTrak, Orbital Radar, and official university/observatory press releases. Discuss what happened, why it matters, and who it affects. This is the LEAD STORY section — make it engaging and newsy.
 
-5. BLOG ARTICLES (5-7 minutes, ~800-1000 words): Discuss the day's blog articles. Summarize key points, add insights, and share personal takeaways. Make it conversational, not a reading of the article.
+5. LAUNCH REPORT (3-5 minutes, ~500-700 words): Detail any orbital launches, dockings, or major spacecraft maneuvers from the last 24 hours or scheduled for the next 24 hours. Include: provider (e.g. SpaceX, Rocket Lab), payload, launch site, and outcome/status. If no launches, mention that briefly and move on.
 
-6. SPACE EVENTS (5-7 minutes, ~800-1000 words): Cover recent space events — geomagnetic storms, solar flares, asteroid approaches, etc. Discuss what happened, why it matters, and who's affected.
+6. SPACE WEATHER REPORT (3-5 minutes, ~500-700 words): Cover today's live space weather data conversationally. Discuss the Kp index, solar wind, Bz, flare activity, and aurora forecast. Explain what the numbers mean in plain English. Ollie should ask rhetorical questions and then answer them, as if thinking out loud.
 
-7. FACT CHECKS (3-5 minutes, ~500-700 words): Cover recent fact checks. Discuss the claims and verdicts. Explain why the claim is true, false, or somewhere in between.
+7. DISCOVERY OF THE DAY (3-5 minutes, ~500-700 words): Summarize ONE recent peer-reviewed finding or official discovery from astrophysics, astronomy, or planetary science. Translate the academic jargon into an accessible, engaging explanation. Make the listener feel the wonder of the discovery. Use the BREAKING NEWS FROM WEB SEARCH data for this.
 
-8. DAILY BRIEF (3-5 minutes, ~500-700 words): Discuss the daily highlight/brief article. Cover the key points and implications.
+8. BLOG ARTICLES (3-5 minutes, ~500-700 words): Discuss the day's blog articles. Summarize key points, add insights, and share personal takeaways. Make it conversational, not a reading of the article.
 
-9. CALL TO ACTIONS (1-2 minutes, ~150-200 words): Include these CTAs:
+9. SPACE EVENTS (3-5 minutes, ~500-700 words): Cover recent space events — geomagnetic storms, solar flares, asteroid approaches, etc. Discuss what happened, why it matters, and who's affected.
+
+10. FACT CHECKS (3-5 minutes, ~500-700 words): Cover recent fact checks. Discuss the claims and verdicts. Explain why the claim is true, false, or somewhere in between.
+
+11. DAILY BRIEF (3-5 minutes, ~500-700 words): Discuss the daily highlight/brief article. Cover the key points and implications.
+
+12. CALL TO ACTIONS (1-2 minutes, ~150-200 words): Include these CTAs:
    - Visit flarient.com for live space weather data, real time Kp index, aurora forecasts, and interactive dashboards — it is the official website of Flarient and the best place to see what is happening right now
    - Subscribe to the podcast on your favorite platform so you never miss an episode
    - Visit flarient.com/podcast for all episodes and show notes
@@ -336,13 +409,15 @@ IMPORTANT RULES:
 - Do NOT just read facts — discuss them, explain them, make them accessible to a general audience
 - Use varied sentence structures and natural speech patterns (fillers like "right", "exactly", "I mean" are OK sparingly)
 - Include moments of personality, humor, and genuine curiosity
-- The HOOK must be ORIGINAL and DIFFERENT every episode — never repeat the same opening
+- The HOOK / VOCAL TRAILER must be ORIGINAL and DIFFERENT every episode — never repeat the same opening. It should feel like a movie trailer for the podcast, teasing the best moments.
 - The THIS DAY IN HISTORY segment must be SHORT (60-90 seconds max) and ENTERTAINING — not a dry history lesson
+- The BREAKING NEWS section should feel like a live news report — urgent, factual, and engaging
+- The DISCOVERY OF THE DAY should translate academic jargon into language a curious non-scientist can understand and get excited about
 - Each segment should flow naturally into the next
-- Aim for approximately 4,500-5,000 words total for daily (30 min) or 6,500-7,000 words for weekly (45 min)
+- Aim for approximately 5,000-5,500 words total for daily (30 min) or 6,500-7,000 words for weekly (45 min)
 
 CONTENT DATA:
-{live_summary}{events_summary}{articles_summary}{fact_checks_summary}{brief_summary}{this_day_summary}
+{breaking_news_summary}{live_summary}{events_summary}{articles_summary}{fact_checks_summary}{brief_summary}{this_day_summary}
 
 Respond with a JSON object with this exact structure:
 {{
@@ -350,7 +425,7 @@ Respond with a JSON object with this exact structure:
   "hook": "The full 30-60 second opening hook (as a single segment from Ollie)",
   "show_notes": "Write an in-depth description of 300-500 words summarising the episode's key topics, discussions, and insights. Explain what the listener will learn, the main stories covered, and why they matter. Include links to any articles, events, or fact checks mentioned. Do NOT include timestamps — they are inaccurate. Format as plain text with line breaks.",
   "segments": [
-    {{"speaker": "A", "text": "dialogue text for this segment", "section": "hook|intro|this_day|space_weather|articles|events|fact_checks|brief|ctas"}},
+    {{"speaker": "A", "text": "dialogue text for this segment", "section": "hook|intro|this_day|breaking_news|launch_report|space_weather|discovery|articles|events|fact_checks|brief|ctas"}},
     ...
   ],
   "ctas": ["CTA 1 text", "CTA 2 text", ...]
@@ -364,13 +439,13 @@ All segments should have "speaker": "A" (Ollie is the only host).
 Generate enough segments to fill the target duration."""
 
 
-def generate_script(content, episode_type):
+def generate_script(content, episode_type, breaking_news=None):
     log(f"Generating podcast script with Gemini (type: {episode_type})...")
     from google import genai
     from google.genai import types
 
     client = genai.Client(api_key=GEMINI_API_KEY)
-    prompt = build_prompt(content, episode_type)
+    prompt = build_prompt(content, episode_type, breaking_news)
 
     # Try runtime-discovered models first, fall back to hardcoded list
     models_to_try = discover_gemini_models(client) or GEMINI_MODELS
@@ -409,6 +484,8 @@ def validate_script(script, content):
     full_text = " ".join(s.get("text", "") for s in script.get("segments", []))
     text_lower = full_text.lower()
     source_text = json.dumps(content).lower()
+    if content.get("_breaking_news"):
+        source_text += " " + content["_breaking_news"].lower()
 
     # Pattern 1: "due to be launched today", "launching soon", "scheduled for today"
     hallucination_patterns = [
@@ -717,9 +794,10 @@ def generate_chapters_file(script, intro_dur=1.5):
     # Group segments by section and estimate timings
     section_names = {
         "hook": "Hook", "intro": "Intro", "this_day": "This Day in History",
-        "space_weather": "Space Weather Report", "articles": "Blog Articles",
-        "events": "Space Events", "fact_checks": "Fact Checks",
-        "brief": "Daily Brief", "ctas": "Call to Actions"
+        "breaking_news": "Breaking News", "launch_report": "Launch Report",
+        "space_weather": "Space Weather Report", "discovery": "Discovery of the Day",
+        "articles": "Blog Articles", "events": "Space Events",
+        "fact_checks": "Fact Checks", "brief": "Daily Brief", "ctas": "Call to Actions"
     }
 
     # Estimate ~150 words per minute (2.5 words/sec)
@@ -1042,8 +1120,12 @@ def main():
     covered = load_covered()
     content = filter_covered(content, covered)
 
+    # 1c. Research breaking news via Gemini + Google Search
+    breaking_news = research_breaking_news()
+    content["_breaking_news"] = breaking_news or ""
+
     # 2. Generate script
-    script = generate_script(content, EPISODE_TYPE)
+    script = generate_script(content, EPISODE_TYPE, breaking_news)
     log(f"  Title: {script.get('title', 'Untitled')}")
 
     # 2a. Validate script for date hallucinations
@@ -1056,7 +1138,7 @@ def main():
         if unsourced:
             log(f"  ⚠ Critical: {len(unsourced)} unsourced mission(s) — regenerating with stricter guardrails...")
             content["_accuracy_warnings"] = issues
-            script = generate_script(content, EPISODE_TYPE)
+            script = generate_script(content, EPISODE_TYPE, breaking_news)
             issues2 = validate_script(script, content)
             if issues2:
                 log(f"  ⚠ Still {len(issues2)} issue(s) after regeneration — proceeding but flagging")
