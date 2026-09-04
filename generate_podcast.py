@@ -217,6 +217,7 @@ def build_prompt(content, episode_type):
         brief_summary += f"- Title: {daily_brief.get('title', '')}\n"
         brief_summary += f"  Subtitle: {daily_brief.get('subtitle', '')}\n"
         brief_summary += f"  Description: {daily_brief.get('description', '')}\n"
+        brief_summary += f"  Freshness: {daily_brief.get('freshness_note', 'today')}\n"
         if daily_brief.get('intro'):
             brief_summary += f"  Intro: {daily_brief['intro'][:1500]}\n"
         if daily_brief.get('implications'):
