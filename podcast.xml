@@ -15,5 +15,34 @@
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
     </itunes:owner>
-    </channel>
+        <item>
+       <title>Asteroid 2025 UK9 Flyby and Calm Solar Wind</title>
+       <link>https://flarient.com/podcast/asteroid-2025-uk9-flyby-and-calm-solar-wind</link>
+       <description>In today&apos;s episode for Saturday, September 5, 2026, Ollie dives deep into the peaceful geomagnetic conditions across our planet and a noteworthy near-Earth object flyby.
+
+First, we explore the close approach of Asteroid 2025 UK9, a space rock tracked by NASA&apos;s Center for Near-Earth Object Studies (CNEOS) as it safely drifted past Earth&apos;s orbital neighborhood. We discuss the mechanics of orbital tracking, planetary defense, and what cataloging these small bodies tells us about our solar system&apos;s architecture.
+
+Next, we examine our live space weather parameters. With the planetary Kp index sitting at a complete baseline of 0 (and peaking at just 0.67 over the last 24 hours), solar wind speeds hovering at a gentle 353 km/s, and the interplanetary magnetic field (Bz) pointing northward at +0.2 nT, Earth&apos;s magnetosphere is experiencing minimal pressure. With an estimated Dst index of -10 nT and aurora maximum probabilities capped at 27%, high-frequency communications, GNSS positioning, and satellite drag models remain exceptionally stable.
+
+Finally, we look at the 72-hour solar forecast. A magnetically complex active region is rotating onto the Earth-facing solar disk. Having already produced an M3.0 solar flare before turning toward us, this region could soon ramp up background X-ray flux and elevate F10.7 solar radio flux.
+
+For real-time space weather dashboards, live Kp readings, and aurora alerts, visit flarient.com.</description>
+       <pubDate>Sat, 05 Sep 2026 00:51:13 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-05</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-05/flarient-podcast-2026-09-05.mp3" length="15505022" type="audio/mpeg"/>
+       <itunes:duration>646</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>1</itunes:episode>
+      <itunes:image href='https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-05/cover-2026-09-05.jpg'/>
+       <itunes:summary>In today&apos;s episode for Saturday, September 5, 2026, Ollie dives deep into the peaceful geomagnetic conditions across our planet and a noteworthy near-Earth object flyby.
+
+First, we explore the close approach of Asteroid 2025 UK9, a space rock tracked by NASA&apos;s Center for Near-Earth Object Studies (CNEOS) as it safely drifted past Earth&apos;s orbital neighborhood. We discuss the mechanics of orbital tracking, planetary defense, and what cataloging these small bodies tells us about our solar system&apos;s architecture.
+
+Next, we examine our live space weather parameters. With the planetary Kp index sitting at a complete baseline of 0 (and peaking at just 0.67 over the last 24 hours), solar wind speeds hovering at a gentle 353 km/s, and the interplanetary magnetic field (Bz) pointing northward at +0.2 nT, Earth&apos;s magnetosphere is experiencing minimal pressure. With an estimated Dst index of -10 nT and aurora maximum probabilities capped at 27%, high-frequency communications, GNSS positioning, and satellite drag models remain exceptionally stable.
+
+Finally, we look at the 72-hour solar forecast. A magnetically complex active region is rotating onto the Earth-facing solar disk. Having already produced an M3.0 solar flare before turning toward us, this region could soon ramp up background X-ray flux and elevate F10.7 solar radio flux.
+
+For real-time space weather dashboards, live Kp readings, and aurora alerts, visit flarient.com.</itunes:summary>
+     </item>
+  </channel>
 </rss>
