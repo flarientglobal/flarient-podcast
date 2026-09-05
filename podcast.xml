@@ -43,6 +43,7 @@ Next, we examine our live space weather parameters. With the planetary Kp index 
 Finally, we look at the 72-hour solar forecast. A magnetically complex active region is rotating onto the Earth-facing solar disk. Having already produced an M3.0 solar flare before turning toward us, this region could soon ramp up background X-ray flux and elevate F10.7 solar radio flux.
 
 For real-time space weather dashboards, live Kp readings, and aurora alerts, visit flarient.com.</itunes:summary>
+            <podcast:socialInteract uri="https://github.com/flarientglobal/flarient-podcast/discussions/35" priority="1" platform="github"/>
      </item>
   </channel>
 </rss>
