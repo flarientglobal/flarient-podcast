@@ -995,7 +995,8 @@ def update_rss_feed(script, mp3_url, cover_url, duration_sec, file_size):
         existing_xml = rss_path.read_text(encoding="utf-8")
         episode_number = existing_xml.count("<item>") + 1
 
-    cover_tag = f"      <itunes:image href='{escape_xml(cover_url)}'/>\n" if cover_url else ""
+    cover_tag = f'      <itunes:image href="{escape_xml(cover_url)}"/>
+' if cover_url else ""
 
     episode_xml = f"""    <item>
        <title>{escape_xml(full_title)}</title>
@@ -1070,9 +1071,10 @@ def commit_feed():
     subprocess.run(["git", "config", "user.name", "Daily Space Podcast Bot"], env=env, check=True)
     subprocess.run(["git", "config", "user.email", "bot@flarient.com"], env=env, check=True)
 
-    # Add podcast.xml and covered_content.json
+    # Add podcast.xml, covered_content.json, and covers/ directory
     subprocess.run(["git", "add", "podcast.xml"], env=env, check=True, cwd=str(REPO_DIR))
     subprocess.run(["git", "add", "covered_content.json"], env=env, capture_output=True, cwd=str(REPO_DIR))
+    subprocess.run(["git", "add", "covers"], env=env, capture_output=True, cwd=str(REPO_DIR))
 
     result = subprocess.run(["git", "diff", "--cached", "--quiet"], env=env, cwd=str(REPO_DIR))
     if result.returncode == 0:
@@ -1103,6 +1105,30 @@ def commit_feed():
                 except subprocess.CalledProcessError as e2:
                     log(f"  Push failed after all retries: {(e2.stderr or '')[:300]}")
                     raise
+
+
+def commit_cover_art(cover_path):
+    """Commit cover art to the repo's covers/ directory for GitHub Pages hosting.
+    GitHub Releases URLs redirect (302) and return content-type: application/octet-stream
+    with content-disposition: attachment — podcast platforms (Spotify, Apple) reject these
+    as cover art. GitHub Pages serves files directly with the correct content-type
+    (image/jpeg) and no redirects, which is what podcast platforms require."""
+    if not cover_path or not Path(cover_path).exists():
+        log("  No cover art to commit to Pages")
+        return None
+    log("  Staging cover art for GitHub Pages hosting...")
+    covers_dir = REPO_DIR / "covers"
+    covers_dir.mkdir(parents=True, exist_ok=True)
+    dest = covers_dir / COVER_FILENAME
+    subprocess.run(["cp", str(cover_path), str(dest)], check=True)
+    env = os.environ.copy()
+    env["GH_TOKEN"] = GH_TOKEN
+    subprocess.run(["git", "add", f"covers/{COVER_FILENAME}"], env=env, check=True, cwd=str(REPO_DIR))
+    owner = REPO.split('/')[0]
+    repo_name = REPO.split('/')[1]
+    pages_url = f"https://{owner}.github.io/{repo_name}/covers/{COVER_FILENAME}"
+    log(f"  Cover art Pages URL: {pages_url}")
+    return pages_url
 
 
 def enable_github_pages():
@@ -1215,8 +1241,9 @@ def main():
         sys.exit(1)
     segment_files = asyncio.run(synthesize_all(segments))
 
-    # 4. Generate cover art
+    # 4. Generate cover art + commit to Pages (Releases URLs redirect with octet-stream — podcast platforms reject them)
     cover_path = generate_cover_art(EPISODE_TYPE, content)
+    cover_pages_url = commit_cover_art(cover_path)
 
     # 5. Master audio (silence removal + loudness normalization + metadata in one pass)
     final_mp3 = str(WORK_DIR / MP3_FILENAME)
@@ -1240,8 +1267,8 @@ def main():
     if new_ids:
         save_covered(covered, new_ids)
 
-    # 9. Update RSS feed
-    update_rss_feed(script, mp3_url, cover_url, duration_sec, file_size)
+    # 9. Update RSS feed (use Pages URL for cover — Releases URLs redirect with octet-stream)
+    update_rss_feed(script, mp3_url, cover_pages_url or cover_url, duration_sec, file_size)
 
     # 10. Commit changes
     commit_feed()
