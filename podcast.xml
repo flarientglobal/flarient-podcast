@@ -15,36 +15,5 @@
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
     </itunes:owner>
-    <item>
-       <title>Roman Telescope Readies for Launch as Asteroid 2025 UK9 Flies By</title>
-       <link>https://flarient.com/podcast/roman-telescope-readies-for-launch-as-asteroid-2025-uk9-flies-by</link>
-       <description>In today&apos;s episode for Friday, September 4, 2026, Ollie dives into the major developments across astronomy and space weather.
-
-First, we look at the Nancy Grace Roman Space Telescope as it undergoes final pre-launch preparations at the Kennedy Space Centre ahead of its scheduled weekend liftoff. Designed to unravel the mysteries of dark energy and cosmic structure once operational, this flagship observatory is preparing to embark on its milestone mission under optimal environmental conditions.
-
-Simultaneously, we track near-Earth asteroid 2025 UK9, which makes a routine, harmless close flyby past Earth today. We examine how these close approaches offer invaluable real-world training for planetary defense teams, orbital modeling, and radar tracking.
-
-In space weather, the Sun remains remarkably calm. With Kp values hovering between 0 and 0.67, a solar wind speed of 412.8 km/s, and a nearly neutral Bz of -0.3 nT, the geomagnetic environment is completely undisturbed. We discuss why this tranquil backdrop is welcome news for satellite communications, GNSS accuracy, and orbital pre-launch checkouts, while noting a quiet aurora forecast capped at just 28% maximum probability.
-
-For real-time solar dashboards, live geomagnetic indices, and aurora alerts, visit flarient.com.</description>
-       <pubDate>Fri, 04 Sep 2026 23:04:12 GMT</pubDate>
-       <guid isPermaLink="false">flarient-podcast-2026-09-04</guid>
-       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-04/flarient-podcast-2026-09-04.mp3" length="9385494" type="audio/mpeg"/>
-       <itunes:duration>391</itunes:duration>
-       <itunes:episodeType>daily</itunes:episodeType>
-       <itunes:episode>1</itunes:episode>
-      <itunes:image href='https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-04/cover-2026-09-04.jpg'/>
-       <itunes:summary>In today&apos;s episode for Friday, September 4, 2026, Ollie dives into the major developments across astronomy and space weather.
-
-First, we look at the Nancy Grace Roman Space Telescope as it undergoes final pre-launch preparations at the Kennedy Space Centre ahead of its scheduled weekend liftoff. Designed to unravel the mysteries of dark energy and cosmic structure once operational, this flagship observatory is preparing to embark on its milestone mission under optimal environmental conditions.
-
-Simultaneously, we track near-Earth asteroid 2025 UK9, which makes a routine, harmless close flyby past Earth today. We examine how these close approaches offer invaluable real-world training for planetary defense teams, orbital modeling, and radar tracking.
-
-In space weather, the Sun remains remarkably calm. With Kp values hovering between 0 and 0.67, a solar wind speed of 412.8 km/s, and a nearly neutral Bz of -0.3 nT, the geomagnetic environment is completely undisturbed. We discuss why this tranquil backdrop is welcome news for satellite communications, GNSS accuracy, and orbital pre-launch checkouts, while noting a quiet aurora forecast capped at just 28% maximum probability.
-
-For real-time solar dashboards, live geomagnetic indices, and aurora alerts, visit flarient.com.</itunes:summary>
-            <podcast:socialInteract uri="https://github.com/flarientglobal/flarient-podcast/discussions/33" priority="1" platform="github"/>
-            <podcast:socialInteract uri="https://github.com/flarientglobal/flarient-podcast/discussions/34" priority="1" platform="github"/>
-     </item>
-  </channel>
+    </channel>
 </rss>
