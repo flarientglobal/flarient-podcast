@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-04/cover-2026-09-04.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-08.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -44,6 +44,53 @@ Finally, we look at the 72-hour solar forecast. A magnetically complex active re
 
 For real-time space weather dashboards, live Kp readings, and aurora alerts, visit flarient.com.</itunes:summary>
             <podcast:socialInteract uri="https://github.com/flarientglobal/flarient-podcast/discussions/35" priority="1" platform="github"/>
+     </item>
+      <item>
+       <title>NASA Deep Space Upgrade &amp; Asteroid 2026 RN2 Flyby</title>
+       <link>https://flarient.com/podcast/nasa-deep-space-upgrade-asteroid-2026-rn2-flyby</link>
+       <description>Welcome to today&apos;s episode of the Daily Space Podcast by Flarient for Tuesday, September 8, 2026. Today, Ollie covers a major infrastructure boost for interplanetary exploration and a close celestial visitor.
+
+In our lead story and daily brief, NASA has officially commissioned a massive new dish antenna in the California desert for the Deep Space Network (DSN). We discuss why expanding interplanetary bandwidth is critical as data demands soar from the Artemis lunar programme and robotic deep space explorers. Simultaneously, astronomers have tracked near-Earth asteroid 2026 RN2 on its safe, predictable flyby past Earth today.
+
+In our space weather report, we examine elevated conditions in the magnetosphere, where geomagnetic activity reached an unsettled Kp index of 4.33 driven by high-speed solar wind pushing past 516 km/s, with a Dst index around -31 nT.
+
+Our discovery segment dives into the biological potential of ocean worlds across our solar system, exploring how hydrothermal activity beneath the icy crusts of Europa and Enceladus might sustain extraterrestrial life.
+
+We also break down several fascinating topics from the Flarient blog network:
+- How amateur radio operators use VOACAP software to model ionospheric skip and optimise HF communication: https://flarient.com/blog/understanding-voacap-for-amateur-radio-success
+- The atmospheric physics of noctilucent clouds glowing electric blue at the mesopause: https://flarient.com/blog/noctilucent-clouds-form-through-rare-atmospheric-conditions
+- The crucial physical distinctions between asteroids, meteoroids, meteors, and meteorites: https://flarient.com/blog/distinguishing-between-asteroids-and-meteors
+- The classification and terrestrial impacts of solar flares and coronal mass ejections: https://flarient.com/blog/solar-flares-and-their-physical-impact-on-earth
+- Investigating habitability across subsurface solar system reservoirs: https://flarient.com/blog/evidence-suggests-biological-potential-on-other-solar-system-worlds
+
+In our fact-checking segment, we debunk the viral online claim that an unexplained black line suddenly appeared across the Moon: https://flarient.com/fact-checker/debunking-the-myth-of-an-unexplained-black-line-across-the-moon
+
+For live real-time space weather dashboards, aurora tracking, and alerts, visit https://flarient.com</description>
+       <pubDate>Tue, 08 Sep 2026 02:29:26 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-08</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-08/flarient-podcast-2026-09-08.mp3" length="18852255" type="audio/mpeg"/>
+       <itunes:duration>785</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>2</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-08.jpg"/>
+       <itunes:summary>Welcome to today&apos;s episode of the Daily Space Podcast by Flarient for Tuesday, September 8, 2026. Today, Ollie covers a major infrastructure boost for interplanetary exploration and a close celestial visitor.
+
+In our lead story and daily brief, NASA has officially commissioned a massive new dish antenna in the California desert for the Deep Space Network (DSN). We discuss why expanding interplanetary bandwidth is critical as data demands soar from the Artemis lunar programme and robotic deep space explorers. Simultaneously, astronomers have tracked near-Earth asteroid 2026 RN2 on its safe, predictable flyby past Earth today.
+
+In our space weather report, we examine elevated conditions in the magnetosphere, where geomagnetic activity reached an unsettled Kp index of 4.33 driven by high-speed solar wind pushing past 516 km/s, with a Dst index around -31 nT.
+
+Our discovery segment dives into the biological potential of ocean worlds across our solar system, exploring how hydrothermal activity beneath the icy crusts of Europa and Enceladus might sustain extraterrestrial life.
+
+We also break down several fascinating topics from the Flarient blog network:
+- How amateur radio operators use VOACAP software to model ionospheric skip and optimise HF communication: https://flarient.com/blog/understanding-voacap-for-amateur-radio-success
+- The atmospheric physics of noctilucent clouds glowing electric blue at the mesopause: https://flarient.com/blog/noctilucent-clouds-form-through-rare-atmospheric-conditions
+- The crucial physical distinctions between asteroids, meteoroids, meteors, and meteorites: https://flarient.com/blog/distinguishing-between-asteroids-and-meteors
+- The classification and terrestrial impacts of solar flares and coronal mass ejections: https://flarient.com/blog/solar-flares-and-their-physical-impact-on-earth
+- Investigating habitability across subsurface solar system reservoirs: https://flarient.com/blog/evidence-suggests-biological-potential-on-other-solar-system-worlds
+
+In our fact-checking segment, we debunk the viral online claim that an unexplained black line suddenly appeared across the Moon: https://flarient.com/fact-checker/debunking-the-myth-of-an-unexplained-black-line-across-the-moon
+
+For live real-time space weather dashboards, aurora tracking, and alerts, visit https://flarient.com</itunes:summary>
      </item>
   </channel>
 </rss>
