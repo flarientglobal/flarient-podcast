@@ -995,8 +995,7 @@ def update_rss_feed(script, mp3_url, cover_url, duration_sec, file_size):
         existing_xml = rss_path.read_text(encoding="utf-8")
         episode_number = existing_xml.count("<item>") + 1
 
-    cover_tag = f'      <itunes:image href="{escape_xml(cover_url)}"/>
-' if cover_url else ""
+    cover_tag = f'      <itunes:image href="{escape_xml(cover_url)}"/>\n' if cover_url else ""
 
     episode_xml = f"""    <item>
        <title>{escape_xml(full_title)}</title>
