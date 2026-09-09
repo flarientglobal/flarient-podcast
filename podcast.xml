@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-08.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-09.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -94,6 +94,31 @@ We also break down several fascinating topics from the Flarient blog network:
 In our fact-checking segment, we debunk the viral online claim that an unexplained black line suddenly appeared across the Moon: https://flarient.com/fact-checker/debunking-the-myth-of-an-unexplained-black-line-across-the-moon
 
 For live real-time space weather dashboards, aurora tracking, and alerts, visit https://flarient.com</itunes:summary>
+     </item>
+      <item>
+       <title>Mainland Europe Hits Orbit as Isar Aerospace Makes History</title>
+       <link>https://flarient.com/podcast/mainland-europe-hits-orbit-as-isar-aerospace-makes-history</link>
+       <description>In today&apos;s episode of the Daily Space Podcast by Flarient, host Ollie breaks down a momentous day for aerospace and space weather.
+
+We start with breaking news from Norway&apos;s Andøya Spaceport, where German company Isar Aerospace launched its Spectrum rocket, achieving the very first orbital launch from mainland Europe. We look at why sovereign launch capabilities matter so much for European Earth observation and telecommunications.
+
+Then, we analyze live space weather metrics from NOAA and SWPC. With the Kp index sitting at a tranquil 1.67 and solar wind speeds around 419 km/s, Earth&apos;s magnetic field is enjoying a quiet stretch—though we explain what a Dst of -17 nT means for satellite drag and radio operations.
+
+In our Discovery segment, we delve into the physics of intergalactic space and the Warm Hot Intergalactic Medium (WHIM). We also examine five deep-dive articles from Flarient covering everything from the atmospheric physics of noctilucent clouds to solar flare impacts on GPS accuracy. Finally, we debunk common myths regarding asteroids versus meteors and look ahead at the 72-hour space weather forecast.</description>
+       <pubDate>Wed, 09 Sep 2026 06:50:22 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-09</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-09/flarient-podcast-2026-09-09.mp3" length="16042951" type="audio/mpeg"/>
+       <itunes:duration>668</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>3</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-09.jpg"/>
+       <itunes:summary>In today&apos;s episode of the Daily Space Podcast by Flarient, host Ollie breaks down a momentous day for aerospace and space weather.
+
+We start with breaking news from Norway&apos;s Andøya Spaceport, where German company Isar Aerospace launched its Spectrum rocket, achieving the very first orbital launch from mainland Europe. We look at why sovereign launch capabilities matter so much for European Earth observation and telecommunications.
+
+Then, we analyze live space weather metrics from NOAA and SWPC. With the Kp index sitting at a tranquil 1.67 and solar wind speeds around 419 km/s, Earth&apos;s magnetic field is enjoying a quiet stretch—though we explain what a Dst of -17 nT means for satellite drag and radio operations.
+
+In our Discovery segment, we delve into the physics of intergalactic space and the Warm Hot Intergalactic Medium (WHIM). We also examine five deep-dive articles from Flarient covering everything from the atmospheric physics of noctilucent clouds to solar flare impacts on GPS accuracy. Finally, we debunk common myths regarding asteroids versus meteors and look ahead at the 72-hour space weather forecast.</itunes:summary>
      </item>
   </channel>
 </rss>
