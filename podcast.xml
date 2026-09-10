@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-09.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-10.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -121,6 +121,23 @@ We start with breaking news from Norway&apos;s Andøya Spaceport, where German c
 Then, we analyze live space weather metrics from NOAA and SWPC. With the Kp index sitting at a tranquil 1.67 and solar wind speeds around 419 km/s, Earth&apos;s magnetic field is enjoying a quiet stretch—though we explain what a Dst of -17 nT means for satellite drag and radio operations.
 
 In our Discovery segment, we delve into the physics of intergalactic space and the Warm Hot Intergalactic Medium (WHIM). We also examine five deep-dive articles from Flarient covering everything from the atmospheric physics of noctilucent clouds to solar flare impacts on GPS accuracy. Finally, we debunk common myths regarding asteroids versus meteors and look ahead at the 72-hour space weather forecast.</itunes:summary>
+     </item>
+      <item>
+       <title>Quantum Gravity Breakthrough &amp; Asteroid 2025 UK9 Flyby</title>
+       <link>https://flarient.com/podcast/quantum-gravity-breakthrough-asteroid-2025-uk9-flyby</link>
+       <description>In today&apos;s episode of the Daily Space Podcast by Flarient for Thursday, September 10, 2026, Ollie explores a monumental breakthrough in fundamental physics where researchers have detected experimental signs of quantum gravity, offering a potential path to unify general relativity with quantum mechanics. We also examine the quiet pass of near-Earth asteroid 2025 UK9 and look ahead to the Taurids meteor shower. In space weather, we break down current magnetosphere conditions, including a calm Kp index of 1.33, solar wind speeds around 450 km/s, and stable geomagnetic indices. Additionally, we dive deep into our featured blog articles covering the 11-year sunspot cycle, the explosive physics of coronal mass ejections, tracking low Earth orbit satellites using TLEs, and optimal camera settings for northern lights photography.
+
+For real-time solar data, live Kp index tracking, and aurora forecasts, visit https://flarient.com.</description>
+       <pubDate>Thu, 10 Sep 2026 06:50:25 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-10</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-10/flarient-podcast-2026-09-10.mp3" length="13522026" type="audio/mpeg"/>
+       <itunes:duration>563</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>4</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-10.jpg"/>
+       <itunes:summary>In today&apos;s episode of the Daily Space Podcast by Flarient for Thursday, September 10, 2026, Ollie explores a monumental breakthrough in fundamental physics where researchers have detected experimental signs of quantum gravity, offering a potential path to unify general relativity with quantum mechanics. We also examine the quiet pass of near-Earth asteroid 2025 UK9 and look ahead to the Taurids meteor shower. In space weather, we break down current magnetosphere conditions, including a calm Kp index of 1.33, solar wind speeds around 450 km/s, and stable geomagnetic indices. Additionally, we dive deep into our featured blog articles covering the 11-year sunspot cycle, the explosive physics of coronal mass ejections, tracking low Earth orbit satellites using TLEs, and optimal camera settings for northern lights photography.
+
+For real-time solar data, live Kp index tracking, and aurora forecasts, visit https://flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
