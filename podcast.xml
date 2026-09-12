@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-11.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-12.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -167,6 +167,31 @@ Space weather remains a key focus, with Ollie breaking down the current Kp index
 In the second half of the show, we tackle the growing problem of orbital debris and the &apos;Kessler syndrome,&apos; explaining why even a tiny speck of paint can be a major threat at seven kilometers per second. We also provide practical tips for aurora photographers, discussing the balance of aperture and ISO settings needed to capture the dance of the Northern Lights. Whether you&apos;re a casual stargazer or a space weather professional, today&apos;s episode covers the essential data you need to understand our cosmic neighborhood.
 
 For real-time data, visit flarient.com to access our live Kp index dashboards and aurora forecasts. You can find more in-depth articles on solar flares and orbital mechanics at flarient.com/blog.</itunes:summary>
+     </item>
+      <item>
+       <title>ISS High-Speed Antenna Upgrade &amp; Asteroid 2025 UK9 Flyby</title>
+       <link>https://flarient.com/podcast/iss-high-speed-antenna-upgrade-asteroid-2025-uk9-flyby</link>
+       <description>In today&apos;s episode of the Daily Space Podcast by Flarient, host Ollie breaks down the latest major developments from Earth orbit and beyond. We lead off with breaking news from Expedition 75 aboard the International Space Station, where astronauts Anil Menon and Sophie Adenot completed a crucial spacewalk on the Z1 truss segment to replace a faulty antenna assembly with a brand-new high-speed system.
+
+We also examine the close pass of near-Earth asteroid 2025 UK9 and check in on the active Taurids meteor shower as it begins its annual visual display. In our live space weather report, we break down quiet geomagnetic conditions with a Kp index sitting comfortably at 2, positive Bz magnetic fields, and what this means for satellite operations and skywatchers.
+
+Later, we explore the science behind discovering distant exoplanets—from transit dips to stellar wobbles—and dive into our latest blog feature on how amateur radio operators use high-frequency bands to listen to the auditory signatures of auroral activity. Finally, we preview the watch status for Comet 15P/Finlay as it prepares for its late 2026 perihelion and conduct essential fact-checks on orbital safety.
+
+For real-time geomagnetic updates, live Kp index monitoring, and interactive space weather dashboards, visit https://flarient.com.</description>
+       <pubDate>Sat, 12 Sep 2026 06:48:29 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-12</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-12/flarient-podcast-2026-09-12.mp3" length="23900373" type="audio/mpeg"/>
+       <itunes:duration>995</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>6</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-12.jpg"/>
+       <itunes:summary>In today&apos;s episode of the Daily Space Podcast by Flarient, host Ollie breaks down the latest major developments from Earth orbit and beyond. We lead off with breaking news from Expedition 75 aboard the International Space Station, where astronauts Anil Menon and Sophie Adenot completed a crucial spacewalk on the Z1 truss segment to replace a faulty antenna assembly with a brand-new high-speed system.
+
+We also examine the close pass of near-Earth asteroid 2025 UK9 and check in on the active Taurids meteor shower as it begins its annual visual display. In our live space weather report, we break down quiet geomagnetic conditions with a Kp index sitting comfortably at 2, positive Bz magnetic fields, and what this means for satellite operations and skywatchers.
+
+Later, we explore the science behind discovering distant exoplanets—from transit dips to stellar wobbles—and dive into our latest blog feature on how amateur radio operators use high-frequency bands to listen to the auditory signatures of auroral activity. Finally, we preview the watch status for Comet 15P/Finlay as it prepares for its late 2026 perihelion and conduct essential fact-checks on orbital safety.
+
+For real-time geomagnetic updates, live Kp index monitoring, and interactive space weather dashboards, visit https://flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
