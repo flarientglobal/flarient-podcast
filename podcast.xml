@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-12.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-13.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -194,6 +194,23 @@ We also examine the close pass of near-Earth asteroid 2025 UK9 and check in on t
 Later, we explore the science behind discovering distant exoplanets—from transit dips to stellar wobbles—and dive into our latest blog feature on how amateur radio operators use high-frequency bands to listen to the auditory signatures of auroral activity. Finally, we preview the watch status for Comet 15P/Finlay as it prepares for its late 2026 perihelion and conduct essential fact-checks on orbital safety.
 
 For real-time geomagnetic updates, live Kp index monitoring, and interactive space weather dashboards, visit https://flarient.com.</itunes:summary>
+     </item>
+      <item>
+       <title>[WEEKLY] Weekly Space Roundup: Asteroid Flyby &amp; Black Hole Jets</title>
+       <link>https://flarient.com/podcast/weekly-space-roundup-asteroid-flyby-black-hole-jets</link>
+       <description>Welcome to the Daily Space Podcast by Flarient for our Sunday Weekly Roundup! Today, Ollie breaks down the top space weather events and astronomical breakthroughs from the past week. We examine the stunning new high-resolution time-lapse video of a relativistic black hole jet, explore the close approach of near-Earth asteroid 2025 UK9, and discuss the peak of the Taurids meteor shower originating from parent body 2P/Encke. We also dive into our featured blog articles covering the physics of orbital decay and satellite reentry, the tsunami risks posed by near-Earth asteroids, and how the Maximum Usable Frequency (MUF) impacts global amateur radio communications. Finally, we look at NASA&apos;s Artemis program and its mission to establish a permanent sustainable presence on the lunar south pole.
+
+Be sure to visit flarient.com for live space weather data, real-time Kp index tracking, aurora forecasts, and interactive dashboards. Subscribe to the podcast, check out our episode archive at flarient.com/podcast, and download the Flarient app for instant push notifications when geomagnetic storms hit.</description>
+       <pubDate>Sun, 13 Sep 2026 06:48:13 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-13</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-13/flarient-podcast-2026-09-13.mp3" length="9725285" type="audio/mpeg"/>
+       <itunes:duration>405</itunes:duration>
+       <itunes:episodeType>weekly</itunes:episodeType>
+       <itunes:episode>7</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-13.jpg"/>
+       <itunes:summary>Welcome to the Daily Space Podcast by Flarient for our Sunday Weekly Roundup! Today, Ollie breaks down the top space weather events and astronomical breakthroughs from the past week. We examine the stunning new high-resolution time-lapse video of a relativistic black hole jet, explore the close approach of near-Earth asteroid 2025 UK9, and discuss the peak of the Taurids meteor shower originating from parent body 2P/Encke. We also dive into our featured blog articles covering the physics of orbital decay and satellite reentry, the tsunami risks posed by near-Earth asteroids, and how the Maximum Usable Frequency (MUF) impacts global amateur radio communications. Finally, we look at NASA&apos;s Artemis program and its mission to establish a permanent sustainable presence on the lunar south pole.
+
+Be sure to visit flarient.com for live space weather data, real-time Kp index tracking, aurora forecasts, and interactive dashboards. Subscribe to the podcast, check out our episode archive at flarient.com/podcast, and download the Flarient app for instant push notifications when geomagnetic storms hit.</itunes:summary>
      </item>
   </channel>
 </rss>
