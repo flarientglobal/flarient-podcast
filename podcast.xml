@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-14.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-15.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -246,6 +246,31 @@ Check out our article on HF radio disruption: https://flarient.com/blog/space-we
 Explore solar flare mechanics: https://flarient.com/blog/the-mechanics-of-solar-flare-formation-gvug
 Learn about orbital debris management: https://flarient.com/blog/international-responsibility-for-the-management-of-orbital-debris
 Discover the cosmic distance ladder: https://flarient.com/blog/how-astronomers-determine-the-scale-of-the-universe</itunes:summary>
+     </item>
+      <item>
+       <title>A $1B Satellite Constellation &amp; Asteroid 2026 RG15 Earth Flyby</title>
+       <link>https://flarient.com/podcast/a-1b-satellite-constellation-asteroid-2026-rg15-earth-flyby</link>
+       <description>In today&apos;s episode of the Daily Space Podcast by Flarient, Ollie breaks down a major shift in the commercial space sector and the latest dynamics in near-Earth space. We lead off with breaking news of a brand new one billion dollar initiative from Marlan Space and Loft Orbital to launch a fifty-satellite constellation equipped with edge AI, escalating competition in low Earth orbit. On the astronomical front, we track near-Earth asteroid 2026 RG15 as it completes its close flyby of Earth today.
+
+In our space weather update, we dive into the latest NOAA and SWPC data, analyzing current Kp index readings, solar wind speeds around 389 km/s, and a positive interplanetary magnetic field (Bz) keeping conditions quiet. For our Discovery of the Day, we examine the precise physics behind ionospheric D-layer radio absorption and how high-frequency radio blackouts happen during solar flare events.
+
+We also explore three deep-dive blog posts covering auroral physics, D-layer electron dynamics, and auroral forecasting under Solar Cycle 25. In our space events segment, we preview the upcoming Taurids and Geminids meteor showers. Finally, we run a crucial fact check debunking the myth that solar flares pose a direct radiation hazard to human health on the ground.
+
+For live space weather metrics, Kp index tracking, and real-time aurora alerts, visit https://flarient.com.</description>
+       <pubDate>Tue, 15 Sep 2026 06:50:54 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-15</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-15/flarient-podcast-2026-09-15.mp3" length="14844248" type="audio/mpeg"/>
+       <itunes:duration>618</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>9</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-15.jpg"/>
+       <itunes:summary>In today&apos;s episode of the Daily Space Podcast by Flarient, Ollie breaks down a major shift in the commercial space sector and the latest dynamics in near-Earth space. We lead off with breaking news of a brand new one billion dollar initiative from Marlan Space and Loft Orbital to launch a fifty-satellite constellation equipped with edge AI, escalating competition in low Earth orbit. On the astronomical front, we track near-Earth asteroid 2026 RG15 as it completes its close flyby of Earth today.
+
+In our space weather update, we dive into the latest NOAA and SWPC data, analyzing current Kp index readings, solar wind speeds around 389 km/s, and a positive interplanetary magnetic field (Bz) keeping conditions quiet. For our Discovery of the Day, we examine the precise physics behind ionospheric D-layer radio absorption and how high-frequency radio blackouts happen during solar flare events.
+
+We also explore three deep-dive blog posts covering auroral physics, D-layer electron dynamics, and auroral forecasting under Solar Cycle 25. In our space events segment, we preview the upcoming Taurids and Geminids meteor showers. Finally, we run a crucial fact check debunking the myth that solar flares pose a direct radiation hazard to human health on the ground.
+
+For live space weather metrics, Kp index tracking, and real-time aurora alerts, visit https://flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
