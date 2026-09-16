@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-15.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-16.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -273,6 +273,31 @@ In our space weather update, we dive into the latest NOAA and SWPC data, analyzi
 We also explore three deep-dive blog posts covering auroral physics, D-layer electron dynamics, and auroral forecasting under Solar Cycle 25. In our space events segment, we preview the upcoming Taurids and Geminids meteor showers. Finally, we run a crucial fact check debunking the myth that solar flares pose a direct radiation hazard to human health on the ground.
 
 For live space weather metrics, Kp index tracking, and real-time aurora alerts, visit https://flarient.com.</itunes:summary>
+     </item>
+      <item>
+       <title>Asteroid 2025 UK9 Glides Past Earth Amid Quiet Space Weather</title>
+       <link>https://flarient.com/podcast/asteroid-2025-uk9-glides-past-earth-amid-quiet-space-weather</link>
+       <description>In today&apos;s episode, Ollie takes us on a journey through the inner solar system as we monitor the close approach of Near-Earth Asteroid 2025 UK9, which is transiting our cosmic backyard today, September 16, 2026. While this asteroid captures the public&apos;s imagination, our host explains why the space weather environment remains remarkably quiet and stable.
+
+We also dive into the fascinating and urgent science of the Kessler Syndrome. Named after NASA scientist Donald Kessler in 1978, this theory warns of a cascading chain reaction of orbital collisions that could render Low Earth Orbit completely unusable. Ollie breaks down the physics of orbital debris, explaining why an object traveling at seven kilometers per second carries such devastating kinetic energy.
+
+In our discovery segment, we look at the velocity of Coronal Mass Ejections (CMEs). While typical solar wind moves at a steady pace, these explosive eruptions can travel up to 3,000 kilometers per second, making early warning systems vital. We also cover the fundamentals of aerospace engineering, contrasting aeronautical flight with the harsh astronautical environment of space.
+
+Finally, we look ahead to the active Taurids meteor shower, running through late November and peaking on November 5, and review the subdued 72-hour space weather outlook. For live Kp index tracking, aurora forecasts, and interactive space weather dashboards, visit the official Flarient website at flarient.com.</description>
+       <pubDate>Wed, 16 Sep 2026 06:51:17 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-16</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-16/flarient-podcast-2026-09-16.mp3" length="19451619" type="audio/mpeg"/>
+       <itunes:duration>810</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>10</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-16.jpg"/>
+       <itunes:summary>In today&apos;s episode, Ollie takes us on a journey through the inner solar system as we monitor the close approach of Near-Earth Asteroid 2025 UK9, which is transiting our cosmic backyard today, September 16, 2026. While this asteroid captures the public&apos;s imagination, our host explains why the space weather environment remains remarkably quiet and stable.
+
+We also dive into the fascinating and urgent science of the Kessler Syndrome. Named after NASA scientist Donald Kessler in 1978, this theory warns of a cascading chain reaction of orbital collisions that could render Low Earth Orbit completely unusable. Ollie breaks down the physics of orbital debris, explaining why an object traveling at seven kilometers per second carries such devastating kinetic energy.
+
+In our discovery segment, we look at the velocity of Coronal Mass Ejections (CMEs). While typical solar wind moves at a steady pace, these explosive eruptions can travel up to 3,000 kilometers per second, making early warning systems vital. We also cover the fundamentals of aerospace engineering, contrasting aeronautical flight with the harsh astronautical environment of space.
+
+Finally, we look ahead to the active Taurids meteor shower, running through late November and peaking on November 5, and review the subdued 72-hour space weather outlook. For live Kp index tracking, aurora forecasts, and interactive space weather dashboards, visit the official Flarient website at flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
