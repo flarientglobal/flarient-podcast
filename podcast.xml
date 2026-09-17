@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-16.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-17.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -300,6 +300,31 @@ We also dive into the fascinating and urgent science of the Kessler Syndrome. Na
 In our discovery segment, we look at the velocity of Coronal Mass Ejections (CMEs). While typical solar wind moves at a steady pace, these explosive eruptions can travel up to 3,000 kilometers per second, making early warning systems vital. We also cover the fundamentals of aerospace engineering, contrasting aeronautical flight with the harsh astronautical environment of space.
 
 Finally, we look ahead to the active Taurids meteor shower, running through late November and peaking on November 5, and review the subdued 72-hour space weather outlook. For live Kp index tracking, aurora forecasts, and interactive space weather dashboards, visit the official Flarient website at flarient.com.</itunes:summary>
+     </item>
+      <item>
+       <title>Taurids Peak Tonight as Asteroid 2025 UK9 Swings Past</title>
+       <link>https://flarient.com/podcast/taurids-peak-tonight-as-asteroid-2025-uk9-swings-past</link>
+       <description>In today&apos;s episode of the Daily Space Podcast by Flarient, Ollie guides us through an incredibly busy night in our cosmic neighborhood. Despite our host star keeping a relatively low profile, we are tracking the harmless close approach of near-Earth Asteroid 2025 UK9 alongside the highly anticipated annual peak of the Taurids meteor shower. Ollie explains the simple orbital intersection driving these meteors and why you might spot some spectacular fireballs tonight.
+
+We also dive deep into the latest live space weather data from the NOAA SWPC. With a Kp index of 0.67 and a solar wind speed of 529.2 km/s, Ollie breaks down what these metrics mean for communication systems, GPS accuracy, and aurora chasers at polar latitudes.
+
+Later in the show, we explore several fascinating new articles from the Flarient blog. We perform a crucial scientific fact check debunking the popular online myth that solar flares trigger earthquakes, illustrating the fundamental boundary between upper-atmospheric space weather and deep-crust geology. Finally, we discuss how everyday enthusiasts are leveraging consumer technology to track solar cycles, and look at the engineering hurdles satellite operators face when monitoring CMEs to protect critical orbital infrastructure.
+
+Check out live space weather dashboards and join our community at https://flarient.com.</description>
+       <pubDate>Thu, 17 Sep 2026 06:51:21 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-17</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-17/flarient-podcast-2026-09-17.mp3" length="17210306" type="audio/mpeg"/>
+       <itunes:duration>717</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>11</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-17.jpg"/>
+       <itunes:summary>In today&apos;s episode of the Daily Space Podcast by Flarient, Ollie guides us through an incredibly busy night in our cosmic neighborhood. Despite our host star keeping a relatively low profile, we are tracking the harmless close approach of near-Earth Asteroid 2025 UK9 alongside the highly anticipated annual peak of the Taurids meteor shower. Ollie explains the simple orbital intersection driving these meteors and why you might spot some spectacular fireballs tonight.
+
+We also dive deep into the latest live space weather data from the NOAA SWPC. With a Kp index of 0.67 and a solar wind speed of 529.2 km/s, Ollie breaks down what these metrics mean for communication systems, GPS accuracy, and aurora chasers at polar latitudes.
+
+Later in the show, we explore several fascinating new articles from the Flarient blog. We perform a crucial scientific fact check debunking the popular online myth that solar flares trigger earthquakes, illustrating the fundamental boundary between upper-atmospheric space weather and deep-crust geology. Finally, we discuss how everyday enthusiasts are leveraging consumer technology to track solar cycles, and look at the engineering hurdles satellite operators face when monitoring CMEs to protect critical orbital infrastructure.
+
+Check out live space weather dashboards and join our community at https://flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
