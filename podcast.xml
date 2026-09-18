@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-17.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-18.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -327,6 +327,27 @@ We also dive deep into the latest live space weather data from the NOAA SWPC. Wi
 Later in the show, we explore several fascinating new articles from the Flarient blog. We perform a crucial scientific fact check debunking the popular online myth that solar flares trigger earthquakes, illustrating the fundamental boundary between upper-atmospheric space weather and deep-crust geology. Finally, we discuss how everyday enthusiasts are leveraging consumer technology to track solar cycles, and look at the engineering hurdles satellite operators face when monitoring CMEs to protect critical orbital infrastructure.
 
 Check out live space weather dashboards and join our community at https://flarient.com.</itunes:summary>
+     </item>
+      <item>
+       <title>Asteroid 2025 UK9 Glides Past Earth Amid Quiet Solar Wind</title>
+       <link>https://flarient.com/podcast/asteroid-2025-uk9-glides-past-earth-amid-quiet-solar-wind</link>
+       <description>In today&apos;s episode, Ollie covers the close approach of Asteroid 2025 UK9 as it glides past Earth during a period of relative solar quiet. We dive deep into the daily space weather metrics, revealing a highly stable magnetosphere with a Kp index of 1, steady solar winds at 461 km/s, and a closed magnetic shield with a positive Bz of 0.9 nT. Ollie also shares details on the annual peak of the Taurids meteor shower, offering skywatchers the chance to spot up to 10 slow-moving fireballs per hour originating from Comet 2P/Encke.
+
+In our science segments, we fact-check a common myth: are solar flares actually visible to the naked eye? We explore how the electromagnetic spectrum and the Solar Dynamics Observatory reveal the Sun&apos;s hidden activity. Moving into orbital dynamics, we discuss the growing threat of space debris and the engineering behind Whipple shields that protect the ISS at an altitude of 408 km. Finally, we look at the shared global responsibility of clearing orbital debris to prevent the Kessler Syndrome.
+
+For real-time solar tracking, interactive auroral forecasts, and extensive space weather dashboards, visit our official website at flarient.com.</description>
+       <pubDate>Fri, 18 Sep 2026 06:50:22 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-18</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-18/flarient-podcast-2026-09-18.mp3" length="20254725" type="audio/mpeg"/>
+       <itunes:duration>843</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>12</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-18.jpg"/>
+       <itunes:summary>In today&apos;s episode, Ollie covers the close approach of Asteroid 2025 UK9 as it glides past Earth during a period of relative solar quiet. We dive deep into the daily space weather metrics, revealing a highly stable magnetosphere with a Kp index of 1, steady solar winds at 461 km/s, and a closed magnetic shield with a positive Bz of 0.9 nT. Ollie also shares details on the annual peak of the Taurids meteor shower, offering skywatchers the chance to spot up to 10 slow-moving fireballs per hour originating from Comet 2P/Encke.
+
+In our science segments, we fact-check a common myth: are solar flares actually visible to the naked eye? We explore how the electromagnetic spectrum and the Solar Dynamics Observatory reveal the Sun&apos;s hidden activity. Moving into orbital dynamics, we discuss the growing threat of space debris and the engineering behind Whipple shields that protect the ISS at an altitude of 408 km. Finally, we look at the shared global responsibility of clearing orbital debris to prevent the Kessler Syndrome.
+
+For real-time solar tracking, interactive auroral forecasts, and extensive space weather dashboards, visit our official website at flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
