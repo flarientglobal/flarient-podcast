@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-18.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-19.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -350,6 +350,35 @@ For real-time solar tracking, interactive auroral forecasts, and extensive space
 In our science segments, we fact-check a common myth: are solar flares actually visible to the naked eye? We explore how the electromagnetic spectrum and the Solar Dynamics Observatory reveal the Sun&apos;s hidden activity. Moving into orbital dynamics, we discuss the growing threat of space debris and the engineering behind Whipple shields that protect the ISS at an altitude of 408 km. Finally, we look at the shared global responsibility of clearing orbital debris to prevent the Kessler Syndrome.
 
 For real-time solar tracking, interactive auroral forecasts, and extensive space weather dashboards, visit our official website at flarient.com.</itunes:summary>
+     </item>
+      <item>
+       <title>Roman Telescope Launches &amp; Asteroid 2025 UK9 Buzzes Earth</title>
+       <link>https://flarient.com/podcast/roman-telescope-launches-asteroid-2025-uk9-buzzes-earth</link>
+       <description>In this 30-minute deep dive, Ollie explores a monumental day for NASA and the global space community. We lead with the successful launch of the Nancy Grace Roman Space Telescope, a mission that utilizes a repurposed spy satellite mirror to investigate the mysteries of dark energy and distant galaxies. Ollie explains how this &apos;new eye&apos; in the sky differs from previous observatories and what it means for our understanding of the universe&apos;s expansion.
+
+Our focus then shifts closer to home as we track Asteroid 2025 UK9. While this near-Earth object makes its closest approach on September 19, 2026, it serves as a reminder of the dynamic nature of our cosmic neighborhood. We also touch upon the early activity of the Taurids meteor shower and why it’s a favorite for dark-sky observers.
+
+The episode provides a comprehensive Space Weather Report, detailing the current low Kp index of 0.33 and explaining the significance of a quiet magnetosphere for satellite health. In our science segment, we bridge the gap between high-altitude physics and the ground, summarizing key research on how noctilucent clouds serve as indicators of atmospheric change. 
+
+We also tackle the &apos;Kessler Syndrome&apos; in a discussion about orbital collisions and provide a vital fact-check on the relationship between solar flares and human biology. Is the Sun really making us sick, or is our magnetic field doing its job? To conclude, we visit the L1 Lagrange point to see how the DSCOVR satellite acts as our early warning system against solar winds. 
+
+For real-time data, Kp index tracking, and aurora forecasts, visit flarient.com.</description>
+       <pubDate>Sat, 19 Sep 2026 11:28:27 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-19</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-19/flarient-podcast-2026-09-19.mp3" length="16821608" type="audio/mpeg"/>
+       <itunes:duration>700</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>13</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-19.jpg"/>
+       <itunes:summary>In this 30-minute deep dive, Ollie explores a monumental day for NASA and the global space community. We lead with the successful launch of the Nancy Grace Roman Space Telescope, a mission that utilizes a repurposed spy satellite mirror to investigate the mysteries of dark energy and distant galaxies. Ollie explains how this &apos;new eye&apos; in the sky differs from previous observatories and what it means for our understanding of the universe&apos;s expansion.
+
+Our focus then shifts closer to home as we track Asteroid 2025 UK9. While this near-Earth object makes its closest approach on September 19, 2026, it serves as a reminder of the dynamic nature of our cosmic neighborhood. We also touch upon the early activity of the Taurids meteor shower and why it’s a favorite for dark-sky observers.
+
+The episode provides a comprehensive Space Weather Report, detailing the current low Kp index of 0.33 and explaining the significance of a quiet magnetosphere for satellite health. In our science segment, we bridge the gap between high-altitude physics and the ground, summarizing key research on how noctilucent clouds serve as indicators of atmospheric change. 
+
+We also tackle the &apos;Kessler Syndrome&apos; in a discussion about orbital collisions and provide a vital fact-check on the relationship between solar flares and human biology. Is the Sun really making us sick, or is our magnetic field doing its job? To conclude, we visit the L1 Lagrange point to see how the DSCOVR satellite acts as our early warning system against solar winds. 
+
+For real-time data, Kp index tracking, and aurora forecasts, visit flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
