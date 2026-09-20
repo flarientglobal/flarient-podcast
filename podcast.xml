@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-19.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-20.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -381,6 +381,43 @@ The episode provides a comprehensive Space Weather Report, detailing the current
 We also tackle the &apos;Kessler Syndrome&apos; in a discussion about orbital collisions and provide a vital fact-check on the relationship between solar flares and human biology. Is the Sun really making us sick, or is our magnetic field doing its job? To conclude, we visit the L1 Lagrange point to see how the DSCOVR satellite acts as our early warning system against solar winds. 
 
 For real-time data, Kp index tracking, and aurora forecasts, visit flarient.com.</itunes:summary>
+     </item>
+      <item>
+       <title>[WEEKLY] Methanol in Comet 3I/ATLAS — Our Window Into Distant Stars</title>
+       <link>https://flarient.com/podcast/methanol-in-comet-3iatlas-our-window-into-distant-stars</link>
+       <description>Welcome to this week&apos;s comprehensive roundup of the Daily Space Podcast by Flarient. In today&apos;s episode, hosted by Ollie, we dive into the sensational astrochemistry discovery surrounding the interstellar comet 3I/ATLAS. Observations from the Atacama Large Millimeter/submillimeter Array (ALMA) have revealed unusually high concentrations of methanol locked within its icy grains, offering a unique window into the chemistry of distant, foreign star systems.
+
+We also track the safe close approach of near-Earth asteroid 2025 UK9, which passes our planet today, and look ahead to the upcoming Taurids meteor shower set to peak on November 5, 2026. 
+
+On the space weather front, the Sun remains remarkably calm. We break down today&apos;s real-time metrics, including a quiet Kp index of 0.33, a Dst index of -19 nT, and a steady solar wind speed of 408.7 km/s. This quiet environment is perfect for satellite operators and communications networks, allowing us to enjoy stable GNSS signals worldwide. 
+
+In our deep dive segments, we analyze the critical role of commercial space weather services in protecting modern infrastructure and satellite fleets. We explore how coronal mass ejections and geomagnetic storms cause atmospheric heating, leading to orbital drag for low Earth orbit satellites, and how single event upsets threaten delicate onboard electronics. We also discuss the scientific framework for identifying extraterrestrial life using atmospheric spectroscopy and biosignatures, and how the Search for Extraterrestrial Intelligence (SETI) filters narrow-band technosignatures from the noisy cosmos.
+
+Finally, we address this week&apos;s sensationalized social media claims of an &apos;imminent superstorm&apos; by checking the actual scientific facts and real-time data.
+
+For live space weather data, real-time Kp index, aurora forecasts, and interactive dashboards, visit the official Flarient website at https://flarient.com.
+
+Read our featured articles on commercial space weather forecasting at https://flarient.com/blog/companies-providing-specialized-space-weather-forecasting-for-businesses, atmospheric biosignatures at https://flarient.com/blog/the-scientific-framework-for-identifying-extraterrestrial-life, satellite operations at https://flarient.com/blog/space-weather-impacts-on-satellite-operations, and SETI methods at https://flarient.com/blog/the-science-of-searching-for-extraterrestrial-intelligence.</description>
+       <pubDate>Sun, 20 Sep 2026 06:43:29 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-20</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-20/flarient-podcast-2026-09-20.mp3" length="15249875" type="audio/mpeg"/>
+       <itunes:duration>635</itunes:duration>
+       <itunes:episodeType>weekly</itunes:episodeType>
+       <itunes:episode>14</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-20.jpg"/>
+       <itunes:summary>Welcome to this week&apos;s comprehensive roundup of the Daily Space Podcast by Flarient. In today&apos;s episode, hosted by Ollie, we dive into the sensational astrochemistry discovery surrounding the interstellar comet 3I/ATLAS. Observations from the Atacama Large Millimeter/submillimeter Array (ALMA) have revealed unusually high concentrations of methanol locked within its icy grains, offering a unique window into the chemistry of distant, foreign star systems.
+
+We also track the safe close approach of near-Earth asteroid 2025 UK9, which passes our planet today, and look ahead to the upcoming Taurids meteor shower set to peak on November 5, 2026. 
+
+On the space weather front, the Sun remains remarkably calm. We break down today&apos;s real-time metrics, including a quiet Kp index of 0.33, a Dst index of -19 nT, and a steady solar wind speed of 408.7 km/s. This quiet environment is perfect for satellite operators and communications networks, allowing us to enjoy stable GNSS signals worldwide. 
+
+In our deep dive segments, we analyze the critical role of commercial space weather services in protecting modern infrastructure and satellite fleets. We explore how coronal mass ejections and geomagnetic storms cause atmospheric heating, leading to orbital drag for low Earth orbit satellites, and how single event upsets threaten delicate onboard electronics. We also discuss the scientific framework for identifying extraterrestrial life using atmospheric spectroscopy and biosignatures, and how the Search for Extraterrestrial Intelligence (SETI) filters narrow-band technosignatures from the noisy cosmos.
+
+Finally, we address this week&apos;s sensationalized social media claims of an &apos;imminent superstorm&apos; by checking the actual scientific facts and real-time data.
+
+For live space weather data, real-time Kp index, aurora forecasts, and interactive dashboards, visit the official Flarient website at https://flarient.com.
+
+Read our featured articles on commercial space weather forecasting at https://flarient.com/blog/companies-providing-specialized-space-weather-forecasting-for-businesses, atmospheric biosignatures at https://flarient.com/blog/the-scientific-framework-for-identifying-extraterrestrial-life, satellite operations at https://flarient.com/blog/space-weather-impacts-on-satellite-operations, and SETI methods at https://flarient.com/blog/the-science-of-searching-for-extraterrestrial-intelligence.</itunes:summary>
      </item>
   </channel>
 </rss>
