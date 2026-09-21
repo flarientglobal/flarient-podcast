@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-20.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-21.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -420,6 +420,27 @@ Finally, we address this week&apos;s sensationalized social media claims of an &
 For live space weather data, real-time Kp index, aurora forecasts, and interactive dashboards, visit the official Flarient website at https://flarient.com.
 
 Read our featured articles on commercial space weather forecasting at https://flarient.com/blog/companies-providing-specialized-space-weather-forecasting-for-businesses, atmospheric biosignatures at https://flarient.com/blog/the-scientific-framework-for-identifying-extraterrestrial-life, satellite operations at https://flarient.com/blog/space-weather-impacts-on-satellite-operations, and SETI methods at https://flarient.com/blog/the-science-of-searching-for-extraterrestrial-intelligence.</itunes:summary>
+     </item>
+      <item>
+       <title>Canada&apos;s New Space Gateway &amp; the Peak of the Taurids</title>
+       <link>https://flarient.com/podcast/canadas-new-space-gateway-the-peak-of-the-taurids</link>
+       <description>In this episode, Ollie takes you on a deep dive into the latest space weather and astronomical events for September 21, 2026. We kick things off with breaking news from Spaceport Nova Scotia, where Leaf Space has officially opened its first Canadian ground station, enhancing global satellite tracking and S-band and X-band data downloads. We then transition to the cosmos, where near-Earth asteroid 2025 UK9 is making a close flyby, and the Taurids meteor shower is reaching its peak. 
+
+Ollie covers the daily space weather report, highlighting a remarkably quiet day with a Kp index of 0.33, a steady solar wind speed of 379.7 km/s, and a benign magnetic field. We also explore the fascinating science of solar particle events, Solar Cycle 25, and how auroras paint the polar skies. Finally, we run a crucial fact check on noctilucent clouds, explaining why these shimmering blue twilight structures in the mesosphere pose absolutely no threat to life on Earth. 
+
+Head over to flarient.com for real-time space weather data, interactive Kp dashboards, and aurora forecasts.</description>
+       <pubDate>Mon, 21 Sep 2026 13:17:24 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-21</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-21/flarient-podcast-2026-09-21.mp3" length="20017110" type="audio/mpeg"/>
+       <itunes:duration>834</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>15</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-21.jpg"/>
+       <itunes:summary>In this episode, Ollie takes you on a deep dive into the latest space weather and astronomical events for September 21, 2026. We kick things off with breaking news from Spaceport Nova Scotia, where Leaf Space has officially opened its first Canadian ground station, enhancing global satellite tracking and S-band and X-band data downloads. We then transition to the cosmos, where near-Earth asteroid 2025 UK9 is making a close flyby, and the Taurids meteor shower is reaching its peak. 
+
+Ollie covers the daily space weather report, highlighting a remarkably quiet day with a Kp index of 0.33, a steady solar wind speed of 379.7 km/s, and a benign magnetic field. We also explore the fascinating science of solar particle events, Solar Cycle 25, and how auroras paint the polar skies. Finally, we run a crucial fact check on noctilucent clouds, explaining why these shimmering blue twilight structures in the mesosphere pose absolutely no threat to life on Earth. 
+
+Head over to flarient.com for real-time space weather data, interactive Kp dashboards, and aurora forecasts.</itunes:summary>
      </item>
   </channel>
 </rss>
