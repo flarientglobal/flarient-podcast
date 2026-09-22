@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-21.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-22.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -443,6 +443,19 @@ Head over to flarient.com for real-time space weather data, interactive Kp dashb
 Ollie covers the daily space weather report, highlighting a remarkably quiet day with a Kp index of 0.33, a steady solar wind speed of 379.7 km/s, and a benign magnetic field. We also explore the fascinating science of solar particle events, Solar Cycle 25, and how auroras paint the polar skies. Finally, we run a crucial fact check on noctilucent clouds, explaining why these shimmering blue twilight structures in the mesosphere pose absolutely no threat to life on Earth. 
 
 Head over to flarient.com for real-time space weather data, interactive Kp dashboards, and aurora forecasts.</itunes:summary>
+     </item>
+      <item>
+       <title>Solar Calm &amp; Asteroid 2025 UK9 Flyby</title>
+       <link>https://flarient.com/podcast/solar-calm-asteroid-2025-uk9-flyby</link>
+       <description>Welcome to another daily edition of the Daily Space Podcast by Flarient with your host Ollie. In today&apos;s episode, we explore the current state of space weather, where the Sun is in a state of absolute calm with a Kp index lingering near zero and steady solar wind conditions. We lead with breaking updates on the Nancy Grace Roman Space Telescope as it cruises toward the second Lagrange point following its recent launch, alongside a routine close flyby of near-Earth asteroid 2025 UK9. We break down what these milestones mean for astronomy and planetary defence. In our deep-dive segments, we examine the physics of solar flares, magnetic reconnection, and how intense bursts of radiation impact Earth&apos;s upper atmosphere and communications. We also explore the ethereal atmospheric mechanics of noctilucent clouds, Earth&apos;s highest cloud formations glittering in the mesosphere at extreme altitudes. We round out the show with a look at cislunar space expansion, upcoming meteor shower outlooks, and essential space weather metrics to keep you fully informed. Visit flarient.com for live Kp index tracking, aurora forecasts, interactive dashboards, and our extensive data archive. Subscribe to the podcast on your favorite platform, follow Flarient on social media for real-time space weather alerts, and download the Flarient app for instant push notifications when geomagnetic storms hit.</description>
+       <pubDate>Tue, 22 Sep 2026 12:02:38 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-22</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-22/flarient-podcast-2026-09-22.mp3" length="8703357" type="audio/mpeg"/>
+       <itunes:duration>362</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>16</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-22.jpg"/>
+       <itunes:summary>Welcome to another daily edition of the Daily Space Podcast by Flarient with your host Ollie. In today&apos;s episode, we explore the current state of space weather, where the Sun is in a state of absolute calm with a Kp index lingering near zero and steady solar wind conditions. We lead with breaking updates on the Nancy Grace Roman Space Telescope as it cruises toward the second Lagrange point following its recent launch, alongside a routine close flyby of near-Earth asteroid 2025 UK9. We break down what these milestones mean for astronomy and planetary defence. In our deep-dive segments, we examine the physics of solar flares, magnetic reconnection, and how intense bursts of radiation impact Earth&apos;s upper atmosphere and communications. We also explore the ethereal atmospheric mechanics of noctilucent clouds, Earth&apos;s highest cloud formations glittering in the mesosphere at extreme altitudes. We round out the show with a look at cislunar space expansion, upcoming meteor shower outlooks, and essential space weather metrics to keep you fully informed. Visit flarient.com for live Kp index tracking, aurora forecasts, interactive dashboards, and our extensive data archive. Subscribe to the podcast on your favorite platform, follow Flarient on social media for real-time space weather alerts, and download the Flarient app for instant push notifications when geomagnetic storms hit.</itunes:summary>
      </item>
   </channel>
 </rss>
