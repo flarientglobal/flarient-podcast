@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-22.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-23.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -458,6 +458,53 @@ Head over to flarient.com for real-time space weather data, interactive Kp dashb
        <itunes:episode>16</itunes:episode>
       <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-22.jpg"/>
        <itunes:summary>Welcome to another daily edition of the Daily Space Podcast by Flarient with your host Ollie. In today&apos;s episode, we explore the current state of space weather, where the Sun is in a state of absolute calm with a Kp index lingering near zero and steady solar wind conditions. We lead with breaking updates on the Nancy Grace Roman Space Telescope as it cruises toward the second Lagrange point following its recent launch, alongside a routine close flyby of near-Earth asteroid 2025 UK9. We break down what these milestones mean for astronomy and planetary defence. In our deep-dive segments, we examine the physics of solar flares, magnetic reconnection, and how intense bursts of radiation impact Earth&apos;s upper atmosphere and communications. We also explore the ethereal atmospheric mechanics of noctilucent clouds, Earth&apos;s highest cloud formations glittering in the mesosphere at extreme altitudes. We round out the show with a look at cislunar space expansion, upcoming meteor shower outlooks, and essential space weather metrics to keep you fully informed. Visit flarient.com for live Kp index tracking, aurora forecasts, interactive dashboards, and our extensive data archive. Subscribe to the podcast on your favorite platform, follow Flarient on social media for real-time space weather alerts, and download the Flarient app for instant push notifications when geomagnetic storms hit.</itunes:summary>
+     </item>
+      <item>
+       <title>Quiet Sun, Asteroid Pass &amp; Taurids Meteor Peak</title>
+       <link>https://flarient.com/podcast/quiet-sun-asteroid-pass-taurids-meteor-peak</link>
+       <description>Welcome to another daily edition of the Daily Space Podcast by Flarient with your host Ollie. Today is Wednesday, September 23, 2026, and we are tracking an unusually calm space weather environment paired with some fascinating astronomical highlights. 
+
+In today&apos;s episode, we kick off with a look at near-Earth asteroid 2025 UK9, which is safely gliding past our planet while solar activity remains remarkably quiet. We examine why the Kp index is hovering near zero, with solar wind speeds settling into a gentle 314.3 kilometers per second and an interplanetary magnetic field component Bz resting at a benign minus 0.9 nanoTesla. 
+
+Next, we explore the ongoing peak of the Taurids meteor shower, offering stargazers up to 10 meteors per hour in dark-sky locations after midnight, originating from comet 2P/Encke. We then transition into our educational blog segments, unpacking the complex physics behind orbital satellite collisions and the looming threat of Kessler Syndrome in Low Earth Orbit. We also break down why powerful X-ray and EUV radiation from solar flares trigger sudden ionospheric disturbances and high-frequency (HF) radio blackouts in the D region of the atmosphere.
+
+Finally, we cover essential space weather tracking tools, reliable real-time data sources, and how astrophysical principles help us understand stellar cycles and solar wind dynamics. Be sure to check out flarient.com for live Kp index tracking, aurora forecasts, and our interactive solar dashboard.
+
+Links and resources mentioned in today&apos;s episode:
+- Flarient Live Space Weather: https://flarient.com
+- Podcast Archive and Show Notes: https://flarient.com/podcast
+- Ursids Meteor Shower Info: https://flarient.com/space-events/meteor-ursids-2026
+- Orbital Satellite Collisions Blog: https://flarient.com/blog/the-mechanics-and-consequences-of-orbital-satellite-collisions
+- Astrophysics Blog: https://flarient.com/blog/astrophysics-and-the-study-of-the-universe
+- HF Radio Blackouts Blog: https://flarient.com/blog/what-causes-hf-radio-blackouts-during-solar-flares
+- Real-Time Data Blog: https://flarient.com/blog/accessing-reliable-real-time-space-weather-data
+- NASA CNEOS: https://cneos.jpl.nasa.gov/
+- NOAA SWPC: https://www.swpc.noaa.gov/</description>
+       <pubDate>Wed, 23 Sep 2026 12:03:04 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-23</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-23/flarient-podcast-2026-09-23.mp3" length="10167269" type="audio/mpeg"/>
+       <itunes:duration>423</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>17</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-23.jpg"/>
+       <itunes:summary>Welcome to another daily edition of the Daily Space Podcast by Flarient with your host Ollie. Today is Wednesday, September 23, 2026, and we are tracking an unusually calm space weather environment paired with some fascinating astronomical highlights. 
+
+In today&apos;s episode, we kick off with a look at near-Earth asteroid 2025 UK9, which is safely gliding past our planet while solar activity remains remarkably quiet. We examine why the Kp index is hovering near zero, with solar wind speeds settling into a gentle 314.3 kilometers per second and an interplanetary magnetic field component Bz resting at a benign minus 0.9 nanoTesla. 
+
+Next, we explore the ongoing peak of the Taurids meteor shower, offering stargazers up to 10 meteors per hour in dark-sky locations after midnight, originating from comet 2P/Encke. We then transition into our educational blog segments, unpacking the complex physics behind orbital satellite collisions and the looming threat of Kessler Syndrome in Low Earth Orbit. We also break down why powerful X-ray and EUV radiation from solar flares trigger sudden ionospheric disturbances and high-frequency (HF) radio blackouts in the D region of the atmosphere.
+
+Finally, we cover essential space weather tracking tools, reliable real-time data sources, and how astrophysical principles help us understand stellar cycles and solar wind dynamics. Be sure to check out flarient.com for live Kp index tracking, aurora forecasts, and our interactive solar dashboard.
+
+Links and resources mentioned in today&apos;s episode:
+- Flarient Live Space Weather: https://flarient.com
+- Podcast Archive and Show Notes: https://flarient.com/podcast
+- Ursids Meteor Shower Info: https://flarient.com/space-events/meteor-ursids-2026
+- Orbital Satellite Collisions Blog: https://flarient.com/blog/the-mechanics-and-consequences-of-orbital-satellite-collisions
+- Astrophysics Blog: https://flarient.com/blog/astrophysics-and-the-study-of-the-universe
+- HF Radio Blackouts Blog: https://flarient.com/blog/what-causes-hf-radio-blackouts-during-solar-flares
+- Real-Time Data Blog: https://flarient.com/blog/accessing-reliable-real-time-space-weather-data
+- NASA CNEOS: https://cneos.jpl.nasa.gov/
+- NOAA SWPC: https://www.swpc.noaa.gov/</itunes:summary>
      </item>
   </channel>
 </rss>
