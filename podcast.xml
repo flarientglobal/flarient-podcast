@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-23.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-24.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -507,6 +507,45 @@ Links and resources mentioned in today&apos;s episode:
 - Real-Time Data Blog: https://flarient.com/blog/accessing-reliable-real-time-space-weather-data
 - NASA CNEOS: https://cneos.jpl.nasa.gov/
 - NOAA SWPC: https://www.swpc.noaa.gov/</itunes:summary>
+     </item>
+      <item>
+       <title>G1 Geomagnetic Storm Active and Asteroid 2025 UK9 Buzzes Earth</title>
+       <link>https://flarient.com/podcast/g1-geomagnetic-storm-active-and-asteroid-2025-uk9-buzzes-earth</link>
+       <description>Welcome to another daily edition of the Daily Space Podcast by Flarient. Today, host Ollie breaks down the latest developments in space weather and astronomy as of Wednesday, September 24, 2026. We kick things off with breaking news on the active G1 moderate geomagnetic storm currently in progress, driven by a Kp index reaching around 4.33 to 5.0 and a Dst index of -36, bringing potential aurora visibility to mid-latitudes. We also explore the close flyby of near-Earth asteroid 2025 UK9, offering fantastic viewing conditions for amateur astronomers alongside the active Taurids meteor shower.
+
+In our deep dives, we examine how satellite tracking relies on precise physics and global coordination, and how solar flare activity impacts global navigation systems by distorting the ionosphere. We clarify the fundamental differences between astronomy and cosmology, and analyze the mechanics of asteroid impacts on Earth. We also review our daily brief, discussing current solar calm, solar wind speeds, and the 72-hour forecast as we watch for potential coronal mass ejection arrivals.
+
+Be sure to visit flarient.com for live space weather data, real-time Kp index tracking, aurora forecasts, and interactive dashboards. Download the Flarient app for push notifications when geomagnetic storms hit, and join our community of space weather enthusiasts and aurora chasers.
+
+Links mentioned in this episode:
+- Tracking Satellites in Real Time: https://flarient.com/blog/tracking-satellites-in-real-time-nxme
+- Solar Flare Impacts on Global Satellite Navigation Systems: https://flarient.com/blog/solar-flare-impacts-on-global-navigation-systems
+- Cosmology and Astronomy: https://flarient.com/blog/cosmology-and-astronomy-distinguishing-the-study-of-the-universe
+- The Mechanics of Asteroid Impacts on Earth: https://flarient.com/blog/the-mechanics-of-asteroid-impacts-on-earth
+- G1 Geomagnetic Storm Event: https://flarient.com/space-events/2026-09-24-g1-storm
+- NOAA SWPC: https://www.swpc.noaa.gov/
+- NASA CNEOS: https://cneos.jpl.nasa.gov/</description>
+       <pubDate>Thu, 24 Sep 2026 12:08:53 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-24</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-24/flarient-podcast-2026-09-24.mp3" length="12773469" type="audio/mpeg"/>
+       <itunes:duration>532</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>18</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-24.jpg"/>
+       <itunes:summary>Welcome to another daily edition of the Daily Space Podcast by Flarient. Today, host Ollie breaks down the latest developments in space weather and astronomy as of Wednesday, September 24, 2026. We kick things off with breaking news on the active G1 moderate geomagnetic storm currently in progress, driven by a Kp index reaching around 4.33 to 5.0 and a Dst index of -36, bringing potential aurora visibility to mid-latitudes. We also explore the close flyby of near-Earth asteroid 2025 UK9, offering fantastic viewing conditions for amateur astronomers alongside the active Taurids meteor shower.
+
+In our deep dives, we examine how satellite tracking relies on precise physics and global coordination, and how solar flare activity impacts global navigation systems by distorting the ionosphere. We clarify the fundamental differences between astronomy and cosmology, and analyze the mechanics of asteroid impacts on Earth. We also review our daily brief, discussing current solar calm, solar wind speeds, and the 72-hour forecast as we watch for potential coronal mass ejection arrivals.
+
+Be sure to visit flarient.com for live space weather data, real-time Kp index tracking, aurora forecasts, and interactive dashboards. Download the Flarient app for push notifications when geomagnetic storms hit, and join our community of space weather enthusiasts and aurora chasers.
+
+Links mentioned in this episode:
+- Tracking Satellites in Real Time: https://flarient.com/blog/tracking-satellites-in-real-time-nxme
+- Solar Flare Impacts on Global Satellite Navigation Systems: https://flarient.com/blog/solar-flare-impacts-on-global-navigation-systems
+- Cosmology and Astronomy: https://flarient.com/blog/cosmology-and-astronomy-distinguishing-the-study-of-the-universe
+- The Mechanics of Asteroid Impacts on Earth: https://flarient.com/blog/the-mechanics-of-asteroid-impacts-on-earth
+- G1 Geomagnetic Storm Event: https://flarient.com/space-events/2026-09-24-g1-storm
+- NOAA SWPC: https://www.swpc.noaa.gov/
+- NASA CNEOS: https://cneos.jpl.nasa.gov/</itunes:summary>
      </item>
   </channel>
 </rss>
