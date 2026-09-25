@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-24.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-25.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -548,6 +548,27 @@ Links mentioned in this episode:
 - G1 Geomagnetic Storm Event: https://flarient.com/space-events/2026-09-24-g1-storm
 - NOAA SWPC: https://www.swpc.noaa.gov/
 - NASA CNEOS: https://cneos.jpl.nasa.gov/</itunes:summary>
+     </item>
+      <item>
+       <title>New Horizons Wakes Up &amp; Taurids Meteor Shower Peak</title>
+       <link>https://flarient.com/podcast/new-horizons-wakes-up-taurids-meteor-shower-peak</link>
+       <description>In today&apos;s episode for Friday, September 25th, 2026, we cover a wealth of activity from the inner solar system to the very edge of the sun&apos;s influence. We lead with the exciting news that NASA&apos;s New Horizons spacecraft has emerged from hibernation in excellent health, ready to continue its mission into interstellar space. Closer to home, we analyze the passage of near-Earth asteroid 2025 UK9 and provide viewing tips for the peak of the Taurids meteor shower, which is expected to produce up to ten shooting stars per hour tonight.
+
+Our space weather segment explores a moderate Kp index anomaly, with levels reaching 4.33, signaling active magnetic conditions. We break down the solar wind speeds and the southward Bz component to explain what this means for our satellites and potential aurora displays. We also delve into the physics of solar flares, the growing threat of space debris and the Kessler Syndrome, and the reality of asteroid impacts on Earth. 
+
+In our fact-check segment, we debunk the persistent myth that NASA cuts the International Space Station live feed to hide unidentified flying objects, explaining the actual orbital mechanics and communications infrastructure behind signal interruptions. Finally, we look ahead to upcoming planetary events like Mercury&apos;s greatest elongation in November. For live data and more, visit flarient.com.</description>
+       <pubDate>Fri, 25 Sep 2026 12:08:37 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-25</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-25/flarient-podcast-2026-09-25.mp3" length="14600984" type="audio/mpeg"/>
+       <itunes:duration>608</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>19</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-25.jpg"/>
+       <itunes:summary>In today&apos;s episode for Friday, September 25th, 2026, we cover a wealth of activity from the inner solar system to the very edge of the sun&apos;s influence. We lead with the exciting news that NASA&apos;s New Horizons spacecraft has emerged from hibernation in excellent health, ready to continue its mission into interstellar space. Closer to home, we analyze the passage of near-Earth asteroid 2025 UK9 and provide viewing tips for the peak of the Taurids meteor shower, which is expected to produce up to ten shooting stars per hour tonight.
+
+Our space weather segment explores a moderate Kp index anomaly, with levels reaching 4.33, signaling active magnetic conditions. We break down the solar wind speeds and the southward Bz component to explain what this means for our satellites and potential aurora displays. We also delve into the physics of solar flares, the growing threat of space debris and the Kessler Syndrome, and the reality of asteroid impacts on Earth. 
+
+In our fact-check segment, we debunk the persistent myth that NASA cuts the International Space Station live feed to hide unidentified flying objects, explaining the actual orbital mechanics and communications infrastructure behind signal interruptions. Finally, we look ahead to upcoming planetary events like Mercury&apos;s greatest elongation in November. For live data and more, visit flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
