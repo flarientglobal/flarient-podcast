@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-25.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-26.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -571,6 +571,35 @@ In our fact-check segment, we debunk the persistent myth that NASA cuts the Inte
 Our space weather segment explores a moderate Kp index anomaly, with levels reaching 4.33, signaling active magnetic conditions. We break down the solar wind speeds and the southward Bz component to explain what this means for our satellites and potential aurora displays. We also delve into the physics of solar flares, the growing threat of space debris and the Kessler Syndrome, and the reality of asteroid impacts on Earth. 
 
 In our fact-check segment, we debunk the persistent myth that NASA cuts the International Space Station live feed to hide unidentified flying objects, explaining the actual orbital mechanics and communications infrastructure behind signal interruptions. Finally, we look ahead to upcoming planetary events like Mercury&apos;s greatest elongation in November. For live data and more, visit flarient.com.</itunes:summary>
+     </item>
+      <item>
+       <title>Neptune at Opposition, Asteroid 2025 UK9 Flyby &amp; Space Weather</title>
+       <link>https://flarient.com/podcast/neptune-at-opposition-asteroid-2025-uk9-flyby-space-weather</link>
+       <description>Welcome to today&apos;s episode of the Daily Space Podcast by Flarient for Saturday, September 26, 2026! In this episode, Ollie breaks down the biggest news in space exploration, astronomy, and space weather.
+
+We start with breaking news on SpaceX&apos;s preparations for its 80th Starlink mission from Vandenberg Space Force Base, clearing the pad for upcoming heavy-lift operations in Florida. We also track the close approach of near-Earth asteroid 2025 UK9, monitored by NASA&apos;s Center for Near-Earth Object Studies (CNEOS), and celebrate Neptune reaching opposition today—a rare, perfect window for telescope observations.
+
+In our Space Weather Report, we take a close look at current solar conditions. With the Kp index sitting at a calm 2 after reaching a peak of 4.0 over the last 24 hours, solar wind speeds around 509.5 km/s, and a Dst index near -34 to -38 nT, geomagnetic conditions remain quiet and stable.
+
+Our Discovery segment highlights the physics of Neptune&apos;s opposition, while our Blog Articles dive into predicting aurora visibility, the elusiveness of solar flare forecasting, and how Whipple shields protect orbital hardware from dangerous space debris. Finally, we tackle two big fact checks: can auroras ever be visible in daylight, and can solar flares be predicted in advance?
+
+For real-time space weather data, aurora forecasts, and interactive dashboards, visit https://flarient.com.</description>
+       <pubDate>Sat, 26 Sep 2026 11:44:48 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-26</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-26/flarient-podcast-2026-09-26.mp3" length="20400806" type="audio/mpeg"/>
+       <itunes:duration>849</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>20</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-26.jpg"/>
+       <itunes:summary>Welcome to today&apos;s episode of the Daily Space Podcast by Flarient for Saturday, September 26, 2026! In this episode, Ollie breaks down the biggest news in space exploration, astronomy, and space weather.
+
+We start with breaking news on SpaceX&apos;s preparations for its 80th Starlink mission from Vandenberg Space Force Base, clearing the pad for upcoming heavy-lift operations in Florida. We also track the close approach of near-Earth asteroid 2025 UK9, monitored by NASA&apos;s Center for Near-Earth Object Studies (CNEOS), and celebrate Neptune reaching opposition today—a rare, perfect window for telescope observations.
+
+In our Space Weather Report, we take a close look at current solar conditions. With the Kp index sitting at a calm 2 after reaching a peak of 4.0 over the last 24 hours, solar wind speeds around 509.5 km/s, and a Dst index near -34 to -38 nT, geomagnetic conditions remain quiet and stable.
+
+Our Discovery segment highlights the physics of Neptune&apos;s opposition, while our Blog Articles dive into predicting aurora visibility, the elusiveness of solar flare forecasting, and how Whipple shields protect orbital hardware from dangerous space debris. Finally, we tackle two big fact checks: can auroras ever be visible in daylight, and can solar flares be predicted in advance?
+
+For real-time space weather data, aurora forecasts, and interactive dashboards, visit https://flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
