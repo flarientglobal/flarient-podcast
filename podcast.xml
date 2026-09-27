@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-26.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-27.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -602,6 +602,39 @@ In our Space Weather Report, we take a close look at current solar conditions. W
 Our Discovery segment highlights the physics of Neptune&apos;s opposition, while our Blog Articles dive into predicting aurora visibility, the elusiveness of solar flare forecasting, and how Whipple shields protect orbital hardware from dangerous space debris. Finally, we tackle two big fact checks: can auroras ever be visible in daylight, and can solar flares be predicted in advance?
 
 For real-time space weather data, aurora forecasts, and interactive dashboards, visit https://flarient.com.</itunes:summary>
+     </item>
+      <item>
+       <title>[WEEKLY] Asteroid 2025 UK9 Swings By &amp; Quantum Universe Theory</title>
+       <link>https://flarient.com/podcast/asteroid-2025-uk9-swings-by-quantum-universe-theory</link>
+       <description>In this extensive Sunday weekly roundup, Ollie takes us on a deep dive into the most compelling space weather and cosmic events of the past week, as of Sunday, September 27, 2026.
+
+First, we track the close approach of near-Earth Asteroid 2025 UK9, analyzing the mechanics of cosmic traffic and the persistent solar wind streams left behind by the solar eruptions on September 4, 2026. We look at how these high-speed streams continue to transfer energy into our magnetosphere through magnetic reconnection.
+
+Next, we explore the intricate physics of satellite orbits. Using the International Space Station as our guide, we discuss Isaac Newton&apos;s famous cannonball thought experiment and explain how solar activity can heat and expand our upper atmosphere, creating orbital drag that threatens low Earth orbit infrastructure. Ollie then breaks down how aerospace engineers harden spacecraft against surface and deep dielectric charging, avoiding disastrous single-event upsets during geomagnetic storms rated from G1 to G5.
+
+For ham radio operators and aurora chasers, we demystify the science of ionospheric propagation and explain exactly how the Aurora Borealis is created when solar particles excite atmospheric oxygen and nitrogen. We also review yesterday&apos;s celestial highlight: Neptune reaching opposition on September 26, 2026, making it the perfect target for midnight stargazers.
+
+Finally, we tackle a mind-bending fact check: is the universe an engineered quantum computer? We evaluate Seth Lloyd&apos;s computational models and explain why this theory remains scientifically unverifiable due to a lack of testable, falsifiable predictions.
+
+Keep track of real-time conditions by visiting flarient.com for live Kp index updates, aurora forecasts, and interactive space weather dashboards.</description>
+       <pubDate>Sun, 27 Sep 2026 12:19:07 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-27</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-27/flarient-podcast-2026-09-27.mp3" length="16423498" type="audio/mpeg"/>
+       <itunes:duration>684</itunes:duration>
+       <itunes:episodeType>weekly</itunes:episodeType>
+       <itunes:episode>21</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-27.jpg"/>
+       <itunes:summary>In this extensive Sunday weekly roundup, Ollie takes us on a deep dive into the most compelling space weather and cosmic events of the past week, as of Sunday, September 27, 2026.
+
+First, we track the close approach of near-Earth Asteroid 2025 UK9, analyzing the mechanics of cosmic traffic and the persistent solar wind streams left behind by the solar eruptions on September 4, 2026. We look at how these high-speed streams continue to transfer energy into our magnetosphere through magnetic reconnection.
+
+Next, we explore the intricate physics of satellite orbits. Using the International Space Station as our guide, we discuss Isaac Newton&apos;s famous cannonball thought experiment and explain how solar activity can heat and expand our upper atmosphere, creating orbital drag that threatens low Earth orbit infrastructure. Ollie then breaks down how aerospace engineers harden spacecraft against surface and deep dielectric charging, avoiding disastrous single-event upsets during geomagnetic storms rated from G1 to G5.
+
+For ham radio operators and aurora chasers, we demystify the science of ionospheric propagation and explain exactly how the Aurora Borealis is created when solar particles excite atmospheric oxygen and nitrogen. We also review yesterday&apos;s celestial highlight: Neptune reaching opposition on September 26, 2026, making it the perfect target for midnight stargazers.
+
+Finally, we tackle a mind-bending fact check: is the universe an engineered quantum computer? We evaluate Seth Lloyd&apos;s computational models and explain why this theory remains scientifically unverifiable due to a lack of testable, falsifiable predictions.
+
+Keep track of real-time conditions by visiting flarient.com for live Kp index updates, aurora forecasts, and interactive space weather dashboards.</itunes:summary>
      </item>
   </channel>
 </rss>
