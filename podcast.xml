@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-27.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-29.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -637,6 +637,35 @@ For ham radio operators and aurora chasers, we demystify the science of ionosphe
 Finally, we tackle a mind-bending fact check: is the universe an engineered quantum computer? We evaluate Seth Lloyd&apos;s computational models and explain why this theory remains scientifically unverifiable due to a lack of testable, falsifiable predictions.
 
 Keep track of real-time conditions by visiting flarient.com for live Kp index updates, aurora forecasts, and interactive space weather dashboards.</itunes:summary>
+     </item>
+      <item>
+       <title>Asteroid 2025 UK9 Passes Earth and Taurid Meteors Peak</title>
+       <link>https://flarient.com/podcast/asteroid-2025-uk9-passes-earth-and-taurid-meteors-peak</link>
+       <description>Welcome to the Daily Space Podcast by Flarient for Tuesday, September 29, 2026. In today&apos;s episode, host Ollie brings you a comprehensive update on everything happening across our solar system and near-Earth space environment. 
+
+We kick things off with breaking news and our daily brief, highlighting the safe passage of asteroid 2025 UK9 and the annual peak of the Taurid meteor shower, which brings up to 10 meteors per hour for dark-sky observers.
+
+Next, we take a close look at current space weather conditions. With a quiet solar wind holding steady and a maximum Kp index of just 1.33 over the past 24 hours, our technological infrastructure remains undisturbed. However, with seven numbered sunspot regions currently dotting the solar disk, we explore why ongoing vigilance is essential as Solar Cycle 25 continues.
+
+In our deep-dive blog discussions, we investigate the fascinating science behind potential life within our solar system on icy moons like Europa and Enceladus, clarify the distinctions between astronomy and astrophysics, examine the extreme optical physics required to witness an aurora during daylight hours, explain how solar flares regularly dwarf the size of Earth, and discuss the increasing frequency of noctilucent clouds in our mesosphere.
+
+Finally, we wrap up with essential resources and calls to action. Visit flarient.com for real-time space weather data, interactive dashboards, Kp index tracking, and aurora forecasts, or head over to flarient.com/podcast for all previous episodes and show notes.</description>
+       <pubDate>Tue, 29 Sep 2026 13:16:39 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-29</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-29/flarient-podcast-2026-09-29.mp3" length="8685820" type="audio/mpeg"/>
+       <itunes:duration>361</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>22</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-29.jpg"/>
+       <itunes:summary>Welcome to the Daily Space Podcast by Flarient for Tuesday, September 29, 2026. In today&apos;s episode, host Ollie brings you a comprehensive update on everything happening across our solar system and near-Earth space environment. 
+
+We kick things off with breaking news and our daily brief, highlighting the safe passage of asteroid 2025 UK9 and the annual peak of the Taurid meteor shower, which brings up to 10 meteors per hour for dark-sky observers.
+
+Next, we take a close look at current space weather conditions. With a quiet solar wind holding steady and a maximum Kp index of just 1.33 over the past 24 hours, our technological infrastructure remains undisturbed. However, with seven numbered sunspot regions currently dotting the solar disk, we explore why ongoing vigilance is essential as Solar Cycle 25 continues.
+
+In our deep-dive blog discussions, we investigate the fascinating science behind potential life within our solar system on icy moons like Europa and Enceladus, clarify the distinctions between astronomy and astrophysics, examine the extreme optical physics required to witness an aurora during daylight hours, explain how solar flares regularly dwarf the size of Earth, and discuss the increasing frequency of noctilucent clouds in our mesosphere.
+
+Finally, we wrap up with essential resources and calls to action. Visit flarient.com for real-time space weather data, interactive dashboards, Kp index tracking, and aurora forecasts, or head over to flarient.com/podcast for all previous episodes and show notes.</itunes:summary>
      </item>
   </channel>
 </rss>
