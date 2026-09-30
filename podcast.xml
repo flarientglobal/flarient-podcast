@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-29.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-30.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -668,6 +668,35 @@ Next, we take a close look at current space weather conditions. With a quiet sol
 In our deep-dive blog discussions, we investigate the fascinating science behind potential life within our solar system on icy moons like Europa and Enceladus, clarify the distinctions between astronomy and astrophysics, examine the extreme optical physics required to witness an aurora during daylight hours, explain how solar flares regularly dwarf the size of Earth, and discuss the increasing frequency of noctilucent clouds in our mesosphere.
 
 Finally, we wrap up with essential resources and calls to action. Visit flarient.com for real-time space weather data, interactive dashboards, Kp index tracking, and aurora forecasts, or head over to flarient.com/podcast for all previous episodes and show notes.</itunes:summary>
+     </item>
+      <item>
+       <title>Enceladus Secrets Revealed and the 2025 UK9 Asteroid Flyby</title>
+       <link>https://flarient.com/podcast/enceladus-secrets-revealed-and-the-2025-uk9-asteroid-flyby</link>
+       <description>In this episode of the Daily Space Podcast, Ollie takes a deep dive into the latest findings from the Saturnian system and our own celestial backyard. We lead with the groundbreaking discovery of complex geological processes within the ice plumes of Enceladus. This discovery suggests that the moon&apos;s internal dynamics are much more active than previously modeled, raising fascinating questions about its potential to host life. 
+
+Closer to home, we discuss the flyby of asteroid 2025 UK9, which is making its closest approach today, September 30, 2026. Ollie explains the tracking data and why, despite the proximity, there is no risk of collision. We also cover the Taurids meteor shower, which is currently at peak activity, offering a zenithal hourly rate of ten meteors as Earth passes through the debris of comet 2P/Encke. 
+
+In our Space Weather report, we look at the incredibly quiet conditions on the Sun. With a Kp index of 0 and solar wind speeds resting at a stable 283.4 km/s, Ollie explains how this &apos;calm before the storm&apos; benefits satellite operators and GPS accuracy. We also explore the &apos;High Divergence&apos; event regarding X-class solar flare forecasts, where human and AI experts couldn&apos;t quite agree on the odds. 
+
+Finally, we review a series of fascinating articles on deep space exploration methods, the physics of orbital motion, and the elusive possibility of asteroid atmospheres. We discuss how gravity assists work and why understanding the Yarkovsky effect is critical for planetary defense. 
+
+For more information and real-time updates, visit https://flarient.com to view our live Kp index and aurora forecasts.</description>
+       <pubDate>Wed, 30 Sep 2026 13:00:17 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-09-30</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-09-30/flarient-podcast-2026-09-30.mp3" length="14619800" type="audio/mpeg"/>
+       <itunes:duration>609</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>23</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-30.jpg"/>
+       <itunes:summary>In this episode of the Daily Space Podcast, Ollie takes a deep dive into the latest findings from the Saturnian system and our own celestial backyard. We lead with the groundbreaking discovery of complex geological processes within the ice plumes of Enceladus. This discovery suggests that the moon&apos;s internal dynamics are much more active than previously modeled, raising fascinating questions about its potential to host life. 
+
+Closer to home, we discuss the flyby of asteroid 2025 UK9, which is making its closest approach today, September 30, 2026. Ollie explains the tracking data and why, despite the proximity, there is no risk of collision. We also cover the Taurids meteor shower, which is currently at peak activity, offering a zenithal hourly rate of ten meteors as Earth passes through the debris of comet 2P/Encke. 
+
+In our Space Weather report, we look at the incredibly quiet conditions on the Sun. With a Kp index of 0 and solar wind speeds resting at a stable 283.4 km/s, Ollie explains how this &apos;calm before the storm&apos; benefits satellite operators and GPS accuracy. We also explore the &apos;High Divergence&apos; event regarding X-class solar flare forecasts, where human and AI experts couldn&apos;t quite agree on the odds. 
+
+Finally, we review a series of fascinating articles on deep space exploration methods, the physics of orbital motion, and the elusive possibility of asteroid atmospheres. We discuss how gravity assists work and why understanding the Yarkovsky effect is critical for planetary defense. 
+
+For more information and real-time updates, visit https://flarient.com to view our live Kp index and aurora forecasts.</itunes:summary>
      </item>
   </channel>
 </rss>
