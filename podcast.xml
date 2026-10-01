@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-09-30.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-01.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -699,6 +699,27 @@ In our Space Weather report, we look at the incredibly quiet conditions on the S
 Finally, we review a series of fascinating articles on deep space exploration methods, the physics of orbital motion, and the elusive possibility of asteroid atmospheres. We discuss how gravity assists work and why understanding the Yarkovsky effect is critical for planetary defense. 
 
 For more information and real-time updates, visit https://flarient.com to view our live Kp index and aurora forecasts.</itunes:summary>
+     </item>
+      <item>
+       <title>Asteroid Flyby &amp; Quiet Solar Winds: Space Weather Brief</title>
+       <link>https://flarient.com/podcast/asteroid-flyby-quiet-solar-winds-space-weather-brief</link>
+       <description>Welcome to the Daily Space Podcast by Flarient for Wednesday, October 1, 2026. In today&apos;s episode, Ollie takes you through a remarkably calm space weather environment while highlighting significant celestial events. We lead with breaking coverage of asteroid 2025 UK9&apos;s recent safe flyby past Earth, examining how it coincided with a tranquil magnetosphere featuring a Kp index sitting flat at zero. Next, we dive into the latest insights from our blog network, exploring how ionospheric disturbances pose hidden risks to commercial drone operations relying on GNSS positioning, and examining the complex precision required for navigating cislunar space.
+
+Moving into our comprehensive space weather report, Ollie breaks down the latest NOAA SWPC data streams, including sluggish solar wind speeds at 288.5 kilometres per second, a minimal interplanetary magnetic field component Bz at 0.5 nT, and a Dst index of -10 nT. We also look back at historical space weather anomalies, reviewing how statistical variations compare to our current quiet baseline. Our daily brief highlights the implications of these calm conditions for satellite operators, high-frequency radio propagation, and aviation networks, while looking forward to the approaching Taurids meteor shower in November.
+
+Finally, we wrap up with essential calls to action, encouraging listeners to visit flarient.com for real-time Kp index tracking, aurora forecasts, and interactive dashboards. Be sure to subscribe on your favorite podcast platform, download the official Flarient app for storm push notifications, and join our community of space weather enthusiasts and aurora chasers.</description>
+       <pubDate>Thu, 01 Oct 2026 13:50:21 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-10-01</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-10-01/flarient-podcast-2026-10-01.mp3" length="10287650" type="audio/mpeg"/>
+       <itunes:duration>428</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>24</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-01.jpg"/>
+       <itunes:summary>Welcome to the Daily Space Podcast by Flarient for Wednesday, October 1, 2026. In today&apos;s episode, Ollie takes you through a remarkably calm space weather environment while highlighting significant celestial events. We lead with breaking coverage of asteroid 2025 UK9&apos;s recent safe flyby past Earth, examining how it coincided with a tranquil magnetosphere featuring a Kp index sitting flat at zero. Next, we dive into the latest insights from our blog network, exploring how ionospheric disturbances pose hidden risks to commercial drone operations relying on GNSS positioning, and examining the complex precision required for navigating cislunar space.
+
+Moving into our comprehensive space weather report, Ollie breaks down the latest NOAA SWPC data streams, including sluggish solar wind speeds at 288.5 kilometres per second, a minimal interplanetary magnetic field component Bz at 0.5 nT, and a Dst index of -10 nT. We also look back at historical space weather anomalies, reviewing how statistical variations compare to our current quiet baseline. Our daily brief highlights the implications of these calm conditions for satellite operators, high-frequency radio propagation, and aviation networks, while looking forward to the approaching Taurids meteor shower in November.
+
+Finally, we wrap up with essential calls to action, encouraging listeners to visit flarient.com for real-time Kp index tracking, aurora forecasts, and interactive dashboards. Be sure to subscribe on your favorite podcast platform, download the official Flarient app for storm push notifications, and join our community of space weather enthusiasts and aurora chasers.</itunes:summary>
      </item>
   </channel>
 </rss>
