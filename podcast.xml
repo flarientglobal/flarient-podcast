@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-01.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-02.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -722,6 +722,47 @@ Finally, we wrap up with essential calls to action, encouraging listeners to vis
 Moving into our comprehensive space weather report, Ollie breaks down the latest NOAA SWPC data streams, including sluggish solar wind speeds at 288.5 kilometres per second, a minimal interplanetary magnetic field component Bz at 0.5 nT, and a Dst index of -10 nT. We also look back at historical space weather anomalies, reviewing how statistical variations compare to our current quiet baseline. Our daily brief highlights the implications of these calm conditions for satellite operators, high-frequency radio propagation, and aviation networks, while looking forward to the approaching Taurids meteor shower in November.
 
 Finally, we wrap up with essential calls to action, encouraging listeners to visit flarient.com for real-time Kp index tracking, aurora forecasts, and interactive dashboards. Be sure to subscribe on your favorite podcast platform, download the official Flarient app for storm push notifications, and join our community of space weather enthusiasts and aurora chasers.</itunes:summary>
+     </item>
+      <item>
+       <title>Asteroid Flyby and Orionids: Calm Space Weather Today</title>
+       <link>https://flarient.com/podcast/asteroid-flyby-and-orionids-calm-space-weather-today</link>
+       <description>In this episode of the Daily Space Podcast by Flarient, we explore the quiet stability of our current space environment and the exciting astronomical events beginning today. We lead with the flyby of asteroid 2025 UK9, a routine but fascinating visitor to our cosmic backyard. We also discuss the start of the Orionids meteor shower, which will offer up to 20 meteors per hour as we move into October, originating from the debris left behind by 1P/Halley. 
+
+Ollie provides a detailed breakdown of current solar activity, noting that the Sun is in a remarkably calm state with a Kp index of 0. This stability provides excellent conditions for satellite operations and radio communications, as geomagnetic disturbances are currently non-existent. We examine why understanding the solar cycle—currently in its 25th iteration—is crucial for our modern technological infrastructure and how solar flares and coronal mass ejections can impact our power grids.
+
+Furthermore, we delve into the elusive beauty of noctilucent clouds and the advanced scientific methods used to explore deep space. We explain how researchers track these phenomena to monitor long-term atmospheric health. 
+
+Key links and resources mentioned:
+- Visit https://flarient.com for real-time solar data, Kp index, and interactive dashboards.
+- Read our blog on solar flares at https://flarient.com/blog/solar-flares-regularly-impact-earths-environment
+- Explore noctilucent clouds at https://flarient.com/blog/the-elusive-nature-of-noctilucent-clouds
+- Understand solar cycle impacts at https://flarient.com/blog/understanding-the-solar-cycle-and-its-impact-on-space-weather
+- Discover deep space exploration methods at https://flarient.com/blog/scientific-methods-used-to-explore-deep-space-gtf2
+- Track the Orionids and more at https://flarient.com/podcast
+
+Join the Flarient community today to stay updated on space weather and never miss an alert.</description>
+       <pubDate>Fri, 02 Oct 2026 13:07:52 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-10-02</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-10-02/flarient-podcast-2026-10-02.mp3" length="6431348" type="audio/mpeg"/>
+       <itunes:duration>267</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>25</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-02.jpg"/>
+       <itunes:summary>In this episode of the Daily Space Podcast by Flarient, we explore the quiet stability of our current space environment and the exciting astronomical events beginning today. We lead with the flyby of asteroid 2025 UK9, a routine but fascinating visitor to our cosmic backyard. We also discuss the start of the Orionids meteor shower, which will offer up to 20 meteors per hour as we move into October, originating from the debris left behind by 1P/Halley. 
+
+Ollie provides a detailed breakdown of current solar activity, noting that the Sun is in a remarkably calm state with a Kp index of 0. This stability provides excellent conditions for satellite operations and radio communications, as geomagnetic disturbances are currently non-existent. We examine why understanding the solar cycle—currently in its 25th iteration—is crucial for our modern technological infrastructure and how solar flares and coronal mass ejections can impact our power grids.
+
+Furthermore, we delve into the elusive beauty of noctilucent clouds and the advanced scientific methods used to explore deep space. We explain how researchers track these phenomena to monitor long-term atmospheric health. 
+
+Key links and resources mentioned:
+- Visit https://flarient.com for real-time solar data, Kp index, and interactive dashboards.
+- Read our blog on solar flares at https://flarient.com/blog/solar-flares-regularly-impact-earths-environment
+- Explore noctilucent clouds at https://flarient.com/blog/the-elusive-nature-of-noctilucent-clouds
+- Understand solar cycle impacts at https://flarient.com/blog/understanding-the-solar-cycle-and-its-impact-on-space-weather
+- Discover deep space exploration methods at https://flarient.com/blog/scientific-methods-used-to-explore-deep-space-gtf2
+- Track the Orionids and more at https://flarient.com/podcast
+
+Join the Flarient community today to stay updated on space weather and never miss an alert.</itunes:summary>
      </item>
   </channel>
 </rss>
