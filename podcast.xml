@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-03.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-04.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -808,6 +808,27 @@ Links mentioned in this episode:
 - Solar Activity and Human Health: https://flarient.com/blog/the-relationship-between-solar-activity-and-human-health
 - Live Space Weather Data &amp; Dashboard: https://flarient.com
 - Full Episodes &amp; Show Notes: https://flarient.com/podcast</itunes:summary>
+     </item>
+      <item>
+       <title>[WEEKLY] Saturn Opposition &amp; Boeing Starliner 2028 Delay</title>
+       <link>https://flarient.com/podcast/saturn-opposition-boeing-starliner-2028-delay</link>
+       <description>This week on the Daily Space Podcast by Flarient, we bring you a comprehensive Sunday roundup of the most significant space weather and exploration stories. First, we tackle the breaking news of NASA&apos;s decision to delay Boeing&apos;s crewed Starliner missions until 2028, examining the massive implications this has for orbital research and launch timelines. In brighter astronomical news, Saturn reaches opposition today, offering the closest and most brilliant views of the ringed planet for the entirety of 2026.
+
+We also dive deep into the top scientific stories of the week. Learn how M and X-class solar flares trigger immediate high-frequency (HF) radio blackouts by ionizing the D-layer of Earth&apos;s ionosphere, disrupting global aviation and maritime communication. Discover the beautiful symmetry of Earth&apos;s polar lights, where the aurora borealis and aurora australis act as mirror images connected by our planet&apos;s magnetic shield. We also explore the physics of sunspots, answering whether they can be safely seen with the naked eye, and look at how advanced numerical modeling helps scientists predict the arrival times of massive coronal mass ejections. Finally, we break down today&apos;s live space weather data, including a moderate Kp index anomaly that has researchers watching the charts closely.
+
+For real-time space weather updates, live Kp index tracking, and interactive dashboards, visit flarient.com.</description>
+       <pubDate>Sun, 04 Oct 2026 12:44:24 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-10-04</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-10-04/flarient-podcast-2026-10-04.mp3" length="19713666" type="audio/mpeg"/>
+       <itunes:duration>821</itunes:duration>
+       <itunes:episodeType>weekly</itunes:episodeType>
+       <itunes:episode>27</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-04.jpg"/>
+       <itunes:summary>This week on the Daily Space Podcast by Flarient, we bring you a comprehensive Sunday roundup of the most significant space weather and exploration stories. First, we tackle the breaking news of NASA&apos;s decision to delay Boeing&apos;s crewed Starliner missions until 2028, examining the massive implications this has for orbital research and launch timelines. In brighter astronomical news, Saturn reaches opposition today, offering the closest and most brilliant views of the ringed planet for the entirety of 2026.
+
+We also dive deep into the top scientific stories of the week. Learn how M and X-class solar flares trigger immediate high-frequency (HF) radio blackouts by ionizing the D-layer of Earth&apos;s ionosphere, disrupting global aviation and maritime communication. Discover the beautiful symmetry of Earth&apos;s polar lights, where the aurora borealis and aurora australis act as mirror images connected by our planet&apos;s magnetic shield. We also explore the physics of sunspots, answering whether they can be safely seen with the naked eye, and look at how advanced numerical modeling helps scientists predict the arrival times of massive coronal mass ejections. Finally, we break down today&apos;s live space weather data, including a moderate Kp index anomaly that has researchers watching the charts closely.
+
+For real-time space weather updates, live Kp index tracking, and interactive dashboards, visit flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
