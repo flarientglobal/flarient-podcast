@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-04.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-05.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -831,6 +831,47 @@ For real-time space weather updates, live Kp index tracking, and interactive das
 We also dive deep into the top scientific stories of the week. Learn how M and X-class solar flares trigger immediate high-frequency (HF) radio blackouts by ionizing the D-layer of Earth&apos;s ionosphere, disrupting global aviation and maritime communication. Discover the beautiful symmetry of Earth&apos;s polar lights, where the aurora borealis and aurora australis act as mirror images connected by our planet&apos;s magnetic shield. We also explore the physics of sunspots, answering whether they can be safely seen with the naked eye, and look at how advanced numerical modeling helps scientists predict the arrival times of massive coronal mass ejections. Finally, we break down today&apos;s live space weather data, including a moderate Kp index anomaly that has researchers watching the charts closely.
 
 For real-time space weather updates, live Kp index tracking, and interactive dashboards, visit flarient.com.</itunes:summary>
+     </item>
+      <item>
+       <title>G1 Solar Storm Subsides as Asteroid 2025 UK9 Passes Earth</title>
+       <link>https://flarient.com/podcast/g1-solar-storm-subsides-as-asteroid-2025-uk9-passes-earth</link>
+       <description>Welcome to the Daily Space Podcast by Flarient for Monday, October 5th, 2026. In today&apos;s episode, host Ollie breaks down an eventful few days across our cosmic neighbourhood.
+
+We begin with our lead developments: the close encounter of near-Earth asteroid 2025 UK9, which safely swept past Earth within the last twenty-four hours, monitored closely by NASA&apos;s Center for Near Earth Object Studies (CNEOS). We also reflect on the massive implications of SpaceX successfully placing Starship into orbit on September 28th, marking a transformative moment for orbital transport and heavy payload delivery.
+
+In our Space Weather Report and Events breakdown, we look at the back-to-back G1 geomagnetic storms recorded on October 4th and October 5th. Both storms saw planetary Kp values reach 5.3, with elevated solar wind speeds reaching 638 km/s and IMF Bz dipping to -7.4 nT. We also analyse an active moderate statistical anomaly where the Kp index hit 5.0—more than 2.3 standard deviations above the 30-day running mean of 2.2. Although conditions have calmed down to quiet levels today with Kp between 0 and 3.33, the recent geomagnetic pulse left measurable signatures on our upper atmosphere and pushed auroral displays down to mid-latitudes.
+
+In our discovery and deep-dive analysis, we explore four insightful Flarient blog articles covering planetary defence, the atmospheric shielding that completely protects ground dwellers from solar particle events, best practices for accessing real-time space weather data, and the precise quantum mechanics behind the oxygen and nitrogen emissions of the Northern Lights.
+
+Explore more details and monitor live telemetry:
+- Identifying Asteroids That Pose a Threat to Earth: https://flarient.com/blog/identifying-asteroids-that-pose-a-threat-to-earth
+- Solar Particle Events and Their Impact on Earth: https://flarient.com/blog/solar-particle-events-and-their-impact-on-earth-kyxt
+- Accessing Reliable Daily Space Weather Reports: https://flarient.com/blog/accessing-reliable-daily-space-weather-reports
+- How the Aurora Borealis Is Created: https://flarient.com/blog/how-the-aurora-borealis-is-created
+- Live Anomaly Alert: https://flarient.com/space-events/anomaly-kp-2026-10-05
+- Recent G1 Storms: https://flarient.com/space-events/2026-10-05-g1-storm</description>
+       <pubDate>Mon, 05 Oct 2026 15:13:30 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-10-05</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-10-05/flarient-podcast-2026-10-05.mp3" length="22365627" type="audio/mpeg"/>
+       <itunes:duration>931</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>28</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-05.jpg"/>
+       <itunes:summary>Welcome to the Daily Space Podcast by Flarient for Monday, October 5th, 2026. In today&apos;s episode, host Ollie breaks down an eventful few days across our cosmic neighbourhood.
+
+We begin with our lead developments: the close encounter of near-Earth asteroid 2025 UK9, which safely swept past Earth within the last twenty-four hours, monitored closely by NASA&apos;s Center for Near Earth Object Studies (CNEOS). We also reflect on the massive implications of SpaceX successfully placing Starship into orbit on September 28th, marking a transformative moment for orbital transport and heavy payload delivery.
+
+In our Space Weather Report and Events breakdown, we look at the back-to-back G1 geomagnetic storms recorded on October 4th and October 5th. Both storms saw planetary Kp values reach 5.3, with elevated solar wind speeds reaching 638 km/s and IMF Bz dipping to -7.4 nT. We also analyse an active moderate statistical anomaly where the Kp index hit 5.0—more than 2.3 standard deviations above the 30-day running mean of 2.2. Although conditions have calmed down to quiet levels today with Kp between 0 and 3.33, the recent geomagnetic pulse left measurable signatures on our upper atmosphere and pushed auroral displays down to mid-latitudes.
+
+In our discovery and deep-dive analysis, we explore four insightful Flarient blog articles covering planetary defence, the atmospheric shielding that completely protects ground dwellers from solar particle events, best practices for accessing real-time space weather data, and the precise quantum mechanics behind the oxygen and nitrogen emissions of the Northern Lights.
+
+Explore more details and monitor live telemetry:
+- Identifying Asteroids That Pose a Threat to Earth: https://flarient.com/blog/identifying-asteroids-that-pose-a-threat-to-earth
+- Solar Particle Events and Their Impact on Earth: https://flarient.com/blog/solar-particle-events-and-their-impact-on-earth-kyxt
+- Accessing Reliable Daily Space Weather Reports: https://flarient.com/blog/accessing-reliable-daily-space-weather-reports
+- How the Aurora Borealis Is Created: https://flarient.com/blog/how-the-aurora-borealis-is-created
+- Live Anomaly Alert: https://flarient.com/space-events/anomaly-kp-2026-10-05
+- Recent G1 Storms: https://flarient.com/space-events/2026-10-05-g1-storm</itunes:summary>
      </item>
   </channel>
 </rss>
