@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-05.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-06.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -874,6 +874,53 @@ Explore more details and monitor live telemetry:
 - How the Aurora Borealis Is Created: https://flarient.com/blog/how-the-aurora-borealis-is-created
 - Live Anomaly Alert: https://flarient.com/space-events/anomaly-kp-2026-10-05
 - Recent G1 Storms: https://flarient.com/space-events/2026-10-05-g1-storm</itunes:summary>
+     </item>
+      <item>
+       <title>Cosmic Mysteries: White Dwarf Planets and Asteroid Flybys</title>
+       <link>https://flarient.com/podcast/cosmic-mysteries-white-dwarf-planets-and-asteroid-flybys</link>
+       <description>In this episode of the Daily Space Podcast by Flarient, we explore the cutting edge of stellar evolution and local solar system dynamics. We start by diving into an incredible discovery involving high concentrations of niobium around a white dwarf, suggesting that planets can indeed form after a star&apos;s death. 
+
+We then shift our focus to the local environment, providing a detailed breakdown of current space weather, the status of near-Earth asteroid 2025 UK9, and the ongoing Orionids meteor shower. As we analyze the data, we discuss why understanding the quiet baseline of our magnetosphere is just as crucial as tracking the intense solar storms that grab the headlines. We also address common misconceptions about secret government facilities to clarify the reality of our current scientific advancements.
+
+Key Topics Covered:
+- The discovery of second-generation planet remnants using archival Hubble data.
+- A close-approach update on the near-Earth asteroid 2025 UK9.
+- A viewing guide for the peaking Orionids meteor shower, originating from Halley&apos;s Comet.
+- An explanation of how we monitor solar storms to protect satellite infrastructure and global navigation systems.
+- A fact check debunking persistent myths regarding Area 51 and reverse-engineered alien technology.
+- A comprehensive space weather report detailing the Kp index, solar wind speeds, and the outlook for the next 72 hours.
+
+Links &amp; Resources:
+- Read the full article on monitoring satellite infrastructure: https://flarient.com/blog/monitoring-solar-storms-to-protect-satellite-infrastructure-hip4
+- Learn about the impact of solar particle events: https://flarient.com/blog/solar-particle-events-and-their-impact-on-earth-kyxt
+- Explore our fact check on Area 51: https://flarient.com/fact-checker/fact-check-area-51-does-not-house-reverse-engineered-alien-spacecraft
+- Stay up to date with live Kp data at: https://flarient.com
+- Join our community at: https://flarient.com/podcast</description>
+       <pubDate>Tue, 06 Oct 2026 13:38:18 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-10-06</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-10-06/flarient-podcast-2026-10-06.mp3" length="4885321" type="audio/mpeg"/>
+       <itunes:duration>203</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>29</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-06.jpg"/>
+       <itunes:summary>In this episode of the Daily Space Podcast by Flarient, we explore the cutting edge of stellar evolution and local solar system dynamics. We start by diving into an incredible discovery involving high concentrations of niobium around a white dwarf, suggesting that planets can indeed form after a star&apos;s death. 
+
+We then shift our focus to the local environment, providing a detailed breakdown of current space weather, the status of near-Earth asteroid 2025 UK9, and the ongoing Orionids meteor shower. As we analyze the data, we discuss why understanding the quiet baseline of our magnetosphere is just as crucial as tracking the intense solar storms that grab the headlines. We also address common misconceptions about secret government facilities to clarify the reality of our current scientific advancements.
+
+Key Topics Covered:
+- The discovery of second-generation planet remnants using archival Hubble data.
+- A close-approach update on the near-Earth asteroid 2025 UK9.
+- A viewing guide for the peaking Orionids meteor shower, originating from Halley&apos;s Comet.
+- An explanation of how we monitor solar storms to protect satellite infrastructure and global navigation systems.
+- A fact check debunking persistent myths regarding Area 51 and reverse-engineered alien technology.
+- A comprehensive space weather report detailing the Kp index, solar wind speeds, and the outlook for the next 72 hours.
+
+Links &amp; Resources:
+- Read the full article on monitoring satellite infrastructure: https://flarient.com/blog/monitoring-solar-storms-to-protect-satellite-infrastructure-hip4
+- Learn about the impact of solar particle events: https://flarient.com/blog/solar-particle-events-and-their-impact-on-earth-kyxt
+- Explore our fact check on Area 51: https://flarient.com/fact-checker/fact-check-area-51-does-not-house-reverse-engineered-alien-spacecraft
+- Stay up to date with live Kp data at: https://flarient.com
+- Join our community at: https://flarient.com/podcast</itunes:summary>
      </item>
   </channel>
 </rss>
