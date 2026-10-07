@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-06.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-07.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -923,6 +923,47 @@ Links &amp; Resources:
 - Explore our fact check on Area 51: https://flarient.com/fact-checker/fact-check-area-51-does-not-house-reverse-engineered-alien-spacecraft
 - Stay up to date with live Kp data at: https://flarient.com
 - Join our community at: https://flarient.com/podcast</itunes:summary>
+     </item>
+      <item>
+       <title>PRIMA Telescope Greenlit and Orionids Meteor Shower Peaks</title>
+       <link>https://flarient.com/podcast/prima-telescope-greenlit-and-orionids-meteor-shower-peaks</link>
+       <description>In today&apos;s episode for Wednesday, October 7th, 2026, Ollie breaks down a busy day in the cosmos. We start with the exciting news that NASA has officially greenlit the PRIMA telescope project. This far-infrared powerhouse is set to launch in 2033 and promises to revolutionize our understanding of galaxy evolution and planetary births. While we look toward that future mission, we also turn our eyes to the current night sky. The Orionids meteor shower, composed of debris from the legendary Halley’s Comet, reaches its peak tonight with up to 20 meteors per hour. 
+
+We also cover the close pass of near-Earth asteroid 2025 UK9. While it’s a reminder of our busy orbital neighborhood, Ollie explains why there’s no need to worry about radiation or impact. The episode features a deep dive into the &apos;Maximum Usable Frequency&apos; (MUF) for radio operators and how solar activity dictates the success of global communications. 
+
+In our space weather report, we look at the remarkably stable conditions today, with a Kp index of 0 and nominal solar wind speeds. We&apos;ll discuss why this is fantastic news for satellite operators and GNSS precision but a bit of a letdown for aurora chasers. Finally, we tackle a fundamental fact check about Martian gravity and provide a 72-hour outlook for the space environment. 
+
+Key topics covered: 
+- NASA&apos;s PRIMA mission approval for 2033 
+- Orionids meteor shower peak details 
+- Asteroid 2025 UK9 flyby 
+- Understanding Maximum Usable Frequency (MUF) 
+- Mars gravity fact check 
+- Solar Cycle 25 and its impact on modern electronics 
+
+For more real-time data and interactive dashboards, visit flarient.com.</description>
+       <pubDate>Wed, 07 Oct 2026 13:53:13 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-10-07</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-10-07/flarient-podcast-2026-10-07.mp3" length="17495567" type="audio/mpeg"/>
+       <itunes:duration>728</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>30</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-07.jpg"/>
+       <itunes:summary>In today&apos;s episode for Wednesday, October 7th, 2026, Ollie breaks down a busy day in the cosmos. We start with the exciting news that NASA has officially greenlit the PRIMA telescope project. This far-infrared powerhouse is set to launch in 2033 and promises to revolutionize our understanding of galaxy evolution and planetary births. While we look toward that future mission, we also turn our eyes to the current night sky. The Orionids meteor shower, composed of debris from the legendary Halley’s Comet, reaches its peak tonight with up to 20 meteors per hour. 
+
+We also cover the close pass of near-Earth asteroid 2025 UK9. While it’s a reminder of our busy orbital neighborhood, Ollie explains why there’s no need to worry about radiation or impact. The episode features a deep dive into the &apos;Maximum Usable Frequency&apos; (MUF) for radio operators and how solar activity dictates the success of global communications. 
+
+In our space weather report, we look at the remarkably stable conditions today, with a Kp index of 0 and nominal solar wind speeds. We&apos;ll discuss why this is fantastic news for satellite operators and GNSS precision but a bit of a letdown for aurora chasers. Finally, we tackle a fundamental fact check about Martian gravity and provide a 72-hour outlook for the space environment. 
+
+Key topics covered: 
+- NASA&apos;s PRIMA mission approval for 2033 
+- Orionids meteor shower peak details 
+- Asteroid 2025 UK9 flyby 
+- Understanding Maximum Usable Frequency (MUF) 
+- Mars gravity fact check 
+- Solar Cycle 25 and its impact on modern electronics 
+
+For more real-time data and interactive dashboards, visit flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
