@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-07.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-08.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -966,6 +966,35 @@ Key topics covered:
 - Solar Cycle 25 and its impact on modern electronics 
 
 For more real-time data and interactive dashboards, visit flarient.com.</itunes:summary>
+     </item>
+      <item>
+       <title>CME Alert — Solar Storm Arriving Tomorrow as Asteroid Flies By</title>
+       <link>https://flarient.com/podcast/cme-alert-solar-storm-arriving-tomorrow-as-asteroid-flies-by</link>
+       <description>In today&apos;s episode of the Daily Space Podcast, Ollie takes a deep look at the dynamic events unfolding in our solar system on October 8, 2026. We lead with a major breaking news update regarding a coronal mass ejection (CME) that erupted from the Sun on October 6 and is scheduled to impact Earth&apos;s magnetosphere tomorrow, October 9. This arrival has triggered a formal NOAA alert, with forecasts suggesting a G1 or G2 class geomagnetic storm. We discuss the implications for satellite operations, GPS precision, and the potential for stunning aurora displays at higher latitudes.
+
+We also cover the recent close approach of near-Earth asteroid 2025 UK9. This flyby serves as a reminder of the &apos;busy&apos; nature of our local space environment, even as we move deeper into the solar maximum of Cycle 25. Ollie explains the mechanics of orbital dynamics—how gravity from giant planets like Jupiter can nudge these rocky remnants into paths that intersect with Earth&apos;s orbit.
+
+For those looking to the night sky, we preview the Orionid meteor shower. Peaking on October 22, this annual display consists of debris from the famous 1P/Halley comet. We&apos;ll share the best times to watch and what to look for after midnight. 
+
+Our science segments today focus on the protection of satellite infrastructure and the sophisticated modeling used to predict CME arrival times. Learn how instruments like the Solar Dynamics Observatory (SDO) allow researchers to &apos;see&apos; the invisible magnetic forces at play. Finally, we explore the historical context of asteroid impacts, from small meteors to the civilization-altering event at Chicxulub. 
+
+For real-time data, Kp index tracking, and more, visit flarient.com.</description>
+       <pubDate>Thu, 08 Oct 2026 14:01:58 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-10-08</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-10-08/flarient-podcast-2026-10-08.mp3" length="14909452" type="audio/mpeg"/>
+       <itunes:duration>621</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>31</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-08.jpg"/>
+       <itunes:summary>In today&apos;s episode of the Daily Space Podcast, Ollie takes a deep look at the dynamic events unfolding in our solar system on October 8, 2026. We lead with a major breaking news update regarding a coronal mass ejection (CME) that erupted from the Sun on October 6 and is scheduled to impact Earth&apos;s magnetosphere tomorrow, October 9. This arrival has triggered a formal NOAA alert, with forecasts suggesting a G1 or G2 class geomagnetic storm. We discuss the implications for satellite operations, GPS precision, and the potential for stunning aurora displays at higher latitudes.
+
+We also cover the recent close approach of near-Earth asteroid 2025 UK9. This flyby serves as a reminder of the &apos;busy&apos; nature of our local space environment, even as we move deeper into the solar maximum of Cycle 25. Ollie explains the mechanics of orbital dynamics—how gravity from giant planets like Jupiter can nudge these rocky remnants into paths that intersect with Earth&apos;s orbit.
+
+For those looking to the night sky, we preview the Orionid meteor shower. Peaking on October 22, this annual display consists of debris from the famous 1P/Halley comet. We&apos;ll share the best times to watch and what to look for after midnight. 
+
+Our science segments today focus on the protection of satellite infrastructure and the sophisticated modeling used to predict CME arrival times. Learn how instruments like the Solar Dynamics Observatory (SDO) allow researchers to &apos;see&apos; the invisible magnetic forces at play. Finally, we explore the historical context of asteroid impacts, from small meteors to the civilization-altering event at Chicxulub. 
+
+For real-time data, Kp index tracking, and more, visit flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
