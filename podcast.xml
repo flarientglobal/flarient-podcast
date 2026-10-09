@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-08.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-09.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -997,6 +997,31 @@ For those looking to the night sky, we preview the Orionid meteor shower. Peakin
 Our science segments today focus on the protection of satellite infrastructure and the sophisticated modeling used to predict CME arrival times. Learn how instruments like the Solar Dynamics Observatory (SDO) allow researchers to &apos;see&apos; the invisible magnetic forces at play. Finally, we explore the historical context of asteroid impacts, from small meteors to the civilization-altering event at Chicxulub. 
 
 For real-time data, Kp index tracking, and more, visit flarient.com.</itunes:summary>
+     </item>
+      <item>
+       <title>Orbital Power Tests &amp; Asteroid 2025 UK9 Close Pass Today</title>
+       <link>https://flarient.com/podcast/orbital-power-tests-asteroid-2025-uk9-close-pass-today</link>
+       <description>In today&apos;s episode of the Daily Space Podcast by Flarient, host Ollie dives into an exciting day of space operations and cosmic events. We start with breaking news from orbit: a live test of a wireless power transfer prototype between two spacecraft. This technology could redefine space operations, allowing satellites to share power and dramatically extend their mission lifespans. We break down the engineering behind this milestone, its challenges, and how stable space weather is assisting today&apos;s maneuvers.
+
+Next, we shift our focus to planetary defense as near-Earth asteroid 2025 UK9 makes its closest approach to Earth today. We discuss how NASA&apos;s Center for Near-Earth Object Studies (CNEOS) tracks these minor planets and why maintaining precise orbital catalogs is crucial for safeguarding our planet.
+
+For skywatchers, we preview the peak of the Draconids meteor shower, offering tips on where to look in the constellation Draco and when to observe after midnight. In our science segments, we explore the official classification of asteroids as minor planets, the physical mechanisms behind sunspots, and how Earth&apos;s magnetosphere interacts with solar particles to paint the skies with auroras.
+
+We also cover today&apos;s space weather data, featuring a calm Kp index of 1.67, a solar wind speed of 358.2 km/s, and a Dst index of -17 nT. Finally, we look back in history to October 9th of 2017, 2011, and 2005 to remember some of the most powerful solar storms of past solar cycles. Check out live data at flarient.com.</description>
+       <pubDate>Fri, 09 Oct 2026 13:41:37 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-10-09</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-10-09/flarient-podcast-2026-10-09.mp3" length="32508242" type="audio/mpeg"/>
+       <itunes:duration>1354</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>32</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-09.jpg"/>
+       <itunes:summary>In today&apos;s episode of the Daily Space Podcast by Flarient, host Ollie dives into an exciting day of space operations and cosmic events. We start with breaking news from orbit: a live test of a wireless power transfer prototype between two spacecraft. This technology could redefine space operations, allowing satellites to share power and dramatically extend their mission lifespans. We break down the engineering behind this milestone, its challenges, and how stable space weather is assisting today&apos;s maneuvers.
+
+Next, we shift our focus to planetary defense as near-Earth asteroid 2025 UK9 makes its closest approach to Earth today. We discuss how NASA&apos;s Center for Near-Earth Object Studies (CNEOS) tracks these minor planets and why maintaining precise orbital catalogs is crucial for safeguarding our planet.
+
+For skywatchers, we preview the peak of the Draconids meteor shower, offering tips on where to look in the constellation Draco and when to observe after midnight. In our science segments, we explore the official classification of asteroids as minor planets, the physical mechanisms behind sunspots, and how Earth&apos;s magnetosphere interacts with solar particles to paint the skies with auroras.
+
+We also cover today&apos;s space weather data, featuring a calm Kp index of 1.67, a solar wind speed of 358.2 km/s, and a Dst index of -17 nT. Finally, we look back in history to October 9th of 2017, 2011, and 2005 to remember some of the most powerful solar storms of past solar cycles. Check out live data at flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
