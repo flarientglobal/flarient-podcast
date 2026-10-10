@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-09.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-10.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1024,6 +1024,43 @@ Next, we shift our focus to planetary defense as near-Earth asteroid 2025 UK9 ma
 For skywatchers, we preview the peak of the Draconids meteor shower, offering tips on where to look in the constellation Draco and when to observe after midnight. In our science segments, we explore the official classification of asteroids as minor planets, the physical mechanisms behind sunspots, and how Earth&apos;s magnetosphere interacts with solar particles to paint the skies with auroras.
 
 We also cover today&apos;s space weather data, featuring a calm Kp index of 1.67, a solar wind speed of 358.2 km/s, and a Dst index of -17 nT. Finally, we look back in history to October 9th of 2017, 2011, and 2005 to remember some of the most powerful solar storms of past solar cycles. Check out live data at flarient.com.</itunes:summary>
+     </item>
+      <item>
+       <title>Supermassive Black Hole Jets and Asteroid 2026 TP6 Flyby</title>
+       <link>https://flarient.com/podcast/supermassive-black-hole-jets-and-asteroid-2026-tp6-flyby</link>
+       <description>On today&apos;s episode for Saturday, October 10, 2026, Ollie explores a fascinating mix of deep-space astrophysics and local planetary dynamics.
+
+First, we unpack breaking findings on supermassive black hole jets. Far from being localized monsters, these immense cosmic blowtorches reach far beyond their host galaxies, blowing away star-forming material and altering the cosmic architecture across millions of light-years. In near-Earth space, we track asteroid 2026 TP6 making its scheduled safe transit past Earth, alongside the peak of the annual Orionid meteor shower spawned by the debris trail of Comet 1P/Halley. We also touch upon new aerospace developments, including China&apos;s radio tracking network and recent milestones in wireless power transfer between orbital spacecraft.
+
+In our space weather update, we examine a remarkably serene magnetosphere with a Kp index lingering around 0.33, solar wind speeds around 374 km/s, and a quiet Dst index of -17 nT, ensuring crystal-clear conditions for satellite operations and radio communications.
+
+Later, our discovery and feature segments explore the nature of intergalactic space, the primordial origins of asteroids trapped between Mars and Jupiter, a fact check on the harmless beauty of noctilucent clouds, and how anyone with a smartphone can track Solar Cycle 25 in real time.
+
+Read more and explore our interactive dashboards:
+- The Cosmic Origins and Formation of Asteroids: https://flarient.com/blog/the-cosmic-origins-and-formation-of-asteroids
+- The Nature and Composition of Intergalactic Space: https://flarient.com/blog/the-nature-and-composition-of-intergalactic-space
+- Noctilucent Clouds Pose No Threat to Life on Earth: https://flarient.com/blog/noctilucent-clouds-pose-no-threat-to-life-on-earth-wu0v
+- Essential Consumer Devices for Tracking Space Weather Conditions: https://flarient.com/blog/essential-consumer-devices-for-tracking-space-weather-conditions</description>
+       <pubDate>Sat, 10 Oct 2026 12:59:38 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-10-10</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-10-10/flarient-podcast-2026-10-10.mp3" length="18005267" type="audio/mpeg"/>
+       <itunes:duration>750</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>33</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-10.jpg"/>
+       <itunes:summary>On today&apos;s episode for Saturday, October 10, 2026, Ollie explores a fascinating mix of deep-space astrophysics and local planetary dynamics.
+
+First, we unpack breaking findings on supermassive black hole jets. Far from being localized monsters, these immense cosmic blowtorches reach far beyond their host galaxies, blowing away star-forming material and altering the cosmic architecture across millions of light-years. In near-Earth space, we track asteroid 2026 TP6 making its scheduled safe transit past Earth, alongside the peak of the annual Orionid meteor shower spawned by the debris trail of Comet 1P/Halley. We also touch upon new aerospace developments, including China&apos;s radio tracking network and recent milestones in wireless power transfer between orbital spacecraft.
+
+In our space weather update, we examine a remarkably serene magnetosphere with a Kp index lingering around 0.33, solar wind speeds around 374 km/s, and a quiet Dst index of -17 nT, ensuring crystal-clear conditions for satellite operations and radio communications.
+
+Later, our discovery and feature segments explore the nature of intergalactic space, the primordial origins of asteroids trapped between Mars and Jupiter, a fact check on the harmless beauty of noctilucent clouds, and how anyone with a smartphone can track Solar Cycle 25 in real time.
+
+Read more and explore our interactive dashboards:
+- The Cosmic Origins and Formation of Asteroids: https://flarient.com/blog/the-cosmic-origins-and-formation-of-asteroids
+- The Nature and Composition of Intergalactic Space: https://flarient.com/blog/the-nature-and-composition-of-intergalactic-space
+- Noctilucent Clouds Pose No Threat to Life on Earth: https://flarient.com/blog/noctilucent-clouds-pose-no-threat-to-life-on-earth-wu0v
+- Essential Consumer Devices for Tracking Space Weather Conditions: https://flarient.com/blog/essential-consumer-devices-for-tracking-space-weather-conditions</itunes:summary>
      </item>
   </channel>
 </rss>
