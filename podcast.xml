@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-10.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-11.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1063,6 +1063,37 @@ Read more and explore our interactive dashboards:
 - The Nature and Composition of Intergalactic Space: https://flarient.com/blog/the-nature-and-composition-of-intergalactic-space
 - Noctilucent Clouds Pose No Threat to Life on Earth: https://flarient.com/blog/noctilucent-clouds-pose-no-threat-to-life-on-earth-wu0v
 - Essential Consumer Devices for Tracking Space Weather Conditions: https://flarient.com/blog/essential-consumer-devices-for-tracking-space-weather-conditions</itunes:summary>
+     </item>
+      <item>
+       <title>[WEEKLY] G3 Solar Storm Slams Earth — Weekly Space Roundup</title>
+       <link>https://flarient.com/podcast/g3-solar-storm-slams-earth-weekly-space-roundup</link>
+       <description>In this comprehensive Sunday Weekly Roundup, Ollie dives into the most intense space weather week of the season. The primary focus is the G3 &apos;Strong&apos; geomagnetic storm that occurred on October 10th, driven by solar wind speeds exceeding 850 kilometers per second. We explore why the Kp index hit a level 7.0 and what that meant for satellite operators and aurora chasers alike. We also revisit the historic success of SpaceX’s Starship, which achieved orbital insertion on September 28th, and discuss how this heavy-lift capability changes the game for lunar and Martian exploration.
+
+Listeners will learn about the &apos;statistical anomaly&apos; detected in the Kp index, where conditions were significantly above the 30-day mean, potentially signaling new patterns in the solar cycle. The episode also covers the close approach of asteroid 2026 TP6 and the peak of the Orionids meteor shower, originating from the debris of Halley&apos;s Comet. In our discovery segment, we look at how planetary scientists use orbital imagery and remote sensing to map the Martian surface, providing a blueprint for future human arrival. Finally, we address the physics of noctilucent clouds and the inherent vulnerability of Earth’s technology to solar activity. For live updates and data, visit flarient.com.
+
+Articles and events discussed:
+- G3 Strong Geomagnetic Storm (Oct 10)
+- Starship Orbital Success (Sept 28)
+- Asteroid 2026 TP6 Flyby
+- The Physics of Noctilucent Clouds
+- Understanding Coronal Holes and High-Speed Solar Wind</description>
+       <pubDate>Sun, 11 Oct 2026 13:18:10 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-10-11</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-10-11/flarient-podcast-2026-10-11.mp3" length="13640515" type="audio/mpeg"/>
+       <itunes:duration>568</itunes:duration>
+       <itunes:episodeType>weekly</itunes:episodeType>
+       <itunes:episode>34</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-11.jpg"/>
+       <itunes:summary>In this comprehensive Sunday Weekly Roundup, Ollie dives into the most intense space weather week of the season. The primary focus is the G3 &apos;Strong&apos; geomagnetic storm that occurred on October 10th, driven by solar wind speeds exceeding 850 kilometers per second. We explore why the Kp index hit a level 7.0 and what that meant for satellite operators and aurora chasers alike. We also revisit the historic success of SpaceX’s Starship, which achieved orbital insertion on September 28th, and discuss how this heavy-lift capability changes the game for lunar and Martian exploration.
+
+Listeners will learn about the &apos;statistical anomaly&apos; detected in the Kp index, where conditions were significantly above the 30-day mean, potentially signaling new patterns in the solar cycle. The episode also covers the close approach of asteroid 2026 TP6 and the peak of the Orionids meteor shower, originating from the debris of Halley&apos;s Comet. In our discovery segment, we look at how planetary scientists use orbital imagery and remote sensing to map the Martian surface, providing a blueprint for future human arrival. Finally, we address the physics of noctilucent clouds and the inherent vulnerability of Earth’s technology to solar activity. For live updates and data, visit flarient.com.
+
+Articles and events discussed:
+- G3 Strong Geomagnetic Storm (Oct 10)
+- Starship Orbital Success (Sept 28)
+- Asteroid 2026 TP6 Flyby
+- The Physics of Noctilucent Clouds
+- Understanding Coronal Holes and High-Speed Solar Wind</itunes:summary>
      </item>
   </channel>
 </rss>
