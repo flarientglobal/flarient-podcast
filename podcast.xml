@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-11.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-14.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1096,6 +1096,55 @@ Articles and events discussed:
 - Asteroid 2026 TP6 Flyby
 - The Physics of Noctilucent Clouds
 - Understanding Coronal Holes and High-Speed Solar Wind</itunes:summary>
+     </item>
+      <item>
+       <title>Asteroid 2026 TP6 Flies By as Orionid Meteors Peak Tonight</title>
+       <link>https://flarient.com/podcast/asteroid-2026-tp6-flies-by-as-orionid-meteors-peak-tonight</link>
+       <description>Welcome to today&apos;s edition of the Daily Space Podcast by Flarient for Wednesday, October 14, 2026. Join your host Ollie as we explore a packed day across the solar system and our immediate orbital environment.
+
+Today, we lead with the close approach of near-Earth asteroid 2026 TP6, tracking how orbital observers and radar monitor this rocky visitor as it safely glides past. Simultaneously, Earth plunges into the ancient debris stream left behind by Comet 1P/Halley, producing the peak of the Orionids meteor shower with up to twenty swift meteors per hour lighting up dark skies.
+
+In our space weather report, we analyse live telemetry from NOAA&apos;s Space Weather Prediction Center and the GFZ German Research Centre for Geosciences. With the planetary Kp index hovering quietly between 0.67 and 2.33, the headline story remains an invisible one: a high-speed solar wind stream surging at 611.7 km/s from an open coronal hole, held at bay only by a northward-pointing interplanetary magnetic field (Bz at +2.5 nT). We look back at the dramatic G3 strong geomagnetic storm that rocked Earth&apos;s magnetosphere on October 10th with an 852 km/s blast, and look ahead on the watch calendar to Jupiter reaching opposition on January 10, 2027.
+
+We also examine new insights into astrobiology and extreme planetary habitability, compare atmospheric evolution on Earth and Mars, and dive into the technological realities of asteroid mining—from volatile extraction to orbital refuelling depots. Finally, we tackle a persistent myth regarding polar mesospheric clouds and verify the real-world science behind noctilucent cloud formation.
+
+Explore interactive dashboards and live data:
+- Live Space Weather &amp; Kp Index: https://flarient.com/#kp
+- Asteroid Tracking: https://flarient.com/#asteroids
+- Aurora Forecast: https://flarient.com/#aurora
+- Solar Flares &amp; Earth Impact: https://flarient.com/blog/solar-flares-and-their-impact-on-earth-lb5i
+- Asteroid Mining Potential: https://flarient.com/blog/the-economic-and-scientific-potential-of-asteroid-mining
+- Astrophysics Mechanics: https://flarient.com/blog/astrophysics-reveals-the-mechanics-of-our-universe
+- Astrobiology &amp; Life&apos;s Origins: https://flarient.com/blog/astrobiology-exploring-the-origins-and-future-of-life-in-the-universe
+- Noctilucent Cloud Photography: https://flarient.com/blog/top-camera-equipment-for-capturing-noctilucent-clouds
+- October 10 G3 Storm Archive: https://flarient.com/space-events/2026-10-10-g3-storm
+- Jupiter Opposition 2027: https://flarient.com/space-events/planetary-jupiter-opposition-2027-01-10</description>
+       <pubDate>Wed, 14 Oct 2026 12:21:34 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-10-14</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-10-14/flarient-podcast-2026-10-14.mp3" length="27656365" type="audio/mpeg"/>
+       <itunes:duration>1152</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>35</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-14.jpg"/>
+       <itunes:summary>Welcome to today&apos;s edition of the Daily Space Podcast by Flarient for Wednesday, October 14, 2026. Join your host Ollie as we explore a packed day across the solar system and our immediate orbital environment.
+
+Today, we lead with the close approach of near-Earth asteroid 2026 TP6, tracking how orbital observers and radar monitor this rocky visitor as it safely glides past. Simultaneously, Earth plunges into the ancient debris stream left behind by Comet 1P/Halley, producing the peak of the Orionids meteor shower with up to twenty swift meteors per hour lighting up dark skies.
+
+In our space weather report, we analyse live telemetry from NOAA&apos;s Space Weather Prediction Center and the GFZ German Research Centre for Geosciences. With the planetary Kp index hovering quietly between 0.67 and 2.33, the headline story remains an invisible one: a high-speed solar wind stream surging at 611.7 km/s from an open coronal hole, held at bay only by a northward-pointing interplanetary magnetic field (Bz at +2.5 nT). We look back at the dramatic G3 strong geomagnetic storm that rocked Earth&apos;s magnetosphere on October 10th with an 852 km/s blast, and look ahead on the watch calendar to Jupiter reaching opposition on January 10, 2027.
+
+We also examine new insights into astrobiology and extreme planetary habitability, compare atmospheric evolution on Earth and Mars, and dive into the technological realities of asteroid mining—from volatile extraction to orbital refuelling depots. Finally, we tackle a persistent myth regarding polar mesospheric clouds and verify the real-world science behind noctilucent cloud formation.
+
+Explore interactive dashboards and live data:
+- Live Space Weather &amp; Kp Index: https://flarient.com/#kp
+- Asteroid Tracking: https://flarient.com/#asteroids
+- Aurora Forecast: https://flarient.com/#aurora
+- Solar Flares &amp; Earth Impact: https://flarient.com/blog/solar-flares-and-their-impact-on-earth-lb5i
+- Asteroid Mining Potential: https://flarient.com/blog/the-economic-and-scientific-potential-of-asteroid-mining
+- Astrophysics Mechanics: https://flarient.com/blog/astrophysics-reveals-the-mechanics-of-our-universe
+- Astrobiology &amp; Life&apos;s Origins: https://flarient.com/blog/astrobiology-exploring-the-origins-and-future-of-life-in-the-universe
+- Noctilucent Cloud Photography: https://flarient.com/blog/top-camera-equipment-for-capturing-noctilucent-clouds
+- October 10 G3 Storm Archive: https://flarient.com/space-events/2026-10-10-g3-storm
+- Jupiter Opposition 2027: https://flarient.com/space-events/planetary-jupiter-opposition-2027-01-10</itunes:summary>
      </item>
   </channel>
 </rss>
