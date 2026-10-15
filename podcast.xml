@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-14.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-15.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1147,6 +1147,57 @@ Explore interactive dashboards and live data:
 - Noctilucent Cloud Photography: https://flarient.com/blog/top-camera-equipment-for-capturing-noctilucent-clouds
 - October 10 G3 Storm Archive: https://flarient.com/space-events/2026-10-10-g3-storm
 - Jupiter Opposition 2027: https://flarient.com/space-events/planetary-jupiter-opposition-2027-01-10</itunes:summary>
+     </item>
+      <item>
+       <title>Asteroid 2026 TP6 Flyby and Post-G3 Storm Calm</title>
+       <link>https://flarient.com/podcast/asteroid-2026-tp6-flyby-and-post-g3-storm-calm</link>
+       <description>Welcome to today&apos;s edition of the Daily Space Podcast by Flarient for Thursday, October 15, 2026. In this episode, host Ollie breaks down the aftermath of the significant G3 geomagnetic storm that struck on October 10th and tracks the latest telemetry as our magnetosphere transitions into a much-needed period of quiet recovery.
+
+We lead with breaking tracking updates on near-Earth asteroid 2026 TP6, which is executing a close flyby past Earth today. We examine how planetary defence teams use these encounters to refine orbital models, and look ahead to the celestial fireworks of the approaching Orionids meteor shower peaking on October 22nd.
+
+In our Launch Report, we assess current orbital traffic and discuss how post-storm atmospheric heating creates thermospheric drag on assets like the International Space Station at 408 kilometres altitude. Then, Ollie walks you through today&apos;s live space weather telemetry, analyzing Kp values peaking at 3, a Dst index of -29 nT, and solar wind speeds settling back toward background levels.
+
+Our Discovery of the Day explores the fascinating physics of noctilucent clouds forming at the freezing mesopause, nucleated by meteoric smoke at altitudes between 80 and 85 kilometres. We also explore the boundary of the heliopause and what lies across the interstellar medium, delve into how amateur radio operators navigate ionospheric absorption, review satellite shielding against deep dielectric charging, and unpack the multidisciplinary search for habitable zones in astrobiology.
+
+Finally, we fact-check the colossal scale of red supergiant Stephenson 2-18 and review the lingering effects of the recent October 4th G1 storm.
+
+Explore further resources and live tracking dashboards:
+- Space Event Archive (G1 Storm): https://flarient.com/space-events/2026-10-04-g1-storm
+- Noctilucent Clouds: https://flarient.com/blog/the-mechanics-of-noctilucent-cloud-formation
+- Beyond the Solar System: https://flarient.com/blog/what-lies-beyond-the-solar-system
+- Kp Index for Ham Radio: https://flarient.com/blog/understanding-the-kp-index-for-effective-ham-radio-planning
+- Satellite Protection: https://flarient.com/blog/monitoring-solar-storms-to-protect-satellite-infrastructure-8jbp
+- Astrobiology Guide: https://flarient.com/blog/astrobiology-exploring-the-origins-and-future-of-life-in-the-universe
+- Stephenson 2-18 Fact Check: https://flarient.com/fact-checker/stephenson-2-18-why-this-red-supergiant-dwarfs-our-sun
+- SWPC NOAA Forecasts: https://www.swpc.noaa.gov/products/3-day-forecast
+- Live Data &amp; Dashboards: https://flarient.com</description>
+       <pubDate>Thu, 15 Oct 2026 12:02:32 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-10-15</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-10-15/flarient-podcast-2026-10-15.mp3" length="21897920" type="audio/mpeg"/>
+       <itunes:duration>912</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>36</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-15.jpg"/>
+       <itunes:summary>Welcome to today&apos;s edition of the Daily Space Podcast by Flarient for Thursday, October 15, 2026. In this episode, host Ollie breaks down the aftermath of the significant G3 geomagnetic storm that struck on October 10th and tracks the latest telemetry as our magnetosphere transitions into a much-needed period of quiet recovery.
+
+We lead with breaking tracking updates on near-Earth asteroid 2026 TP6, which is executing a close flyby past Earth today. We examine how planetary defence teams use these encounters to refine orbital models, and look ahead to the celestial fireworks of the approaching Orionids meteor shower peaking on October 22nd.
+
+In our Launch Report, we assess current orbital traffic and discuss how post-storm atmospheric heating creates thermospheric drag on assets like the International Space Station at 408 kilometres altitude. Then, Ollie walks you through today&apos;s live space weather telemetry, analyzing Kp values peaking at 3, a Dst index of -29 nT, and solar wind speeds settling back toward background levels.
+
+Our Discovery of the Day explores the fascinating physics of noctilucent clouds forming at the freezing mesopause, nucleated by meteoric smoke at altitudes between 80 and 85 kilometres. We also explore the boundary of the heliopause and what lies across the interstellar medium, delve into how amateur radio operators navigate ionospheric absorption, review satellite shielding against deep dielectric charging, and unpack the multidisciplinary search for habitable zones in astrobiology.
+
+Finally, we fact-check the colossal scale of red supergiant Stephenson 2-18 and review the lingering effects of the recent October 4th G1 storm.
+
+Explore further resources and live tracking dashboards:
+- Space Event Archive (G1 Storm): https://flarient.com/space-events/2026-10-04-g1-storm
+- Noctilucent Clouds: https://flarient.com/blog/the-mechanics-of-noctilucent-cloud-formation
+- Beyond the Solar System: https://flarient.com/blog/what-lies-beyond-the-solar-system
+- Kp Index for Ham Radio: https://flarient.com/blog/understanding-the-kp-index-for-effective-ham-radio-planning
+- Satellite Protection: https://flarient.com/blog/monitoring-solar-storms-to-protect-satellite-infrastructure-8jbp
+- Astrobiology Guide: https://flarient.com/blog/astrobiology-exploring-the-origins-and-future-of-life-in-the-universe
+- Stephenson 2-18 Fact Check: https://flarient.com/fact-checker/stephenson-2-18-why-this-red-supergiant-dwarfs-our-sun
+- SWPC NOAA Forecasts: https://www.swpc.noaa.gov/products/3-day-forecast
+- Live Data &amp; Dashboards: https://flarient.com</itunes:summary>
      </item>
   </channel>
 </rss>
