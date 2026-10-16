@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-15.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-16.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1200,6 +1200,39 @@ Explore further resources and live tracking dashboards:
 - Stephenson 2-18 Fact Check: https://flarient.com/fact-checker/stephenson-2-18-why-this-red-supergiant-dwarfs-our-sun
 - SWPC NOAA Forecasts: https://www.swpc.noaa.gov/products/3-day-forecast
 - Live Data &amp; Dashboards: https://flarient.com</itunes:summary>
+     </item>
+      <item>
+       <title>Asteroid 2025 UK9 Flyby and Calm Space Weather Update</title>
+       <link>https://flarient.com/podcast/asteroid-2025-uk9-flyby-and-calm-space-weather-update</link>
+       <description>In today&apos;s episode, we dive into the quiet but fascinating state of our local space environment. We start by covering the close passage of near-Earth asteroid 2025 UK9, a timely reminder of the cosmic neighbors that orbit our sun. We shift our focus to the Sun, which is currently in a period of remarkable geomagnetic stability. We discuss why a low Kp index is actually a goldmine for satellite operators and how it provides the perfect window for viewing the upcoming Orionids meteor shower.
+
+We also break down the complex world of orbital mechanics. You’ll learn how engineers use &apos;sun-synchronous&apos; orbits to keep satellites in perpetual, consistent light for better Earth observation. Plus, we explore the often-overlooked impact of solar flares on modern infrastructure, explaining the physics behind how solar radiation can interfere with GPS accuracy. From the potential for asteroids to generate tsunamis upon oceanic impact to the delicate balance of our satellite networks, we cover it all.
+
+Finally, we wrap up with our daily brief and essential resources for tracking space weather. Visit flarient.com for our live dashboards, aurora forecasts, and to join our community of space weather enthusiasts. Don&apos;t forget to subscribe to the podcast to keep up with the latest in our solar system.
+
+Key links:
+- Understanding the Mechanics of Sun-Synchronous Orbits: https://flarient.com/blog/understanding-the-mechanics-of-sun-synchronous-orbits
+- How Solar Flares Disrupt GPS Accuracy: https://flarient.com/blog/how-solar-flares-disrupt-gps-accuracy-and-satellite-navigation
+- The Network of Satellites: https://flarient.com/blog/the-network-of-satellites-orbiting-our-planet
+- Asteroid Impacts and Tsunami Risks: https://flarient.com/blog/asteroid-impacts-and-the-threat-of-tsunami-generation</description>
+       <pubDate>Fri, 16 Oct 2026 11:49:46 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-10-16</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-10-16/flarient-podcast-2026-10-16.mp3" length="5316023" type="audio/mpeg"/>
+       <itunes:duration>221</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>37</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-16.jpg"/>
+       <itunes:summary>In today&apos;s episode, we dive into the quiet but fascinating state of our local space environment. We start by covering the close passage of near-Earth asteroid 2025 UK9, a timely reminder of the cosmic neighbors that orbit our sun. We shift our focus to the Sun, which is currently in a period of remarkable geomagnetic stability. We discuss why a low Kp index is actually a goldmine for satellite operators and how it provides the perfect window for viewing the upcoming Orionids meteor shower.
+
+We also break down the complex world of orbital mechanics. You’ll learn how engineers use &apos;sun-synchronous&apos; orbits to keep satellites in perpetual, consistent light for better Earth observation. Plus, we explore the often-overlooked impact of solar flares on modern infrastructure, explaining the physics behind how solar radiation can interfere with GPS accuracy. From the potential for asteroids to generate tsunamis upon oceanic impact to the delicate balance of our satellite networks, we cover it all.
+
+Finally, we wrap up with our daily brief and essential resources for tracking space weather. Visit flarient.com for our live dashboards, aurora forecasts, and to join our community of space weather enthusiasts. Don&apos;t forget to subscribe to the podcast to keep up with the latest in our solar system.
+
+Key links:
+- Understanding the Mechanics of Sun-Synchronous Orbits: https://flarient.com/blog/understanding-the-mechanics-of-sun-synchronous-orbits
+- How Solar Flares Disrupt GPS Accuracy: https://flarient.com/blog/how-solar-flares-disrupt-gps-accuracy-and-satellite-navigation
+- The Network of Satellites: https://flarient.com/blog/the-network-of-satellites-orbiting-our-planet
+- Asteroid Impacts and Tsunami Risks: https://flarient.com/blog/asteroid-impacts-and-the-threat-of-tsunami-generation</itunes:summary>
      </item>
   </channel>
 </rss>
