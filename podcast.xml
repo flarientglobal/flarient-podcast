@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-16.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-17.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1235,6 +1235,35 @@ Key links:
 - How Solar Flares Disrupt GPS Accuracy: https://flarient.com/blog/how-solar-flares-disrupt-gps-accuracy-and-satellite-navigation
 - The Network of Satellites: https://flarient.com/blog/the-network-of-satellites-orbiting-our-planet
 - Asteroid Impacts and Tsunami Risks: https://flarient.com/blog/asteroid-impacts-and-the-threat-of-tsunami-generation</itunes:summary>
+     </item>
+      <item>
+       <title>Asteroid 2025 UK9 Flyby and Orionids Peak Amid Calm Sun</title>
+       <link>https://flarient.com/podcast/asteroid-2025-uk9-flyby-and-orionids-peak-amid-calm-sun</link>
+       <description>In today&apos;s episode for Saturday, October 17th, 2026, Ollie takes you on a comprehensive journey across our local solar system and the broader cosmos.
+
+We lead with breaking news from our cosmic backyard: the close approach of near-Earth asteroid 2025 UK9 as it sweeps past Earth, alongside the peak of the annual Orionids meteor shower. Originating from the ancient debris trail of Comet 1P/Halley, the Orionids offer up to 20 meteors per hour radiant from the constellation Orion, providing stunning viewing opportunities under dark skies after midnight.
+
+In our space weather report, we examine an exceptionally tranquil magnetosphere. With the planetary Kp index dropping to 0 and holding near quiet baselines, a neutral Bz magnetic field component of minus 1.5 nanoteslas, and solar wind cruising at a steady 464.7 kilometres per second, space weather disturbances are at a minimum. Satellite operators benefit from low atmospheric drag and rock-solid GNSS positioning accuracy, while auroral activity remains suppressed at a modest 13 percent maximum.
+
+We also explore four in-depth features from Flarient&apos;s latest publications. First, we unpack the enduring cosmological foundation of the Big Bang Theory, tracing Edwin Hubble&apos;s redshift observations and the thermal snapshot of the Cosmic Microwave Background from when the universe was just 380,000 years old. Next, we journey into the freezing mesopause to reveal why noctilucent clouds are such rare atmospheric wonders, requiring temperatures below minus 120 degrees Celsius and meteoric dust to form. We then break down how astrobiologists model the habitable zone through planetary equilibrium, stellar flux, atmospheric pressure, and planetary magnetic shielding. Finally, we discuss how enterprise space weather forecasting protects critical global infrastructure—from power grids to commercial aviation—against geomagnetic disruptions.
+
+For real-time space weather dashboards, live Kp readings, and aurora alerts, visit https://flarient.com and explore our full archive at https://flarient.com/podcast.</description>
+       <pubDate>Sat, 17 Oct 2026 11:09:28 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-10-17</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-10-17/flarient-podcast-2026-10-17.mp3" length="24282177" type="audio/mpeg"/>
+       <itunes:duration>1011</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>38</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-17.jpg"/>
+       <itunes:summary>In today&apos;s episode for Saturday, October 17th, 2026, Ollie takes you on a comprehensive journey across our local solar system and the broader cosmos.
+
+We lead with breaking news from our cosmic backyard: the close approach of near-Earth asteroid 2025 UK9 as it sweeps past Earth, alongside the peak of the annual Orionids meteor shower. Originating from the ancient debris trail of Comet 1P/Halley, the Orionids offer up to 20 meteors per hour radiant from the constellation Orion, providing stunning viewing opportunities under dark skies after midnight.
+
+In our space weather report, we examine an exceptionally tranquil magnetosphere. With the planetary Kp index dropping to 0 and holding near quiet baselines, a neutral Bz magnetic field component of minus 1.5 nanoteslas, and solar wind cruising at a steady 464.7 kilometres per second, space weather disturbances are at a minimum. Satellite operators benefit from low atmospheric drag and rock-solid GNSS positioning accuracy, while auroral activity remains suppressed at a modest 13 percent maximum.
+
+We also explore four in-depth features from Flarient&apos;s latest publications. First, we unpack the enduring cosmological foundation of the Big Bang Theory, tracing Edwin Hubble&apos;s redshift observations and the thermal snapshot of the Cosmic Microwave Background from when the universe was just 380,000 years old. Next, we journey into the freezing mesopause to reveal why noctilucent clouds are such rare atmospheric wonders, requiring temperatures below minus 120 degrees Celsius and meteoric dust to form. We then break down how astrobiologists model the habitable zone through planetary equilibrium, stellar flux, atmospheric pressure, and planetary magnetic shielding. Finally, we discuss how enterprise space weather forecasting protects critical global infrastructure—from power grids to commercial aviation—against geomagnetic disruptions.
+
+For real-time space weather dashboards, live Kp readings, and aurora alerts, visit https://flarient.com and explore our full archive at https://flarient.com/podcast.</itunes:summary>
      </item>
   </channel>
 </rss>
