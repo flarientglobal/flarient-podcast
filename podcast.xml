@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-17.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-18.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1266,6 +1266,41 @@ In our space weather report, we examine an exceptionally tranquil magnetosphere.
 We also explore four in-depth features from Flarient&apos;s latest publications. First, we unpack the enduring cosmological foundation of the Big Bang Theory, tracing Edwin Hubble&apos;s redshift observations and the thermal snapshot of the Cosmic Microwave Background from when the universe was just 380,000 years old. Next, we journey into the freezing mesopause to reveal why noctilucent clouds are such rare atmospheric wonders, requiring temperatures below minus 120 degrees Celsius and meteoric dust to form. We then break down how astrobiologists model the habitable zone through planetary equilibrium, stellar flux, atmospheric pressure, and planetary magnetic shielding. Finally, we discuss how enterprise space weather forecasting protects critical global infrastructure—from power grids to commercial aviation—against geomagnetic disruptions.
 
 For real-time space weather dashboards, live Kp readings, and aurora alerts, visit https://flarient.com and explore our full archive at https://flarient.com/podcast.</itunes:summary>
+     </item>
+      <item>
+       <title>[WEEKLY] Asteroid 2025 UK9 Flyby, Orionids Peak, and Solar Calm</title>
+       <link>https://flarient.com/podcast/asteroid-2025-uk9-flyby-orionids-peak-and-solar-calm</link>
+       <description>Welcome to the Sunday Weekly Roundup on the Daily Space Podcast by Flarient for October 18, 2026. In this comprehensive review of our local space environment, host Ollie examines a fascinating cosmic double feature happening right above our heads. Near-Earth asteroid 2025 UK9 makes its closest approach to our planet, coinciding with the annual peak of the Orionids meteor shower—a stream of ancient debris shed by Comet 1P/Halley hitting our upper atmosphere at blistering speeds with zenithal hourly rates reaching twenty meteors per hour.
+
+Alongside these astronomical spectacles, our star has settled into a remarkably peaceful state. We dive into the live space weather metrics from NOAA and the Space Weather Prediction Center, analyzing a quiet Kp index of 0.67, a benign interplanetary magnetic field with Bz hovering around positive 3.2 nT, and solar wind speeds clocking in at 423.4 kilometres per second. Ollie explores what these tranquil conditions mean for satellite drag, high-frequency communications, and global navigation systems, as well as auroral visibility confined strictly to high polar latitudes.
+
+We also explore the week&apos;s foundational space weather science, unpacking our latest deep-dive articles. We untangle the vital physical distinctions between instantaneous electromagnetic solar flares travelling at the speed of light and massive coronal mass ejections (CMEs) that propel billions of tonnes of plasma across the solar system over days. Plus, we explore how differential solar rotation winds up internal magnetic fields to generate sunspots, and how charged solar wind particles ignite the glowing red, green, and purple curtains of the aurora borealis.
+
+Read the full articles and access interactive dashboards at:
+- Distinguishing Between Solar Flares and Coronal Mass Ejections: https://flarient.com/blog/distinguishing-between-solar-flares-and-coronal-mass-ejections
+- Sunspots and Their Role in Shaping Space Weather: https://flarient.com/blog/sunspots-and-their-role-in-shaping-space-weather-8r74
+- The Science and Wonder of the Aurora Borealis: https://flarient.com/blog/the-science-and-wonder-of-the-aurora-borealis
+- Solar Flares Explained: https://flarient.com/blog/solar-flares-explained
+- NOAA SWPC 3-Day Forecast: https://www.swpc.noaa.gov/products/3-day-forecast</description>
+       <pubDate>Sun, 18 Oct 2026 11:34:11 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-10-18</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-10-18/flarient-podcast-2026-10-18.mp3" length="28828109" type="audio/mpeg"/>
+       <itunes:duration>1201</itunes:duration>
+       <itunes:episodeType>weekly</itunes:episodeType>
+       <itunes:episode>39</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-18.jpg"/>
+       <itunes:summary>Welcome to the Sunday Weekly Roundup on the Daily Space Podcast by Flarient for October 18, 2026. In this comprehensive review of our local space environment, host Ollie examines a fascinating cosmic double feature happening right above our heads. Near-Earth asteroid 2025 UK9 makes its closest approach to our planet, coinciding with the annual peak of the Orionids meteor shower—a stream of ancient debris shed by Comet 1P/Halley hitting our upper atmosphere at blistering speeds with zenithal hourly rates reaching twenty meteors per hour.
+
+Alongside these astronomical spectacles, our star has settled into a remarkably peaceful state. We dive into the live space weather metrics from NOAA and the Space Weather Prediction Center, analyzing a quiet Kp index of 0.67, a benign interplanetary magnetic field with Bz hovering around positive 3.2 nT, and solar wind speeds clocking in at 423.4 kilometres per second. Ollie explores what these tranquil conditions mean for satellite drag, high-frequency communications, and global navigation systems, as well as auroral visibility confined strictly to high polar latitudes.
+
+We also explore the week&apos;s foundational space weather science, unpacking our latest deep-dive articles. We untangle the vital physical distinctions between instantaneous electromagnetic solar flares travelling at the speed of light and massive coronal mass ejections (CMEs) that propel billions of tonnes of plasma across the solar system over days. Plus, we explore how differential solar rotation winds up internal magnetic fields to generate sunspots, and how charged solar wind particles ignite the glowing red, green, and purple curtains of the aurora borealis.
+
+Read the full articles and access interactive dashboards at:
+- Distinguishing Between Solar Flares and Coronal Mass Ejections: https://flarient.com/blog/distinguishing-between-solar-flares-and-coronal-mass-ejections
+- Sunspots and Their Role in Shaping Space Weather: https://flarient.com/blog/sunspots-and-their-role-in-shaping-space-weather-8r74
+- The Science and Wonder of the Aurora Borealis: https://flarient.com/blog/the-science-and-wonder-of-the-aurora-borealis
+- Solar Flares Explained: https://flarient.com/blog/solar-flares-explained
+- NOAA SWPC 3-Day Forecast: https://www.swpc.noaa.gov/products/3-day-forecast</itunes:summary>
      </item>
   </channel>
 </rss>
