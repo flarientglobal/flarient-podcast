@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-10-18.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-04.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1303,6 +1303,31 @@ Read the full articles and access interactive dashboards at:
 - The Science and Wonder of the Aurora Borealis: https://flarient.com/blog/the-science-and-wonder-of-the-aurora-borealis
 - Solar Flares Explained: https://flarient.com/blog/solar-flares-explained
 - NOAA SWPC 3-Day Forecast: https://www.swpc.noaa.gov/products/3-day-forecast</itunes:summary>
+     </item>
+      <item>
+       <title>Orbital Debris Speeds — The Bullet-Speed Reality of Space Junk</title>
+       <link>https://flarient.com/podcast/orbital-debris-speeds-the-bullet-speed-reality-of-space-junk</link>
+       <description>In today’s episode of the Daily Space Podcast, Ollie takes a deep dive into the high-stakes environment of low Earth orbit and the foundational science of our universe. We begin with a comprehensive look at the modern state of planetary defense. With millions of pieces of rocky debris and near-Earth objects (NEOs) zooming through our solar system, how do agencies like NASA and the ESA actually track these bodies decades into the future? We break down the orbital mechanics and the role of gravitational &apos;nudges&apos; from giants like Jupiter.
+
+Then, we tackle a major point of confusion in space weather: the difference between solar flares and coronal mass ejections (CMEs). While they are often mentioned in the same breath, one travels at the speed of light while the other is a billion-ton cloud of plasma. Understanding this distinction is vital for protecting our global infrastructure. Speaking of protection, our &apos;Discovery of the Day&apos; segment looks at the terrifying velocity of orbital debris. In low Earth orbit, objects move at 17,500 miles per hour. We discuss the physics of hypervelocity impacts and why traditional armor just doesn&apos;t work against a paint fleck moving at seven kilometers per second.
+
+Finally, we check the pulse of the Sun with a detailed space weather report based on the latest Kp index readings from 2026-11-04, and we revisit the origins of everything with a look at why the Big Bang Theory remains the bedrock of modern cosmology. From the cosmic microwave background to the expansion of distant galaxies, we explore how the deep past still dictates our technological present.
+
+For live space weather data, aurora forecasts, and interactive dashboards, visit flarient.com. Read our full articles on asteroid threats and solar physics at flarient.com/blog.</description>
+       <pubDate>Wed, 04 Nov 2026 03:50:56 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-11-04</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-11-04/flarient-podcast-2026-11-04.mp3" length="14436112" type="audio/mpeg"/>
+       <itunes:duration>601</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>40</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-04.jpg"/>
+       <itunes:summary>In today’s episode of the Daily Space Podcast, Ollie takes a deep dive into the high-stakes environment of low Earth orbit and the foundational science of our universe. We begin with a comprehensive look at the modern state of planetary defense. With millions of pieces of rocky debris and near-Earth objects (NEOs) zooming through our solar system, how do agencies like NASA and the ESA actually track these bodies decades into the future? We break down the orbital mechanics and the role of gravitational &apos;nudges&apos; from giants like Jupiter.
+
+Then, we tackle a major point of confusion in space weather: the difference between solar flares and coronal mass ejections (CMEs). While they are often mentioned in the same breath, one travels at the speed of light while the other is a billion-ton cloud of plasma. Understanding this distinction is vital for protecting our global infrastructure. Speaking of protection, our &apos;Discovery of the Day&apos; segment looks at the terrifying velocity of orbital debris. In low Earth orbit, objects move at 17,500 miles per hour. We discuss the physics of hypervelocity impacts and why traditional armor just doesn&apos;t work against a paint fleck moving at seven kilometers per second.
+
+Finally, we check the pulse of the Sun with a detailed space weather report based on the latest Kp index readings from 2026-11-04, and we revisit the origins of everything with a look at why the Big Bang Theory remains the bedrock of modern cosmology. From the cosmic microwave background to the expansion of distant galaxies, we explore how the deep past still dictates our technological present.
+
+For live space weather data, aurora forecasts, and interactive dashboards, visit flarient.com. Read our full articles on asteroid threats and solar physics at flarient.com/blog.</itunes:summary>
      </item>
   </channel>
 </rss>
