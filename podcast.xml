@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-04.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-05.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1331,6 +1331,31 @@ Then, we tackle a major point of confusion in space weather: the difference betw
 Finally, we check the pulse of the Sun with a detailed space weather report based on the latest Kp index readings from 2026-11-04, and we revisit the origins of everything with a look at why the Big Bang Theory remains the bedrock of modern cosmology. From the cosmic microwave background to the expansion of distant galaxies, we explore how the deep past still dictates our technological present.
 
 For live space weather data, aurora forecasts, and interactive dashboards, visit flarient.com. Read our full articles on asteroid threats and solar physics at flarient.com/blog.</itunes:summary>
+     </item>
+      <item>
+       <title>Taurids Peak and Swift&apos;s Fiery Farewell — Today in Space</title>
+       <link>https://flarient.com/podcast/taurids-peak-and-swifts-fiery-farewell-today-in-space</link>
+       <description>In today&apos;s episode, Ollie takes us through a significant transition in near-Earth space. We lead with the news that the Neil Gehrels Swift Observatory completed its atmospheric re-entry on November 4, 2026, ending two decades of incredible gamma-ray burst discovery. As we mourn the loss of this satellite, the universe provides a fitting tribute: the peak of the Taurids meteor shower, which is intensifying today, November 5. Ollie explains the origins of these fireballs, stemming from the debris of Comet 2P/Encke, and why tonight&apos;s conditions are optimal for viewing.
+
+We dive deep into the daily space weather report, which shows an remarkably quiet geomagnetic field. With a Kp index ranging from 0 to 1.33 and solar wind speeds holding steady around 375 km/s, Ollie discusses why this stability is a boon for both satellite operators and ground-based observers. We also explore the &apos;Discovery of the Day&apos;—the fascinating relationship between meteoric dust and the formation of rare, electric-blue noctilucent clouds in our upper atmosphere.
+
+In our deep-dive segments, we review the diverse network of satellites that populate our orbit, from the ISS to geostationary behemoths, and discuss the cosmic origins of asteroids as the &apos;frozen archives&apos; of our solar system. We also address the physical reality of space debris re-entering our atmosphere, providing a much-needed fact check on the actual risks of ground impacts. Finally, we look ahead to the next 72 hours, tracking asteroid 2026 VP1 and monitoring the solar flux as we move deeper into the week. 
+
+For real-time data and interactive dashboards, visit flarient.com.</description>
+       <pubDate>Thu, 05 Nov 2026 14:56:45 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-11-05</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-11-05/flarient-podcast-2026-11-05.mp3" length="18862921" type="audio/mpeg"/>
+       <itunes:duration>785</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>41</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-05.jpg"/>
+       <itunes:summary>In today&apos;s episode, Ollie takes us through a significant transition in near-Earth space. We lead with the news that the Neil Gehrels Swift Observatory completed its atmospheric re-entry on November 4, 2026, ending two decades of incredible gamma-ray burst discovery. As we mourn the loss of this satellite, the universe provides a fitting tribute: the peak of the Taurids meteor shower, which is intensifying today, November 5. Ollie explains the origins of these fireballs, stemming from the debris of Comet 2P/Encke, and why tonight&apos;s conditions are optimal for viewing.
+
+We dive deep into the daily space weather report, which shows an remarkably quiet geomagnetic field. With a Kp index ranging from 0 to 1.33 and solar wind speeds holding steady around 375 km/s, Ollie discusses why this stability is a boon for both satellite operators and ground-based observers. We also explore the &apos;Discovery of the Day&apos;—the fascinating relationship between meteoric dust and the formation of rare, electric-blue noctilucent clouds in our upper atmosphere.
+
+In our deep-dive segments, we review the diverse network of satellites that populate our orbit, from the ISS to geostationary behemoths, and discuss the cosmic origins of asteroids as the &apos;frozen archives&apos; of our solar system. We also address the physical reality of space debris re-entering our atmosphere, providing a much-needed fact check on the actual risks of ground impacts. Finally, we look ahead to the next 72 hours, tracking asteroid 2026 VP1 and monitoring the solar flux as we move deeper into the week. 
+
+For real-time data and interactive dashboards, visit flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
