@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-05.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-06.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1358,6 +1358,27 @@ We dive deep into the daily space weather report, which shows an remarkably quie
 In our deep-dive segments, we review the diverse network of satellites that populate our orbit, from the ISS to geostationary behemoths, and discuss the cosmic origins of asteroids as the &apos;frozen archives&apos; of our solar system. We also address the physical reality of space debris re-entering our atmosphere, providing a much-needed fact check on the actual risks of ground impacts. Finally, we look ahead to the next 72 hours, tracking asteroid 2026 VP1 and monitoring the solar flux as we move deeper into the week. 
 
 For real-time data and interactive dashboards, visit flarient.com.</itunes:summary>
+     </item>
+      <item>
+       <title>ISS Solar Upgrade &amp; Quiet Space Weather</title>
+       <link>https://flarient.com/podcast/iss-solar-upgrade-quiet-space-weather</link>
+       <description>Welcome to the Daily Space Podcast by Flarient! In today&apos;s episode for November 6, 2026, host Ollie takes you through a comprehensive look at our current space environment. We start with a major milestone in human spaceflight: astronauts outside the International Space Station finalising the installation of the eighth and ultimate roll-out solar array, ensuring robust power for future operations and deorbit plans. Meanwhile, skywatchers are treated to the annual Orionids meteor shower, bringing up to twenty meteors per hour.
+
+Moving into our space weather report, we analyse today&apos;s remarkably calm conditions. With the Kp index sitting at a gentle 1.67, solar wind speeds near 337 kilometres per second, and a neutral magnetic field, the environment is ideal for orbital construction and long-exposure astrophotography without the interference of geomagnetic storms. We also dive into our recent blog articles, exploring how radio operators optimise high-frequency bands for aurora propagation, the ongoing search for extraterrestrial life within our solar system, the growing challenge of space debris in low Earth orbit, and the true thermodynamic temperature of interplanetary space.
+
+Discover how these fascinating scientific principles connect our local cosmic neighbourhood to everyday technology. Visit flarient.com for live space weather data, real-time Kp indices, aurora forecasts, and interactive dashboards. Don&apos;t forget to subscribe to the podcast on your favorite platform, check out flarient.com/podcast for all episodes and show notes, follow Flarient on social media, join our community of aurora chasers, and download the Flarient app for push notifications when geomagnetic storms hit.</description>
+       <pubDate>Fri, 06 Nov 2026 14:33:51 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-11-06</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-11-06/flarient-podcast-2026-11-06.mp3" length="9178578" type="audio/mpeg"/>
+       <itunes:duration>382</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>42</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-06.jpg"/>
+       <itunes:summary>Welcome to the Daily Space Podcast by Flarient! In today&apos;s episode for November 6, 2026, host Ollie takes you through a comprehensive look at our current space environment. We start with a major milestone in human spaceflight: astronauts outside the International Space Station finalising the installation of the eighth and ultimate roll-out solar array, ensuring robust power for future operations and deorbit plans. Meanwhile, skywatchers are treated to the annual Orionids meteor shower, bringing up to twenty meteors per hour.
+
+Moving into our space weather report, we analyse today&apos;s remarkably calm conditions. With the Kp index sitting at a gentle 1.67, solar wind speeds near 337 kilometres per second, and a neutral magnetic field, the environment is ideal for orbital construction and long-exposure astrophotography without the interference of geomagnetic storms. We also dive into our recent blog articles, exploring how radio operators optimise high-frequency bands for aurora propagation, the ongoing search for extraterrestrial life within our solar system, the growing challenge of space debris in low Earth orbit, and the true thermodynamic temperature of interplanetary space.
+
+Discover how these fascinating scientific principles connect our local cosmic neighbourhood to everyday technology. Visit flarient.com for live space weather data, real-time Kp indices, aurora forecasts, and interactive dashboards. Don&apos;t forget to subscribe to the podcast on your favorite platform, check out flarient.com/podcast for all episodes and show notes, follow Flarient on social media, join our community of aurora chasers, and download the Flarient app for push notifications when geomagnetic storms hit.</itunes:summary>
      </item>
   </channel>
 </rss>
