@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-06.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-07.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1381,6 +1381,35 @@ Discover how these fascinating scientific principles connect our local cosmic ne
 Moving into our space weather report, we analyse today&apos;s remarkably calm conditions. With the Kp index sitting at a gentle 1.67, solar wind speeds near 337 kilometres per second, and a neutral magnetic field, the environment is ideal for orbital construction and long-exposure astrophotography without the interference of geomagnetic storms. We also dive into our recent blog articles, exploring how radio operators optimise high-frequency bands for aurora propagation, the ongoing search for extraterrestrial life within our solar system, the growing challenge of space debris in low Earth orbit, and the true thermodynamic temperature of interplanetary space.
 
 Discover how these fascinating scientific principles connect our local cosmic neighbourhood to everyday technology. Visit flarient.com for live space weather data, real-time Kp indices, aurora forecasts, and interactive dashboards. Don&apos;t forget to subscribe to the podcast on your favorite platform, check out flarient.com/podcast for all episodes and show notes, follow Flarient on social media, join our community of aurora chasers, and download the Flarient app for push notifications when geomagnetic storms hit.</itunes:summary>
+     </item>
+      <item>
+       <title>Swift Observatory Re-Enters Earth&apos;s Atmosphere &amp; Asteroid 2026 VK2 Passes</title>
+       <link>https://flarient.com/podcast/swift-observatory-re-enters-earths-atmosphere-asteroid-2026-vk2-passes</link>
+       <description>In today&apos;s episode of the Daily Space Podcast by Flarient, host Ollie dives into major cosmic events unfolding today, Saturday, November 7, 2026.
+
+We lead with breaking news regarding the Neil Gehrels Swift Observatory, which officially concluded its design-defying twenty-year mission on November 4, 2026, re-entering Earth&apos;s atmosphere over North Sumatra, Indonesia. We also track near-Earth asteroid 2026 VK2 as it makes its closest approach to Earth today, alongside the active Leonids meteor shower building toward its mid-November peak.
+
+In our space weather update, we analyze live metrics from NOAA and SWPC: a settled Kp index peaking at 3.33 over the last 24 hours, solar wind speeds around 457 km/s, and a stable magnetosphere with a Bz component of -8.5 nT. We also explore peer-reviewed insights into asteroid magnetism, thermoremanent magnetization, and the practical realities of solar flare interactions with modern technology.
+
+Finally, we fact-check common space weather myths, differentiating the immediate 8-minute light speed impact of solar flares from the multi-day arrival of coronal mass ejections.
+
+For real-time space weather metrics, live Kp index tracking, and local aurora predictions, visit https://flarient.com.</description>
+       <pubDate>Sat, 07 Nov 2026 13:29:02 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-11-07</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-11-07/flarient-podcast-2026-11-07.mp3" length="15361482" type="audio/mpeg"/>
+       <itunes:duration>639</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>43</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-07.jpg"/>
+       <itunes:summary>In today&apos;s episode of the Daily Space Podcast by Flarient, host Ollie dives into major cosmic events unfolding today, Saturday, November 7, 2026.
+
+We lead with breaking news regarding the Neil Gehrels Swift Observatory, which officially concluded its design-defying twenty-year mission on November 4, 2026, re-entering Earth&apos;s atmosphere over North Sumatra, Indonesia. We also track near-Earth asteroid 2026 VK2 as it makes its closest approach to Earth today, alongside the active Leonids meteor shower building toward its mid-November peak.
+
+In our space weather update, we analyze live metrics from NOAA and SWPC: a settled Kp index peaking at 3.33 over the last 24 hours, solar wind speeds around 457 km/s, and a stable magnetosphere with a Bz component of -8.5 nT. We also explore peer-reviewed insights into asteroid magnetism, thermoremanent magnetization, and the practical realities of solar flare interactions with modern technology.
+
+Finally, we fact-check common space weather myths, differentiating the immediate 8-minute light speed impact of solar flares from the multi-day arrival of coronal mass ejections.
+
+For real-time space weather metrics, live Kp index tracking, and local aurora predictions, visit https://flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
