@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-07.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-08.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1412,6 +1412,31 @@ In our space weather update, we analyze live metrics from NOAA and SWPC: a settl
 Finally, we fact-check common space weather myths, differentiating the immediate 8-minute light speed impact of solar flares from the multi-day arrival of coronal mass ejections.
 
 For real-time space weather metrics, live Kp index tracking, and local aurora predictions, visit https://flarient.com.</itunes:summary>
+     </item>
+      <item>
+       <title>[WEEKLY] NASA Expands $4.2B Moon Base Plan as 751 km/s Solar Wind Hits Earth</title>
+       <link>https://flarient.com/podcast/nasa-expands-42b-moon-base-plan-as-751-kms-solar-wind-hits-earth</link>
+       <description>Welcome to the Sunday Weekly Roundup of the Daily Space Podcast by Flarient! In this episode, host Ollie breaks down the biggest space news and solar weather developments of the week ending November 8, 2026.
+
+We start with breaking news from NASA, which has expanded its Commercial Lunar Payload Services contract to a massive $4.2 billion to support critical Moon base infrastructure—including Starship cislunar communication testing and the innovative miniCAST solar power tower. Concurrently, Earth&apos;s magnetosphere experienced a G1 moderate geomagnetic storm fueled by a high-speed solar wind stream peaking at 751 km/s from a coronal hole.
+
+We also dive deep into peer-reviewed concepts and blog highlights from Flarient, including the physics behind ionospheric disturbances during solar storms, the true scientific boundary of deep space beyond cislunar orbit, and a comprehensive fact check on asteroid sizes versus planetary hydrostatic equilibrium. Finally, we preview the week ahead, including viewing prospects for the approaching Leonids meteor shower originating from comet 55P/Tempel-Tuttle and tracking near-Earth asteroid 2026 VK2.
+
+For real-time space weather data, live Kp index monitoring, and aurora forecasts, visit https://flarient.com.</description>
+       <pubDate>Sun, 08 Nov 2026 13:46:35 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-11-08</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-11-08/flarient-podcast-2026-11-08.mp3" length="12401699" type="audio/mpeg"/>
+       <itunes:duration>516</itunes:duration>
+       <itunes:episodeType>weekly</itunes:episodeType>
+       <itunes:episode>44</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-08.jpg"/>
+       <itunes:summary>Welcome to the Sunday Weekly Roundup of the Daily Space Podcast by Flarient! In this episode, host Ollie breaks down the biggest space news and solar weather developments of the week ending November 8, 2026.
+
+We start with breaking news from NASA, which has expanded its Commercial Lunar Payload Services contract to a massive $4.2 billion to support critical Moon base infrastructure—including Starship cislunar communication testing and the innovative miniCAST solar power tower. Concurrently, Earth&apos;s magnetosphere experienced a G1 moderate geomagnetic storm fueled by a high-speed solar wind stream peaking at 751 km/s from a coronal hole.
+
+We also dive deep into peer-reviewed concepts and blog highlights from Flarient, including the physics behind ionospheric disturbances during solar storms, the true scientific boundary of deep space beyond cislunar orbit, and a comprehensive fact check on asteroid sizes versus planetary hydrostatic equilibrium. Finally, we preview the week ahead, including viewing prospects for the approaching Leonids meteor shower originating from comet 55P/Tempel-Tuttle and tracking near-Earth asteroid 2026 VK2.
+
+For real-time space weather data, live Kp index monitoring, and aurora forecasts, visit https://flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
