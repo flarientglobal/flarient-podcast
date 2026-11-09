@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-08.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-09.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1439,6 +1439,31 @@ We start with breaking news from NASA, which has expanded its Commercial Lunar P
 We also dive deep into peer-reviewed concepts and blog highlights from Flarient, including the physics behind ionospheric disturbances during solar storms, the true scientific boundary of deep space beyond cislunar orbit, and a comprehensive fact check on asteroid sizes versus planetary hydrostatic equilibrium. Finally, we preview the week ahead, including viewing prospects for the approaching Leonids meteor shower originating from comet 55P/Tempel-Tuttle and tracking near-Earth asteroid 2026 VK2.
 
 For real-time space weather data, live Kp index monitoring, and aurora forecasts, visit https://flarient.com.</itunes:summary>
+     </item>
+      <item>
+       <title>NASA Moon Base Contracts &amp; 725 km/s Solar Wind Stream</title>
+       <link>https://flarient.com/podcast/nasa-moon-base-contracts-725-kms-solar-wind-stream</link>
+       <description>In today&apos;s episode of the Daily Space Podcast by Flarient, host Ollie breaks down major developments in space exploration and space weather. NASA has officially awarded major contracts to private firms to build out essential Moon Base transport and communications, with SpaceX set to launch dedicated satellites by 2028 to connect the lunar surface with Earth. 
+
+Meanwhile, space weather conditions are dynamic as a high-speed solar wind stream clocked at 725 km/s hits Earth&apos;s magnetosphere from an equatorial coronal hole. We analyze the live Kp index readings, magnetic field dynamics, and aurora viewing potential.
+
+We also examine key insights from our latest Flarient blog series covering solar flare plasma mechanics, Solar Cycle 25 updates, and high-frequency radio wave propagation. Finally, we look ahead to upcoming space events, including the Leonids meteor shower peak and the February 2027 annular solar eclipse.
+
+For real-time space weather dashboards, live Kp updates, and aurora alerts, visit https://flarient.com.</description>
+       <pubDate>Mon, 09 Nov 2026 17:00:13 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-11-09</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-11-09/flarient-podcast-2026-11-09.mp3" length="19841567" type="audio/mpeg"/>
+       <itunes:duration>826</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>45</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-09.jpg"/>
+       <itunes:summary>In today&apos;s episode of the Daily Space Podcast by Flarient, host Ollie breaks down major developments in space exploration and space weather. NASA has officially awarded major contracts to private firms to build out essential Moon Base transport and communications, with SpaceX set to launch dedicated satellites by 2028 to connect the lunar surface with Earth. 
+
+Meanwhile, space weather conditions are dynamic as a high-speed solar wind stream clocked at 725 km/s hits Earth&apos;s magnetosphere from an equatorial coronal hole. We analyze the live Kp index readings, magnetic field dynamics, and aurora viewing potential.
+
+We also examine key insights from our latest Flarient blog series covering solar flare plasma mechanics, Solar Cycle 25 updates, and high-frequency radio wave propagation. Finally, we look ahead to upcoming space events, including the Leonids meteor shower peak and the February 2027 annular solar eclipse.
+
+For real-time space weather dashboards, live Kp updates, and aurora alerts, visit https://flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
