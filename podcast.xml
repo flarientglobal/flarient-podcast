@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-09.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-10.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1466,6 +1466,43 @@ Meanwhile, space weather conditions are dynamic as a high-speed solar wind strea
 We also examine key insights from our latest Flarient blog series covering solar flare plasma mechanics, Solar Cycle 25 updates, and high-frequency radio wave propagation. Finally, we look ahead to upcoming space events, including the Leonids meteor shower peak and the February 2027 annular solar eclipse.
 
 For real-time space weather dashboards, live Kp updates, and aurora alerts, visit https://flarient.com.</itunes:summary>
+     </item>
+      <item>
+       <title>NASA&apos;s $10B Moon Base Ambition and Today&apos;s Space Weather</title>
+       <link>https://flarient.com/podcast/nasas-10b-moon-base-ambition-and-todays-space-weather</link>
+       <description>In this episode of the Daily Space Podcast, we dive into the monumental news of NASA’s ten billion dollar investment to establish a permanent presence at the lunar South Pole. We explore what this means for future infrastructure, including the deployment of the PROMISE rover and the miniCAST communications network.
+
+Moving to our cosmic neighborhood, we analyze current space weather conditions. With solar wind speeds hitting 683 km/s, we discuss the impact of this plasma flow on our magnetosphere and what current Kp index readings tell us about the safety of our orbital assets. We also look ahead to the upcoming peak of the Leonids meteor shower, offering tips on what to watch for in the night sky.
+
+We break down the complexities of solar flares and their real-world impact, from GPS navigation precision to the protection of global power grids. Our segment on planetary science reminds us of the fragility of our own planet, drawing lessons from our celestial neighbors. 
+
+Key segments include:
+- Breaking News: NASA&apos;s Lunar South Pole contracts.
+- Space Weather Report: Analyzing today&apos;s solar wind and geomagnetic stability.
+- Fact Checks: Distinguishing between solar flare myths and reality.
+- Daily Brief: A comprehensive look at the intersection of lunar expansion and solar variability.
+
+For more detailed data, real-time Kp index updates, and aurora forecasts, visit https://flarient.com. Subscribe to the Daily Space Podcast on your favorite platform for your daily briefing on everything happening above the atmosphere.</description>
+       <pubDate>Tue, 10 Nov 2026 16:59:58 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-11-10</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-11-10/flarient-podcast-2026-11-10.mp3" length="6463323" type="audio/mpeg"/>
+       <itunes:duration>269</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>46</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-10.jpg"/>
+       <itunes:summary>In this episode of the Daily Space Podcast, we dive into the monumental news of NASA’s ten billion dollar investment to establish a permanent presence at the lunar South Pole. We explore what this means for future infrastructure, including the deployment of the PROMISE rover and the miniCAST communications network.
+
+Moving to our cosmic neighborhood, we analyze current space weather conditions. With solar wind speeds hitting 683 km/s, we discuss the impact of this plasma flow on our magnetosphere and what current Kp index readings tell us about the safety of our orbital assets. We also look ahead to the upcoming peak of the Leonids meteor shower, offering tips on what to watch for in the night sky.
+
+We break down the complexities of solar flares and their real-world impact, from GPS navigation precision to the protection of global power grids. Our segment on planetary science reminds us of the fragility of our own planet, drawing lessons from our celestial neighbors. 
+
+Key segments include:
+- Breaking News: NASA&apos;s Lunar South Pole contracts.
+- Space Weather Report: Analyzing today&apos;s solar wind and geomagnetic stability.
+- Fact Checks: Distinguishing between solar flare myths and reality.
+- Daily Brief: A comprehensive look at the intersection of lunar expansion and solar variability.
+
+For more detailed data, real-time Kp index updates, and aurora forecasts, visit https://flarient.com. Subscribe to the Daily Space Podcast on your favorite platform for your daily briefing on everything happening above the atmosphere.</itunes:summary>
      </item>
   </channel>
 </rss>
