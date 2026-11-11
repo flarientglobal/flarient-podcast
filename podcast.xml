@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-10.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-11.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1504,6 +1504,35 @@ Key segments include:
 - Daily Brief: A comprehensive look at the intersection of lunar expansion and solar variability.
 
 For more detailed data, real-time Kp index updates, and aurora forecasts, visit https://flarient.com. Subscribe to the Daily Space Podcast on your favorite platform for your daily briefing on everything happening above the atmosphere.</itunes:summary>
+     </item>
+      <item>
+       <title>Expedition 74 Lands Home as Asteroid 2026 VS8 Flees Past</title>
+       <link>https://flarient.com/podcast/expedition-74-lands-home-as-asteroid-2026-vs8-flees-past</link>
+       <description>On this Wednesday, November 11, 2026 edition of the Daily Space Podcast by Flarient, host Ollie breaks down a busy day across our orbital neighbourhood and space weather monitors.
+
+We open with breaking news from human spaceflight: NASA and international partners are welcoming home the crew of Expedition 74 at Space Center Houston. After an extended stay aboard the International Space Station at 408 kilometres altitude, the astronauts return with vital physiological data on blood circulation and cognitive pilot performance in microgravity, alongside breakthroughs in microgravity manufacturing. At the same time, planetary defence trackers have their sights on near-Earth asteroid 2026 VS8 as it completes a harmless close flyby of Earth.
+
+Looking back into the space weather archives, today marks the one-year anniversary of the ferocious November 11, 2025 solar eruption—a potent X5.1-class flare launched from sunspot AR4274 that sparked sudden high-frequency radio blackouts across Europe and Africa and triggered a severe geomagnetic storm. In stark contrast, today&apos;s solar environment is peaceful. Ollie breaks down the latest NOAA and SWPC readings, where the Kp index sits at a calm 0.33, the Dst index rests near -17 nT, and a sparse solar wind density of 0.9 particles per cubic centimetre provides clear skies for satellite operators and early observers of the ramping Leonids meteor shower.
+
+In our deep-dive segments, we explore the physics of Hohmann transfer orbits—the classic 1925 two-burn manoeuvre essential for orbital transfers and fuel budgeting. We also investigate how satellite operators shield orbital hardware from single event upsets, solar radiation degradation, and thermospheric drag during Solar Cycle 25. Finally, we dispel common misconceptions regarding asteroid sizes and examine how magnetic reconnection inside sunspots converts stored magnetic energy into dangerous radiation.
+
+For real-time solar tracking, interactive auroral ovals, and live Kp monitoring, visit https://flarient.com and explore our full archive at https://flarient.com/podcast.</description>
+       <pubDate>Wed, 11 Nov 2026 17:10:45 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-11-11</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-11-11/flarient-podcast-2026-11-11.mp3" length="20454089" type="audio/mpeg"/>
+       <itunes:duration>852</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>47</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-11.jpg"/>
+       <itunes:summary>On this Wednesday, November 11, 2026 edition of the Daily Space Podcast by Flarient, host Ollie breaks down a busy day across our orbital neighbourhood and space weather monitors.
+
+We open with breaking news from human spaceflight: NASA and international partners are welcoming home the crew of Expedition 74 at Space Center Houston. After an extended stay aboard the International Space Station at 408 kilometres altitude, the astronauts return with vital physiological data on blood circulation and cognitive pilot performance in microgravity, alongside breakthroughs in microgravity manufacturing. At the same time, planetary defence trackers have their sights on near-Earth asteroid 2026 VS8 as it completes a harmless close flyby of Earth.
+
+Looking back into the space weather archives, today marks the one-year anniversary of the ferocious November 11, 2025 solar eruption—a potent X5.1-class flare launched from sunspot AR4274 that sparked sudden high-frequency radio blackouts across Europe and Africa and triggered a severe geomagnetic storm. In stark contrast, today&apos;s solar environment is peaceful. Ollie breaks down the latest NOAA and SWPC readings, where the Kp index sits at a calm 0.33, the Dst index rests near -17 nT, and a sparse solar wind density of 0.9 particles per cubic centimetre provides clear skies for satellite operators and early observers of the ramping Leonids meteor shower.
+
+In our deep-dive segments, we explore the physics of Hohmann transfer orbits—the classic 1925 two-burn manoeuvre essential for orbital transfers and fuel budgeting. We also investigate how satellite operators shield orbital hardware from single event upsets, solar radiation degradation, and thermospheric drag during Solar Cycle 25. Finally, we dispel common misconceptions regarding asteroid sizes and examine how magnetic reconnection inside sunspots converts stored magnetic energy into dangerous radiation.
+
+For real-time solar tracking, interactive auroral ovals, and live Kp monitoring, visit https://flarient.com and explore our full archive at https://flarient.com/podcast.</itunes:summary>
      </item>
   </channel>
 </rss>
