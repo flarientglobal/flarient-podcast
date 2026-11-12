@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-11.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-12.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1534,6 +1534,39 @@ Looking back into the space weather archives, today marks the one-year anniversa
 In our deep-dive segments, we explore the physics of Hohmann transfer orbits—the classic 1925 two-burn manoeuvre essential for orbital transfers and fuel budgeting. We also investigate how satellite operators shield orbital hardware from single event upsets, solar radiation degradation, and thermospheric drag during Solar Cycle 25. Finally, we dispel common misconceptions regarding asteroid sizes and examine how magnetic reconnection inside sunspots converts stored magnetic energy into dangerous radiation.
 
 For real-time solar tracking, interactive auroral ovals, and live Kp monitoring, visit https://flarient.com and explore our full archive at https://flarient.com/podcast.</itunes:summary>
+     </item>
+      <item>
+       <title>Lunar Base Contracts Awarded as Leonids Approach Quiet Skies</title>
+       <link>https://flarient.com/podcast/lunar-base-contracts-awarded-as-leonids-approach-quiet-skies</link>
+       <description>In today&apos;s episode for Thursday, November 12, 2026, host Ollie breaks down the latest major developments in space exploration and space weather.
+
+First, we lead with breaking news regarding NASA&apos;s decision to officially award commercial contracts to build the foundational infrastructure for a permanent human lunar base at the Moon&apos;s south pole. We explore the critical technology involved, including high-yield surface power generation, lunar communications arrays, and nuclear-powered rovers built to survive the extreme temperatures of the lunar night.
+
+Next, we examine today&apos;s remarkably calm space weather conditions. With the Kp index sitting flat at 0 and a 24-hour maximum of just 0.67, Earth&apos;s magnetosphere remains completely uncompressed. We analyze solar wind parameters, including a steady speed of 508.7 km/s, a density of 2.7 protons per cubic centimetre, and a weak positive Bz vector of 1.1 nT.
+
+In our Discovery segment, we explore the science behind high-altitude noctilucent clouds, which form in the mesosphere at altitudes of 80 kilometres on meteoric dust crystals at freezing temperatures of minus 130 degrees Celsius.
+
+We also cover our suite of blog articles detailing Solar Cycle 25 flare classifications, electromagnetic infrastructure risks, and practical space weather preparedness. Finally, we preview the upcoming Leonids meteor shower peaking on November 18 from comet 55P/Tempel-Tuttle, and provide a track on near-Earth asteroid 2026 VC11.
+
+For real-time space weather charts, Kp index tracking, and aurora alerts, visit flarient.com.</description>
+       <pubDate>Thu, 12 Nov 2026 15:34:49 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-11-12</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-11-12/flarient-podcast-2026-11-12.mp3" length="16687445" type="audio/mpeg"/>
+       <itunes:duration>695</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>48</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-12.jpg"/>
+       <itunes:summary>In today&apos;s episode for Thursday, November 12, 2026, host Ollie breaks down the latest major developments in space exploration and space weather.
+
+First, we lead with breaking news regarding NASA&apos;s decision to officially award commercial contracts to build the foundational infrastructure for a permanent human lunar base at the Moon&apos;s south pole. We explore the critical technology involved, including high-yield surface power generation, lunar communications arrays, and nuclear-powered rovers built to survive the extreme temperatures of the lunar night.
+
+Next, we examine today&apos;s remarkably calm space weather conditions. With the Kp index sitting flat at 0 and a 24-hour maximum of just 0.67, Earth&apos;s magnetosphere remains completely uncompressed. We analyze solar wind parameters, including a steady speed of 508.7 km/s, a density of 2.7 protons per cubic centimetre, and a weak positive Bz vector of 1.1 nT.
+
+In our Discovery segment, we explore the science behind high-altitude noctilucent clouds, which form in the mesosphere at altitudes of 80 kilometres on meteoric dust crystals at freezing temperatures of minus 130 degrees Celsius.
+
+We also cover our suite of blog articles detailing Solar Cycle 25 flare classifications, electromagnetic infrastructure risks, and practical space weather preparedness. Finally, we preview the upcoming Leonids meteor shower peaking on November 18 from comet 55P/Tempel-Tuttle, and provide a track on near-Earth asteroid 2026 VC11.
+
+For real-time space weather charts, Kp index tracking, and aurora alerts, visit flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
