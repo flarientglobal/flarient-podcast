@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-12.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-13.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1569,6 +1569,27 @@ In our Discovery segment, we explore the science behind high-altitude noctilucen
 We also cover our suite of blog articles detailing Solar Cycle 25 flare classifications, electromagnetic infrastructure risks, and practical space weather preparedness. Finally, we preview the upcoming Leonids meteor shower peaking on November 18 from comet 55P/Tempel-Tuttle, and provide a track on near-Earth asteroid 2026 VC11.
 
 For real-time space weather charts, Kp index tracking, and aurora alerts, visit flarient.com.</itunes:summary>
+     </item>
+      <item>
+       <title>NASA Commits $11 Billion to Lunar Base as Leonids Peak</title>
+       <link>https://flarient.com/podcast/nasa-commits-11-billion-to-lunar-base-as-leonids-peak</link>
+       <description>In today&apos;s episode of the Daily Space Podcast by Flarient, host Ollie breaks down NASA&apos;s landmark $11 billion commitment to permanent lunar infrastructure. Learn how surface power generation and miniCAST communication towers will lay the foundation for sustained human presence on the Moon. We also explore the annual peak of the Leonids meteor shower, originating from Comet 55P/Tempel-Tuttle, and what observers can expect under tonight&apos;s exceptionally quiet space weather conditions.
+
+In our science and discovery segments, we delve into the physics of noctilucent clouds in the mesosphere—80 to 85 kilometers above Earth—where ice crystals form on meteor smoke dust. We also examine the growing legal and physical challenges of space debris, where tiny fragments traveling at 27,000 km/h threaten satellite constellations, and review the lifecycle of stars from nebulae to stellar remnants.
+
+Finally, we cover live space weather data, including a Kp index ranging from 0 to 1.33, steady solar wind speeds of 424.5 km/s, and a quiet magnetosphere ideal for satellite operations and skywatching. For real-time updates and interactive dashboards, visit flarient.com.</description>
+       <pubDate>Fri, 13 Nov 2026 14:54:40 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-11-13</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-11-13/flarient-podcast-2026-11-13.mp3" length="15614747" type="audio/mpeg"/>
+       <itunes:duration>650</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>49</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-13.jpg"/>
+       <itunes:summary>In today&apos;s episode of the Daily Space Podcast by Flarient, host Ollie breaks down NASA&apos;s landmark $11 billion commitment to permanent lunar infrastructure. Learn how surface power generation and miniCAST communication towers will lay the foundation for sustained human presence on the Moon. We also explore the annual peak of the Leonids meteor shower, originating from Comet 55P/Tempel-Tuttle, and what observers can expect under tonight&apos;s exceptionally quiet space weather conditions.
+
+In our science and discovery segments, we delve into the physics of noctilucent clouds in the mesosphere—80 to 85 kilometers above Earth—where ice crystals form on meteor smoke dust. We also examine the growing legal and physical challenges of space debris, where tiny fragments traveling at 27,000 km/h threaten satellite constellations, and review the lifecycle of stars from nebulae to stellar remnants.
+
+Finally, we cover live space weather data, including a Kp index ranging from 0 to 1.33, steady solar wind speeds of 424.5 km/s, and a quiet magnetosphere ideal for satellite operations and skywatching. For real-time updates and interactive dashboards, visit flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
