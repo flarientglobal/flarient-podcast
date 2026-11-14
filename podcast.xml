@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-13.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-14.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1592,6 +1592,47 @@ Finally, we cover live space weather data, including a Kp index ranging from 0 t
 In our science and discovery segments, we delve into the physics of noctilucent clouds in the mesosphere—80 to 85 kilometers above Earth—where ice crystals form on meteor smoke dust. We also examine the growing legal and physical challenges of space debris, where tiny fragments traveling at 27,000 km/h threaten satellite constellations, and review the lifecycle of stars from nebulae to stellar remnants.
 
 Finally, we cover live space weather data, including a Kp index ranging from 0 to 1.33, steady solar wind speeds of 424.5 km/s, and a quiet magnetosphere ideal for satellite operations and skywatching. For real-time updates and interactive dashboards, visit flarient.com.</itunes:summary>
+     </item>
+      <item>
+       <title>Starship Double Catch Attempt and Asteroid Flyby</title>
+       <link>https://flarient.com/podcast/starship-double-catch-attempt-and-asteroid-flyby</link>
+       <description>Welcome to today&apos;s episode of the Daily Space Podcast by Flarient for Saturday, November 14, 2026. In this comprehensive edition, Ollie explores an extraordinary convergence of heavy-lift aerospace engineering, planetary astronomy, and solar physics.
+
+First, we lead with SpaceX&apos;s daring attempt at a historic double catch landing for its Starship vehicle. As engineers track high-stakes telemetry for this launch, our attention also turns to the celestial sphere, where near-Earth asteroid 2019 XF2 makes a safe, quiet flyby tracked by NASA&apos;s Center for Near-Earth Object Studies (CNEOS). We also break down the peak of the annual Leonids meteor shower, spawned by comet 55P/Tempel-Tuttle, and why tonight presents an exceptional skywatching opportunity.
+
+In our space weather report, Ollie analyses real-time telemetry from NOAA and GFZ Potsdam, revealing an exceptionally quiet magnetosphere with Kp values dropping down to 0.33, a max 24-hour reading of 1.33, and a steady solar wind flow around 398 km/s with a Dst index of -19 nT. We examine how these tranquil conditions offer a flawless operational environment for GNSS timing and launch operations with minimal satellite drag.
+
+Later, our discovery and article segments dissect the diverse chemical makeup of asteroids—from primitive carbonaceous C-types to metallic M-types—alongside an in-depth look at coronal holes and high-speed wind streams reaching 700 km/s. Finally, we review the mechanics of solar flares, the Carrington Event of 1859, and what modern infrastructure must do to prepare for violent space weather.
+
+Explore all the articles discussed:
+- Asteroid Composition: https://flarient.com/blog/the-composition-and-elemental-makeup-of-asteroids
+- Coronal Holes: https://flarient.com/blog/understanding-coronal-holes-and-their-influence-on-earth
+- The Carrington Event: https://flarient.com/blog/the-carrington-event-and-future-solar-risks
+- Solar Flares: https://flarient.com/blog/solar-flares-are-explosions-of-pure-energy
+
+Visit flarient.com for live dashboards and aurora tracking.</description>
+       <pubDate>Sat, 14 Nov 2026 13:58:10 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-11-14</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-11-14/flarient-podcast-2026-11-14.mp3" length="31465007" type="audio/mpeg"/>
+       <itunes:duration>1310</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>50</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-14.jpg"/>
+       <itunes:summary>Welcome to today&apos;s episode of the Daily Space Podcast by Flarient for Saturday, November 14, 2026. In this comprehensive edition, Ollie explores an extraordinary convergence of heavy-lift aerospace engineering, planetary astronomy, and solar physics.
+
+First, we lead with SpaceX&apos;s daring attempt at a historic double catch landing for its Starship vehicle. As engineers track high-stakes telemetry for this launch, our attention also turns to the celestial sphere, where near-Earth asteroid 2019 XF2 makes a safe, quiet flyby tracked by NASA&apos;s Center for Near-Earth Object Studies (CNEOS). We also break down the peak of the annual Leonids meteor shower, spawned by comet 55P/Tempel-Tuttle, and why tonight presents an exceptional skywatching opportunity.
+
+In our space weather report, Ollie analyses real-time telemetry from NOAA and GFZ Potsdam, revealing an exceptionally quiet magnetosphere with Kp values dropping down to 0.33, a max 24-hour reading of 1.33, and a steady solar wind flow around 398 km/s with a Dst index of -19 nT. We examine how these tranquil conditions offer a flawless operational environment for GNSS timing and launch operations with minimal satellite drag.
+
+Later, our discovery and article segments dissect the diverse chemical makeup of asteroids—from primitive carbonaceous C-types to metallic M-types—alongside an in-depth look at coronal holes and high-speed wind streams reaching 700 km/s. Finally, we review the mechanics of solar flares, the Carrington Event of 1859, and what modern infrastructure must do to prepare for violent space weather.
+
+Explore all the articles discussed:
+- Asteroid Composition: https://flarient.com/blog/the-composition-and-elemental-makeup-of-asteroids
+- Coronal Holes: https://flarient.com/blog/understanding-coronal-holes-and-their-influence-on-earth
+- The Carrington Event: https://flarient.com/blog/the-carrington-event-and-future-solar-risks
+- Solar Flares: https://flarient.com/blog/solar-flares-are-explosions-of-pure-energy
+
+Visit flarient.com for live dashboards and aurora tracking.</itunes:summary>
      </item>
   </channel>
 </rss>
