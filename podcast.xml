@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-14.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-15.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1635,6 +1635,35 @@ Explore all the articles discussed:
 - Solar Flares: https://flarient.com/blog/solar-flares-are-explosions-of-pure-energy
 
 Visit flarient.com for live dashboards and aurora tracking.</itunes:summary>
+     </item>
+      <item>
+       <title>[WEEKLY] Euclid Maps 900M Galaxies as Asteroid Skims Earth</title>
+       <link>https://flarient.com/podcast/euclid-maps-900m-galaxies-as-asteroid-skims-earth</link>
+       <description>Welcome to the Sunday Weekly Roundup on the Daily Space Podcast by Flarient with Ollie. On this edition for November 15, 2026, we look back at the biggest space weather stories and astronomical milestones of the past seven days, along with breaking discoveries from the last twenty-four hours.
+
+Our top story of the week is the landmark release of the DR1 Foundation data from the European Space Agency&apos;s Euclid space telescope. This extraordinary new dataset maps an astonishing 900 million galaxies across cosmic time, laying the groundwork for Euclid&apos;s six-year mission to chart the cosmic web and unlock the mysteries of dark energy and dark matter. Closer to home, we track today&apos;s close pass of near-Earth asteroid 2019 XF2 and discuss the fascinating orbital mechanics of binary asteroids that drift through space accompanied by their own moons.
+
+We also break down the critical physics of space weather. Learn how magnetic reconnection drives explosive solar flares that reach Earth in just over eight minutes, and why coronal mass ejections (CMEs)—sluggish clouds of magnetized plasma traveling between 400 and 3,000 kilometres per second—pose an entirely distinct threat to planetary power grids. We also examine why no asteroid can ever truly surpass Earth in size, unpacking the planetary physics of hydrostatic equilibrium and examining dwarf planet Ceres at 940 kilometres across.
+
+Finally, we review the live space weather metrics from NOAA and SWPC, showing exceptionally quiet conditions with Kp indices hovering near zero, solar wind at an ambient 402.5 km/s, and a Dst of -10 nT. For observers in the Southern Hemisphere between 50° and 70° latitude, we highlight the newly active 2026 noctilucent cloud season glowing in the mesosphere.
+
+Explore live data, real-time Kp trackers, and interactive space weather dashboards at https://flarient.com, read our articles on solar flare physics at https://flarient.com/blog/the-dynamic-physics-behind-solar-flares, and view Southern Hemisphere sky event details at https://flarient.com/space-events/noctilucent-south-2026.</description>
+       <pubDate>Sun, 15 Nov 2026 14:23:12 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-11-15</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-11-15/flarient-podcast-2026-11-15.mp3" length="20887924" type="audio/mpeg"/>
+       <itunes:duration>870</itunes:duration>
+       <itunes:episodeType>weekly</itunes:episodeType>
+       <itunes:episode>51</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-15.jpg"/>
+       <itunes:summary>Welcome to the Sunday Weekly Roundup on the Daily Space Podcast by Flarient with Ollie. On this edition for November 15, 2026, we look back at the biggest space weather stories and astronomical milestones of the past seven days, along with breaking discoveries from the last twenty-four hours.
+
+Our top story of the week is the landmark release of the DR1 Foundation data from the European Space Agency&apos;s Euclid space telescope. This extraordinary new dataset maps an astonishing 900 million galaxies across cosmic time, laying the groundwork for Euclid&apos;s six-year mission to chart the cosmic web and unlock the mysteries of dark energy and dark matter. Closer to home, we track today&apos;s close pass of near-Earth asteroid 2019 XF2 and discuss the fascinating orbital mechanics of binary asteroids that drift through space accompanied by their own moons.
+
+We also break down the critical physics of space weather. Learn how magnetic reconnection drives explosive solar flares that reach Earth in just over eight minutes, and why coronal mass ejections (CMEs)—sluggish clouds of magnetized plasma traveling between 400 and 3,000 kilometres per second—pose an entirely distinct threat to planetary power grids. We also examine why no asteroid can ever truly surpass Earth in size, unpacking the planetary physics of hydrostatic equilibrium and examining dwarf planet Ceres at 940 kilometres across.
+
+Finally, we review the live space weather metrics from NOAA and SWPC, showing exceptionally quiet conditions with Kp indices hovering near zero, solar wind at an ambient 402.5 km/s, and a Dst of -10 nT. For observers in the Southern Hemisphere between 50° and 70° latitude, we highlight the newly active 2026 noctilucent cloud season glowing in the mesosphere.
+
+Explore live data, real-time Kp trackers, and interactive space weather dashboards at https://flarient.com, read our articles on solar flare physics at https://flarient.com/blog/the-dynamic-physics-behind-solar-flares, and view Southern Hemisphere sky event details at https://flarient.com/space-events/noctilucent-south-2026.</itunes:summary>
      </item>
   </channel>
 </rss>
