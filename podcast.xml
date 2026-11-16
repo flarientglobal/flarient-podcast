@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-15.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-16.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1666,6 +1666,27 @@ We also break down the critical physics of space weather. Learn how magnetic rec
 Finally, we review the live space weather metrics from NOAA and SWPC, showing exceptionally quiet conditions with Kp indices hovering near zero, solar wind at an ambient 402.5 km/s, and a Dst of -10 nT. For observers in the Southern Hemisphere between 50° and 70° latitude, we highlight the newly active 2026 noctilucent cloud season glowing in the mesosphere.
 
 Explore live data, real-time Kp trackers, and interactive space weather dashboards at https://flarient.com, read our articles on solar flare physics at https://flarient.com/blog/the-dynamic-physics-behind-solar-flares, and view Southern Hemisphere sky event details at https://flarient.com/space-events/noctilucent-south-2026.</itunes:summary>
+     </item>
+      <item>
+       <title>Roman Telescope Aligns Optics as Asteroid 2019 XF2 Flies By</title>
+       <link>https://flarient.com/podcast/roman-telescope-aligns-optics-as-asteroid-2019-xf2-flies-by</link>
+       <description>In today&apos;s episode of the Daily Space Podcast by Flarient, host Ollie breaks down a major astronomical milestone: NASA&apos;s Nancy Grace Roman Space Telescope has successfully aligned its internal instruments, securing the extreme pointing accuracy needed to search for exoplanets and dark matter. We also track the close flyby of near-Earth asteroid 2019 XF2 and discuss the kickoff of the southern hemisphere&apos;s noctilucent cloud season.
+
+On the space weather front, conditions remain extraordinarily serene. With a Kp index hovering between 0.0 and 1.67, solar wind speeds around 345.8 km/s, and a neutral magnetic orientation, satellite operations and power grids are enjoying smooth sailing. We dive deep into recent Flarient blog articles explaining how solar flares disrupt GPS accuracy and high-frequency amateur radio, distinguish solar flares from coronal mass ejections, and explore the intriguing biophysics behind white auroras. Finally, we review past geomagnetic events, fact-check common solar myths, and provide your full daily brief.
+
+For real-time Kp index updates, aurora forecasts, and space weather dashboards, visit https://flarient.com.</description>
+       <pubDate>Mon, 16 Nov 2026 16:24:18 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-11-16</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-11-16/flarient-podcast-2026-11-16.mp3" length="17042291" type="audio/mpeg"/>
+       <itunes:duration>710</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>52</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-16.jpg"/>
+       <itunes:summary>In today&apos;s episode of the Daily Space Podcast by Flarient, host Ollie breaks down a major astronomical milestone: NASA&apos;s Nancy Grace Roman Space Telescope has successfully aligned its internal instruments, securing the extreme pointing accuracy needed to search for exoplanets and dark matter. We also track the close flyby of near-Earth asteroid 2019 XF2 and discuss the kickoff of the southern hemisphere&apos;s noctilucent cloud season.
+
+On the space weather front, conditions remain extraordinarily serene. With a Kp index hovering between 0.0 and 1.67, solar wind speeds around 345.8 km/s, and a neutral magnetic orientation, satellite operations and power grids are enjoying smooth sailing. We dive deep into recent Flarient blog articles explaining how solar flares disrupt GPS accuracy and high-frequency amateur radio, distinguish solar flares from coronal mass ejections, and explore the intriguing biophysics behind white auroras. Finally, we review past geomagnetic events, fact-check common solar myths, and provide your full daily brief.
+
+For real-time Kp index updates, aurora forecasts, and space weather dashboards, visit https://flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
