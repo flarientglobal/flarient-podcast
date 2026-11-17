@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-16.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-17.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1689,6 +1689,51 @@ For real-time Kp index updates, aurora forecasts, and space weather dashboards, 
 On the space weather front, conditions remain extraordinarily serene. With a Kp index hovering between 0.0 and 1.67, solar wind speeds around 345.8 km/s, and a neutral magnetic orientation, satellite operations and power grids are enjoying smooth sailing. We dive deep into recent Flarient blog articles explaining how solar flares disrupt GPS accuracy and high-frequency amateur radio, distinguish solar flares from coronal mass ejections, and explore the intriguing biophysics behind white auroras. Finally, we review past geomagnetic events, fact-check common solar myths, and provide your full daily brief.
 
 For real-time Kp index updates, aurora forecasts, and space weather dashboards, visit https://flarient.com.</itunes:summary>
+     </item>
+      <item>
+       <title>Hera Unveils Didymos as Solar Calm Settles Over Earth</title>
+       <link>https://flarient.com/podcast/hera-unveils-didymos-as-solar-calm-settles-over-earth</link>
+       <description>In today&apos;s episode of the Daily Space Podcast by Flarient for Tuesday, November 17, 2026, host Ollie breaks down major new discoveries from the European Space Agency&apos;s Hera mission alongside exceptionally quiet space weather conditions across our planet.
+
+First, we lead with the breaking imagery from ESA&apos;s Hera probe, which has beamed back its first detailed pictures of the Didymos asteroid system following NASA&apos;s kinetic impact experiment with DART. Ollie explores what the boulder-strewn landscape reveals about asteroid structure, kinetic deflection mechanics, and the future of planetary defence.
+
+Next, we examine today&apos;s live space weather telemetry. Earth&apos;s magnetosphere is currently enjoying profound serenity, with the Kp index sitting at a minimal 0.67 and peaking at just 1.33 over the last 24 hours. With solar wind speeds resting at a sluggish 316 kilometres per second, a neutral interplanetary magnetic field Bz of positive 5.2 nanoteslas, and a Dst index of minus 17 nanoteslas, geomagnetic storm activity is non-existent and aurora chances are suppressed to roughly twelve percent.
+
+We then review four featured articles from the Flarient blog. We unpack the astonishing velocities of coronal mass ejections, which can accelerate plasma clouds up to 3,000 kilometres per second compared to standard solar wind speeds. We explore where &apos;deep space&apos; truly begins, charting the shift from Earth&apos;s gravitational dominance past lunar orbit out into the interplanetary medium. We also explore the mechanics of ionospheric scintillation, explaining how solar flares distort GPS timing signals, and head 85 kilometres up into the freezing mesosphere to inspect the physics of noctilucent clouds, which are currently lighting up twilight skies in the Southern Hemisphere.
+
+Finally, we track near-Earth asteroid 2026 WA and debunk common myths regarding solar flare travel times and navigation outages.
+
+Read more and explore live dashboards:
+- Hera and Didymos Daily Brief: https://flarient.com
+- CME Speed Dynamics: https://flarient.com/blog/the-incredible-speed-of-coronal-mass-ejections
+- Defining Deep Space: https://flarient.com/blog/defining-the-boundless-reach-of-deep-space
+- Solar Flares and GPS Accuracy: https://flarient.com/blog/solar-flares-impact-gps-accuracy-and-satellite-navigation
+- Noctilucent Clouds in the Mesosphere: https://flarient.com/blog/the-extraordinary-altitude-of-noctilucent-clouds
+- Live Dashboards and Aurora Forecasts: https://flarient.com</description>
+       <pubDate>Tue, 17 Nov 2026 16:28:16 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-11-17</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-11-17/flarient-podcast-2026-11-17.mp3" length="26105312" type="audio/mpeg"/>
+       <itunes:duration>1087</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>53</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-17.jpg"/>
+       <itunes:summary>In today&apos;s episode of the Daily Space Podcast by Flarient for Tuesday, November 17, 2026, host Ollie breaks down major new discoveries from the European Space Agency&apos;s Hera mission alongside exceptionally quiet space weather conditions across our planet.
+
+First, we lead with the breaking imagery from ESA&apos;s Hera probe, which has beamed back its first detailed pictures of the Didymos asteroid system following NASA&apos;s kinetic impact experiment with DART. Ollie explores what the boulder-strewn landscape reveals about asteroid structure, kinetic deflection mechanics, and the future of planetary defence.
+
+Next, we examine today&apos;s live space weather telemetry. Earth&apos;s magnetosphere is currently enjoying profound serenity, with the Kp index sitting at a minimal 0.67 and peaking at just 1.33 over the last 24 hours. With solar wind speeds resting at a sluggish 316 kilometres per second, a neutral interplanetary magnetic field Bz of positive 5.2 nanoteslas, and a Dst index of minus 17 nanoteslas, geomagnetic storm activity is non-existent and aurora chances are suppressed to roughly twelve percent.
+
+We then review four featured articles from the Flarient blog. We unpack the astonishing velocities of coronal mass ejections, which can accelerate plasma clouds up to 3,000 kilometres per second compared to standard solar wind speeds. We explore where &apos;deep space&apos; truly begins, charting the shift from Earth&apos;s gravitational dominance past lunar orbit out into the interplanetary medium. We also explore the mechanics of ionospheric scintillation, explaining how solar flares distort GPS timing signals, and head 85 kilometres up into the freezing mesosphere to inspect the physics of noctilucent clouds, which are currently lighting up twilight skies in the Southern Hemisphere.
+
+Finally, we track near-Earth asteroid 2026 WA and debunk common myths regarding solar flare travel times and navigation outages.
+
+Read more and explore live dashboards:
+- Hera and Didymos Daily Brief: https://flarient.com
+- CME Speed Dynamics: https://flarient.com/blog/the-incredible-speed-of-coronal-mass-ejections
+- Defining Deep Space: https://flarient.com/blog/defining-the-boundless-reach-of-deep-space
+- Solar Flares and GPS Accuracy: https://flarient.com/blog/solar-flares-impact-gps-accuracy-and-satellite-navigation
+- Noctilucent Clouds in the Mesosphere: https://flarient.com/blog/the-extraordinary-altitude-of-noctilucent-clouds
+- Live Dashboards and Aurora Forecasts: https://flarient.com</itunes:summary>
      </item>
   </channel>
 </rss>
