@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-17.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-19.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1736,6 +1736,27 @@ Read more and explore live dashboards:
 - Solar Flares and GPS Accuracy: https://flarient.com/blog/solar-flares-impact-gps-accuracy-and-satellite-navigation
 - Noctilucent Clouds in the Mesosphere: https://flarient.com/blog/the-extraordinary-altitude-of-noctilucent-clouds
 - Live Dashboards and Aurora Forecasts: https://flarient.com</itunes:summary>
+     </item>
+      <item>
+       <title>Voyager 1 Hits One Light Day Milestone &amp; Debris Threats</title>
+       <link>https://flarient.com/podcast/voyager-1-hits-one-light-day-milestone-debris-threats</link>
+       <description>In today&apos;s episode of the Daily Space Podcast by Flarient, Ollie breaks down a major milestone in interstellar transit: NASA&apos;s Voyager 1 spacecraft has reached a distance of one light day from Earth, traveling over 16 billion miles into the cosmic void. We also discuss the immediate surroundings of our planet, tracking the approach of near-Earth asteroid 2026 WJ and checking out the peak of the noctilucent cloud season in the Southern Hemisphere.
+
+In our astronomy and space technology segments, we explore the physics of orbital debris velocity, explaining why high-speed collisions in Low Earth Orbit threaten global satellite infrastructure and who holds legal responsibility under the Outer Space Treaty. We also climb the cosmic distance ladder to understand how astronomers measure vast interstellar distances using parallax, Cepheid variables, and Type Ia supernovae. Finally, we tackle a major fact check regarding claims about Area 51 and reverse-engineered technology.
+
+For real-time space weather monitoring, live Kp index tracking, and aurora forecasts, head over to flarient.com.</description>
+       <pubDate>Thu, 19 Nov 2026 16:05:26 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-11-19</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-11-19/flarient-podcast-2026-11-19.mp3" length="12428018" type="audio/mpeg"/>
+       <itunes:duration>517</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>54</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-19.jpg"/>
+       <itunes:summary>In today&apos;s episode of the Daily Space Podcast by Flarient, Ollie breaks down a major milestone in interstellar transit: NASA&apos;s Voyager 1 spacecraft has reached a distance of one light day from Earth, traveling over 16 billion miles into the cosmic void. We also discuss the immediate surroundings of our planet, tracking the approach of near-Earth asteroid 2026 WJ and checking out the peak of the noctilucent cloud season in the Southern Hemisphere.
+
+In our astronomy and space technology segments, we explore the physics of orbital debris velocity, explaining why high-speed collisions in Low Earth Orbit threaten global satellite infrastructure and who holds legal responsibility under the Outer Space Treaty. We also climb the cosmic distance ladder to understand how astronomers measure vast interstellar distances using parallax, Cepheid variables, and Type Ia supernovae. Finally, we tackle a major fact check regarding claims about Area 51 and reverse-engineered technology.
+
+For real-time space weather monitoring, live Kp index tracking, and aurora forecasts, head over to flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
