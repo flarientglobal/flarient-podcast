@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-19.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-20.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1759,6 +1759,31 @@ For real-time space weather monitoring, live Kp index tracking, and aurora forec
 In our astronomy and space technology segments, we explore the physics of orbital debris velocity, explaining why high-speed collisions in Low Earth Orbit threaten global satellite infrastructure and who holds legal responsibility under the Outer Space Treaty. We also climb the cosmic distance ladder to understand how astronomers measure vast interstellar distances using parallax, Cepheid variables, and Type Ia supernovae. Finally, we tackle a major fact check regarding claims about Area 51 and reverse-engineered technology.
 
 For real-time space weather monitoring, live Kp index tracking, and aurora forecasts, head over to flarient.com.</itunes:summary>
+     </item>
+      <item>
+       <title>Voyager 1 Hits One Light-Day Record as Asteroid 2026 WJ Flies By</title>
+       <link>https://flarient.com/podcast/voyager-1-hits-one-light-day-record-as-asteroid-2026-wj-flies-by</link>
+       <description>In today&apos;s episode of the Daily Space Podcast by Flarient, host Ollie explores a monumental achievement in space exploration: NASA&apos;s Voyager 1 probe has reached a distance of one light-day from Earth—roughly 25.9 billion kilometres away—meaning a radio command takes 24 hours to travel one way.
+
+We also cover current celestial observations, including asteroid 2026 WJ as it safely passes Earth and Mercury reaching its greatest elongation west on 20 November 2026, offering prime viewing in the pre-dawn sky. 
+
+In our deep-dive segments, we examine the physics of Hohmann transfer orbits, break down why solar flares do not pose direct physical health hazards to people on Earth&apos;s surface, and explore the legal and physical challenges of managing orbital space debris under the Outer Space Treaty. Finally, we review today&apos;s exceptionally calm space weather conditions, with solar wind speeds around 406.5 km/s and a Kp index near zero, offering a quiet environment for satellite operators worldwide.
+
+For real-time space weather metrics, Kp index tracking, and interactive forecasts, visit flarient.com.</description>
+       <pubDate>Fri, 20 Nov 2026 15:48:35 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-11-20</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-11-20/flarient-podcast-2026-11-20.mp3" length="18830953" type="audio/mpeg"/>
+       <itunes:duration>784</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>55</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-20.jpg"/>
+       <itunes:summary>In today&apos;s episode of the Daily Space Podcast by Flarient, host Ollie explores a monumental achievement in space exploration: NASA&apos;s Voyager 1 probe has reached a distance of one light-day from Earth—roughly 25.9 billion kilometres away—meaning a radio command takes 24 hours to travel one way.
+
+We also cover current celestial observations, including asteroid 2026 WJ as it safely passes Earth and Mercury reaching its greatest elongation west on 20 November 2026, offering prime viewing in the pre-dawn sky. 
+
+In our deep-dive segments, we examine the physics of Hohmann transfer orbits, break down why solar flares do not pose direct physical health hazards to people on Earth&apos;s surface, and explore the legal and physical challenges of managing orbital space debris under the Outer Space Treaty. Finally, we review today&apos;s exceptionally calm space weather conditions, with solar wind speeds around 406.5 km/s and a Kp index near zero, offering a quiet environment for satellite operators worldwide.
+
+For real-time space weather metrics, Kp index tracking, and interactive forecasts, visit flarient.com.</itunes:summary>
      </item>
   </channel>
 </rss>
