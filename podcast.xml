@@ -10,7 +10,7 @@
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"/>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-20.jpg"/>
+    <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-21.jpg"/>
     <itunes:owner>
       <itunes:name>Flarient</itunes:name>
       <itunes:email>podcast@flarient.com</itunes:email>
@@ -1786,6 +1786,35 @@ We also cover current celestial observations, including asteroid 2026 WJ as it s
 In our deep-dive segments, we examine the physics of Hohmann transfer orbits, break down why solar flares do not pose direct physical health hazards to people on Earth&apos;s surface, and explore the legal and physical challenges of managing orbital space debris under the Outer Space Treaty. Finally, we review today&apos;s exceptionally calm space weather conditions, with solar wind speeds around 406.5 km/s and a Kp index near zero, offering a quiet environment for satellite operators worldwide.
 
 For real-time space weather metrics, Kp index tracking, and interactive forecasts, visit flarient.com.</itunes:summary>
+     </item>
+      <item>
+       <title>Voyager 1 Reaches One Light Day From Earth</title>
+       <link>https://flarient.com/podcast/voyager-1-reaches-one-light-day-from-earth</link>
+       <description>In today&apos;s episode of the Daily Space Podcast by Flarient for Saturday, 21 November 2026, Ollie covers an historic milestone in deep space exploration alongside calm conditions across our local space weather environment.
+
+NASA has confirmed that the Voyager 1 spacecraft has officially reached an astounding distance of one light day from Earth. Traveling through interstellar space, the probe is now more than 16.1 billion miles away, representing one of humanity&apos;s greatest engineering triumphs. Meanwhile, in our immediate cosmic backyard, asteroid 2026 WA1 makes a safe close approach past Earth, and Mercury reaches its prime viewing position following its greatest elongation west.
+
+On the space weather front, our Sun is in an exceptionally tranquil regime. We break down the latest live telemetry from NOAA&apos;s Space Weather Prediction Center and the GFZ German Research Centre for Geosciences. With a Kp index lingering between 0 and 0.33, solar wind speeds around 365 km/s, and a neutral interplanetary magnetic field, geomagnetic storm risk is virtually nonexistent and auroral activity remains suppressed.
+
+We also dive deep into recent articles published on Flarient. We explore the vital importance of near-Earth space—from the Kármán line to satellite orbits—and explain why early-warning observatories at the Sun-Earth Lagrange Point 1 are critical for defending our technological infrastructure. In our fact-check segment, we dispel the common myth that asteroids emit ionising radiation, clarifying the physical differences between inert rocky remnants and high-energy solar emissions. Finally, we explore the atmospheric physics of noctilucent clouds, which form 80 kilometres up in the frigid mesosphere around meteoric dust.
+
+Explore live solar wind data, Kp tracking, and aurora maps at https://flarient.com and catch past episodes at https://flarient.com/podcast.</description>
+       <pubDate>Sat, 21 Nov 2026 14:57:31 GMT</pubDate>
+       <guid isPermaLink="false">flarient-podcast-2026-11-21</guid>
+       <enclosure url="https://github.com/flarientglobal/flarient-podcast/releases/download/podcast-2026-11-21/flarient-podcast-2026-11-21.mp3" length="24969915" type="audio/mpeg"/>
+       <itunes:duration>1040</itunes:duration>
+       <itunes:episodeType>daily</itunes:episodeType>
+       <itunes:episode>56</itunes:episode>
+      <itunes:image href="https://flarientglobal.github.io/flarient-podcast/covers/cover-2026-11-21.jpg"/>
+       <itunes:summary>In today&apos;s episode of the Daily Space Podcast by Flarient for Saturday, 21 November 2026, Ollie covers an historic milestone in deep space exploration alongside calm conditions across our local space weather environment.
+
+NASA has confirmed that the Voyager 1 spacecraft has officially reached an astounding distance of one light day from Earth. Traveling through interstellar space, the probe is now more than 16.1 billion miles away, representing one of humanity&apos;s greatest engineering triumphs. Meanwhile, in our immediate cosmic backyard, asteroid 2026 WA1 makes a safe close approach past Earth, and Mercury reaches its prime viewing position following its greatest elongation west.
+
+On the space weather front, our Sun is in an exceptionally tranquil regime. We break down the latest live telemetry from NOAA&apos;s Space Weather Prediction Center and the GFZ German Research Centre for Geosciences. With a Kp index lingering between 0 and 0.33, solar wind speeds around 365 km/s, and a neutral interplanetary magnetic field, geomagnetic storm risk is virtually nonexistent and auroral activity remains suppressed.
+
+We also dive deep into recent articles published on Flarient. We explore the vital importance of near-Earth space—from the Kármán line to satellite orbits—and explain why early-warning observatories at the Sun-Earth Lagrange Point 1 are critical for defending our technological infrastructure. In our fact-check segment, we dispel the common myth that asteroids emit ionising radiation, clarifying the physical differences between inert rocky remnants and high-energy solar emissions. Finally, we explore the atmospheric physics of noctilucent clouds, which form 80 kilometres up in the frigid mesosphere around meteoric dust.
+
+Explore live solar wind data, Kp tracking, and aurora maps at https://flarient.com and catch past episodes at https://flarient.com/podcast.</itunes:summary>
      </item>
   </channel>
 </rss>
